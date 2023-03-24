@@ -3,5 +3,5 @@ items:
     items:
       - name: Common Usage
         href: CommonUsageFSM.md
-      - name: How to extend Feel FSM
-        href: ExtendFeelFSM.md
+      - name: How to extend DEAL FSM
+        href: ExtendFSM.md

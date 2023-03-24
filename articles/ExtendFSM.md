@@ -1,15 +1,15 @@
 ---
-title: How to extend Feel FSM
+title: How to extend DEAL FSM
 description: This document guide you create custom action and state for your game.
 author: Kevin
 date: 2023-03-22
 ---
 
-# How to extend Feel FSM
+# How to extend DEAL FSM
 
 ## Quick Start
 
-To extend the custom logic of this UCE State Machine, you can create new `ScriptableAction`, `ScriptableCondition`, and `StateTransition` SOs. For example, you might want to add a new action called `ShuffleAction` that shuffles the deck before dealing cards to players.
+To extend the custom logic of this DEAL State Machine, you can create new `ScriptableAction`, `ScriptableCondition`, and `StateTransition` SOs. For example, you might want to add a new action called `ShuffleAction` that shuffles the deck before dealing cards to players.
 
 1. Create a new `ScriptableAction` SO called `ShuffleAction`.
 2. In the inspector of the `ShuffleAction` SO, add a public method called `Execute()`.
