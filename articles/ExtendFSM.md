@@ -7,6 +7,8 @@ date: 2023-03-22
 
 # How to extend DEAL FSM
 
+![alt-text](https://res.cloudinary.com/djpxpezra/image/upload/v1679639277/superblog-image-gen_srz96t.png)
+
 ## Quick Start
 
 To extend the custom logic of this DEAL State Machine, you can create new `ScriptableAction`, `ScriptableCondition`, and `StateTransition` SOs. For example, you might want to add a new action called `ShuffleAction` that shuffles the deck before dealing cards to players.
