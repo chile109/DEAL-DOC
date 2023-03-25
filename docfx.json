@@ -14,7 +14,8 @@
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
       "noRestore": false,
-      "namespaceLayout": "flattened"
+      "namespaceLayout": "flattened",
+      "filter": "filterConfig.yml"
     }
   ],
   "build": {
@@ -63,4 +64,5 @@
     "keepFileLink": false,
     "disableGitFeatures": false
   }
-}
+} }
+}   
