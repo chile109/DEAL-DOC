@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BaseDeck
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BaseDeck
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DEAL.BaseDeck">
+
+
+  <h1 id="DEAL_BaseDeck" data-uid="DEAL.BaseDeck" class="text-break">Class BaseDeck
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></div>
+    <div class="level6"><span class="xref">BaseDeck</span></div>
+      <div class="level7"><a class="xref" href="DEAL.CountingDeck.html">CountingDeck</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_Index">CardHolder.Index</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_Actor">CardHolder.Actor</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_avatar">CardHolder.avatar</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_speedScale">CardHolder.speedScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_colume">CardHolder.colume</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_PerformAddCardAnimation_DEAL_Card_">CardHolder.PerformAddCardAnimation(Card)</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_Card_">CardHolder.ClaimOwnership(Card)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
+  <h6><strong>Assembly</strong>: MustaverseLab.DEAL.Runtime.dll</h6>
+  <h5 id="DEAL_BaseDeck_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BaseDeck : CardHolder</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_cardPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.cardPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L18">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseDeck_cardPool" data-uid="DEAL.BaseDeck.cardPool">cardPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected List&lt;Card&gt; cardPool</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_deckSO.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.deckSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L15">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseDeck_deckSO" data-uid="DEAL.BaseDeck.deckSO">deckSO</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected DeckSO deckSO</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.DeckSO.html">DeckSO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_targetDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.targetDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L21">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseDeck_targetDeck" data-uid="DEAL.BaseDeck.targetDeck">targetDeck</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected BaseDeck targetDeck</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_ClearOwnership_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.ClearOwnership(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L70">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_ClearOwnership_" data-uid="DEAL.BaseDeck.ClearOwnership*"></a>
+  <h4 id="DEAL_BaseDeck_ClearOwnership_DEAL_Card_" data-uid="DEAL.BaseDeck.ClearOwnership(DEAL.Card)">ClearOwnership(Card)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ClearOwnership(Card c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_Card_">CardHolder.ClearOwnership(Card)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetHolderId.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetHolderId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L139">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_GetHolderId_" data-uid="DEAL.BaseDeck.GetHolderId*"></a>
+  <h4 id="DEAL_BaseDeck_GetHolderId" data-uid="DEAL.BaseDeck.GetHolderId">GetHolderId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHolderId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GetHolderId">CardHolder.GetHolderId()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetSize.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L144">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_GetSize_" data-uid="DEAL.BaseDeck.GetSize*"></a>
+  <h4 id="DEAL_BaseDeck_GetSize" data-uid="DEAL.BaseDeck.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GetSize">CardHolder.GetSize()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_InitDeck_DEAL_DeckSO_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.InitDeck(DEAL.DeckSO)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L36">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_InitDeck_" data-uid="DEAL.BaseDeck.InitDeck*"></a>
+  <h4 id="DEAL_BaseDeck_InitDeck_DEAL_DeckSO_" data-uid="DEAL.BaseDeck.InitDeck(DEAL.DeckSO)">InitDeck(DeckSO)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitDeck(DeckSO data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.DeckSO.html">DeckSO</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnCardClaimed_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardClaimed(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L48">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_OnCardClaimed_" data-uid="DEAL.BaseDeck.OnCardClaimed*"></a>
+  <h4 id="DEAL_BaseDeck_OnCardClaimed_DEAL_Card_" data-uid="DEAL.BaseDeck.OnCardClaimed(DEAL.Card)">OnCardClaimed(Card)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnCardClaimed(Card c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_Card_">CardHolder.OnCardClaimed(Card)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnCardCleared_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardCleared(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L54">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_OnCardCleared_" data-uid="DEAL.BaseDeck.OnCardCleared*"></a>
+  <h4 id="DEAL_BaseDeck_OnCardCleared_DEAL_Card_" data-uid="DEAL.BaseDeck.OnCardCleared(DEAL.Card)">OnCardCleared(Card)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnCardCleared(Card c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardCleared_DEAL_Card_">CardHolder.OnCardCleared(Card)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnRefreshDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnRefreshDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L59">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_OnRefreshDeck_" data-uid="DEAL.BaseDeck.OnRefreshDeck*"></a>
+  <h4 id="DEAL_BaseDeck_OnRefreshDeck" data-uid="DEAL.BaseDeck.OnRefreshDeck">OnRefreshDeck()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnRefreshDeck()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnRefreshDeck">CardHolder.OnRefreshDeck()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L76">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_PickCards_" data-uid="DEAL.BaseDeck.PickCards*"></a>
+  <h4 id="DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_" data-uid="DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)">PickCards(CardChoice)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Card[] PickCards(CardChoice choice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></td>
+        <td><span class="parametername">choice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_PickCards_DEAL_FSM_CardChoice_">CardHolder.PickCards(CardChoice)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_TestCardDeal_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TestCardDeal(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L25">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_TestCardDeal_" data-uid="DEAL.BaseDeck.TestCardDeal*"></a>
+  <h4 id="DEAL_BaseDeck_TestCardDeal_System_Int32_" data-uid="DEAL.BaseDeck.TestCardDeal(System.Int32)">TestCardDeal(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestCardDeal(int slotId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">slotId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_TransferCard_DEAL_Card_DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCard(DEAL.Card%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L119">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_TransferCard_" data-uid="DEAL.BaseDeck.TransferCard*"></a>
+  <h4 id="DEAL_BaseDeck_TransferCard_DEAL_Card_DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCard(DEAL.Card,DEAL.CardHolder)">TransferCard(Card, CardHolder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TransferCard(Card c, CardHolder newOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">newOwner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_Card_DEAL_CardHolder_">CardHolder.TransferCard(Card, CardHolder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable%7BDEAL.Card%7D%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L129">View Source</a>
+  </span>
+  <a id="DEAL_BaseDeck_TransferCards_" data-uid="DEAL.BaseDeck.TransferCards*"></a>
+  <h4 id="DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)">TransferCards(IEnumerable&lt;Card&gt;, CardHolder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TransferCards(IEnumerable&lt;Card&gt; cards, CardHolder newOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><span class="parametername">cards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">newOwner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_">CardHolder.TransferCards(IEnumerable&lt;Card&gt;, CardHolder)</a></div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
