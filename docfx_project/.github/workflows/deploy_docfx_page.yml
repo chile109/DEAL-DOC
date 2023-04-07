@@ -1,3 +1,13 @@
+name: Deploy Docfx GithubPage
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "docfx" branch
+  push:
+    branches: ["docfx"]
+  pull_request:
+    branches: ["docfx"]
+
 jobs:
   publish-docs:
     runs-on: ubuntu-latest
