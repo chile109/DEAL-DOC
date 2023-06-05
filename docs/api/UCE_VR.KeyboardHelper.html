@@ -1,0 +1,911 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class KeyboardHelper
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class KeyboardHelper
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UCE_VR.KeyboardHelper">
+
+
+  <h1 id="UCE_VR_KeyboardHelper" data-uid="UCE_VR.KeyboardHelper" class="text-break">Class KeyboardHelper
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">KeyboardHelper</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">XRIDefaultInputActions</span>.<span class="xref">IKeyBoardActions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.Invoke(string, float)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.InvokeRepeating(string, float, float)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine(IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.print(object)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent(Type, out Component)</span>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents(Type, List&lt;Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.CompareTag(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string, object, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string, object, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string, object, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object, float)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object, float)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindSceneObjectsOfType(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfTypeIncludingAssets(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfTypeAll(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UCE_VR.html">UCE_VR</a></h6>
+  <h6><strong>Assembly</strong>: SharKevin.UCEVR.Runtime.dll</h6>
+  <h5 id="UCE_VR_KeyboardHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class KeyboardHelper : MonoBehaviour, XRIDefaultInputActions.IKeyBoardActions</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_Instance.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L11">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_Instance_" data-uid="UCE_VR.KeyboardHelper.Instance*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_Instance" data-uid="UCE_VR.KeyboardHelper.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KeyboardHelper Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnAddAvartar_UnityEngine_InputSystem_InputAction_CallbackContext_.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnAddAvartar(UnityEngine.InputSystem.InputAction.CallbackContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L113">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_OnAddAvartar_" data-uid="UCE_VR.KeyboardHelper.OnAddAvartar*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_OnAddAvartar_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="UCE_VR.KeyboardHelper.OnAddAvartar(UnityEngine.InputSystem.InputAction.CallbackContext)">OnAddAvartar(CallbackContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAddAvartar(InputAction.CallbackContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnConfirmReady_UnityEngine_InputSystem_InputAction_CallbackContext_.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnConfirmReady(UnityEngine.InputSystem.InputAction.CallbackContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L152">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_OnConfirmReady_" data-uid="UCE_VR.KeyboardHelper.OnConfirmReady*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_OnConfirmReady_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="UCE_VR.KeyboardHelper.OnConfirmReady(UnityEngine.InputSystem.InputAction.CallbackContext)">OnConfirmReady(CallbackContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConfirmReady(InputAction.CallbackContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnNumberPress_UnityEngine_InputSystem_InputAction_CallbackContext_.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnNumberPress(UnityEngine.InputSystem.InputAction.CallbackContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L79">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_OnNumberPress_" data-uid="UCE_VR.KeyboardHelper.OnNumberPress*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_OnNumberPress_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="UCE_VR.KeyboardHelper.OnNumberPress(UnityEngine.InputSystem.InputAction.CallbackContext)">OnNumberPress(CallbackContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnNumberPress(InputAction.CallbackContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnRequestReady_UnityEngine_InputSystem_InputAction_CallbackContext_.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnRequestReady(UnityEngine.InputSystem.InputAction.CallbackContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L139">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_OnRequestReady_" data-uid="UCE_VR.KeyboardHelper.OnRequestReady*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_OnRequestReady_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="UCE_VR.KeyboardHelper.OnRequestReady(UnityEngine.InputSystem.InputAction.CallbackContext)">OnRequestReady(CallbackContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRequestReady(InputAction.CallbackContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnResetTable_UnityEngine_InputSystem_InputAction_CallbackContext_.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnResetTable(UnityEngine.InputSystem.InputAction.CallbackContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L165">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_OnResetTable_" data-uid="UCE_VR.KeyboardHelper.OnResetTable*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_OnResetTable_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="UCE_VR.KeyboardHelper.OnResetTable(UnityEngine.InputSystem.InputAction.CallbackContext)">OnResetTable(CallbackContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnResetTable(InputAction.CallbackContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnShiftNumberPress_UnityEngine_InputSystem_InputAction_CallbackContext_.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnShiftNumberPress(UnityEngine.InputSystem.InputAction.CallbackContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L96">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_OnShiftNumberPress_" data-uid="UCE_VR.KeyboardHelper.OnShiftNumberPress*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_OnShiftNumberPress_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="UCE_VR.KeyboardHelper.OnShiftNumberPress(UnityEngine.InputSystem.InputAction.CallbackContext)">OnShiftNumberPress(CallbackContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnShiftNumberPress(InputAction.CallbackContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnTakeSeat_UnityEngine_InputSystem_InputAction_CallbackContext_.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnTakeSeat(UnityEngine.InputSystem.InputAction.CallbackContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L126">View Source</a>
+  </span>
+  <a id="UCE_VR_KeyboardHelper_OnTakeSeat_" data-uid="UCE_VR.KeyboardHelper.OnTakeSeat*"></a>
+  <h4 id="UCE_VR_KeyboardHelper_OnTakeSeat_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="UCE_VR.KeyboardHelper.OnTakeSeat(UnityEngine.InputSystem.InputAction.CallbackContext)">OnTakeSeat(CallbackContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTakeSeat(InputAction.CallbackContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnAddAvartarCallback.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnAddAvartarCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L36">View Source</a>
+  </span>
+  <h4 id="UCE_VR_KeyboardHelper_OnAddAvartarCallback" data-uid="UCE_VR.KeyboardHelper.OnAddAvartarCallback">OnAddAvartarCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event KeyboardHelper.AddAvartarEvent OnAddAvartarCallback</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a>.<a class="xref" href="UCE_VR.KeyboardHelper.AddAvartarEvent.html">AddAvartarEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnConfirmReadyCallback.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnConfirmReadyCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L45">View Source</a>
+  </span>
+  <h4 id="UCE_VR_KeyboardHelper_OnConfirmReadyCallback" data-uid="UCE_VR.KeyboardHelper.OnConfirmReadyCallback">OnConfirmReadyCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event KeyboardHelper.ConfirmReadtEvent OnConfirmReadyCallback</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a>.<a class="xref" href="UCE_VR.KeyboardHelper.ConfirmReadtEvent.html">ConfirmReadtEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnNumberPressCallback.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnNumberPressCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L30">View Source</a>
+  </span>
+  <h4 id="UCE_VR_KeyboardHelper_OnNumberPressCallback" data-uid="UCE_VR.KeyboardHelper.OnNumberPressCallback">OnNumberPressCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event KeyboardHelper.NumberPressEvent OnNumberPressCallback</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a>.<a class="xref" href="UCE_VR.KeyboardHelper.NumberPressEvent.html">NumberPressEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnRequestReadyCallback.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnRequestReadyCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L42">View Source</a>
+  </span>
+  <h4 id="UCE_VR_KeyboardHelper_OnRequestReadyCallback" data-uid="UCE_VR.KeyboardHelper.OnRequestReadyCallback">OnRequestReadyCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event KeyboardHelper.RequestReadyEvent OnRequestReadyCallback</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a>.<a class="xref" href="UCE_VR.KeyboardHelper.RequestReadyEvent.html">RequestReadyEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnResetGameCallback.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnResetGameCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L48">View Source</a>
+  </span>
+  <h4 id="UCE_VR_KeyboardHelper_OnResetGameCallback" data-uid="UCE_VR.KeyboardHelper.OnResetGameCallback">OnResetGameCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event KeyboardHelper.ResetGameEvent OnResetGameCallback</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a>.<a class="xref" href="UCE_VR.KeyboardHelper.ResetGameEvent.html">ResetGameEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnShiftNumberPressCallback.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnShiftNumberPressCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L33">View Source</a>
+  </span>
+  <h4 id="UCE_VR_KeyboardHelper_OnShiftNumberPressCallback" data-uid="UCE_VR.KeyboardHelper.OnShiftNumberPressCallback">OnShiftNumberPressCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event KeyboardHelper.ShiftNumberPressEvent OnShiftNumberPressCallback</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a>.<a class="xref" href="UCE_VR.KeyboardHelper.ShiftNumberPressEvent.html">ShiftNumberPressEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper_OnTakeSeatCallback.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper.OnTakeSeatCallback%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L39">View Source</a>
+  </span>
+  <h4 id="UCE_VR_KeyboardHelper_OnTakeSeatCallback" data-uid="UCE_VR.KeyboardHelper.OnTakeSeatCallback">OnTakeSeatCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event KeyboardHelper.TakeSeatEvent OnTakeSeatCallback</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.KeyboardHelper.html">KeyboardHelper</a>.<a class="xref" href="UCE_VR.KeyboardHelper.TakeSeatEvent.html">TakeSeatEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">XRIDefaultInputActions.IKeyBoardActions</span>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=UCE_VR_KeyboardHelper.md&amp;value=---%0Auid%3A%20UCE_VR.KeyboardHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/vr_unity_card_engine/Runtime/Helper/KeyboardHelper.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
