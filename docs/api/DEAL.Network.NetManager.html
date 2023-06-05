@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class NetManager
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class NetManager
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DEAL.Network.NetManager">
+
+
+  <h1 id="DEAL_Network_NetManager" data-uid="DEAL.Network.NetManager" class="text-break">Class NetManager
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">MonoBehaviourPun</span></div>
+    <div class="level6"><span class="xref">MonoBehaviourPunCallbacks</span></div>
+    <div class="level7"><span class="xref">NetManager</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IConnectionCallbacks</span></div>
+    <div><span class="xref">IMatchmakingCallbacks</span></div>
+    <div><span class="xref">IInRoomCallbacks</span></div>
+    <div><span class="xref">ILobbyCallbacks</span></div>
+    <div><span class="xref">IWebRpcCallback</span></div>
+    <div><span class="xref">IErrorInfoCallback</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnEnable()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnDisable()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnConnected()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnMasterClientSwitched(Player)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnCreateRoomFailed(short, string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnCreatedRoom()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnJoinedLobby()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnLeftLobby()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnRegionListReceived(RegionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnRoomListUpdate(List&lt;RoomInfo&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnPlayerLeftRoom(Player)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnRoomPropertiesUpdate(Hashtable)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnPlayerPropertiesUpdate(Player, Hashtable)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnFriendListUpdate(List&lt;FriendInfo&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnCustomAuthenticationResponse(Dictionary&lt;string, object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnCustomAuthenticationFailed(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnWebRpcResponse(OperationResponse)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnLobbyStatisticsUpdate(List&lt;TypedLobbyInfo&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPunCallbacks.OnErrorInfo(ErrorInfo)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviourPun.photonView</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a>.<a class="xref" href="DEAL.Network.html">Network</a></h6>
+  <h6><strong>Assembly</strong>: MustaverseLab.DEAL.Runtime.dll</h6>
+  <h5 id="DEAL_Network_NetManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NetManager : MonoBehaviourPunCallbacks, IConnectionCallbacks, IMatchmakingCallbacks, IInRoomCallbacks, ILobbyCallbacks, IWebRpcCallback, IErrorInfoCallback</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_DebugText.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.DebugText%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L14">View Source</a>
+  </span>
+  <h4 id="DEAL_Network_NetManager_DebugText" data-uid="DEAL.Network.NetManager.DebugText">DebugText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TMP_Text DebugText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMP_Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_JoinRoomName.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.JoinRoomName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L16">View Source</a>
+  </span>
+  <h4 id="DEAL_Network_NetManager_JoinRoomName" data-uid="DEAL.Network.NetManager.JoinRoomName">JoinRoomName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string JoinRoomName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_JoinRoomOnStart.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.JoinRoomOnStart%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L17">View Source</a>
+  </span>
+  <h4 id="DEAL_Network_NetManager_JoinRoomOnStart" data-uid="DEAL.Network.NetManager.JoinRoomOnStart">JoinRoomOnStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool JoinRoomOnStart</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_SpawnTransform.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.SpawnTransform%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L15">View Source</a>
+  </span>
+  <h4 id="DEAL_Network_NetManager_SpawnTransform" data-uid="DEAL.Network.NetManager.SpawnTransform">SpawnTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform SpawnTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_OnConnectedToMaster.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.OnConnectedToMaster%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L55">View Source</a>
+  </span>
+  <a id="DEAL_Network_NetManager_OnConnectedToMaster_" data-uid="DEAL.Network.NetManager.OnConnectedToMaster*"></a>
+  <h4 id="DEAL_Network_NetManager_OnConnectedToMaster" data-uid="DEAL.Network.NetManager.OnConnectedToMaster">OnConnectedToMaster()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnConnectedToMaster()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Photon.Pun.MonoBehaviourPunCallbacks.OnConnectedToMaster()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_OnDisconnected_Photon_Realtime_DisconnectCause_.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.OnDisconnected(Photon.Realtime.DisconnectCause)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L96">View Source</a>
+  </span>
+  <a id="DEAL_Network_NetManager_OnDisconnected_" data-uid="DEAL.Network.NetManager.OnDisconnected*"></a>
+  <h4 id="DEAL_Network_NetManager_OnDisconnected_Photon_Realtime_DisconnectCause_" data-uid="DEAL.Network.NetManager.OnDisconnected(Photon.Realtime.DisconnectCause)">OnDisconnected(DisconnectCause)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnDisconnected(DisconnectCause cause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DisconnectCause</span></td>
+        <td><span class="parametername">cause</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Photon.Pun.MonoBehaviourPunCallbacks.OnDisconnected(Photon.Realtime.DisconnectCause)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_OnJoinedRoom.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.OnJoinedRoom%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L79">View Source</a>
+  </span>
+  <a id="DEAL_Network_NetManager_OnJoinedRoom_" data-uid="DEAL.Network.NetManager.OnJoinedRoom*"></a>
+  <h4 id="DEAL_Network_NetManager_OnJoinedRoom" data-uid="DEAL.Network.NetManager.OnJoinedRoom">OnJoinedRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnJoinedRoom()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Photon.Pun.MonoBehaviourPunCallbacks.OnJoinedRoom()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_OnJoinRandomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.OnJoinRandomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L50">View Source</a>
+  </span>
+  <a id="DEAL_Network_NetManager_OnJoinRandomFailed_" data-uid="DEAL.Network.NetManager.OnJoinRandomFailed*"></a>
+  <h4 id="DEAL_Network_NetManager_OnJoinRandomFailed_System_Int16_System_String_" data-uid="DEAL.Network.NetManager.OnJoinRandomFailed(System.Int16,System.String)">OnJoinRandomFailed(short, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnJoinRandomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRandomFailed(short, string)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_OnJoinRoomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.OnJoinRoomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L44">View Source</a>
+  </span>
+  <a id="DEAL_Network_NetManager_OnJoinRoomFailed_" data-uid="DEAL.Network.NetManager.OnJoinRoomFailed*"></a>
+  <h4 id="DEAL_Network_NetManager_OnJoinRoomFailed_System_Int16_System_String_" data-uid="DEAL.Network.NetManager.OnJoinRoomFailed(System.Int16,System.String)">OnJoinRoomFailed(short, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnJoinRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">short</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRoomFailed(short, string)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_OnLeftRoom.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.OnLeftRoom%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L118">View Source</a>
+  </span>
+  <a id="DEAL_Network_NetManager_OnLeftRoom_" data-uid="DEAL.Network.NetManager.OnLeftRoom*"></a>
+  <h4 id="DEAL_Network_NetManager_OnLeftRoom" data-uid="DEAL.Network.NetManager.OnLeftRoom">OnLeftRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnLeftRoom()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Photon.Pun.MonoBehaviourPunCallbacks.OnLeftRoom()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager_OnPlayerEnteredRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager.OnPlayerEnteredRoom(Photon.Realtime.Player)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L70">View Source</a>
+  </span>
+  <a id="DEAL_Network_NetManager_OnPlayerEnteredRoom_" data-uid="DEAL.Network.NetManager.OnPlayerEnteredRoom*"></a>
+  <h4 id="DEAL_Network_NetManager_OnPlayerEnteredRoom_Photon_Realtime_Player_" data-uid="DEAL.Network.NetManager.OnPlayerEnteredRoom(Photon.Realtime.Player)">OnPlayerEnteredRoom(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerEnteredRoom(Player newPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Player</span></td>
+        <td><span class="parametername">newPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerEnteredRoom(Photon.Realtime.Player)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Photon.Realtime.IConnectionCallbacks</span>
+  </div>
+  <div>
+      <span class="xref">Photon.Realtime.IMatchmakingCallbacks</span>
+  </div>
+  <div>
+      <span class="xref">Photon.Realtime.IInRoomCallbacks</span>
+  </div>
+  <div>
+      <span class="xref">Photon.Realtime.ILobbyCallbacks</span>
+  </div>
+  <div>
+      <span class="xref">Photon.Realtime.IWebRpcCallback</span>
+  </div>
+  <div>
+      <span class="xref">Photon.Realtime.IErrorInfoCallback</span>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_Network_NetManager.md&amp;value=---%0Auid%3A%20DEAL.Network.NetManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Network/NetManager.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

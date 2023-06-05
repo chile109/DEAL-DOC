@@ -1,0 +1,1462 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CardStateMachineComponent
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CardStateMachineComponent
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent">
+
+
+  <h1 id="UCE_VR_ScriptableFSM_CardStateMachineComponent" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent" class="text-break">Class CardStateMachineComponent
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">CardStateMachineComponent</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IEventListener</span></div>
+    <div><span class="xref">IOnEventCallback</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.Invoke(string, float)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.InvokeRepeating(string, float, float)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine(IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(string)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.print(object)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent(Type, out Component)</span>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents(Type, List&lt;Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.CompareTag(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string, object, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessageUpwards(string, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string, object, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.SendMessage(string, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string, object, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string)</span>
+    </div>
+    <div>
+      <span class="xref">Component.BroadcastMessage(string, SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object, float)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object, float)</span>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindSceneObjectsOfType(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfTypeIncludingAssets(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;(bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfTypeAll(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType(Type, bool)</span>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UCE_VR.html">UCE_VR</a>.<a class="xref" href="UCE_VR.ScriptableFSM.html">ScriptableFSM</a></h6>
+  <h6><strong>Assembly</strong>: MustaverseLab.DEAL.Runtime.dll</h6>
+  <h5 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CardStateMachineComponent : MonoBehaviour, IEventListener, IOnEventCallback</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_eventDictionary.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.eventDictionary%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L16">View Source</a>
+  </span>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_eventDictionary" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.eventDictionary">eventDictionary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, bool&gt; eventDictionary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">bool</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_FixedPlayerOrderStack.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.FixedPlayerOrderStack%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L54">View Source</a>
+  </span>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_FixedPlayerOrderStack" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.FixedPlayerOrderStack">FixedPlayerOrderStack</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stack&lt;Tuple&lt;ActionActor, int[]&gt;&gt; FixedPlayerOrderStack</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stack</span>&lt;<span class="xref">Tuple</span>&lt;<a class="xref" href="UCE_VR.ScriptableFSM.ActionActor.html">ActionActor</a>, <span class="xref">int</span>[]&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_OnStateChanged.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.OnStateChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L76">View Source</a>
+  </span>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnStateChanged" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnStateChanged">OnStateChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ScriptableState, ScriptableState&gt; OnStateChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="UCE_VR.ScriptableFSM.ScriptableState.html">ScriptableState</a>, <a class="xref" href="UCE_VR.ScriptableFSM.ScriptableState.html">ScriptableState</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitSystemLock.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitSystemLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L24">View Source</a>
+  </span>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitSystemLock" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitSystemLock">WaitSystemLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WaitSystemLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_CardChoiceBuffer.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.CardChoiceBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L63">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CardChoiceBuffer_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CardChoiceBuffer*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CardChoiceBuffer" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CardChoiceBuffer">CardChoiceBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;Card&gt; CardChoiceBuffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReadOnlyCollection</span>&lt;<a class="xref" href="UCE_VR.Card.html">Card</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentAvatar.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L56">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentAvatar_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentAvatar*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentAvatar" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentAvatar">CurrentAvatar</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar CurrentAvatar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentPlayerDeck.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentPlayerDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L42">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentPlayerDeck_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentPlayerDeck*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentPlayerDeck" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentPlayerDeck">CurrentPlayerDeck</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseDeck CurrentPlayerDeck { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.BaseDeck.html">BaseDeck</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentState.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L19">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentState_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentState*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_CurrentState" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.CurrentState">CurrentState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptableState CurrentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.ScriptableState.html">ScriptableState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_LastExecutedCards.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.LastExecutedCards%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L69">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_LastExecutedCards_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.LastExecutedCards*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_LastExecutedCards" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.LastExecutedCards">LastExecutedCards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;Card&gt; LastExecutedCards { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReadOnlyCollection</span>&lt;<a class="xref" href="UCE_VR.Card.html">Card</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_NextPlayerMultiplier.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.NextPlayerMultiplier%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L49">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_NextPlayerMultiplier_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.NextPlayerMultiplier*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_NextPlayerMultiplier" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.NextPlayerMultiplier">NextPlayerMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NextPlayerMultiplier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitDialogLock.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitDialogLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L35">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitDialogLock_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitDialogLock*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitDialogLock" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitDialogLock">WaitDialogLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WaitDialogLock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitTurnLock.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitTurnLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L28">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitTurnLock_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitTurnLock*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_WaitTurnLock" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.WaitTurnLock">WaitTurnLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WaitTurnLock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_ChangePlayer_System_Int32_.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.ChangePlayer(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L142">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_ChangePlayer_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.ChangePlayer*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_ChangePlayer_System_Int32_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.ChangePlayer(System.Int32)">ChangePlayer(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangePlayer(int newPlayerIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">newPlayerIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_DebugCancelWait.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.DebugCancelWait%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L378">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_DebugCancelWait_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.DebugCancelWait*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_DebugCancelWait" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.DebugCancelWait">DebugCancelWait()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DebugCancelWait()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_ExecuteCardTransfer_UCE_VR_Avatar_UCE_VR_CardHolder_.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.ExecuteCardTransfer(UCE_VR.Avatar%2CUCE_VR.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L461">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_ExecuteCardTransfer_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.ExecuteCardTransfer*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_ExecuteCardTransfer_UCE_VR_Avatar_UCE_VR_CardHolder_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.ExecuteCardTransfer(UCE_VR.Avatar,UCE_VR.CardHolder)">ExecuteCardTransfer(Avatar, CardHolder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCardTransfer(Avatar actorPlayer, CardHolder newOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">actorPlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UCE_VR.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">newOwner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorAvatar_UCE_VR_ScriptableFSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorAvatar(UCE_VR.ScriptableFSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L267">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorAvatar_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorAvatar*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorAvatar_UCE_VR_ScriptableFSM_ActionActor_System_Int32___" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorAvatar(UCE_VR.ScriptableFSM.ActionActor,System.Int32[])">GetActorAvatar(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar GetActorAvatar(ActionActor actor, int[] actorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorAvatars_UCE_VR_ScriptableFSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorAvatars(UCE_VR.ScriptableFSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L309">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorAvatars_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorAvatars*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorAvatars_UCE_VR_ScriptableFSM_ActionActor_System_Int32___" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorAvatars(UCE_VR.ScriptableFSM.ActionActor,System.Int32[])">GetActorAvatars(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar[] GetActorAvatars(ActionActor actor, int[] actorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Avatar.html">Avatar</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorDeck_UCE_VR_ScriptableFSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorDeck(UCE_VR.ScriptableFSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L213">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorDeck_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorDeck*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetActorDeck_UCE_VR_ScriptableFSM_ActionActor_System_Int32___" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetActorDeck(UCE_VR.ScriptableFSM.ActionActor,System.Int32[])">GetActorDeck(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardHolder[] GetActorDeck(ActionActor actor, int[] actorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.CardHolder.html">CardHolder</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_GetPlayerActorIndex_UCE_VR_ScriptableFSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.GetPlayerActorIndex(UCE_VR.ScriptableFSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L166">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetPlayerActorIndex_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetPlayerActorIndex*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_GetPlayerActorIndex_UCE_VR_ScriptableFSM_ActionActor_System_Int32___" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.GetPlayerActorIndex(UCE_VR.ScriptableFSM.ActionActor,System.Int32[])">GetPlayerActorIndex(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPlayerActorIndex(ActionActor actor, int[] actorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_OnConfirmSpecialAction.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.OnConfirmSpecialAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L539">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnConfirmSpecialAction_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnConfirmSpecialAction*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnConfirmSpecialAction" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnConfirmSpecialAction">OnConfirmSpecialAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConfirmSpecialAction()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_OnEvent_EventArgs_.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.OnEvent(EventArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L585">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnEvent_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnEvent*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnEvent_EventArgs_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnEvent(EventArgs)">OnEvent(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEvent(EventArgs @event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventArgs</span></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_OnEvent_ExitGames_Client_Photon_EventData_.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.OnEvent(ExitGames.Client.Photon.EventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L595">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnEvent_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnEvent*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnEvent_ExitGames_Client_Photon_EventData_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnEvent(ExitGames.Client.Photon.EventData)">OnEvent(EventData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEvent(EventData photonEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventData</span></td>
+        <td><span class="parametername">photonEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_OnPickSpecialAction_UCE_VR_Card_.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.OnPickSpecialAction(UCE_VR.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L501">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnPickSpecialAction_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnPickSpecialAction*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_OnPickSpecialAction_UCE_VR_Card_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.OnPickSpecialAction(UCE_VR.Card)">OnPickSpecialAction(Card)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPickSpecialAction(Card card)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Card.html">Card</a></td>
+        <td><span class="parametername">card</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestCardPick_UCE_VR_Avatar_UCE_VR_CardHolder_UCE_VR_ScriptableFSM_CardChoice_.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestCardPick(UCE_VR.Avatar%2CUCE_VR.CardHolder%2CUCE_VR.ScriptableFSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L427">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestCardPick_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestCardPick*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestCardPick_UCE_VR_Avatar_UCE_VR_CardHolder_UCE_VR_ScriptableFSM_CardChoice_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestCardPick(UCE_VR.Avatar,UCE_VR.CardHolder,UCE_VR.ScriptableFSM.CardChoice)">RequestCardPick(Avatar, CardHolder, CardChoice)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestCardPick(Avatar actorPlayer, CardHolder pickingDeck, CardChoice newCardChoice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">actorPlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UCE_VR.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">pickingDeck</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.CardChoice.html">CardChoice</a></td>
+        <td><span class="parametername">newCardChoice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestShowDialog_UCE_VR_Avatar___UCE_VR_ScriptableFSM_DialogType_System_String___.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestShowDialog(UCE_VR.Avatar%5B%5D%2CUCE_VR.ScriptableFSM.DialogType%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L324">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestShowDialog_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestShowDialog*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestShowDialog_UCE_VR_Avatar___UCE_VR_ScriptableFSM_DialogType_System_String___" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestShowDialog(UCE_VR.Avatar[],UCE_VR.ScriptableFSM.DialogType,System.String[])">RequestShowDialog(Avatar[], DialogType, string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestShowDialog(Avatar[] targets, DialogType dialogType, string[] dialogParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Avatar.html">Avatar</a>[]</td>
+        <td><span class="parametername">targets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.DialogType.html">DialogType</a></td>
+        <td><span class="parametername">dialogType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">dialogParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestShowLocalDialog_UCE_VR_ScriptableFSM_DialogType_System_String___System_Action_System_Object____.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestShowLocalDialog(UCE_VR.ScriptableFSM.DialogType%2CSystem.String%5B%5D%2CSystem.Action%7BSystem.Object%5B%5D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L383">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestShowLocalDialog_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestShowLocalDialog*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_RequestShowLocalDialog_UCE_VR_ScriptableFSM_DialogType_System_String___System_Action_System_Object____" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.RequestShowLocalDialog(UCE_VR.ScriptableFSM.DialogType,System.String[],System.Action{System.Object[]})">RequestShowLocalDialog(DialogType, string[], Action&lt;object[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestShowLocalDialog(DialogType dialogType, string[] dialogParams, Action&lt;object[]&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.DialogType.html">DialogType</a></td>
+        <td><span class="parametername">dialogType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">dialogParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">object</span>[]&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_SetPlayerOrder_UCE_VR_ScriptableFSM_OrderType_System_Int32___.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.SetPlayerOrder(UCE_VR.ScriptableFSM.OrderType%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L148">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_SetPlayerOrder_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.SetPlayerOrder*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_SetPlayerOrder_UCE_VR_ScriptableFSM_OrderType_System_Int32___" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.SetPlayerOrder(UCE_VR.ScriptableFSM.OrderType,System.Int32[])">SetPlayerOrder(OrderType, int[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlayerOrder(OrderType orderType, int[] orderParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.ScriptableFSM.OrderType.html">OrderType</a></td>
+        <td><span class="parametername">orderType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>[]</td>
+        <td><span class="parametername">orderParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_StartFSM.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.StartFSM%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L90">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_StartFSM_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.StartFSM*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_StartFSM" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.StartFSM">StartFSM()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartFSM()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_TerminateFSM.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.TerminateFSM%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L106">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_TerminateFSM_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.TerminateFSM*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_TerminateFSM" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.TerminateFSM">TerminateFSM()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TerminateFSM()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent_TryPick_UCE_VR_Card_UnityEngine_XR_Interaction_Toolkit_IXRInteractor_.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent.TryPick(UCE_VR.Card%2CUnityEngine.XR.Interaction.Toolkit.IXRInteractor)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L476">View Source</a>
+  </span>
+  <a id="UCE_VR_ScriptableFSM_CardStateMachineComponent_TryPick_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.TryPick*"></a>
+  <h4 id="UCE_VR_ScriptableFSM_CardStateMachineComponent_TryPick_UCE_VR_Card_UnityEngine_XR_Interaction_Toolkit_IXRInteractor_" data-uid="UCE_VR.ScriptableFSM.CardStateMachineComponent.TryPick(UCE_VR.Card,UnityEngine.XR.Interaction.Toolkit.IXRInteractor)">TryPick(Card, IXRInteractor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryPick(Card card, IXRInteractor interactor = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UCE_VR.Card.html">Card</a></td>
+        <td><span class="parametername">card</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IXRInteractor</span></td>
+        <td><span class="parametername">interactor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IEventListener</span>
+  </div>
+  <div>
+      <span class="xref">Photon.Realtime.IOnEventCallback</span>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/feature/docfx-ucevr/apiSpec/new?filename=UCE_VR_ScriptableFSM_CardStateMachineComponent.md&amp;value=---%0Auid%3A%20UCE_VR.ScriptableFSM.CardStateMachineComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/feature/docfx-ucevr/Packages/DEAL/Core/Runtime/ScriptableObject/ScriptableFSM/CardStateMachineComponent.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
