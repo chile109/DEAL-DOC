@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>How to extend DEAL FSM </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="How to extend DEAL FSM ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-extend-deal-fsm">How to extend DEAL FSM</h1>
+
+<p><img src="https://res.cloudinary.com/djpxpezra/image/upload/v1679639277/superblog-image-gen_srz96t.png" alt="alt-text"></p>
+<h2 id="quick-start">Quick Start</h2>
+<p>To extend the custom logic of this DEAL State Machine, you can create new <code>ScriptableAction</code>, <code>ScriptableCondition</code>, and <code>StateTransition</code> SOs. For example, you might want to add a new action called <code>ShuffleAction</code> that shuffles the deck before dealing cards to players.</p>
+<ol>
+<li>Create a new <code>ScriptableAction</code> SO called <code>ShuffleAction</code>.</li>
+<li>In the inspector of the <code>ShuffleAction</code> SO, add a public method called <code>Execute()</code>.</li>
+<li>Implement the logic for shuffling the deck in the <code>Execute()</code> method.</li>
+<li>Create a new <code>StateTransition</code> SO called <code>InitialShuffleTransition</code>.</li>
+<li>Set <code>99_InitialDeal_State</code></li>
+<li>Set its <code>_trueState_</code> to be the start state (<code>99_Start_State</code>).</li>
+<li>Set its <code>_falseState_</code> to be an empty state (<code>99_Empty_State</code>) since we don't want any other behavior if shuffle fails.</li>
+<li>Add a new instance of your custom condition that checks if shuffle is successful in this transition's <code>_condition_</code>.</li>
+<li>Add an instance of your new <code>ShuffleAction</code> in the <code>_entryActions_</code> array of your start state (<code>99_Start_State</code>).</li>
+</ol>
+<p>When your game goes from dealing to starting, it will run your custom shuffle action first. If it works, the game will move to the start state. If it doesn't work, the game will stay in the dealing state. You can make other custom actions and conditions to use in transitions between different stages of the game for more complicated game play.</p>
+<h3 id="basic">Basic</h3>
+<ol>
+<li><p><code>ScriptableState (SO)</code>: The core state structure with method executin every action listed in the target <code>ScriptableAction[]</code> array</p>
+<table>
+<thead>
+<tr>
+<th><strong>State</strong></th>
+<th>OnEnterState</th>
+<th>OnExitState</th>
+<th>OnUpdateState</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ActionList</strong></td>
+<td><em>entryActions</em></td>
+<td><em>exitActions</em></td>
+<td><em>updateActions</em></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p><code>ScriptableAction (SO)</code>: Abstract SO class that can be executed</p>
+</li>
+<li><p><code>ScriptableCondition (SO)</code>: Abstract SO class that can verify itself and return a boolean value</p>
+</li>
+<li><p><code>StateTransition (Structure)</code>: Includes the <code>ScriptableCondition</code> to check for <code>_originState_</code> to make transition to <code>_trueState_</code>/<code>_falseState_</code> depending on the condition, if <code>_falseState_</code> is set to the given <code>_emptyState_</code>, this means that the transition will remain on the same state until condition is met.</p>
+</li>
+<li><p><code>ScriptableStateMachine (SO)</code>: The core FSM SO which can hold a list of <code>StateTransition</code>s</p>
+</li>
+</ol>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/DEAL-DOC/blob/4/merge/articles/ExtendFSM.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
