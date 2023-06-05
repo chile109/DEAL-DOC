@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/Kevin/Documents/UCEngine/docfx_project",
+  "source_base_path": "C:/Users/Kevin/Documents/UCEngine/DEAL-DOC",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -1087,7 +1087,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "KrQeP8UMlFMu/ayWhLlFoTX+jxOs7SrmSF3oFX/mujg="
+          "hash": "sJOW2ClnHp80oPEzaudSUaYyBeuuK6Uwzt7lxBql4/8="
         }
       },
       "version": ""
@@ -1109,7 +1109,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/CommonUsageFSM.html",
-          "hash": "Ep6grcxpZIDDSteFp21jXUIfTlaUyoFqCPdQVZvG/4s="
+          "hash": "CEQJ13Z9eUjpHFBZOJNXb01DCmj5qiy/W8py4TOZvvw="
         }
       },
       "version": ""
@@ -1120,7 +1120,18 @@
       "output": {
         ".html": {
           "relative_path": "articles/ExtendFSM.html",
-          "hash": "iHcIx4G/jXdajHFtil078SdntQH//AS3oyzVZg/rN5k="
+          "hash": "XUh5Kqr5DS7p3ffgCj8u34L5mSTLLLxeaHxNIWA/oSA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/NumberMechanism.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/NumberMechanism.html",
+          "hash": "41ofAYKhay5U+FRIi4KasFaUf7sFEkx3yGQG+H1wS4k="
         }
       },
       "version": ""
@@ -1131,7 +1142,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "MjvcLZ6bZtyK/uWu6euSL9xnAQatwfVPpvaBShshmGw="
+          "hash": "CwhAGYP/svAKQiUIVEUOutQRWngOF1Cx7whnErn9ZDM="
         }
       },
       "version": ""
@@ -1142,7 +1153,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "XR6h25stz7vsjmugDEE2oZM+Uz265LvcQwOHmqx3X/U="
+          "hash": "2Mg6yz4+Ce2naQRNTGXRapYhQ514xZycpklXx3UGabE="
         }
       },
       "version": ""
