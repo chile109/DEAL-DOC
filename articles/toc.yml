@@ -5,3 +5,7 @@ items:
         href: CommonUsageFSM.md
       - name: How to extend DEAL FSM
         href: ExtendFSM.md
+  - name: Card Game Design
+    items:
+      - name: General Mechanism
+        href: NumberMechanism.md
