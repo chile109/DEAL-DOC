@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BaseUCEngine </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BaseUCEngine ">
+    
+    <meta name="description" content="This UCEngine singleton is responsible for initializing the game table elements, XR interaction avatar, Photon PUN network and managing the DEAL FSM.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DEAL.BaseUCEngine">
+
+
+
+  <h1 id="DEAL_BaseUCEngine" data-uid="DEAL.BaseUCEngine" class="text-break">Class BaseUCEngine</h1>
+  <div class="markdown level0 summary"><p>This UCEngine singleton is responsible for initializing the game table elements, XR interaction avatar, Photon PUN network and managing the DEAL FSM.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">BaseUCEngine</span></div>
+      <div class="level6"><a class="xref" href="DEAL.UCE.html">UCE</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
+  <h6><strong>Assembly</strong>: MustaverseLab.DEAL.Runtime.dll</h6>
+  <h5 id="DEAL_BaseUCEngine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BaseUCEngine : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_ConfigSymbol.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.ConfigSymbol%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L35">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseUCEngine_ConfigSymbol" data-uid="DEAL.BaseUCEngine.ConfigSymbol">ConfigSymbol</h4>
+  <div class="markdown level1 summary"><p>Target Symbol of the game to load your GlobalInfoSO file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConfigSymbol</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_avatarList.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.avatarList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L89">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseUCEngine_avatarList" data-uid="DEAL.BaseUCEngine.avatarList">avatarList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Avatar&gt; avatarList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.Avatar.html">Avatar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_globalInfoSO.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.globalInfoSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L37">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseUCEngine_globalInfoSO" data-uid="DEAL.BaseUCEngine.globalInfoSO">globalInfoSO</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalInfoSO globalInfoSO</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.GlobalInfoSO.html">GlobalInfoSO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_playerDeckArray.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.playerDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L79">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseUCEngine_playerDeckArray" data-uid="DEAL.BaseUCEngine.playerDeckArray">playerDeckArray</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseDeck[] playerDeckArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_stateMachineComponent.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.stateMachineComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L48">View Source</a>
+  </span>
+  <h4 id="DEAL_BaseUCEngine_stateMachineComponent" data-uid="DEAL.BaseUCEngine.stateMachineComponent">stateMachineComponent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected CardStateMachineComponent stateMachineComponent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CardStateMachineComponent.html">CardStateMachineComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_ActiveSystemDeckArray.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.ActiveSystemDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L74">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_ActiveSystemDeckArray_" data-uid="DEAL.BaseUCEngine.ActiveSystemDeckArray*"></a>
+  <h4 id="DEAL_BaseUCEngine_ActiveSystemDeckArray" data-uid="DEAL.BaseUCEngine.ActiveSystemDeckArray">ActiveSystemDeckArray</h4>
+  <div class="markdown level1 summary"><p>The public system such as the counting deck.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseDeck[] ActiveSystemDeckArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_ActiveSystemTileArray.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.ActiveSystemTileArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L64">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_ActiveSystemTileArray_" data-uid="DEAL.BaseUCEngine.ActiveSystemTileArray*"></a>
+  <h4 id="DEAL_BaseUCEngine_ActiveSystemTileArray" data-uid="DEAL.BaseUCEngine.ActiveSystemTileArray">ActiveSystemTileArray</h4>
+  <div class="markdown level1 summary"><p>The public system tiles to be used in the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardHolder[] ActiveSystemTileArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_AllPlayerIds.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.AllPlayerIds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L126">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_AllPlayerIds_" data-uid="DEAL.BaseUCEngine.AllPlayerIds*"></a>
+  <h4 id="DEAL_BaseUCEngine_AllPlayerIds" data-uid="DEAL.BaseUCEngine.AllPlayerIds">AllPlayerIds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] AllPlayerIds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_AvatarList.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.AvatarList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L96">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_AvatarList_" data-uid="DEAL.BaseUCEngine.AvatarList*"></a>
+  <h4 id="DEAL_BaseUCEngine_AvatarList" data-uid="DEAL.BaseUCEngine.AvatarList">AvatarList</h4>
+  <div class="markdown level1 summary"><p>All player avatars in the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Avatar&gt; AvatarList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.Avatar.html">Avatar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_GlobalInfoSO.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.GlobalInfoSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L42">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_GlobalInfoSO_" data-uid="DEAL.BaseUCEngine.GlobalInfoSO*"></a>
+  <h4 id="DEAL_BaseUCEngine_GlobalInfoSO" data-uid="DEAL.BaseUCEngine.GlobalInfoSO">GlobalInfoSO</h4>
+  <div class="markdown level1 summary"><p>Your DEAL card game global information config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalInfoSO GlobalInfoSO { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.GlobalInfoSO.html">GlobalInfoSO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_Instance.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L14">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_Instance_" data-uid="DEAL.BaseUCEngine.Instance*"></a>
+  <h4 id="DEAL_BaseUCEngine_Instance" data-uid="DEAL.BaseUCEngine.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseUCEngine Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseUCEngine.html">BaseUCEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_LocalAvatar.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.LocalAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L106">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_LocalAvatar_" data-uid="DEAL.BaseUCEngine.LocalAvatar*"></a>
+  <h4 id="DEAL_BaseUCEngine_LocalAvatar" data-uid="DEAL.BaseUCEngine.LocalAvatar">LocalAvatar</h4>
+  <div class="markdown level1 summary"><p>current player avatar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar LocalAvatar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_LocalAvatarId.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.LocalAvatarId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L111">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_LocalAvatarId_" data-uid="DEAL.BaseUCEngine.LocalAvatarId*"></a>
+  <h4 id="DEAL_BaseUCEngine_LocalAvatarId" data-uid="DEAL.BaseUCEngine.LocalAvatarId">LocalAvatarId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LocalAvatarId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_PlayerDeckArray.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.PlayerDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L84">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_PlayerDeckArray_" data-uid="DEAL.BaseUCEngine.PlayerDeckArray*"></a>
+  <h4 id="DEAL_BaseUCEngine_PlayerDeckArray" data-uid="DEAL.BaseUCEngine.PlayerDeckArray">PlayerDeckArray</h4>
+  <div class="markdown level1 summary"><p>Current player's card holder deck.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseDeck[] PlayerDeckArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_StateMachineComponent.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.StateMachineComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L54">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_StateMachineComponent_" data-uid="DEAL.BaseUCEngine.StateMachineComponent*"></a>
+  <h4 id="DEAL_BaseUCEngine_StateMachineComponent" data-uid="DEAL.BaseUCEngine.StateMachineComponent">StateMachineComponent</h4>
+  <div class="markdown level1 summary"><p>DEAL FSM Unity component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardStateMachineComponent StateMachineComponent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CardStateMachineComponent.html">CardStateMachineComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DEAL_BaseUCEngine_StateMachineComponent_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="DEAL.html">DEAL</a>.<a class="xref" href="DEAL.FSM.html">FSM</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_Table.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.Table%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L134">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_Table_" data-uid="DEAL.BaseUCEngine.Table*"></a>
+  <h4 id="DEAL_BaseUCEngine_Table" data-uid="DEAL.BaseUCEngine.Table">Table</h4>
+  <div class="markdown level1 summary"><p>Game table prefab with settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TurnTable Table { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.TurnTable.html">TurnTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_AvatarJoin_DEAL_Avatar_.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.AvatarJoin(DEAL.Avatar)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L194">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_AvatarJoin_" data-uid="DEAL.BaseUCEngine.AvatarJoin*"></a>
+  <h4 id="DEAL_BaseUCEngine_AvatarJoin_DEAL_Avatar_" data-uid="DEAL.BaseUCEngine.AvatarJoin(DEAL.Avatar)">AvatarJoin(Avatar)</h4>
+  <div class="markdown level1 summary"><p>Add avatar to the game when player join the room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AvatarJoin(Avatar avatar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">avatar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_ClearGame.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.ClearGame%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L235">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_ClearGame_" data-uid="DEAL.BaseUCEngine.ClearGame*"></a>
+  <h4 id="DEAL_BaseUCEngine_ClearGame" data-uid="DEAL.BaseUCEngine.ClearGame">ClearGame()</h4>
+  <div class="markdown level1 summary"><p>Clean up the game settings and leave the room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearGame()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_InitPlayer.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.InitPlayer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L174">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_InitPlayer_" data-uid="DEAL.BaseUCEngine.InitPlayer*"></a>
+  <h4 id="DEAL_BaseUCEngine_InitPlayer" data-uid="DEAL.BaseUCEngine.InitPlayer">InitPlayer()</h4>
+  <div class="markdown level1 summary"><p>Init the avatar for the game player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitPlayer()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_InitTable.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.InitTable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L142">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_InitTable_" data-uid="DEAL.BaseUCEngine.InitTable*"></a>
+  <h4 id="DEAL_BaseUCEngine_InitTable" data-uid="DEAL.BaseUCEngine.InitTable">InitTable()</h4>
+  <div class="markdown level1 summary"><p>Init the game global information cofing to load the game table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitTable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_IsGameReady.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.IsGameReady%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L248">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_IsGameReady_" data-uid="DEAL.BaseUCEngine.IsGameReady*"></a>
+  <h4 id="DEAL_BaseUCEngine_IsGameReady" data-uid="DEAL.BaseUCEngine.IsGameReady">IsGameReady()</h4>
+  <div class="markdown level1 summary"><p>Check if all players are ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGameReady()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_RefreshSeat.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.RefreshSeat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L263">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_RefreshSeat_" data-uid="DEAL.BaseUCEngine.RefreshSeat*"></a>
+  <h4 id="DEAL_BaseUCEngine_RefreshSeat" data-uid="DEAL.BaseUCEngine.RefreshSeat">RefreshSeat()</h4>
+  <div class="markdown level1 summary"><p>Reresh the seat of all players.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RefreshSeat()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_SpawnAvatar.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.SpawnAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L184">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_SpawnAvatar_" data-uid="DEAL.BaseUCEngine.SpawnAvatar*"></a>
+  <h4 id="DEAL_BaseUCEngine_SpawnAvatar" data-uid="DEAL.BaseUCEngine.SpawnAvatar">SpawnAvatar()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GameObject SpawnAvatar()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine_StartGame_System_String_.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine.StartGame(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L219">View Source</a>
+  </span>
+  <a id="DEAL_BaseUCEngine_StartGame_" data-uid="DEAL.BaseUCEngine.StartGame*"></a>
+  <h4 id="DEAL_BaseUCEngine_StartGame_System_String_" data-uid="DEAL.BaseUCEngine.StartGame(System.String)">StartGame(string)</h4>
+  <div class="markdown level1 summary"><p>Start game with the global information config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StartGame(string infoKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">infoKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseUCEngine.md&amp;value=---%0Auid%3A%20DEAL.BaseUCEngine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/BaseUCEngine.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

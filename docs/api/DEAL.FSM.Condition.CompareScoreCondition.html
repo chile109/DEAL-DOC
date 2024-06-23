@@ -5,11 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class CompareScoreCondition
- </title>
+      <title>Class CompareScoreCondition </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class CompareScoreCondition
- ">
+      <meta name="title" content="Class CompareScoreCondition ">
+    
     
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
@@ -70,17 +69,18 @@
             <article class="content wrap" id="_content" data-uid="DEAL.FSM.Condition.CompareScoreCondition">
 
 
-  <h1 id="DEAL_FSM_Condition_CompareScoreCondition" data-uid="DEAL.FSM.Condition.CompareScoreCondition" class="text-break">Class CompareScoreCondition
-</h1>
+
+  <h1 id="DEAL_FSM_Condition_CompareScoreCondition" data-uid="DEAL.FSM.Condition.CompareScoreCondition" class="text-break">Class CompareScoreCondition</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Object</span></div>
     <div class="level2"><span class="xref">ScriptableObject</span></div>
     <div class="level3"><a class="xref" href="DEAL.FSM.ScriptableCondition.html">ScriptableCondition</a></div>
     <div class="level4"><span class="xref">CompareScoreCondition</span></div>
+      <div class="level5"><a class="xref" href="DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.html">CompareScoreAgainstMultipleCondition</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -88,10 +88,10 @@
       <span class="xref">ScriptableObject.SetDirty()</span>
     </div>
     <div>
-      <span class="xref">ScriptableObject.CreateInstance(string)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">ScriptableObject.CreateInstance(string)</a>
     </div>
     <div>
-      <span class="xref">ScriptableObject.CreateInstance(Type)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">ScriptableObject.CreateInstance(Type)</a>
     </div>
     <div>
       <span class="xref">ScriptableObject.CreateInstance&lt;T&gt;()</span>
@@ -104,14 +104,346 @@
     <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;UCE/FSM/Condition/CompareScoreCondition&quot;, fileName = &quot;CompareScore_Condition&quot;)]
 public class CompareScoreCondition : ScriptableCondition</code></pre>
   </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_compareType.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.compareType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L16">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_compareType" data-uid="DEAL.FSM.Condition.CompareScoreCondition.compareType">compareType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ComparePatternType compareType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ComparePatternType.html">ComparePatternType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_control.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.control%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L18">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_control" data-uid="DEAL.FSM.Condition.CompareScoreCondition.control">control</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ActionActor control</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_controlCheckScale.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.controlCheckScale%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L20">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_controlCheckScale" data-uid="DEAL.FSM.Condition.CompareScoreCondition.controlCheckScale">controlCheckScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected CheckScale controlCheckScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CheckScale.html">CheckScale</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_controlCounter.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.controlCounter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L21">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_controlCounter" data-uid="DEAL.FSM.Condition.CompareScoreCondition.controlCounter">controlCounter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ScoreCounterType controlCounter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ScoreCounterType.html">ScoreCounterType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_controlCounterParams.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.controlCounterParams%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L22">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_controlCounterParams" data-uid="DEAL.FSM.Condition.CompareScoreCondition.controlCounterParams">controlCounterParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected int[] controlCounterParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_controlParams.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.controlParams%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L19">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_controlParams" data-uid="DEAL.FSM.Condition.CompareScoreCondition.controlParams">controlParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected int[] controlParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_subject.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.subject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L10">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_subject" data-uid="DEAL.FSM.Condition.CompareScoreCondition.subject">subject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ActionActor subject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_subjectCheckScale.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.subjectCheckScale%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L12">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_subjectCheckScale" data-uid="DEAL.FSM.Condition.CompareScoreCondition.subjectCheckScale">subjectCheckScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected CheckScale subjectCheckScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CheckScale.html">CheckScale</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_subjectCounter.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.subjectCounter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L13">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_subjectCounter" data-uid="DEAL.FSM.Condition.CompareScoreCondition.subjectCounter">subjectCounter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ScoreCounterType subjectCounter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ScoreCounterType.html">ScoreCounterType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_subjectCounterParams.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.subjectCounterParams%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L14">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_subjectCounterParams" data-uid="DEAL.FSM.Condition.CompareScoreCondition.subjectCounterParams">subjectCounterParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected int[] subjectCounterParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_subjectParams.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.subjectParams%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L11">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_Condition_CompareScoreCondition_subjectParams" data-uid="DEAL.FSM.Condition.CompareScoreCondition.subjectParams">subjectParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected int[] subjectParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_AddCardToScore_DEAL_Card_System_Int32__.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.Card%2CSystem.Int32%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_AddCardToScore_DEAL_Card_System_Int32__.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.Card%2CSystem.Int32%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L135">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L136">View Source</a>
   </span>
   <a id="DEAL_FSM_Condition_CompareScoreCondition_AddCardToScore_" data-uid="DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore*"></a>
   <h4 id="DEAL_FSM_Condition_CompareScoreCondition_AddCardToScore_DEAL_Card_System_Int32__" data-uid="DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.Card,System.Int32@)">AddCardToScore(Card, ref int)</h4>
@@ -137,7 +469,7 @@ public class CompareScoreCondition : ScriptableCondition</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">originalScore</span></td>
         <td></td>
       </tr>
@@ -145,10 +477,10 @@ public class CompareScoreCondition : ScriptableCondition</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_Card___.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType%2CSystem.Int32%5B%5D%2CDEAL.Card%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_Card___.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType%2CSystem.Int32%5B%5D%2CDEAL.Card%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L79">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L75">View Source</a>
   </span>
   <a id="DEAL_FSM_Condition_CompareScoreCondition_CountScore_" data-uid="DEAL.FSM.Condition.CompareScoreCondition.CountScore*"></a>
   <h4 id="DEAL_FSM_Condition_CompareScoreCondition_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_Card___" data-uid="DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.Card[])">CountScore(ScoreCounterType, int[], Card[])</h4>
@@ -174,7 +506,7 @@ public class CompareScoreCondition : ScriptableCondition</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
         <td><span class="parametername">counterParams</span></td>
         <td></td>
       </tr>
@@ -195,17 +527,17 @@ public class CompareScoreCondition : ScriptableCondition</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_Verify_DEAL_FSM_CardStateMachineComponent_.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.CardStateMachineComponent)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition_Verify_DEAL_FSM_CardStateMachineComponent_.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.CardStateMachineComponent)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L28">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L24">View Source</a>
   </span>
   <a id="DEAL_FSM_Condition_CompareScoreCondition_Verify_" data-uid="DEAL.FSM.Condition.CompareScoreCondition.Verify*"></a>
   <h4 id="DEAL_FSM_Condition_CompareScoreCondition_Verify_DEAL_FSM_CardStateMachineComponent_" data-uid="DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.CardStateMachineComponent)">Verify(CardStateMachineComponent)</h4>
@@ -242,13 +574,14 @@ public class CompareScoreCondition : ScriptableCondition</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="DEAL.FSM.ScriptableCondition.html#DEAL_FSM_ScriptableCondition_Verify_DEAL_FSM_CardStateMachineComponent_">ScriptableCondition.Verify(CardStateMachineComponent)</a></div>
+
 </article>
           </div>
 
@@ -257,15 +590,15 @@ public class CompareScoreCondition : ScriptableCondition</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_FSM_Condition_CompareScoreCondition.md&amp;value=---%0Auid%3A%20DEAL.FSM.Condition.CompareScoreCondition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/ScriptableObject/FSM/Condition/CompareScoreCondition.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>

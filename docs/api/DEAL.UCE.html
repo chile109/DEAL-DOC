@@ -5,12 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class UCE
- </title>
+      <title>Class UCE </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class UCE
- ">
+      <meta name="title" content="Class UCE ">
     
+    <meta name="description" content="This UCE singleton is responsible for initializing the game table elements, XR interaction avatar, Photon PUN network and managing the DEAL FSM.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -70,394 +69,135 @@
             <article class="content wrap" id="_content" data-uid="DEAL.UCE">
 
 
-  <h1 id="DEAL_UCE" data-uid="DEAL.UCE" class="text-break">Class UCE
-</h1>
+
+  <h1 id="DEAL_UCE" data-uid="DEAL.UCE" class="text-break">Class UCE</h1>
   <div class="markdown level0 summary"><p>This UCE singleton is responsible for initializing the game table elements, XR interaction avatar, Photon PUN network and managing the DEAL FSM.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Object</span></div>
     <div class="level2"><span class="xref">Component</span></div>
     <div class="level3"><span class="xref">Behaviour</span></div>
     <div class="level4"><span class="xref">MonoBehaviour</span></div>
-    <div class="level5"><span class="xref">UCE</span></div>
+    <div class="level5"><a class="xref" href="DEAL.BaseUCEngine.html">BaseUCEngine</a></div>
+    <div class="level6"><span class="xref">UCE</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IOnEventCallback</span></div>
+    <div><a class="xref" href="DEAL.IEventListener.html">IEventListener</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_Instance">BaseUCEngine.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_ConfigSymbol">BaseUCEngine.ConfigSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_globalInfoSO">BaseUCEngine.globalInfoSO</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_GlobalInfoSO">BaseUCEngine.GlobalInfoSO</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_stateMachineComponent">BaseUCEngine.stateMachineComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_StateMachineComponent">BaseUCEngine.StateMachineComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_ActiveSystemTileArray">BaseUCEngine.ActiveSystemTileArray</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_ActiveSystemDeckArray">BaseUCEngine.ActiveSystemDeckArray</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_playerDeckArray">BaseUCEngine.playerDeckArray</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_PlayerDeckArray">BaseUCEngine.PlayerDeckArray</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_avatarList">BaseUCEngine.avatarList</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_AvatarList">BaseUCEngine.AvatarList</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_LocalAvatar">BaseUCEngine.LocalAvatar</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_LocalAvatarId">BaseUCEngine.LocalAvatarId</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_AllPlayerIds">BaseUCEngine.AllPlayerIds</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_Table">BaseUCEngine.Table</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_InitTable">BaseUCEngine.InitTable()</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_InitPlayer">BaseUCEngine.InitPlayer()</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_AvatarJoin_DEAL_Avatar_">BaseUCEngine.AvatarJoin(Avatar)</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_StartGame_System_String_">BaseUCEngine.StartGame(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_ClearGame">BaseUCEngine.ClearGame()</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_IsGameReady">BaseUCEngine.IsGameReady()</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_RefreshSeat">BaseUCEngine.RefreshSeat()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
   <h6><strong>Assembly</strong>: MustaverseLab.DEAL.Runtime.dll</h6>
   <h5 id="DEAL_UCE_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UCE : MonoBehaviour, IOnEventCallback</code></pre>
+    <pre><code class="lang-csharp hljs">public class UCE : BaseUCEngine, IEventListener</code></pre>
   </div>
-  <h3 id="fields">Fields
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_ConfigSymbol.md&amp;value=---%0Auid%3A%20DEAL.UCE.ConfigSymbol%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L41">View Source</a>
-  </span>
-  <h4 id="DEAL_UCE_ConfigSymbol" data-uid="DEAL.UCE.ConfigSymbol">ConfigSymbol</h4>
-  <div class="markdown level1 summary"><p>Target Symbol of the game to load your GlobalInfoSO file in addressable assets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ConfigSymbol</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_ActiveSystemDeckArray.md&amp;value=---%0Auid%3A%20DEAL.UCE.ActiveSystemDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L93">View Source</a>
-  </span>
-  <a id="DEAL_UCE_ActiveSystemDeckArray_" data-uid="DEAL.UCE.ActiveSystemDeckArray*"></a>
-  <h4 id="DEAL_UCE_ActiveSystemDeckArray" data-uid="DEAL.UCE.ActiveSystemDeckArray">ActiveSystemDeckArray</h4>
-  <div class="markdown level1 summary"><p>The public system such as the counting deck.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BaseDeck[] ActiveSystemDeckArray { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_ActiveSystemTileArray.md&amp;value=---%0Auid%3A%20DEAL.UCE.ActiveSystemTileArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L83">View Source</a>
-  </span>
-  <a id="DEAL_UCE_ActiveSystemTileArray_" data-uid="DEAL.UCE.ActiveSystemTileArray*"></a>
-  <h4 id="DEAL_UCE_ActiveSystemTileArray" data-uid="DEAL.UCE.ActiveSystemTileArray">ActiveSystemTileArray</h4>
-  <div class="markdown level1 summary"><p>The public system tiles to be used in the game.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CardHolder[] ActiveSystemTileArray { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_AvatarList.md&amp;value=---%0Auid%3A%20DEAL.UCE.AvatarList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L116">View Source</a>
-  </span>
-  <a id="DEAL_UCE_AvatarList_" data-uid="DEAL.UCE.AvatarList*"></a>
-  <h4 id="DEAL_UCE_AvatarList" data-uid="DEAL.UCE.AvatarList">AvatarList</h4>
-  <div class="markdown level1 summary"><p>All player avatars in the game.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Avatar&gt; AvatarList { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="DEAL.Avatar.html">Avatar</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_GlobalInfoSO.md&amp;value=---%0Auid%3A%20DEAL.UCE.GlobalInfoSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L61">View Source</a>
-  </span>
-  <a id="DEAL_UCE_GlobalInfoSO_" data-uid="DEAL.UCE.GlobalInfoSO*"></a>
-  <h4 id="DEAL_UCE_GlobalInfoSO" data-uid="DEAL.UCE.GlobalInfoSO">GlobalInfoSO</h4>
-  <div class="markdown level1 summary"><p>Your DEAL card game global information config.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GlobalInfoSO GlobalInfoSO { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.GlobalInfoSO.html">GlobalInfoSO</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_Instance.md&amp;value=---%0Auid%3A%20DEAL.UCE.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L20">View Source</a>
-  </span>
-  <a id="DEAL_UCE_Instance_" data-uid="DEAL.UCE.Instance*"></a>
-  <h4 id="DEAL_UCE_Instance" data-uid="DEAL.UCE.Instance">Instance</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UCE Instance { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.UCE.html">UCE</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_LocalAvatar.md&amp;value=---%0Auid%3A%20DEAL.UCE.LocalAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L126">View Source</a>
-  </span>
-  <a id="DEAL_UCE_LocalAvatar_" data-uid="DEAL.UCE.LocalAvatar*"></a>
-  <h4 id="DEAL_UCE_LocalAvatar" data-uid="DEAL.UCE.LocalAvatar">LocalAvatar</h4>
-  <div class="markdown level1 summary"><p>current player avatar.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Avatar LocalAvatar { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_PlayerDeckArray.md&amp;value=---%0Auid%3A%20DEAL.UCE.PlayerDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L104">View Source</a>
-  </span>
-  <a id="DEAL_UCE_PlayerDeckArray_" data-uid="DEAL.UCE.PlayerDeckArray*"></a>
-  <h4 id="DEAL_UCE_PlayerDeckArray" data-uid="DEAL.UCE.PlayerDeckArray">PlayerDeckArray</h4>
-  <div class="markdown level1 summary"><p>Current player's card holder deck.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BaseDeck[] PlayerDeckArray { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_StateMachineComponent.md&amp;value=---%0Auid%3A%20DEAL.UCE.StateMachineComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L73">View Source</a>
-  </span>
-  <a id="DEAL_UCE_StateMachineComponent_" data-uid="DEAL.UCE.StateMachineComponent*"></a>
-  <h4 id="DEAL_UCE_StateMachineComponent" data-uid="DEAL.UCE.StateMachineComponent">StateMachineComponent</h4>
-  <div class="markdown level1 summary"><p>DEAL FSM Unity component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CardStateMachineComponent StateMachineComponent { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.FSM.CardStateMachineComponent.html">CardStateMachineComponent</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DEAL_UCE_StateMachineComponent_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="DEAL.html">DEAL</a>.<a class="xref" href="DEAL.FSM.html">FSM</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_Table.md&amp;value=---%0Auid%3A%20DEAL.UCE.Table%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L137">View Source</a>
-  </span>
-  <a id="DEAL_UCE_Table_" data-uid="DEAL.UCE.Table*"></a>
-  <h4 id="DEAL_UCE_Table" data-uid="DEAL.UCE.Table">Table</h4>
-  <div class="markdown level1 summary"><p>Game table prefab with settings.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TurnTable Table { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DEAL.TurnTable.html">TurnTable</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_XrOrigin.md&amp;value=---%0Auid%3A%20DEAL.UCE.XrOrigin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L50">View Source</a>
-  </span>
-  <a id="DEAL_UCE_XrOrigin_" data-uid="DEAL.UCE.XrOrigin*"></a>
-  <h4 id="DEAL_UCE_XrOrigin" data-uid="DEAL.UCE.XrOrigin">XrOrigin</h4>
-  <div class="markdown level1 summary"><p>XR Origin of the XRI.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public XROrigin XrOrigin { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">XROrigin</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_AvatarJoin_DEAL_Avatar_.md&amp;value=---%0Auid%3A%20DEAL.UCE.AvatarJoin(DEAL.Avatar)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_UCE_OnDestroy.md&amp;value=---%0Auid%3A%20DEAL.UCE.OnDestroy%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L214">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L17">View Source</a>
   </span>
-  <a id="DEAL_UCE_AvatarJoin_" data-uid="DEAL.UCE.AvatarJoin*"></a>
-  <h4 id="DEAL_UCE_AvatarJoin_DEAL_Avatar_" data-uid="DEAL.UCE.AvatarJoin(DEAL.Avatar)">AvatarJoin(Avatar)</h4>
-  <div class="markdown level1 summary"><p>Add avatar to the game when player join the room.</p>
+  <a id="DEAL_UCE_OnDestroy_" data-uid="DEAL.UCE.OnDestroy*"></a>
+  <h4 id="DEAL_UCE_OnDestroy" data-uid="DEAL.UCE.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_UCE_OnEvent_DEAL_EventMsg_.md&amp;value=---%0Auid%3A%20DEAL.UCE.OnEvent(DEAL.EventMsg)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L26">View Source</a>
+  </span>
+  <a id="DEAL_UCE_OnEvent_" data-uid="DEAL.UCE.OnEvent*"></a>
+  <h4 id="DEAL_UCE_OnEvent_DEAL_EventMsg_" data-uid="DEAL.UCE.OnEvent(DEAL.EventMsg)">OnEvent(EventMsg)</h4>
+  <div class="markdown level1 summary"><p>Handle Different events fired by NetworkEventSystem.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AvatarJoin(Avatar avatar)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void OnEvent(EventMsg e)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -470,92 +210,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
-        <td><span class="parametername">avatar</span></td>
+        <td><a class="xref" href="DEAL.EventMsg.html">EventMsg</a></td>
+        <td><span class="parametername">e</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_ClearGame.md&amp;value=---%0Auid%3A%20DEAL.UCE.ClearGame%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_UCE_SpawnAvatar.md&amp;value=---%0Auid%3A%20DEAL.UCE.SpawnAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L260">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L55">View Source</a>
   </span>
-  <a id="DEAL_UCE_ClearGame_" data-uid="DEAL.UCE.ClearGame*"></a>
-  <h4 id="DEAL_UCE_ClearGame" data-uid="DEAL.UCE.ClearGame">ClearGame()</h4>
-  <div class="markdown level1 summary"><p>Clean up the game settings and leave the room.</p>
-</div>
+  <a id="DEAL_UCE_SpawnAvatar_" data-uid="DEAL.UCE.SpawnAvatar*"></a>
+  <h4 id="DEAL_UCE_SpawnAvatar" data-uid="DEAL.UCE.SpawnAvatar">SpawnAvatar()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ClearGame()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_InitGlobalInfo_System_String_.md&amp;value=---%0Auid%3A%20DEAL.UCE.InitGlobalInfo(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L165">View Source</a>
-  </span>
-  <a id="DEAL_UCE_InitGlobalInfo_" data-uid="DEAL.UCE.InitGlobalInfo*"></a>
-  <h4 id="DEAL_UCE_InitGlobalInfo_System_String_" data-uid="DEAL.UCE.InitGlobalInfo(System.String)">InitGlobalInfo(string)</h4>
-  <div class="markdown level1 summary"><p>Init the game global information cofing to load the game table by UI button.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InitGlobalInfo(string infoKey)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">infoKey</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_InitTable.md&amp;value=---%0Auid%3A%20DEAL.UCE.InitTable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L178">View Source</a>
-  </span>
-  <a id="DEAL_UCE_InitTable_" data-uid="DEAL.UCE.InitTable*"></a>
-  <h4 id="DEAL_UCE_InitTable" data-uid="DEAL.UCE.InitTable">InitTable()</h4>
-  <div class="markdown level1 summary"><p>Init the game global information cofing to load the game table.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InitTable()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_IsGameReady.md&amp;value=---%0Auid%3A%20DEAL.UCE.IsGameReady%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L275">View Source</a>
-  </span>
-  <a id="DEAL_UCE_IsGameReady_" data-uid="DEAL.UCE.IsGameReady*"></a>
-  <h4 id="DEAL_UCE_IsGameReady" data-uid="DEAL.UCE.IsGameReady">IsGameReady()</h4>
-  <div class="markdown level1 summary"><p>Check if all players are ready.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsGameReady()</code></pre>
+    <pre><code class="lang-csharp hljs">public override GameObject SpawnAvatar()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -567,81 +241,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><span class="xref">GameObject</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DEAL.BaseUCEngine.html#DEAL_BaseUCEngine_SpawnAvatar">BaseUCEngine.SpawnAvatar()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_OnEvent_ExitGames_Client_Photon_EventData_.md&amp;value=---%0Auid%3A%20DEAL.UCE.OnEvent(ExitGames.Client.Photon.EventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_UCE_Start.md&amp;value=---%0Auid%3A%20DEAL.UCE.Start%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L291">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L12">View Source</a>
   </span>
-  <a id="DEAL_UCE_OnEvent_" data-uid="DEAL.UCE.OnEvent*"></a>
-  <h4 id="DEAL_UCE_OnEvent_ExitGames_Client_Photon_EventData_" data-uid="DEAL.UCE.OnEvent(ExitGames.Client.Photon.EventData)">OnEvent(EventData)</h4>
-  <div class="markdown level1 summary"><p>Handle PLAYER_EVENT_CODE, FSM_STATE_EVENT_CODE from photon event of DAL FSM.</p>
-</div>
+  <a id="DEAL_UCE_Start_" data-uid="DEAL.UCE.Start*"></a>
+  <h4 id="DEAL_UCE_Start" data-uid="DEAL.UCE.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnEvent(EventData photonEvent)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EventData</span></td>
-        <td><span class="parametername">photonEvent</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE_StartGame_System_String_.md&amp;value=---%0Auid%3A%20DEAL.UCE.StartGame(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L229">View Source</a>
-  </span>
-  <a id="DEAL_UCE_StartGame_" data-uid="DEAL.UCE.StartGame*"></a>
-  <h4 id="DEAL_UCE_StartGame_System_String_" data-uid="DEAL.UCE.StartGame(System.String)">StartGame(string)</h4>
-  <div class="markdown level1 summary"><p>Start game with the global information config.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void StartGame(string infoKey)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">infoKey</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">Photon.Realtime.IOnEventCallback</span>
+      <a class="xref" href="DEAL.IEventListener.html">IEventListener</a>
   </div>
+
 </article>
           </div>
 
@@ -650,15 +276,15 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_UCE.md&amp;value=---%0Auid%3A%20DEAL.UCE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_UCE.md&amp;value=---%0Auid%3A%20DEAL.UCE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Generic/UCE.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>

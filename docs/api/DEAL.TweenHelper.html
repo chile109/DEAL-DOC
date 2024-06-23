@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TweenHelper </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TweenHelper ">
+    
+    <meta name="description" content="TweenHelper is a singleton class that provides a set of helper functions for tweening. will use facade pattern to hide the implementation of DOTween in the future.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DEAL.TweenHelper">
+
+
+
+  <h1 id="DEAL_TweenHelper" data-uid="DEAL.TweenHelper" class="text-break">Class TweenHelper</h1>
+  <div class="markdown level0 summary"><p>TweenHelper is a singleton class that provides a set of helper functions for tweening. will use facade pattern to hide the implementation of DOTween in the future.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">TweenHelper</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
+  <h6><strong>Assembly</strong>: MustaverseLab.DEAL.Runtime.dll</h6>
+  <h5 id="DEAL_TweenHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TweenHelper : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_Instance.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L16">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_Instance_" data-uid="DEAL.TweenHelper.Instance*"></a>
+  <h4 id="DEAL_TweenHelper_Instance" data-uid="DEAL.TweenHelper.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TweenHelper Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.TweenHelper.html">TweenHelper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_BufferChipToHolder_DEAL_Chip_DEAL_ChipHolder_System_Action_.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.BufferChipToHolder(DEAL.Chip%2CDEAL.ChipHolder%2CSystem.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L116">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_BufferChipToHolder_" data-uid="DEAL.TweenHelper.BufferChipToHolder*"></a>
+  <h4 id="DEAL_TweenHelper_BufferChipToHolder_DEAL_Chip_DEAL_ChipHolder_System_Action_" data-uid="DEAL.TweenHelper.BufferChipToHolder(DEAL.Chip,DEAL.ChipHolder,System.Action)">BufferChipToHolder(Chip, ChipHolder, Action)</h4>
+  <div class="markdown level1 summary"><p>Moves a chip to a specified chip holder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Sequence BufferChipToHolder(Chip c, ChipHolder h, Action onComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Chip.html">Chip</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The chip to move.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.ChipHolder.html">ChipHolder</a></td>
+        <td><span class="parametername">h</span></td>
+        <td><p>The chip holder to move the chip to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td><p>An optional callback to invoke when the movement is complete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sequence</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_CardToHolder_DEAL_Card_DEAL_CardHolder_System_Action_.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.CardToHolder(DEAL.Card%2CDEAL.CardHolder%2CSystem.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L69">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_CardToHolder_" data-uid="DEAL.TweenHelper.CardToHolder*"></a>
+  <h4 id="DEAL_TweenHelper_CardToHolder_DEAL_Card_DEAL_CardHolder_System_Action_" data-uid="DEAL.TweenHelper.CardToHolder(DEAL.Card,DEAL.CardHolder,System.Action)">CardToHolder(Card, CardHolder, Action)</h4>
+  <div class="markdown level1 summary"><p>Moves a card to a specified card holder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Sequence CardToHolder(Card c, CardHolder h, Action onComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card to be moved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">h</span></td>
+        <td><p>The card holder to move the card to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td><p>An optional callback to be invoked when the sequence completes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sequence</span></td>
+        <td><p>The created sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_CardsToHolder_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_System_Action_DEAL_Card__System_Action_.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable%7BDEAL.Card%7D%2CDEAL.CardHolder%2CSystem.Action%7BDEAL.Card%7D%2CSystem.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L89">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_CardsToHolder_" data-uid="DEAL.TweenHelper.CardsToHolder*"></a>
+  <h4 id="DEAL_TweenHelper_CardsToHolder_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_System_Action_DEAL_Card__System_Action_" data-uid="DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder,System.Action{DEAL.Card},System.Action)">CardsToHolder(IEnumerable&lt;Card&gt;, CardHolder, Action&lt;Card&gt;, Action)</h4>
+  <div class="markdown level1 summary"><p>Moves a group of cards to a specified card holder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Sequence CardsToHolder(IEnumerable&lt;Card&gt; cds, CardHolder h, Action&lt;Card&gt; onComplete = null, Action onCompleteAll = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><span class="parametername">cds</span></td>
+        <td><p>The cards to be moved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">h</span></td>
+        <td><p>The card holder to move the cards to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><span class="parametername">onComplete</span></td>
+        <td><p>An optional callback to be invoked everytime a card has been moved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onCompleteAll</span></td>
+        <td><p>An optional callback to be invoked when all cards have been moved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sequence</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_DeckSlotMove_DEAL_Card_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.DeckSlotMove(DEAL.Card%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L134">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_DeckSlotMove_" data-uid="DEAL.TweenHelper.DeckSlotMove*"></a>
+  <h4 id="DEAL_TweenHelper_DeckSlotMove_DEAL_Card_System_Int32_System_Int32_" data-uid="DEAL.TweenHelper.DeckSlotMove(DEAL.Card,System.Int32,System.Int32)">DeckSlotMove(Card, int, int)</h4>
+  <div class="markdown level1 summary"><p>Moves a card to a specified deck slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeckSlotMove(Card c, int col, int row)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card to move.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">col</span></td>
+        <td><p>The column index of the deck slot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">row</span></td>
+        <td><p>The row index of the deck slot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_DeckSnap_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.DeckSnap(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L151">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_DeckSnap_" data-uid="DEAL.TweenHelper.DeckSnap*"></a>
+  <h4 id="DEAL_TweenHelper_DeckSnap_DEAL_Card_" data-uid="DEAL.TweenHelper.DeckSnap(DEAL.Card)">DeckSnap(Card)</h4>
+  <div class="markdown level1 summary"><p>Snaps the specified card to a deck position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeckSnap(Card c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card to snap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_ShowCard_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.ShowCard(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L166">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_ShowCard_" data-uid="DEAL.TweenHelper.ShowCard*"></a>
+  <h4 id="DEAL_TweenHelper_ShowCard_DEAL_Card_" data-uid="DEAL.TweenHelper.ShowCard(DEAL.Card)">ShowCard(Card)</h4>
+  <div class="markdown level1 summary"><p>Reveal the specified card by flipping it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowCard(Card c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The card to show.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper_SmoothMove_UnityEngine_GameObject_UnityEngine_GameObject_System_Single_System_Single_System_Action_.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper.SmoothMove(UnityEngine.GameObject%2CUnityEngine.GameObject%2CSystem.Single%2CSystem.Single%2CSystem.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L46">View Source</a>
+  </span>
+  <a id="DEAL_TweenHelper_SmoothMove_" data-uid="DEAL.TweenHelper.SmoothMove*"></a>
+  <h4 id="DEAL_TweenHelper_SmoothMove_UnityEngine_GameObject_UnityEngine_GameObject_System_Single_System_Single_System_Action_" data-uid="DEAL.TweenHelper.SmoothMove(UnityEngine.GameObject,UnityEngine.GameObject,System.Single,System.Single,System.Action)">SmoothMove(GameObject, GameObject, float, float, Action)</h4>
+  <div class="markdown level1 summary"><p>Creates a sequence of tweens to smoothly move a GameObject towards a target position, then rotate to match the target rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Sequence SmoothMove(GameObject go, GameObject target, float duration, float heightOffset, Action onComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>The GameObject to move.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The target GameObject to move towards.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>The duration of the movement.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">heightOffset</span></td>
+        <td><p>The height offset to apply to the target position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td><p>An optional callback to invoke when the movement is complete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sequence</span></td>
+        <td><p>The created sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_TweenHelper.md&amp;value=---%0Auid%3A%20DEAL.TweenHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Utility/TweenHelper.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

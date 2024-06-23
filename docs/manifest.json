@@ -1,6 +1,5 @@
 {
-  "homepages": [],
-  "source_base_path": "C:/Users/Kevin/Documents/UCEngine/DEAL-DOC",
+  "source_base_path": "/Users/kevinshark/UCEngine/DEAL-DOC",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -8,8 +7,7 @@
       "source_relative_path": "api/DEAL.AnchorSeat.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.AnchorSeat.html",
-          "hash": "m8eCRI+d/ftmhmMiQK+P6LDwa0axYfM7/ITC2h7AUGQ="
+          "relative_path": "api/DEAL.AnchorSeat.html"
         }
       },
       "version": ""
@@ -19,8 +17,27 @@
       "source_relative_path": "api/DEAL.Avatar.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Avatar.html",
-          "hash": "H1o2MkIv/erwG8ircZyKH1OjqkD5x2XGIbWxhrs+6dM="
+          "relative_path": "api/DEAL.Avatar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.BaccarateChipHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.BaccarateChipHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.BaccarateCommunityChipHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.BaccarateCommunityChipHolder.html"
         }
       },
       "version": ""
@@ -30,8 +47,7 @@
       "source_relative_path": "api/DEAL.BaseDeck.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.BaseDeck.html",
-          "hash": "Kyo/PGOduZhx3dGjVCiUWDxhhokz53nr/7Zh9d3QIQA="
+          "relative_path": "api/DEAL.BaseDeck.html"
         }
       },
       "version": ""
@@ -41,8 +57,57 @@
       "source_relative_path": "api/DEAL.BaseTile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.BaseTile.html",
-          "hash": "y1hQCyXLe2Tsn37xElj4Zx+1WHZGTWYhposfv9qciAk="
+          "relative_path": "api/DEAL.BaseTile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.BaseUCEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.BaseUCEngine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.BrowserBridge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.BrowserBridge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.ByteConvert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.ByteConvert.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.CachedEvent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.CachedEvent-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.CachedEvent-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.CachedEvent-2.html"
         }
       },
       "version": ""
@@ -52,8 +117,7 @@
       "source_relative_path": "api/DEAL.Card.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Card.html",
-          "hash": "4HIP6Z66Z+dq7amoBkJn8tItggRORdC/Yeu1VDJr4bQ="
+          "relative_path": "api/DEAL.Card.html"
         }
       },
       "version": ""
@@ -63,8 +127,7 @@
       "source_relative_path": "api/DEAL.CardHolder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.CardHolder.html",
-          "hash": "JOaoUAIV0R84MZYlTmvhwSX0j89ywUUN1c3+fBdyR5s="
+          "relative_path": "api/DEAL.CardHolder.html"
         }
       },
       "version": ""
@@ -74,8 +137,7 @@
       "source_relative_path": "api/DEAL.CardSO.CardEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.CardSO.CardEvent.html",
-          "hash": "QzLinI/9GV/r7WuN6whz2ppQNsNmHpFBhgPjQsEF4Tc="
+          "relative_path": "api/DEAL.CardSO.CardEvent.html"
         }
       },
       "version": ""
@@ -85,8 +147,47 @@
       "source_relative_path": "api/DEAL.CardSO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.CardSO.html",
-          "hash": "EoTNQUf9ut9SRZbMtUHykviF9gr5U+vw4ab1IDQC0eU="
+          "relative_path": "api/DEAL.CardSO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.CardUGUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.CardUGUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Chip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Chip.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.ChipHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.ChipHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.CommunityChipHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.CommunityChipHolder.html"
         }
       },
       "version": ""
@@ -96,8 +197,7 @@
       "source_relative_path": "api/DEAL.CountingDeck.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.CountingDeck.html",
-          "hash": "ag7YNPcsW/zMSkhnx/ZbF0xZLxmdCz7O/vzIz57ZyLY="
+          "relative_path": "api/DEAL.CountingDeck.html"
         }
       },
       "version": ""
@@ -107,8 +207,7 @@
       "source_relative_path": "api/DEAL.DeckSO.AddEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.DeckSO.AddEvent.html",
-          "hash": "mJ0vza9fu3GrN7rvDSYuopHoGiUeQ5KrwkKtuMfBKek="
+          "relative_path": "api/DEAL.DeckSO.AddEvent.html"
         }
       },
       "version": ""
@@ -118,8 +217,7 @@
       "source_relative_path": "api/DEAL.DeckSO.DealEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.DeckSO.DealEvent.html",
-          "hash": "JpC6Jci15KvUxshYtJLX9gHafuxrMOR+0De0eRNRLJA="
+          "relative_path": "api/DEAL.DeckSO.DealEvent.html"
         }
       },
       "version": ""
@@ -129,8 +227,7 @@
       "source_relative_path": "api/DEAL.DeckSO.DrawEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.DeckSO.DrawEvent.html",
-          "hash": "yEDFmLKKpFLeLJAZdo1veT+a3YM66XMUr/yJ/G+OUMU="
+          "relative_path": "api/DEAL.DeckSO.DrawEvent.html"
         }
       },
       "version": ""
@@ -140,8 +237,7 @@
       "source_relative_path": "api/DEAL.DeckSO.TapEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.DeckSO.TapEvent.html",
-          "hash": "UyPmo5v/1bqMCV1hMCrHv8Y8WSVNPhhTuR30HdN0bRs="
+          "relative_path": "api/DEAL.DeckSO.TapEvent.html"
         }
       },
       "version": ""
@@ -151,8 +247,167 @@
       "source_relative_path": "api/DEAL.DeckSO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.DeckSO.html",
-          "hash": "iiT8l0Lq9vNO/stWgF0vGOxcJXlppv1P0zw1D0Xa+jw="
+          "relative_path": "api/DEAL.DeckSO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.DefaultNetworkAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.DefaultNetworkAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.EnumNamedArrayAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.EnumNamedArrayAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.ActionPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.ActionPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.ActorArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.ActorArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.BasePayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.BasePayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.BetData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.BetData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.CardActionPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.CardActionPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.CardSOJsonData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.CardSOJsonData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.CountdownData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.CountdownData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.PopDialogData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.PopDialogData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.ServerPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.ServerPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.StateEventPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.StateEventPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.TargetActorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.TargetActorData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.ViewEventPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.ViewEventPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.XRActionPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.XRActionPayload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Event.html"
         }
       },
       "version": ""
@@ -162,8 +417,37 @@
       "source_relative_path": "api/DEAL.EventArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.EventArgs.html",
-          "hash": "QuB3cvtDOUsAIQlgj2Yb9GRohxasbgzVHOsuQc7yDS0="
+          "relative_path": "api/DEAL.EventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.EventMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.EventMsg.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.EventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.EventType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.BaccarateChipResolveAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.BaccarateChipResolveAction.html"
         }
       },
       "version": ""
@@ -173,8 +457,27 @@
       "source_relative_path": "api/DEAL.FSM.Action.ChangePlayerAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.ChangePlayerAction.html",
-          "hash": "+ZkXXHWDaWyVJl5IEHU0coJAH6/r1GohOAQeVsCjGRM="
+          "relative_path": "api/DEAL.FSM.Action.ChangePlayerAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.CombineEvalScoreAction.Argument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.CombineEvalScoreAction.Argument.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.CombineEvalScoreAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.CombineEvalScoreAction.html"
         }
       },
       "version": ""
@@ -184,8 +487,7 @@
       "source_relative_path": "api/DEAL.FSM.Action.DealPostAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.DealPostAction.html",
-          "hash": "SXj0AYqoiPmZhxh4lxhOVDqYEgP/QdnCZEDeycC+9V4="
+          "relative_path": "api/DEAL.FSM.Action.DealPostAction.html"
         }
       },
       "version": ""
@@ -195,8 +497,7 @@
       "source_relative_path": "api/DEAL.FSM.Action.DealPreAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.DealPreAction.html",
-          "hash": "ftfo/Orgz+AbwGouJdJcDfW4gsy6fIUpDY1fRD1KLpA="
+          "relative_path": "api/DEAL.FSM.Action.DealPreAction.html"
         }
       },
       "version": ""
@@ -206,8 +507,7 @@
       "source_relative_path": "api/DEAL.FSM.Action.DrawPostAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.DrawPostAction.html",
-          "hash": "jNfVRdKdRW+dTpgzkI2l+VMjcNgwpUZeGODNaKzw1Uk="
+          "relative_path": "api/DEAL.FSM.Action.DrawPostAction.html"
         }
       },
       "version": ""
@@ -217,8 +517,7 @@
       "source_relative_path": "api/DEAL.FSM.Action.DrawPreAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.DrawPreAction.html",
-          "hash": "r8WL5j1GkEeMlIh98hgU8nWnXz4ouvkOB59x2R+CyhU="
+          "relative_path": "api/DEAL.FSM.Action.DrawPreAction.html"
         }
       },
       "version": ""
@@ -228,19 +527,47 @@
       "source_relative_path": "api/DEAL.FSM.Action.EliminatePlayerAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.EliminatePlayerAction.html",
-          "hash": "pPJCbIj0DE4+IYeBm4tS0iL5yCuQv9X9N32y3k5jyy8="
+          "relative_path": "api/DEAL.FSM.Action.EliminatePlayerAction.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.FSM.Action.PhotonEventAction.yml",
+      "source_relative_path": "api/DEAL.FSM.Action.ModifyPlayerPropertyAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.PhotonEventAction.html",
-          "hash": "7m8AOSv4jDYKZ/hdXcMja6QEAJKn/nvDf63l7FL5yZM="
+          "relative_path": "api/DEAL.FSM.Action.ModifyPlayerPropertyAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.ModifyPlayerPropertyIntAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.ModifyPlayerPropertyIntAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.PopDialogAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.PopDialogAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.RequestServerAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.RequestServerAction.html"
         }
       },
       "version": ""
@@ -250,8 +577,37 @@
       "source_relative_path": "api/DEAL.FSM.Action.ShowDialogAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.ShowDialogAction.html",
-          "hash": "rWZnV4n7jn4UFSOr9VNirAy3eeiYp17F4mLr881US/c="
+          "relative_path": "api/DEAL.FSM.Action.ShowDialogAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.StartCountDownAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.StartCountDownAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.TransferPostAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.TransferPostAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.TransferPreAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.TransferPreAction.html"
         }
       },
       "version": ""
@@ -261,8 +617,57 @@
       "source_relative_path": "api/DEAL.FSM.Action.UpdateBlackBoardAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.UpdateBlackBoardAction.html",
-          "hash": "VeGfqRNefG1OlvoFACi+xSx2bFSMISSwoyzd4+EgibE="
+          "relative_path": "api/DEAL.FSM.Action.UpdateBlackBoardAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyEnumAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyEnumAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyFetchSystemAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyFetchSystemAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyIntAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.UpdatePlayerPropertyIntAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.UpdateStateEventAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.UpdateStateEventAction.html"
         }
       },
       "version": ""
@@ -272,8 +677,7 @@
       "source_relative_path": "api/DEAL.FSM.Action.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Action.html",
-          "hash": "OosJpHT65vy+oKA3oK77f9WSMEtawBAIQ1wFsUY8SqM="
+          "relative_path": "api/DEAL.FSM.Action.html"
         }
       },
       "version": ""
@@ -283,8 +687,17 @@
       "source_relative_path": "api/DEAL.FSM.ActionActor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ActionActor.html",
-          "hash": "MQcETZbl/LRdBxGfDDY3qdc9ZGoYPTPAoae8TfiSn78="
+          "relative_path": "api/DEAL.FSM.ActionActor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.BetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.BetType.html"
         }
       },
       "version": ""
@@ -294,8 +707,7 @@
       "source_relative_path": "api/DEAL.FSM.CardChoice.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.CardChoice.html",
-          "hash": "TAaaV6D3aAE8o7Pu7/bsfaSo0r5VPIeVk5od/JD6fz0="
+          "relative_path": "api/DEAL.FSM.CardChoice.html"
         }
       },
       "version": ""
@@ -305,8 +717,7 @@
       "source_relative_path": "api/DEAL.FSM.CardChoiceRule.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.CardChoiceRule.html",
-          "hash": "8JjressIvQfaWINvUT2Xy9vkUKsN47xGNAaRY7gIuw8="
+          "relative_path": "api/DEAL.FSM.CardChoiceRule.html"
         }
       },
       "version": ""
@@ -316,19 +727,7 @@
       "source_relative_path": "api/DEAL.FSM.CardData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.CardData.html",
-          "hash": "KdMUCLPduuKsxlW6yNO2Wfw8Q2pbtvNlNp29/sW7yF0="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.FSM.CardScoreType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DEAL.FSM.CardScoreType.html",
-          "hash": "PyB8h+r9Xjezec49DmQxVbMBHxPWbfmzu1JsjZekUJA="
+          "relative_path": "api/DEAL.FSM.CardData.html"
         }
       },
       "version": ""
@@ -338,8 +737,7 @@
       "source_relative_path": "api/DEAL.FSM.CardStateMachineComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.CardStateMachineComponent.html",
-          "hash": "RqemiRg2O1un6URPpvmLUAGO4dbbW8g38Rjr0iyjZ94="
+          "relative_path": "api/DEAL.FSM.CardStateMachineComponent.html"
         }
       },
       "version": ""
@@ -349,8 +747,17 @@
       "source_relative_path": "api/DEAL.FSM.CheckScale.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.CheckScale.html",
-          "hash": "ooWqZGSV+9bk/yIonf0ZbM0VZcI1zI88+3pmapZH7mE="
+          "relative_path": "api/DEAL.FSM.CheckScale.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.CommonProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.CommonProperty.html"
         }
       },
       "version": ""
@@ -360,8 +767,7 @@
       "source_relative_path": "api/DEAL.FSM.ComparePattern.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ComparePattern.html",
-          "hash": "lNcaKEy/fgI05xX3eIyiodecUVAoU+O5BqdlcBgIOmY="
+          "relative_path": "api/DEAL.FSM.ComparePattern.html"
         }
       },
       "version": ""
@@ -371,8 +777,7 @@
       "source_relative_path": "api/DEAL.FSM.ComparePatternType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ComparePatternType.html",
-          "hash": "+IjRy05Wq3KjdMKrCLVjSctV91rKlsNNigyLx2EFMB8="
+          "relative_path": "api/DEAL.FSM.ComparePatternType.html"
         }
       },
       "version": ""
@@ -382,8 +787,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.AlwaysTrueCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.AlwaysTrueCondition.html",
-          "hash": "GZlSil0luJoUtBVVNR9GuS1iWcLV6fUmG8kvtZ/heM0="
+          "relative_path": "api/DEAL.FSM.Condition.AlwaysTrueCondition.html"
         }
       },
       "version": ""
@@ -393,8 +797,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.CheckDeckCountCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.CheckDeckCountCondition.html",
-          "hash": "s2yAkTvq2IfOv+Q5s0pavR6jd6ssVr9kOpKwgoUbPfU="
+          "relative_path": "api/DEAL.FSM.Condition.CheckDeckCountCondition.html"
         }
       },
       "version": ""
@@ -404,8 +807,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.CheckDefeatedCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.CheckDefeatedCondition.html",
-          "hash": "XY4JpGomuv/whUJp04x6nvD5OV8Pssx2gxMMC8sC9r0="
+          "relative_path": "api/DEAL.FSM.Condition.CheckDefeatedCondition.html"
         }
       },
       "version": ""
@@ -415,8 +817,57 @@
       "source_relative_path": "api/DEAL.FSM.Condition.CheckGameOverCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.CheckGameOverCondition.html",
-          "hash": "sddGtzFmB9FKE+FlIPRtL9GFiSz8jhxCPfqW8uNz9CI="
+          "relative_path": "api/DEAL.FSM.Condition.CheckGameOverCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Condition.CheckPlayerPropertyCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Condition.CheckPlayerPropertyCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Condition.CheckPlayerPropertyEnumCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Condition.CheckPlayerPropertyEnumCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Condition.CheckPlayerPropertyIntCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Condition.CheckPlayerPropertyIntCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Condition.ComparePlayerPropertyCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Condition.ComparePlayerPropertyCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.html"
         }
       },
       "version": ""
@@ -426,8 +877,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.CompareScoreCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.CompareScoreCondition.html",
-          "hash": "zNTKhEqZWhK2YTJ2n/fEEe2wLCYTtvYiTHx97tH8kog="
+          "relative_path": "api/DEAL.FSM.Condition.CompareScoreCondition.html"
         }
       },
       "version": ""
@@ -437,8 +887,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.EndOfSystemLockCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.EndOfSystemLockCondition.html",
-          "hash": "KI7dY124AFOi6QRT5WWP6WqUINjo7x23wuVTDxeLA2I="
+          "relative_path": "api/DEAL.FSM.Condition.EndOfSystemLockCondition.html"
         }
       },
       "version": ""
@@ -448,19 +897,37 @@
       "source_relative_path": "api/DEAL.FSM.Condition.EndOfTurnCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.EndOfTurnCondition.html",
-          "hash": "Fb01qq8mRTmqeNR4sEoSmViqLnvoLp1x0kA/iQRUobA="
+          "relative_path": "api/DEAL.FSM.Condition.EndOfTurnCondition.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.FSM.Condition.ValidatePatternCondition.yml",
+      "source_relative_path": "api/DEAL.FSM.Condition.MatchRule.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.ValidatePatternCondition.html",
-          "hash": "+TBEMA7Htws9Uan6K/8zWIYI+2Vma9zqFuso+dgXUKo="
+          "relative_path": "api/DEAL.FSM.Condition.MatchRule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Condition.MatchRuleSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Condition.MatchRuleSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Condition.MatchScoreMultipleCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html"
         }
       },
       "version": ""
@@ -470,8 +937,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.WaitEventCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.WaitEventCondition.html",
-          "hash": "4IuZ0+ku/8QiTc0wBC+4ZV6jPD3U2DWPvgPekZunB6o="
+          "relative_path": "api/DEAL.FSM.Condition.WaitEventCondition.html"
         }
       },
       "version": ""
@@ -481,8 +947,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.WaitForGroupEventCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.WaitForGroupEventCondition.html",
-          "hash": "NZAaSc0PpFbIUUym4GV4Cv3b4BiYptL6zBEZp3hmuoU="
+          "relative_path": "api/DEAL.FSM.Condition.WaitForGroupEventCondition.html"
         }
       },
       "version": ""
@@ -492,8 +957,7 @@
       "source_relative_path": "api/DEAL.FSM.Condition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Condition.html",
-          "hash": "iTPjVaDO0cUWyAD79wpJrQoaAeWxeKpyrFm+7cb0JlM="
+          "relative_path": "api/DEAL.FSM.Condition.html"
         }
       },
       "version": ""
@@ -503,8 +967,7 @@
       "source_relative_path": "api/DEAL.FSM.DialogType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.DialogType.html",
-          "hash": "oQS5qIFerPpSxTcnjew64wye8lUxrMmJVvBP9DVWVgw="
+          "relative_path": "api/DEAL.FSM.DialogType.html"
         }
       },
       "version": ""
@@ -514,19 +977,7 @@
       "source_relative_path": "api/DEAL.FSM.GameoverType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.GameoverType.html",
-          "hash": "39XR218TzJc2N5lYaS1XUo+/SXoQlEEAKG+YEUmhB10="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.FSM.NetworkEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DEAL.FSM.NetworkEvent.html",
-          "hash": "ZyGHQT+K47Ny6KbawJPI5wJIXuGNf5ZytYQvwz0tGho="
+          "relative_path": "api/DEAL.FSM.GameoverType.html"
         }
       },
       "version": ""
@@ -536,8 +987,17 @@
       "source_relative_path": "api/DEAL.FSM.NodeTransition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.NodeTransition.html",
-          "hash": "NkTZq1noJSyEZq0zSv+yFAxmVyO9yYMPahDwM5L3WAA="
+          "relative_path": "api/DEAL.FSM.NodeTransition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.NumberModifyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.NumberModifyType.html"
         }
       },
       "version": ""
@@ -547,8 +1007,7 @@
       "source_relative_path": "api/DEAL.FSM.OrderType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.OrderType.html",
-          "hash": "XNCARcUGGXaZwF55FT0lRI6u8k6UnNXnBXzoz0c2C/A="
+          "relative_path": "api/DEAL.FSM.OrderType.html"
         }
       },
       "version": ""
@@ -558,8 +1017,7 @@
       "source_relative_path": "api/DEAL.FSM.Pattern.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.Pattern.html",
-          "hash": "xueyS8fvj0cIrYOC2TSalZr7EuEla7k4Qo1F2cyrR2I="
+          "relative_path": "api/DEAL.FSM.Pattern.html"
         }
       },
       "version": ""
@@ -569,8 +1027,7 @@
       "source_relative_path": "api/DEAL.FSM.PatternCard.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.PatternCard.html",
-          "hash": "yE+H5JRzguSWTDf4JCc/RK44yutiJEuCudBNqsvTSAg="
+          "relative_path": "api/DEAL.FSM.PatternCard.html"
         }
       },
       "version": ""
@@ -580,8 +1037,7 @@
       "source_relative_path": "api/DEAL.FSM.PatternCardComparer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.PatternCardComparer.html",
-          "hash": "n8im7Y2uGnBJ6twD5MQpL4V6gEteIQcuxBNh8NuRIv0="
+          "relative_path": "api/DEAL.FSM.PatternCardComparer.html"
         }
       },
       "version": ""
@@ -591,8 +1047,7 @@
       "source_relative_path": "api/DEAL.FSM.PatternScorePair.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.PatternScorePair.html",
-          "hash": "aMhXaMJO+msr0m7uAYn0eoJG5GdMCP3j5d/cRzPQpoM="
+          "relative_path": "api/DEAL.FSM.PatternScorePair.html"
         }
       },
       "version": ""
@@ -602,8 +1057,7 @@
       "source_relative_path": "api/DEAL.FSM.PatternType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.PatternType.html",
-          "hash": "AoAWLycMw08k3jVat+hybEtDi06I6RtpgeTIlWZK3Yw="
+          "relative_path": "api/DEAL.FSM.PatternType.html"
         }
       },
       "version": ""
@@ -613,8 +1067,7 @@
       "source_relative_path": "api/DEAL.FSM.RerouteNode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.RerouteNode.html",
-          "hash": "JmdavYd6oDVVpQfqkVnfLSYbja0neXrorOlfWciC0RY="
+          "relative_path": "api/DEAL.FSM.RerouteNode.html"
         }
       },
       "version": ""
@@ -624,8 +1077,7 @@
       "source_relative_path": "api/DEAL.FSM.ScoreCounterType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ScoreCounterType.html",
-          "hash": "riSS6oydvDMth1VVOyRbfktsbYcwE2xj3IUlVUfwusk="
+          "relative_path": "api/DEAL.FSM.ScoreCounterType.html"
         }
       },
       "version": ""
@@ -635,8 +1087,7 @@
       "source_relative_path": "api/DEAL.FSM.ScriptableAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ScriptableAction.html",
-          "hash": "l25AyyVkouInZqtypANqpcaQcKogUZzIlJ3s417cu2k="
+          "relative_path": "api/DEAL.FSM.ScriptableAction.html"
         }
       },
       "version": ""
@@ -646,8 +1097,7 @@
       "source_relative_path": "api/DEAL.FSM.ScriptableComparerFactory.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ScriptableComparerFactory.html",
-          "hash": "lkbYXeuOSLVralY9L7l3EUPoaznmxK6D/eSU5/hA9rI="
+          "relative_path": "api/DEAL.FSM.ScriptableComparerFactory.html"
         }
       },
       "version": ""
@@ -657,8 +1107,7 @@
       "source_relative_path": "api/DEAL.FSM.ScriptableCondition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ScriptableCondition.html",
-          "hash": "Tt9ggmP85S41s5Dtstf5zUYxhcIH8rAsMv9PUmUv+ds="
+          "relative_path": "api/DEAL.FSM.ScriptableCondition.html"
         }
       },
       "version": ""
@@ -668,8 +1117,7 @@
       "source_relative_path": "api/DEAL.FSM.ScriptableNode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ScriptableNode.html",
-          "hash": "BjgJ/qj1Ca9TINJu344u7FtdslV0Cw7IQHeHaPIKuA0="
+          "relative_path": "api/DEAL.FSM.ScriptableNode.html"
         }
       },
       "version": ""
@@ -679,8 +1127,7 @@
       "source_relative_path": "api/DEAL.FSM.ScriptableState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ScriptableState.html",
-          "hash": "X042nA7E5wcXi91mQDr9GxKbrQBSXUT9NlsoHqh0f64="
+          "relative_path": "api/DEAL.FSM.ScriptableState.html"
         }
       },
       "version": ""
@@ -690,8 +1137,7 @@
       "source_relative_path": "api/DEAL.FSM.ScriptableStateMachine.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.ScriptableStateMachine.html",
-          "hash": "3tMQFWNwVOFJ9Tc+blaxLyPtsZTSQcr039ydi/IvDd4="
+          "relative_path": "api/DEAL.FSM.ScriptableStateMachine.html"
         }
       },
       "version": ""
@@ -701,8 +1147,7 @@
       "source_relative_path": "api/DEAL.FSM.StateNode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.StateNode.html",
-          "hash": "ZIKQ1GzsVH/P+kkai/W8P176NeeUrPmTNnEMcLi8Fc8="
+          "relative_path": "api/DEAL.FSM.StateNode.html"
         }
       },
       "version": ""
@@ -712,8 +1157,17 @@
       "source_relative_path": "api/DEAL.FSM.StateTransition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.StateTransition.html",
-          "hash": "h93+yKHg7Xzifm8OaKRma42rg0156AHaLmzoYm+4SOk="
+          "relative_path": "api/DEAL.FSM.StateTransition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.SystemProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.SystemProperty.html"
         }
       },
       "version": ""
@@ -723,8 +1177,7 @@
       "source_relative_path": "api/DEAL.FSM.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.FSM.html",
-          "hash": "9c8YFUVRWEk8pUWQk3kokY/sqcZN8fmMcZmXGgvB5x8="
+          "relative_path": "api/DEAL.FSM.html"
         }
       },
       "version": ""
@@ -734,8 +1187,7 @@
       "source_relative_path": "api/DEAL.GlobalEnum.PlayCardMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.GlobalEnum.PlayCardMode.html",
-          "hash": "9Ky8BmQRctOmldpj+C7vVNjIChY0+3y7ZGKs2Hw3aBw="
+          "relative_path": "api/DEAL.GlobalEnum.PlayCardMode.html"
         }
       },
       "version": ""
@@ -745,8 +1197,7 @@
       "source_relative_path": "api/DEAL.GlobalEnum.PokerSuit.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.GlobalEnum.PokerSuit.html",
-          "hash": "ZIgilrk3Ep1zb/Ei1g+pIxmtNkYWL2ZlCoLvjJH4QTM="
+          "relative_path": "api/DEAL.GlobalEnum.PokerSuit.html"
         }
       },
       "version": ""
@@ -756,8 +1207,7 @@
       "source_relative_path": "api/DEAL.GlobalEnum.TileOrder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.GlobalEnum.TileOrder.html",
-          "hash": "b+Oavu7HGdXF0zXUZqikNRkbOhcRQY83uonZf1Vvd34="
+          "relative_path": "api/DEAL.GlobalEnum.TileOrder.html"
         }
       },
       "version": ""
@@ -767,8 +1217,17 @@
       "source_relative_path": "api/DEAL.GlobalEnum.TileType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.GlobalEnum.TileType.html",
-          "hash": "E+h04KQU+8BTHhxDKQiPHYD+8tL+gB0YAqUPu+W1E2E="
+          "relative_path": "api/DEAL.GlobalEnum.TileType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.GlobalEnum.XRAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.GlobalEnum.XRAction.html"
         }
       },
       "version": ""
@@ -778,8 +1237,7 @@
       "source_relative_path": "api/DEAL.GlobalEnum.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.GlobalEnum.html",
-          "hash": "qq1KyZ7Ziw+S+oWwToRoKcslG5pNf9q15SslC5oXRYM="
+          "relative_path": "api/DEAL.GlobalEnum.html"
         }
       },
       "version": ""
@@ -789,30 +1247,17 @@
       "source_relative_path": "api/DEAL.GlobalInfoSO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.GlobalInfoSO.html",
-          "hash": "J++8nIbPyqXjzcvwzbe3KfzAeHfelP+00pVqNphO6jE="
+          "relative_path": "api/DEAL.GlobalInfoSO.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.Helper.CardHelper.yml",
+      "source_relative_path": "api/DEAL.HandEvaluator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Helper.CardHelper.html",
-          "hash": "h4NhDrD4XprZrlGxpMO5zcPZ0TMArIuhrX17dIpiY+8="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.Helper.PhotonHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DEAL.Helper.PhotonHelper.html",
-          "hash": "ofXKANq5w7MPQt5AJyhVSrcgXzjZ0d1zd1iTo5+DC8U="
+          "relative_path": "api/DEAL.HandEvaluator.html"
         }
       },
       "version": ""
@@ -822,8 +1267,7 @@
       "source_relative_path": "api/DEAL.Helper.TileHelper.ThreadSafeRandom.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Helper.TileHelper.ThreadSafeRandom.html",
-          "hash": "F8JBPhvzHpZDPpYmlEOgy9vlddF9LuypaSQhIXPIkOQ="
+          "relative_path": "api/DEAL.Helper.TileHelper.ThreadSafeRandom.html"
         }
       },
       "version": ""
@@ -833,8 +1277,7 @@
       "source_relative_path": "api/DEAL.Helper.TileHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Helper.TileHelper.html",
-          "hash": "CEjMJIKssetaRcyr1/WQlRmfoIM5ULJO5Vk6tqMEc1U="
+          "relative_path": "api/DEAL.Helper.TileHelper.html"
         }
       },
       "version": ""
@@ -844,8 +1287,17 @@
       "source_relative_path": "api/DEAL.Helper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Helper.html",
-          "hash": "AqjfQTqxwaM9gTnbftiOSVLqoNVQhgoDDjPINEhxczY="
+          "relative_path": "api/DEAL.Helper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.IDealInstantiateCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.IDealInstantiateCallback.html"
         }
       },
       "version": ""
@@ -855,52 +1307,97 @@
       "source_relative_path": "api/DEAL.IEventListener.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.IEventListener.html",
-          "hash": "A3fN0nFHLPUzPkizq37gUzFgVl99sTFjRqfL7IWxHPw="
+          "relative_path": "api/DEAL.IEventListener.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.Network.LoginManager.yml",
+      "source_relative_path": "api/DEAL.INetworkAdapter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Network.LoginManager.html",
-          "hash": "vhEnC8ArEoa0D5+yNvBN8q/4p0fevprOZCsrsMtyOTQ="
+          "relative_path": "api/DEAL.INetworkAdapter.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.Network.NetManager.yml",
+      "source_relative_path": "api/DEAL.JsonConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Network.NetManager.html",
-          "hash": "IqSu4WS3/poOIhR5VOxgRecKXBWsp/G9jYPeM6xStr0="
+          "relative_path": "api/DEAL.JsonConverter.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.Network.RoomItem.yml",
+      "source_relative_path": "api/DEAL.NetworkEventCode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Network.RoomItem.html",
-          "hash": "AyIMFowYkeIMT92g0mgfk+ui8qJ2uLgh6kDG97JIhkY="
+          "relative_path": "api/DEAL.NetworkEventCode.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.Network.yml",
+      "source_relative_path": "api/DEAL.NetworkEventSystem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Network.html",
-          "hash": "Ric5J2OtPeCQ9KHahvSRYe2c56rI38TzZWU+NPvYeV4="
+          "relative_path": "api/DEAL.NetworkEventSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.PlayerChipHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.PlayerChipHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.PlayerHint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.PlayerHint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.RpcTargetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.RpcTargetType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.ServerTile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.ServerTile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.ServerUiTile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.ServerUiTile.html"
         }
       },
       "version": ""
@@ -910,8 +1407,7 @@
       "source_relative_path": "api/DEAL.Tile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.Tile.html",
-          "hash": "joYQieEifvn/qmnQg5hdSt3Ku/S1lU39vj+1UjmH/5o="
+          "relative_path": "api/DEAL.Tile.html"
         }
       },
       "version": ""
@@ -921,8 +1417,7 @@
       "source_relative_path": "api/DEAL.TileSO.AddCardEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.TileSO.AddCardEvent.html",
-          "hash": "58XM0IHRnhNK7lGjU53F/j6uZm8belt0y/MSwygEsG8="
+          "relative_path": "api/DEAL.TileSO.AddCardEvent.html"
         }
       },
       "version": ""
@@ -932,8 +1427,7 @@
       "source_relative_path": "api/DEAL.TileSO.DealEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.TileSO.DealEvent.html",
-          "hash": "igX/+bWYZxjA1lhLjzV/6ZXP8ql9u/2T9AunwB2XAVM="
+          "relative_path": "api/DEAL.TileSO.DealEvent.html"
         }
       },
       "version": ""
@@ -943,8 +1437,7 @@
       "source_relative_path": "api/DEAL.TileSO.ShuffleEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.TileSO.ShuffleEvent.html",
-          "hash": "qRbwuyU7Bpn73plKwdB8mdVf5VLDPAd3xhMMocDGGmo="
+          "relative_path": "api/DEAL.TileSO.ShuffleEvent.html"
         }
       },
       "version": ""
@@ -954,8 +1447,7 @@
       "source_relative_path": "api/DEAL.TileSO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.TileSO.html",
-          "hash": "dgwOTd7grrh2DKMYgE5G7bbAZFWgWKwaZHzrXc/dlGQ="
+          "relative_path": "api/DEAL.TileSO.html"
         }
       },
       "version": ""
@@ -965,8 +1457,17 @@
       "source_relative_path": "api/DEAL.TurnTable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.TurnTable.html",
-          "hash": "y63KUUiNqQhODO3sglMgk7Of2y1fSqxXcxqFy4/XQH8="
+          "relative_path": "api/DEAL.TurnTable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.TweenHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.TweenHelper.html"
         }
       },
       "version": ""
@@ -976,8 +1477,7 @@
       "source_relative_path": "api/DEAL.UCE.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UCE.html",
-          "hash": "FS4HFx8LRdS0Q45pPgT+upuflsYLMlVprvUsEv4/aV8="
+          "relative_path": "api/DEAL.UCE.html"
         }
       },
       "version": ""
@@ -987,8 +1487,7 @@
       "source_relative_path": "api/DEAL.UI.CardPlayerUI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UI.CardPlayerUI.html",
-          "hash": "XnVPHLzEkIoWXSWZqUYTI5gX+M865kTsvjfCG99yMXE="
+          "relative_path": "api/DEAL.UI.CardPlayerUI.html"
         }
       },
       "version": ""
@@ -998,8 +1497,7 @@
       "source_relative_path": "api/DEAL.UI.ConfirmDialog.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UI.ConfirmDialog.html",
-          "hash": "AJhY17d3ifcuSHtwIUyH1POxJhBOMtmr3v9mHYoO5Wk="
+          "relative_path": "api/DEAL.UI.ConfirmDialog.html"
         }
       },
       "version": ""
@@ -1009,8 +1507,7 @@
       "source_relative_path": "api/DEAL.UI.DialogBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UI.DialogBase.html",
-          "hash": "Qrctr44q+yEnA8NtCXR6fgRliDr+q2KBZtrtbIPv/Mc="
+          "relative_path": "api/DEAL.UI.DialogBase.html"
         }
       },
       "version": ""
@@ -1020,8 +1517,7 @@
       "source_relative_path": "api/DEAL.UI.GameInfoView.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UI.GameInfoView.html",
-          "hash": "9KnmcbLyxmQc4eWanMOjZjJN0WqRdQ6/0GVp6oFFiG0="
+          "relative_path": "api/DEAL.UI.GameInfoView.html"
         }
       },
       "version": ""
@@ -1031,8 +1527,7 @@
       "source_relative_path": "api/DEAL.UI.SelectButton.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UI.SelectButton.html",
-          "hash": "sXGLyv3VLYDT8bQfdYA90veqAXlbwDpGk28+3453K/U="
+          "relative_path": "api/DEAL.UI.SelectButton.html"
         }
       },
       "version": ""
@@ -1042,8 +1537,7 @@
       "source_relative_path": "api/DEAL.UI.SelectDialog.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UI.SelectDialog.html",
-          "hash": "zN6uNvkDkYwjO6KOx4UQYm8F3O1R3sggf2pM9vlJoT0="
+          "relative_path": "api/DEAL.UI.SelectDialog.html"
         }
       },
       "version": ""
@@ -1053,19 +1547,27 @@
       "source_relative_path": "api/DEAL.UI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.UI.html",
-          "hash": "EFKC//wZfTR5OTOrmRrS+WRxybRwnHJXJuImhV1d2kw="
+          "relative_path": "api/DEAL.UI.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DEAL.XRInputNotifyCenter.yml",
+      "source_relative_path": "api/DEAL.UiDeck.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.XRInputNotifyCenter.html",
-          "hash": "yteUbVXDyC4a28KW6xhZdICpRjJIePMuNtgR33H+KEM="
+          "relative_path": "api/DEAL.UiDeck.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UiTile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UiTile.html"
         }
       },
       "version": ""
@@ -1075,8 +1577,7 @@
       "source_relative_path": "api/DEAL.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DEAL.html",
-          "hash": "4MZqrpgLcJaQyb85zeHqpi6EjKpJQFx4bt9gmCRNbqE="
+          "relative_path": "api/DEAL.html"
         }
       },
       "version": ""
@@ -1086,8 +1587,7 @@
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "sJOW2ClnHp80oPEzaudSUaYyBeuuK6Uwzt7lxBql4/8="
+          "relative_path": "api/index.html"
         }
       },
       "version": ""
@@ -1097,8 +1597,10 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "SCPiuwwqE2NK0zEmh/xiqzDr88vUqB80o/zfjcA6CLk="
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -1108,8 +1610,7 @@
       "source_relative_path": "articles/CommonUsageFSM.md",
       "output": {
         ".html": {
-          "relative_path": "articles/CommonUsageFSM.html",
-          "hash": "CEQJ13Z9eUjpHFBZOJNXb01DCmj5qiy/W8py4TOZvvw="
+          "relative_path": "articles/CommonUsageFSM.html"
         }
       },
       "version": ""
@@ -1119,8 +1620,7 @@
       "source_relative_path": "articles/ExtendFSM.md",
       "output": {
         ".html": {
-          "relative_path": "articles/ExtendFSM.html",
-          "hash": "XUh5Kqr5DS7p3ffgCj8u34L5mSTLLLxeaHxNIWA/oSA="
+          "relative_path": "articles/ExtendFSM.html"
         }
       },
       "version": ""
@@ -1130,8 +1630,7 @@
       "source_relative_path": "articles/NumberMechanism.md",
       "output": {
         ".html": {
-          "relative_path": "articles/NumberMechanism.html",
-          "hash": "41ofAYKhay5U+FRIi4KasFaUf7sFEkx3yGQG+H1wS4k="
+          "relative_path": "articles/NumberMechanism.html"
         }
       },
       "version": ""
@@ -1141,8 +1640,10 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "CwhAGYP/svAKQiUIVEUOutQRWngOF1Cx7whnErn9ZDM="
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
       "version": ""
@@ -1152,8 +1653,7 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "2Mg6yz4+Ce2naQRNTGXRapYhQ514xZycpklXx3UGabE="
+          "relative_path": "index.html"
         }
       },
       "version": ""
@@ -1163,14 +1663,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "yo8nR0kOOtchy+iqHA6aNrJgVhtgDYJuG9gWFrywoiE="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

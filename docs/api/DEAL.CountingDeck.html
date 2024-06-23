@@ -5,11 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class CountingDeck
- </title>
+      <title>Class CountingDeck </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class CountingDeck
- ">
+      <meta name="title" content="Class CountingDeck ">
+    
     
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
@@ -70,13 +69,13 @@
             <article class="content wrap" id="_content" data-uid="DEAL.CountingDeck">
 
 
-  <h1 id="DEAL_CountingDeck" data-uid="DEAL.CountingDeck" class="text-break">Class CountingDeck
-</h1>
+
+  <h1 id="DEAL_CountingDeck" data-uid="DEAL.CountingDeck" class="text-break">Class CountingDeck</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Object</span></div>
     <div class="level2"><span class="xref">Component</span></div>
     <div class="level3"><span class="xref">Behaviour</span></div>
@@ -94,10 +93,16 @@
       <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_cardPool">BaseDeck.cardPool</a>
     </div>
     <div>
+      <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_DebugVisibleCardPool">BaseDeck.DebugVisibleCardPool</a>
+    </div>
+    <div>
       <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_targetDeck">BaseDeck.targetDeck</a>
     </div>
     <div>
       <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_TestCardDeal_System_Int32_">BaseDeck.TestCardDeal(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_TestShowHand">BaseDeck.TestShowHand()</a>
     </div>
     <div>
       <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardCleared_DEAL_Card_">BaseDeck.OnCardCleared(Card)</a>
@@ -112,6 +117,12 @@
       <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_">BaseDeck.PickCards(CardChoice)</a>
     </div>
     <div>
+      <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_">BaseDeck.GenerateAutoPickCombinations(CardChoice)</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_Card__System_Int32_">BaseDeck.GetWeightDescCombinations(List&lt;Card&gt;, int)</a>
+    </div>
+    <div>
       <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_TransferCard_DEAL_Card_DEAL_CardHolder_">BaseDeck.TransferCard(Card, CardHolder)</a>
     </div>
     <div>
@@ -124,6 +135,9 @@
       <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_GetSize">BaseDeck.GetSize()</a>
     </div>
     <div>
+      <a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_ClearPool">BaseDeck.ClearPool()</a>
+    </div>
+    <div>
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_Index">CardHolder.Index</a>
     </div>
     <div>
@@ -133,16 +147,19 @@
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_avatar">CardHolder.avatar</a>
     </div>
     <div>
-      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_speedScale">CardHolder.speedScale</a>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_AttachedChipHolder">CardHolder.AttachedChipHolder</a>
     </div>
     <div>
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_colume">CardHolder.colume</a>
     </div>
     <div>
-      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_PerformAddCardAnimation_DEAL_Card_">CardHolder.PerformAddCardAnimation(Card)</a>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_CustomProperties">CardHolder.CustomProperties</a>
     </div>
     <div>
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_Card_">CardHolder.ClaimOwnership(Card)</a>
+    </div>
+    <div>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_SetCustomProperties_System_String_System_Int32_">CardHolder.SetCustomProperties(string, int)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
@@ -155,14 +172,15 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_CountingDeck_InitDeck_DEAL_DeckSO_.md&amp;value=---%0Auid%3A%20DEAL.CountingDeck.InitDeck(DEAL.DeckSO)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_CountingDeck_InitDeck_DEAL_DeckSO_.md&amp;value=---%0Auid%3A%20DEAL.CountingDeck.InitDeck(DEAL.DeckSO)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/CountingDeck.cs/#L15">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/CountingDeck.cs/#L15">View Source</a>
   </span>
   <a id="DEAL_CountingDeck_InitDeck_" data-uid="DEAL.CountingDeck.InitDeck*"></a>
   <h4 id="DEAL_CountingDeck_InitDeck_DEAL_DeckSO_" data-uid="DEAL.CountingDeck.InitDeck(DEAL.DeckSO)">InitDeck(DeckSO)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialize the deck with a given deck data</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,14 +207,15 @@
   <div><a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_InitDeck_DEAL_DeckSO_">BaseDeck.InitDeck(DeckSO)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_CountingDeck_OnCardClaimed_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.CountingDeck.OnCardClaimed(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_CountingDeck_OnCardClaimed_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.CountingDeck.OnCardClaimed(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/CountingDeck.cs/#L21">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/CountingDeck.cs/#L21">View Source</a>
   </span>
   <a id="DEAL_CountingDeck_OnCardClaimed_" data-uid="DEAL.CountingDeck.OnCardClaimed*"></a>
   <h4 id="DEAL_CountingDeck_OnCardClaimed_DEAL_Card_" data-uid="DEAL.CountingDeck.OnCardClaimed(DEAL.Card)">OnCardClaimed(Card)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Triggered when a card is claimed by this holder</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,12 +234,14 @@
       <tr>
         <td><a class="xref" href="DEAL.Card.html">Card</a></td>
         <td><span class="parametername">c</span></td>
-        <td></td>
+        <td><p>The card claimed</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardClaimed_DEAL_Card_">BaseDeck.OnCardClaimed(Card)</a></div>
+
 </article>
           </div>
 
@@ -229,15 +250,15 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_CountingDeck.md&amp;value=---%0Auid%3A%20DEAL.CountingDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_CountingDeck.md&amp;value=---%0Auid%3A%20DEAL.CountingDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/blob/main/Packages/DEAL/Core/Runtime/Component/CountingDeck.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/CountingDeck.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
