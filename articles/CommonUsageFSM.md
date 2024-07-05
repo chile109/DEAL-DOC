@@ -40,6 +40,7 @@ A `ScriptableStateMachine` consists of a list of `ScriptableState` and `StateTra
 - `ComparePlayerPropertyCondition`: compare the target player's property with the reference player's property
 - `CompareScoreCondition`: compare the subject player's card score with the control player's card score
   - `XXXCheckScale`: check only the cards from player's buffer, or check the whole deck
+    - Buffer: When player selects one or many cards from their deck, but hasn't perform any actual transfer yet (for example: about to deal), these cards are temporarily placed in the buffer
   - `XXXCounter`: method to count the scores
     - `SumNumber`: sum all the card numbers
     - `Max`: find the max number
