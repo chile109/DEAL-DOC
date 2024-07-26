@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Common Usage FSM SO ">
     
-    <meta name="description" content="This document show the FSM SO common usage for game 99">
+    <meta name="description" content="This document show the FSM SO common usage">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -69,41 +69,73 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="common-usage">Common Usage</h1>
 
-<p>The Card State Machine is a system that manages the actions ScriptableObject taken during a card game.
-Here show the usage of pre-defined FSM SO in example game 99.</p>
-<h2 id="action">Action</h2>
+<p>The Card State Machine is a system that manages the actions ScriptableObject taken during a card game.</p>
+<p>A <code>ScriptableStateMachine</code> consists of a list of <code>ScriptableState</code> and <code>StateTransition</code> SOs. Each <code>ScriptableState</code> contains a list of <code>ScriptableAction</code> SOs that are executed when the state is entered, exited, or updated. Each <code>StateTransition</code> contains a <code>ScriptableCondition</code> SO that checks if the transition should be made from the origin state to the true state or false state.</p>
+<h2 id="default-action-types">Default Action Types</h2>
 <ul>
 <li><code>ChangePlayerAction</code>: Rotate to the player specified by <code>ActionActor</code> enum and params</li>
-<li><code>DealAction</code>, <code>DrawAction</code>: Deal means actor will give out card to target, Draw means actor will pick card from target.</li>
-<li><code>PreAction</code>, <code>PostAction</code>: During PreAction, the action will acquire the involved decks and players, then request <code>CardStateMachineComponent</code> to WaitTurnLock until the actor has made a valid <code>CardChoice</code>, which will then be executed by PostAction.</li>
+<li><code>DealAction</code>, <code>DrawAction</code>: Deal means actor will give out card to target, Draw means actor will pick card from target.</li>
+<li><code>TrasnsferAction</code>: Similar to Deal/Draw, but for transferring chips.</li>
+<li><code>PreAction</code>, <code>PostAction</code>: During PreAction, the action will acquire the involved decks and players, then request <code>CardStateMachineComponent</code> to WaitTurnLock until the actor has made a valid <code>CardChoice</code>, which will then be executed by PostAction.</li>
 <li><code>CardChoice</code>: Serializable structure that can be set to request the state machine to host a <strong>Card Pick</strong>.
 <ul>
 <li><code>count</code>: How many cards should be picked</li>
-<li><code>rule</code>: Enum CardChoiceRule that records the pick rules (like <em>FromTop</em>, <em>Random</em>, <em>Specific</em>)</li>
+<li><code>rule</code>: Enum CardChoiceRule that records the pick rules (like <em>FromTop</em>, <em>Random</em>, <em>Specific</em>)</li>
 <li><code>isRevealedToPicker</code>: Should the picker see the cards when picking?</li>
 </ul>
 </li>
+<li><code>EliminatePlayerAction</code>: Eliminate the player from the game</li>
+<li><code>ModifyPlayerPropertyAction</code>: Modify the target player's property with reference player's property</li>
+<li><code>UpdatePlayerPropertyAction</code>: Update the target player's property with the given value</li>
+<li><code>ShowDialogAction</code>: Pop up a dialog to selected players</li>
+<li><code>UpdateStateEventAction</code>: Update the state machine's state</li>
 </ul>
-<h2 id="condition">Condition</h2>
+<h2 id="default-condition-types">Default Condition Types</h2>
 <ul>
-<li><code>EndOfTurnCondition</code> : check if state is locked by WaitTurnLock</li>
-<li><code>AlwaysTrueCondition</code> : always passes, used for transition phase</li>
-<li><code>CheckDeckCountCondition</code> : checks if given actor has given amount of cards, normally used in intial deal
+<li><code>EndOfTurnCondition</code>: check if state is locked by WaitTurnLock</li>
+<li><code>EndOfSystemLockCondition</code>: check if state is locked by WaitSystemLock</li>
+<li><code>AlwaysTrueCondition</code>: always passes, used for transition phase</li>
+<li><code>CheckDeckCountCondition</code>: checks if given actor has given amount of cards, normally used in intial deal
 <ul>
-<li>Example : <code>99_CheckAllPlayer5Cards_Condition</code> Checks if all players have 5 cards, so that the game can start</li>
+<li>Example usage: Checks if all players have 5 cards, so that the game can start, else continue dealing cards to players</li>
+</ul>
+</li>
+<li><code>CheckDefeatedCondition</code>: checks if the specific player has been defeated</li>
+<li><code>CheckGameOverCondition</code>: set the amount of <code>maxEliminatedPlayerCount</code>, if the amount of eliminated players is equal to or greater than <code>maxEliminatedPlayerCount</code>, the game is over</li>
+<li><code>CheckPlayerPropertyCondition</code>: check target player's property against the given value <code>rawPropertyValue</code></li>
+<li><code>ComparePlayerPropertyCondition</code>: compare the target player's property with the reference player's property</li>
+<li><code>CompareScoreCondition</code>: compare the subject player's card score with the control player's card score
+<ul>
+<li><code>XXXCheckScale</code>: check only the cards from player's buffer, or check the whole deck
+<ul>
+<li>Buffer: When player selects one or many cards from their deck, but hasn't perform any actual transfer yet (for example: about to deal), these cards are temporarily placed in the buffer</li>
+</ul>
+</li>
+<li><code>XXXCounter</code>: method to count the scores
+<ul>
+<li><code>SumNumber</code>: sum all the card numbers</li>
+<li><code>Max</code>: find the max number</li>
+<li><code>Min</code>: find the min number</li>
+<li><code>MostOccuredNumber</code>: find the most occurred number</li>
+<li><code>Average</code>: calculate the average number</li>
+<li><code>Mid</code>: find the middle number</li>
+<li><code>GivenMinusSumNumber</code>: given score (stored in <code>CounterParams</code>) minus the sum of all cards</li>
+<li><code>PokerEval</code>: evaluate the poker hand using external <code>PHEval</code> library</li>
+<li><code>BaccarateRangeSum</code>: sum the card numbers using Baccarate rules</li>
 </ul>
 </li>
 </ul>
-<h2 id="state">State</h2>
+</li>
+<li><code>MatchScoreMultipleCondition</code>: check subject player's card score against a group set of rules
 <ul>
-<li><code>99_Inital_State</code> : Initial state that will check if players all have 5 cards. If true -&gt; start state, else -&gt; initial deal state</li>
-<li><code>99_InitialDeal_State</code> : The initial state to deal 1 single card per entry to the current player</li>
-<li><code>99_Empty_State</code> : Used for empty state behaviour</li>
-<li><code>99_Start_State</code> : The beginning of player turns</li>
-<li><code>99_PlayerDraw_State</code> : Player draws a card from tile</li>
-<li><code>99_PlayerTurn_State</code> : Player's turn to pick a card to deal to the counting deck</li>
-<li><code>99_Validation_State</code> : Verify if this game is over based on whether next player can make any moves, should transition to GameOver State and calculate the winner/loser</li>
+<li>Example usage: Check if the player's score is larger than 3 and smaller than 6</li>
 </ul>
+</li>
+<li><code>WaitEventCondition</code>: wait until a state event is triggered locally</li>
+<li><code>WaitForGroupEventCondition</code>: wait until a state event is triggered for all members in selected group</li>
+</ul>
+<h2 id="extend-usage">Extend usage</h2>
+<p>If you feel like customizing the action or condition, you can create your own <code>ScriptableAction</code> or <code>ScriptableCondition</code> SOs. Check out the <code>ExtendFSM</code> article for more information.</p>
 
 </article>
           </div>

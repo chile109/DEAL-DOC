@@ -109,7 +109,7 @@ Cards can be added or removed from the deck.
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_CustomProperties">CardHolder.CustomProperties</a>
     </div>
     <div>
-      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_Card_">CardHolder.ClaimOwnership(Card)</a>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_BaseCard_">CardHolder.ClaimOwnership(BaseCard)</a>
     </div>
     <div>
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_SetCustomProperties_System_String_System_Int32_">CardHolder.SetCustomProperties(string, int)</a>
@@ -125,10 +125,10 @@ Cards can be added or removed from the deck.
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_cardPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.cardPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_cardPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.cardPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L22">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L21">View Source</a>
   </span>
   <h4 id="DEAL_BaseDeck_cardPool" data-uid="DEAL.BaseDeck.cardPool">cardPool</h4>
   <div class="markdown level1 summary"></div>
@@ -136,7 +136,7 @@ Cards can be added or removed from the deck.
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[SerializeField]
-protected List&lt;Card&gt; cardPool</code></pre>
+protected List&lt;BaseCard&gt; cardPool</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -148,17 +148,17 @@ protected List&lt;Card&gt; cardPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_deckSO.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.deckSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_deckSO.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.deckSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L19">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L18">View Source</a>
   </span>
   <h4 id="DEAL_BaseDeck_deckSO" data-uid="DEAL.BaseDeck.deckSO">deckSO</h4>
   <div class="markdown level1 summary"></div>
@@ -185,10 +185,10 @@ protected DeckSO deckSO</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_targetDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.targetDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_targetDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.targetDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L27">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L26">View Source</a>
   </span>
   <h4 id="DEAL_BaseDeck_targetDeck" data-uid="DEAL.BaseDeck.targetDeck">targetDeck</h4>
   <div class="markdown level1 summary"></div>
@@ -217,10 +217,10 @@ protected BaseDeck targetDeck</code></pre>
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_DebugVisibleCardPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.DebugVisibleCardPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_DebugVisibleCardPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.DebugVisibleCardPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L24">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L23">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_DebugVisibleCardPool_" data-uid="DEAL.BaseDeck.DebugVisibleCardPool*"></a>
   <h4 id="DEAL_BaseDeck_DebugVisibleCardPool" data-uid="DEAL.BaseDeck.DebugVisibleCardPool">DebugVisibleCardPool</h4>
@@ -228,7 +228,7 @@ protected BaseDeck targetDeck</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Card&gt; DebugVisibleCardPool { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;BaseCard&gt; DebugVisibleCardPool { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -240,7 +240,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -249,19 +249,19 @@ protected BaseDeck targetDeck</code></pre>
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_ClearOwnership_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.ClearOwnership(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_ClearOwnership_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L95">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L94">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_ClearOwnership_" data-uid="DEAL.BaseDeck.ClearOwnership*"></a>
-  <h4 id="DEAL_BaseDeck_ClearOwnership_DEAL_Card_" data-uid="DEAL.BaseDeck.ClearOwnership(DEAL.Card)">ClearOwnership(Card)</h4>
+  <h4 id="DEAL_BaseDeck_ClearOwnership_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)">ClearOwnership(BaseCard)</h4>
   <div class="markdown level1 summary"><p>Release ownership of a card, will first trigger special move if any exists</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void ClearOwnership(Card c)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void ClearOwnership(BaseCard c)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -274,7 +274,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>The card to release</p>
 </td>
@@ -282,13 +282,13 @@ protected BaseDeck targetDeck</code></pre>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_Card_">CardHolder.ClearOwnership(Card)</a></div>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_BaseCard_">CardHolder.ClearOwnership(BaseCard)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_ClearPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.ClearPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_ClearPool.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.ClearPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L214">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L213">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_ClearPool_" data-uid="DEAL.BaseDeck.ClearPool*"></a>
   <h4 id="DEAL_BaseDeck_ClearPool" data-uid="DEAL.BaseDeck.ClearPool">ClearPool()</h4>
@@ -300,10 +300,10 @@ protected BaseDeck targetDeck</code></pre>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L144">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L143">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_GenerateAutoPickCombinations_" data-uid="DEAL.BaseDeck.GenerateAutoPickCombinations*"></a>
   <h4 id="DEAL_BaseDeck_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_" data-uid="DEAL.BaseDeck.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)">GenerateAutoPickCombinations(CardChoice)</h4>
@@ -311,7 +311,7 @@ protected BaseDeck targetDeck</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;Card&gt;[] GenerateAutoPickCombinations(CardChoice choice)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;BaseCard&gt;[] GenerateAutoPickCombinations(CardChoice choice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -340,7 +340,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -349,10 +349,10 @@ protected BaseDeck targetDeck</code></pre>
   <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_">CardHolder.GenerateAutoPickCombinations(CardChoice)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_GetHolderId.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetHolderId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetHolderId.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetHolderId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L193">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L192">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_GetHolderId_" data-uid="DEAL.BaseDeck.GetHolderId*"></a>
   <h4 id="DEAL_BaseDeck_GetHolderId" data-uid="DEAL.BaseDeck.GetHolderId">GetHolderId()</h4>
@@ -381,10 +381,10 @@ protected BaseDeck targetDeck</code></pre>
   <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GetHolderId">CardHolder.GetHolderId()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_GetSize.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetSize.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L209">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L208">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_GetSize_" data-uid="DEAL.BaseDeck.GetSize*"></a>
   <h4 id="DEAL_BaseDeck_GetSize" data-uid="DEAL.BaseDeck.GetSize">GetSize()</h4>
@@ -413,19 +413,19 @@ protected BaseDeck targetDeck</code></pre>
   <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_GetSize">CardHolder.GetSize()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_Card__System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List%7BDEAL.Card%7D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_BaseCard__System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List%7BDEAL.BaseCard%7D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L161">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L160">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_GetWeightDescCombinations_" data-uid="DEAL.BaseDeck.GetWeightDescCombinations*"></a>
-  <h4 id="DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_Card__System_Int32_" data-uid="DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.Card},System.Int32)">GetWeightDescCombinations(List&lt;Card&gt;, int)</h4>
+  <h4 id="DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_BaseCard__System_Int32_" data-uid="DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.BaseCard},System.Int32)">GetWeightDescCombinations(List&lt;BaseCard&gt;, int)</h4>
   <div class="markdown level1 summary"><p>Helper method to generate all possible combinations of cards in the deck with weight for AI players to make decisions</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IEnumerable&lt;Card&gt;&gt; GetWeightDescCombinations(List&lt;Card&gt; cards, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IEnumerable&lt;BaseCard&gt;&gt; GetWeightDescCombinations(List&lt;BaseCard&gt; cards, int count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -438,7 +438,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
         <td><span class="parametername">cards</span></td>
         <td></td>
       </tr>
@@ -459,17 +459,17 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_InitDeck_DEAL_DeckSO_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.InitDeck(DEAL.DeckSO)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_InitDeck_DEAL_DeckSO_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.InitDeck(DEAL.DeckSO)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L61">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L60">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_InitDeck_" data-uid="DEAL.BaseDeck.InitDeck*"></a>
   <h4 id="DEAL_BaseDeck_InitDeck_DEAL_DeckSO_" data-uid="DEAL.BaseDeck.InitDeck(DEAL.DeckSO)">InitDeck(DeckSO)</h4>
@@ -499,19 +499,19 @@ protected BaseDeck targetDeck</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_OnCardClaimed_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardClaimed(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnCardClaimed_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L73">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L72">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_OnCardClaimed_" data-uid="DEAL.BaseDeck.OnCardClaimed*"></a>
-  <h4 id="DEAL_BaseDeck_OnCardClaimed_DEAL_Card_" data-uid="DEAL.BaseDeck.OnCardClaimed(DEAL.Card)">OnCardClaimed(Card)</h4>
+  <h4 id="DEAL_BaseDeck_OnCardClaimed_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)">OnCardClaimed(BaseCard)</h4>
   <div class="markdown level1 summary"><p>Triggered when a card is claimed by this holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnCardClaimed(Card c)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnCardClaimed(BaseCard c)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -524,7 +524,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>The card claimed</p>
 </td>
@@ -532,22 +532,22 @@ protected BaseDeck targetDeck</code></pre>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_Card_">CardHolder.OnCardClaimed(Card)</a></div>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_BaseCard_">CardHolder.OnCardClaimed(BaseCard)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_OnCardCleared_DEAL_Card_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardCleared(DEAL.Card)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnCardCleared_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L79">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L78">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_OnCardCleared_" data-uid="DEAL.BaseDeck.OnCardCleared*"></a>
-  <h4 id="DEAL_BaseDeck_OnCardCleared_DEAL_Card_" data-uid="DEAL.BaseDeck.OnCardCleared(DEAL.Card)">OnCardCleared(Card)</h4>
+  <h4 id="DEAL_BaseDeck_OnCardCleared_DEAL_BaseCard_" data-uid="DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)">OnCardCleared(BaseCard)</h4>
   <div class="markdown level1 summary"><p>Triggered when a card is cleared from this holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnCardCleared(Card c)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnCardCleared(BaseCard c)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -560,7 +560,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>The card cleared</p>
 </td>
@@ -568,13 +568,13 @@ protected BaseDeck targetDeck</code></pre>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardCleared_DEAL_Card_">CardHolder.OnCardCleared(Card)</a></div>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardCleared_DEAL_BaseCard_">CardHolder.OnCardCleared(BaseCard)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_OnRefreshDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnRefreshDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_OnRefreshDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.OnRefreshDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L84">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L83">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_OnRefreshDeck_" data-uid="DEAL.BaseDeck.OnRefreshDeck*"></a>
   <h4 id="DEAL_BaseDeck_OnRefreshDeck" data-uid="DEAL.BaseDeck.OnRefreshDeck">OnRefreshDeck()</h4>
@@ -589,10 +589,10 @@ protected BaseDeck targetDeck</code></pre>
   <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnRefreshDeck">CardHolder.OnRefreshDeck()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L101">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L100">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_PickCards_" data-uid="DEAL.BaseDeck.PickCards*"></a>
   <h4 id="DEAL_BaseDeck_PickCards_DEAL_FSM_CardChoice_" data-uid="DEAL.BaseDeck.PickCards(DEAL.FSM.CardChoice)">PickCards(CardChoice)</h4>
@@ -601,7 +601,7 @@ protected BaseDeck targetDeck</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Card[] PickCards(CardChoice choice)</code></pre>
+    <pre><code class="lang-csharp hljs">public override BaseCard[] PickCards(CardChoice choice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -630,7 +630,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DEAL.Card.html">Card</a>[]</td>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a>[]</td>
         <td><p>An array of cards picked</p>
 </td>
       </tr>
@@ -640,10 +640,10 @@ protected BaseDeck targetDeck</code></pre>
   <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_PickCards_DEAL_FSM_CardChoice_">CardHolder.PickCards(CardChoice)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_TestCardDeal_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TestCardDeal(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_TestCardDeal_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TestCardDeal(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L35">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L34">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_TestCardDeal_" data-uid="DEAL.BaseDeck.TestCardDeal*"></a>
   <h4 id="DEAL_BaseDeck_TestCardDeal_System_Int32_" data-uid="DEAL.BaseDeck.TestCardDeal(System.Int32)">TestCardDeal(int)</h4>
@@ -674,10 +674,10 @@ protected BaseDeck targetDeck</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_TestShowHand.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TestShowHand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_TestShowHand.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TestShowHand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L49">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L48">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_TestShowHand_" data-uid="DEAL.BaseDeck.TestShowHand*"></a>
   <h4 id="DEAL_BaseDeck_TestShowHand" data-uid="DEAL.BaseDeck.TestShowHand">TestShowHand()</h4>
@@ -690,19 +690,19 @@ protected BaseDeck targetDeck</code></pre>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_TransferCard_DEAL_Card_DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCard(DEAL.Card%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_TransferCard_DEAL_BaseCard_DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCard(DEAL.BaseCard%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L173">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L172">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_TransferCard_" data-uid="DEAL.BaseDeck.TransferCard*"></a>
-  <h4 id="DEAL_BaseDeck_TransferCard_DEAL_Card_DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCard(DEAL.Card,DEAL.CardHolder)">TransferCard(Card, CardHolder)</h4>
+  <h4 id="DEAL_BaseDeck_TransferCard_DEAL_BaseCard_DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCard(DEAL.BaseCard,DEAL.CardHolder)">TransferCard(BaseCard, CardHolder)</h4>
   <div class="markdown level1 summary"><p>Transfer a single card to another holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void TransferCard(Card c, CardHolder newOwner)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void TransferCard(BaseCard c, CardHolder newOwner)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -715,7 +715,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>The card to transfer</p>
 </td>
@@ -729,22 +729,22 @@ protected BaseDeck targetDeck</code></pre>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_Card_DEAL_CardHolder_">CardHolder.TransferCard(Card, CardHolder)</a></div>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_BaseCard_DEAL_CardHolder_">CardHolder.TransferCard(BaseCard, CardHolder)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable%7BDEAL.Card%7D%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable%7BDEAL.BaseCard%7D%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L183">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L182">View Source</a>
   </span>
   <a id="DEAL_BaseDeck_TransferCards_" data-uid="DEAL.BaseDeck.TransferCards*"></a>
-  <h4 id="DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)">TransferCards(IEnumerable&lt;Card&gt;, CardHolder)</h4>
+  <h4 id="DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_" data-uid="DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)">TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)</h4>
   <div class="markdown level1 summary"><p>Transfer a group of cards to another holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void TransferCards(IEnumerable&lt;Card&gt; cards, CardHolder newOwner)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void TransferCards(IEnumerable&lt;BaseCard&gt; cards, CardHolder newOwner)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -757,7 +757,7 @@ protected BaseDeck targetDeck</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
         <td><span class="parametername">cards</span></td>
         <td><p>The cards to transfer</p>
 </td>
@@ -771,7 +771,7 @@ protected BaseDeck targetDeck</code></pre>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_">CardHolder.TransferCards(IEnumerable&lt;Card&gt;, CardHolder)</a></div>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_">CardHolder.TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)</a></div>
 
 </article>
           </div>
@@ -781,10 +781,10 @@ protected BaseDeck targetDeck</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_BaseDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_BaseDeck.md&amp;value=---%0Auid%3A%20DEAL.BaseDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/BaseDeck.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/BaseDeck.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

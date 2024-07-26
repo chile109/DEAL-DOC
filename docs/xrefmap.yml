@@ -408,18 +408,335 @@ references:
   isSpec: "True"
   fullName: DEAL.BaccarateCommunityChipHolder.RetrieveChipFromBuffer
   nameWithType: BaccarateCommunityChipHolder.RetrieveChipFromBuffer
+- uid: DEAL.BaseCard
+  name: BaseCard
+  href: api/DEAL.BaseCard.html
+  commentId: T:DEAL.BaseCard
+  fullName: DEAL.BaseCard
+  nameWithType: BaseCard
+- uid: DEAL.BaseCard.ActivateCard(System.String)
+  name: ActivateCard(string)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ActivateCard_System_String_
+  commentId: M:DEAL.BaseCard.ActivateCard(System.String)
+  name.vb: ActivateCard(String)
+  fullName: DEAL.BaseCard.ActivateCard(string)
+  fullName.vb: DEAL.BaseCard.ActivateCard(String)
+  nameWithType: BaseCard.ActivateCard(string)
+  nameWithType.vb: BaseCard.ActivateCard(String)
+- uid: DEAL.BaseCard.ActivateCard*
+  name: ActivateCard
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ActivateCard_
+  commentId: Overload:DEAL.BaseCard.ActivateCard
+  isSpec: "True"
+  fullName: DEAL.BaseCard.ActivateCard
+  nameWithType: BaseCard.ActivateCard
+- uid: DEAL.BaseCard.AddToScore(System.Int32@)
+  name: AddToScore(ref int)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_AddToScore_System_Int32__
+  commentId: M:DEAL.BaseCard.AddToScore(System.Int32@)
+  name.vb: AddToScore(Integer)
+  fullName: DEAL.BaseCard.AddToScore(ref int)
+  fullName.vb: DEAL.BaseCard.AddToScore(Integer)
+  nameWithType: BaseCard.AddToScore(ref int)
+  nameWithType.vb: BaseCard.AddToScore(Integer)
+- uid: DEAL.BaseCard.AddToScore*
+  name: AddToScore
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_AddToScore_
+  commentId: Overload:DEAL.BaseCard.AddToScore
+  isSpec: "True"
+  fullName: DEAL.BaseCard.AddToScore
+  nameWithType: BaseCard.AddToScore
+- uid: DEAL.BaseCard.CardSO
+  name: CardSO
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_CardSO
+  commentId: F:DEAL.BaseCard.CardSO
+  fullName: DEAL.BaseCard.CardSO
+  nameWithType: BaseCard.CardSO
+- uid: DEAL.BaseCard.GetNumber
+  name: GetNumber()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_GetNumber
+  commentId: M:DEAL.BaseCard.GetNumber
+  fullName: DEAL.BaseCard.GetNumber()
+  nameWithType: BaseCard.GetNumber()
+- uid: DEAL.BaseCard.GetNumber*
+  name: GetNumber
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_GetNumber_
+  commentId: Overload:DEAL.BaseCard.GetNumber
+  isSpec: "True"
+  fullName: DEAL.BaseCard.GetNumber
+  nameWithType: BaseCard.GetNumber
+- uid: DEAL.BaseCard.HideSelectPreview
+  name: HideSelectPreview()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_HideSelectPreview
+  commentId: M:DEAL.BaseCard.HideSelectPreview
+  fullName: DEAL.BaseCard.HideSelectPreview()
+  nameWithType: BaseCard.HideSelectPreview()
+- uid: DEAL.BaseCard.HideSelectPreview*
+  name: HideSelectPreview
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_HideSelectPreview_
+  commentId: Overload:DEAL.BaseCard.HideSelectPreview
+  isSpec: "True"
+  fullName: DEAL.BaseCard.HideSelectPreview
+  nameWithType: BaseCard.HideSelectPreview
+- uid: DEAL.BaseCard.LiteralName
+  name: LiteralName
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_LiteralName
+  commentId: P:DEAL.BaseCard.LiteralName
+  fullName: DEAL.BaseCard.LiteralName
+  nameWithType: BaseCard.LiteralName
+- uid: DEAL.BaseCard.LiteralName*
+  name: LiteralName
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_LiteralName_
+  commentId: Overload:DEAL.BaseCard.LiteralName
+  isSpec: "True"
+  fullName: DEAL.BaseCard.LiteralName
+  nameWithType: BaseCard.LiteralName
+- uid: DEAL.BaseCard.LockOwnership(DEAL.CardHolder)
+  name: LockOwnership(CardHolder)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_LockOwnership_DEAL_CardHolder_
+  commentId: M:DEAL.BaseCard.LockOwnership(DEAL.CardHolder)
+  fullName: DEAL.BaseCard.LockOwnership(DEAL.CardHolder)
+  nameWithType: BaseCard.LockOwnership(CardHolder)
+- uid: DEAL.BaseCard.LockOwnership*
+  name: LockOwnership
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_LockOwnership_
+  commentId: Overload:DEAL.BaseCard.LockOwnership
+  isSpec: "True"
+  fullName: DEAL.BaseCard.LockOwnership
+  nameWithType: BaseCard.LockOwnership
+- uid: DEAL.BaseCard.OnCardEvent
+  name: OnCardEvent
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_OnCardEvent
+  commentId: F:DEAL.BaseCard.OnCardEvent
+  fullName: DEAL.BaseCard.OnCardEvent
+  nameWithType: BaseCard.OnCardEvent
+- uid: DEAL.BaseCard.OnDragAction
+  name: OnDragAction
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_OnDragAction
+  commentId: F:DEAL.BaseCard.OnDragAction
+  fullName: DEAL.BaseCard.OnDragAction
+  nameWithType: BaseCard.OnDragAction
+- uid: DEAL.BaseCard.OnTapDownAction
+  name: OnTapDownAction
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_OnTapDownAction
+  commentId: F:DEAL.BaseCard.OnTapDownAction
+  fullName: DEAL.BaseCard.OnTapDownAction
+  nameWithType: BaseCard.OnTapDownAction
+- uid: DEAL.BaseCard.OnTapReleaseAction
+  name: OnTapReleaseAction
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_OnTapReleaseAction
+  commentId: F:DEAL.BaseCard.OnTapReleaseAction
+  fullName: DEAL.BaseCard.OnTapReleaseAction
+  nameWithType: BaseCard.OnTapReleaseAction
+- uid: DEAL.BaseCard.Owner
+  name: Owner
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_Owner
+  commentId: P:DEAL.BaseCard.Owner
+  fullName: DEAL.BaseCard.Owner
+  nameWithType: BaseCard.Owner
+- uid: DEAL.BaseCard.Owner*
+  name: Owner
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_Owner_
+  commentId: Overload:DEAL.BaseCard.Owner
+  isSpec: "True"
+  fullName: DEAL.BaseCard.Owner
+  nameWithType: BaseCard.Owner
+- uid: DEAL.BaseCard.ParseScore(System.String)
+  name: ParseScore(string)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ParseScore_System_String_
+  commentId: M:DEAL.BaseCard.ParseScore(System.String)
+  name.vb: ParseScore(String)
+  fullName: DEAL.BaseCard.ParseScore(string)
+  fullName.vb: DEAL.BaseCard.ParseScore(String)
+  nameWithType: BaseCard.ParseScore(string)
+  nameWithType.vb: BaseCard.ParseScore(String)
+- uid: DEAL.BaseCard.ParseScore*
+  name: ParseScore
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ParseScore_
+  commentId: Overload:DEAL.BaseCard.ParseScore
+  isSpec: "True"
+  fullName: DEAL.BaseCard.ParseScore
+  nameWithType: BaseCard.ParseScore
+- uid: DEAL.BaseCard.PerformSlotMove(System.Int32,System.Int32)
+  name: PerformSlotMove(int, int)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_PerformSlotMove_System_Int32_System_Int32_
+  commentId: M:DEAL.BaseCard.PerformSlotMove(System.Int32,System.Int32)
+  name.vb: PerformSlotMove(Integer, Integer)
+  fullName: DEAL.BaseCard.PerformSlotMove(int, int)
+  fullName.vb: DEAL.BaseCard.PerformSlotMove(Integer, Integer)
+  nameWithType: BaseCard.PerformSlotMove(int, int)
+  nameWithType.vb: BaseCard.PerformSlotMove(Integer, Integer)
+- uid: DEAL.BaseCard.PerformSlotMove*
+  name: PerformSlotMove
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_PerformSlotMove_
+  commentId: Overload:DEAL.BaseCard.PerformSlotMove
+  isSpec: "True"
+  fullName: DEAL.BaseCard.PerformSlotMove
+  nameWithType: BaseCard.PerformSlotMove
+- uid: DEAL.BaseCard.ProcessSpecialMove
+  name: ProcessSpecialMove()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ProcessSpecialMove
+  commentId: M:DEAL.BaseCard.ProcessSpecialMove
+  fullName: DEAL.BaseCard.ProcessSpecialMove()
+  nameWithType: BaseCard.ProcessSpecialMove()
+- uid: DEAL.BaseCard.ProcessSpecialMove*
+  name: ProcessSpecialMove
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ProcessSpecialMove_
+  commentId: Overload:DEAL.BaseCard.ProcessSpecialMove
+  isSpec: "True"
+  fullName: DEAL.BaseCard.ProcessSpecialMove
+  nameWithType: BaseCard.ProcessSpecialMove
+- uid: DEAL.BaseCard.ReleaseOwnership
+  name: ReleaseOwnership()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ReleaseOwnership
+  commentId: M:DEAL.BaseCard.ReleaseOwnership
+  fullName: DEAL.BaseCard.ReleaseOwnership()
+  nameWithType: BaseCard.ReleaseOwnership()
+- uid: DEAL.BaseCard.ReleaseOwnership*
+  name: ReleaseOwnership
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ReleaseOwnership_
+  commentId: Overload:DEAL.BaseCard.ReleaseOwnership
+  isSpec: "True"
+  fullName: DEAL.BaseCard.ReleaseOwnership
+  nameWithType: BaseCard.ReleaseOwnership
+- uid: DEAL.BaseCard.ResetCardData
+  name: ResetCardData()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ResetCardData
+  commentId: M:DEAL.BaseCard.ResetCardData
+  fullName: DEAL.BaseCard.ResetCardData()
+  nameWithType: BaseCard.ResetCardData()
+- uid: DEAL.BaseCard.ResetCardData*
+  name: ResetCardData
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ResetCardData_
+  commentId: Overload:DEAL.BaseCard.ResetCardData
+  isSpec: "True"
+  fullName: DEAL.BaseCard.ResetCardData
+  nameWithType: BaseCard.ResetCardData
+- uid: DEAL.BaseCard.Score
+  name: Score
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_Score
+  commentId: P:DEAL.BaseCard.Score
+  fullName: DEAL.BaseCard.Score
+  nameWithType: BaseCard.Score
+- uid: DEAL.BaseCard.Score*
+  name: Score
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_Score_
+  commentId: Overload:DEAL.BaseCard.Score
+  isSpec: "True"
+  fullName: DEAL.BaseCard.Score
+  nameWithType: BaseCard.Score
+- uid: DEAL.BaseCard.SetCardData(DEAL.CardSO,DEAL.CardHolder)
+  name: SetCardData(CardSO, CardHolder)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_SetCardData_DEAL_CardSO_DEAL_CardHolder_
+  commentId: M:DEAL.BaseCard.SetCardData(DEAL.CardSO,DEAL.CardHolder)
+  fullName: DEAL.BaseCard.SetCardData(DEAL.CardSO, DEAL.CardHolder)
+  nameWithType: BaseCard.SetCardData(CardSO, CardHolder)
+- uid: DEAL.BaseCard.SetCardData*
+  name: SetCardData
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_SetCardData_
+  commentId: Overload:DEAL.BaseCard.SetCardData
+  isSpec: "True"
+  fullName: DEAL.BaseCard.SetCardData
+  nameWithType: BaseCard.SetCardData
+- uid: DEAL.BaseCard.SetChoice(System.Nullable{System.Int32})
+  name: SetChoice(int?)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_SetChoice_System_Nullable_System_Int32__
+  commentId: M:DEAL.BaseCard.SetChoice(System.Nullable{System.Int32})
+  name.vb: SetChoice(Integer?)
+  fullName: DEAL.BaseCard.SetChoice(int?)
+  fullName.vb: DEAL.BaseCard.SetChoice(Integer?)
+  nameWithType: BaseCard.SetChoice(int?)
+  nameWithType.vb: BaseCard.SetChoice(Integer?)
+- uid: DEAL.BaseCard.SetChoice*
+  name: SetChoice
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_SetChoice_
+  commentId: Overload:DEAL.BaseCard.SetChoice
+  isSpec: "True"
+  fullName: DEAL.BaseCard.SetChoice
+  nameWithType: BaseCard.SetChoice
+- uid: DEAL.BaseCard.ShowSelectPreview
+  name: ShowSelectPreview()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ShowSelectPreview
+  commentId: M:DEAL.BaseCard.ShowSelectPreview
+  fullName: DEAL.BaseCard.ShowSelectPreview()
+  nameWithType: BaseCard.ShowSelectPreview()
+- uid: DEAL.BaseCard.ShowSelectPreview*
+  name: ShowSelectPreview
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_ShowSelectPreview_
+  commentId: Overload:DEAL.BaseCard.ShowSelectPreview
+  isSpec: "True"
+  fullName: DEAL.BaseCard.ShowSelectPreview
+  nameWithType: BaseCard.ShowSelectPreview
+- uid: DEAL.BaseCard.SlotID
+  name: SlotID
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_SlotID
+  commentId: F:DEAL.BaseCard.SlotID
+  fullName: DEAL.BaseCard.SlotID
+  nameWithType: BaseCard.SlotID
+- uid: DEAL.BaseCard.TestPick
+  name: TestPick()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_TestPick
+  commentId: M:DEAL.BaseCard.TestPick
+  fullName: DEAL.BaseCard.TestPick()
+  nameWithType: BaseCard.TestPick()
+- uid: DEAL.BaseCard.TestPick*
+  name: TestPick
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_TestPick_
+  commentId: Overload:DEAL.BaseCard.TestPick
+  isSpec: "True"
+  fullName: DEAL.BaseCard.TestPick
+  nameWithType: BaseCard.TestPick
+- uid: DEAL.BaseCard.TryLockOwnership(DEAL.Event.ActorArgs)
+  name: TryLockOwnership(ActorArgs)
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_TryLockOwnership_DEAL_Event_ActorArgs_
+  commentId: M:DEAL.BaseCard.TryLockOwnership(DEAL.Event.ActorArgs)
+  fullName: DEAL.BaseCard.TryLockOwnership(DEAL.Event.ActorArgs)
+  nameWithType: BaseCard.TryLockOwnership(ActorArgs)
+- uid: DEAL.BaseCard.TryLockOwnership*
+  name: TryLockOwnership
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_TryLockOwnership_
+  commentId: Overload:DEAL.BaseCard.TryLockOwnership
+  isSpec: "True"
+  fullName: DEAL.BaseCard.TryLockOwnership
+  nameWithType: BaseCard.TryLockOwnership
+- uid: DEAL.BaseCard.UpdateScore
+  name: UpdateScore()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_UpdateScore
+  commentId: M:DEAL.BaseCard.UpdateScore
+  fullName: DEAL.BaseCard.UpdateScore()
+  nameWithType: BaseCard.UpdateScore()
+- uid: DEAL.BaseCard.UpdateScore*
+  name: UpdateScore
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_UpdateScore_
+  commentId: Overload:DEAL.BaseCard.UpdateScore
+  isSpec: "True"
+  fullName: DEAL.BaseCard.UpdateScore
+  nameWithType: BaseCard.UpdateScore
+- uid: DEAL.BaseCard.initCard
+  name: initCard()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_initCard
+  commentId: M:DEAL.BaseCard.initCard
+  fullName: DEAL.BaseCard.initCard()
+  nameWithType: BaseCard.initCard()
+- uid: DEAL.BaseCard.initCard*
+  name: initCard
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_initCard_
+  commentId: Overload:DEAL.BaseCard.initCard
+  isSpec: "True"
+  fullName: DEAL.BaseCard.initCard
+  nameWithType: BaseCard.initCard
 - uid: DEAL.BaseDeck
   name: BaseDeck
   href: api/DEAL.BaseDeck.html
   commentId: T:DEAL.BaseDeck
   fullName: DEAL.BaseDeck
   nameWithType: BaseDeck
-- uid: DEAL.BaseDeck.ClearOwnership(DEAL.Card)
-  name: ClearOwnership(Card)
-  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_ClearOwnership_DEAL_Card_
-  commentId: M:DEAL.BaseDeck.ClearOwnership(DEAL.Card)
-  fullName: DEAL.BaseDeck.ClearOwnership(DEAL.Card)
-  nameWithType: BaseDeck.ClearOwnership(Card)
+- uid: DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)
+  name: ClearOwnership(BaseCard)
+  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_ClearOwnership_DEAL_BaseCard_
+  commentId: M:DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)
+  fullName: DEAL.BaseDeck.ClearOwnership(DEAL.BaseCard)
+  nameWithType: BaseDeck.ClearOwnership(BaseCard)
 - uid: DEAL.BaseDeck.ClearOwnership*
   name: ClearOwnership
   href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_ClearOwnership_
@@ -492,15 +809,15 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseDeck.GetSize
   nameWithType: BaseDeck.GetSize
-- uid: DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.Card},System.Int32)
-  name: GetWeightDescCombinations(List<Card>, int)
-  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_Card__System_Int32_
-  commentId: M:DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.Card},System.Int32)
-  name.vb: GetWeightDescCombinations(List(Of Card), Integer)
-  fullName: DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List<DEAL.Card>, int)
-  fullName.vb: DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List(Of DEAL.Card), Integer)
-  nameWithType: BaseDeck.GetWeightDescCombinations(List<Card>, int)
-  nameWithType.vb: BaseDeck.GetWeightDescCombinations(List(Of Card), Integer)
+- uid: DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.BaseCard},System.Int32)
+  name: GetWeightDescCombinations(List<BaseCard>, int)
+  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_GetWeightDescCombinations_System_Collections_Generic_List_DEAL_BaseCard__System_Int32_
+  commentId: M:DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List{DEAL.BaseCard},System.Int32)
+  name.vb: GetWeightDescCombinations(List(Of BaseCard), Integer)
+  fullName: DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List<DEAL.BaseCard>, int)
+  fullName.vb: DEAL.BaseDeck.GetWeightDescCombinations(System.Collections.Generic.List(Of DEAL.BaseCard), Integer)
+  nameWithType: BaseDeck.GetWeightDescCombinations(List<BaseCard>, int)
+  nameWithType.vb: BaseDeck.GetWeightDescCombinations(List(Of BaseCard), Integer)
 - uid: DEAL.BaseDeck.GetWeightDescCombinations*
   name: GetWeightDescCombinations
   href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_GetWeightDescCombinations_
@@ -521,12 +838,12 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseDeck.InitDeck
   nameWithType: BaseDeck.InitDeck
-- uid: DEAL.BaseDeck.OnCardClaimed(DEAL.Card)
-  name: OnCardClaimed(Card)
-  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardClaimed_DEAL_Card_
-  commentId: M:DEAL.BaseDeck.OnCardClaimed(DEAL.Card)
-  fullName: DEAL.BaseDeck.OnCardClaimed(DEAL.Card)
-  nameWithType: BaseDeck.OnCardClaimed(Card)
+- uid: DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)
+  name: OnCardClaimed(BaseCard)
+  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardClaimed_DEAL_BaseCard_
+  commentId: M:DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)
+  fullName: DEAL.BaseDeck.OnCardClaimed(DEAL.BaseCard)
+  nameWithType: BaseDeck.OnCardClaimed(BaseCard)
 - uid: DEAL.BaseDeck.OnCardClaimed*
   name: OnCardClaimed
   href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardClaimed_
@@ -534,12 +851,12 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseDeck.OnCardClaimed
   nameWithType: BaseDeck.OnCardClaimed
-- uid: DEAL.BaseDeck.OnCardCleared(DEAL.Card)
-  name: OnCardCleared(Card)
-  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardCleared_DEAL_Card_
-  commentId: M:DEAL.BaseDeck.OnCardCleared(DEAL.Card)
-  fullName: DEAL.BaseDeck.OnCardCleared(DEAL.Card)
-  nameWithType: BaseDeck.OnCardCleared(Card)
+- uid: DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)
+  name: OnCardCleared(BaseCard)
+  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardCleared_DEAL_BaseCard_
+  commentId: M:DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)
+  fullName: DEAL.BaseDeck.OnCardCleared(DEAL.BaseCard)
+  nameWithType: BaseDeck.OnCardCleared(BaseCard)
 - uid: DEAL.BaseDeck.OnCardCleared*
   name: OnCardCleared
   href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_OnCardCleared_
@@ -602,12 +919,12 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseDeck.TestShowHand
   nameWithType: BaseDeck.TestShowHand
-- uid: DEAL.BaseDeck.TransferCard(DEAL.Card,DEAL.CardHolder)
-  name: TransferCard(Card, CardHolder)
-  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_TransferCard_DEAL_Card_DEAL_CardHolder_
-  commentId: M:DEAL.BaseDeck.TransferCard(DEAL.Card,DEAL.CardHolder)
-  fullName: DEAL.BaseDeck.TransferCard(DEAL.Card, DEAL.CardHolder)
-  nameWithType: BaseDeck.TransferCard(Card, CardHolder)
+- uid: DEAL.BaseDeck.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  name: TransferCard(BaseCard, CardHolder)
+  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_TransferCard_DEAL_BaseCard_DEAL_CardHolder_
+  commentId: M:DEAL.BaseDeck.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  fullName: DEAL.BaseDeck.TransferCard(DEAL.BaseCard, DEAL.CardHolder)
+  nameWithType: BaseDeck.TransferCard(BaseCard, CardHolder)
 - uid: DEAL.BaseDeck.TransferCard*
   name: TransferCard
   href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_TransferCard_
@@ -615,15 +932,15 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseDeck.TransferCard
   nameWithType: BaseDeck.TransferCard
-- uid: DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name: TransferCards(IEnumerable<Card>, CardHolder)
-  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_
-  commentId: M:DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name.vb: TransferCards(IEnumerable(Of Card), CardHolder)
-  fullName: DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable<DEAL.Card>, DEAL.CardHolder)
-  fullName.vb: DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.Card), DEAL.CardHolder)
-  nameWithType: BaseDeck.TransferCards(IEnumerable<Card>, CardHolder)
-  nameWithType.vb: BaseDeck.TransferCards(IEnumerable(Of Card), CardHolder)
+- uid: DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name: TransferCards(IEnumerable<BaseCard>, CardHolder)
+  href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_
+  commentId: M:DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name.vb: TransferCards(IEnumerable(Of BaseCard), CardHolder)
+  fullName: DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable<DEAL.BaseCard>, DEAL.CardHolder)
+  fullName.vb: DEAL.BaseDeck.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.BaseCard), DEAL.CardHolder)
+  nameWithType: BaseDeck.TransferCards(IEnumerable<BaseCard>, CardHolder)
+  nameWithType.vb: BaseDeck.TransferCards(IEnumerable(Of BaseCard), CardHolder)
 - uid: DEAL.BaseDeck.TransferCards*
   name: TransferCards
   href: api/DEAL.BaseDeck.html#DEAL_BaseDeck_TransferCards_
@@ -649,6 +966,76 @@ references:
   commentId: F:DEAL.BaseDeck.targetDeck
   fullName: DEAL.BaseDeck.targetDeck
   nameWithType: BaseDeck.targetDeck
+- uid: DEAL.BaseSeat
+  name: BaseSeat
+  href: api/DEAL.BaseSeat.html
+  commentId: T:DEAL.BaseSeat
+  fullName: DEAL.BaseSeat
+  nameWithType: BaseSeat
+- uid: DEAL.BaseSeat.PlayerUI
+  name: PlayerUI
+  href: api/DEAL.BaseSeat.html#DEAL_BaseSeat_PlayerUI
+  commentId: F:DEAL.BaseSeat.PlayerUI
+  fullName: DEAL.BaseSeat.PlayerUI
+  nameWithType: BaseSeat.PlayerUI
+- uid: DEAL.BaseTable
+  name: BaseTable
+  href: api/DEAL.BaseTable.html
+  commentId: T:DEAL.BaseTable
+  fullName: DEAL.BaseTable
+  nameWithType: BaseTable
+- uid: DEAL.BaseTable.PlayerDeckArray
+  name: PlayerDeckArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_PlayerDeckArray
+  commentId: P:DEAL.BaseTable.PlayerDeckArray
+  fullName: DEAL.BaseTable.PlayerDeckArray
+  nameWithType: BaseTable.PlayerDeckArray
+- uid: DEAL.BaseTable.PlayerDeckArray*
+  name: PlayerDeckArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_PlayerDeckArray_
+  commentId: Overload:DEAL.BaseTable.PlayerDeckArray
+  isSpec: "True"
+  fullName: DEAL.BaseTable.PlayerDeckArray
+  nameWithType: BaseTable.PlayerDeckArray
+- uid: DEAL.BaseTable.SeatArray
+  name: SeatArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_SeatArray
+  commentId: P:DEAL.BaseTable.SeatArray
+  fullName: DEAL.BaseTable.SeatArray
+  nameWithType: BaseTable.SeatArray
+- uid: DEAL.BaseTable.SeatArray*
+  name: SeatArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_SeatArray_
+  commentId: Overload:DEAL.BaseTable.SeatArray
+  isSpec: "True"
+  fullName: DEAL.BaseTable.SeatArray
+  nameWithType: BaseTable.SeatArray
+- uid: DEAL.BaseTable.SystemDeckArray
+  name: SystemDeckArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_SystemDeckArray
+  commentId: P:DEAL.BaseTable.SystemDeckArray
+  fullName: DEAL.BaseTable.SystemDeckArray
+  nameWithType: BaseTable.SystemDeckArray
+- uid: DEAL.BaseTable.SystemDeckArray*
+  name: SystemDeckArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_SystemDeckArray_
+  commentId: Overload:DEAL.BaseTable.SystemDeckArray
+  isSpec: "True"
+  fullName: DEAL.BaseTable.SystemDeckArray
+  nameWithType: BaseTable.SystemDeckArray
+- uid: DEAL.BaseTable.SystemTileArray
+  name: SystemTileArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_SystemTileArray
+  commentId: P:DEAL.BaseTable.SystemTileArray
+  fullName: DEAL.BaseTable.SystemTileArray
+  nameWithType: BaseTable.SystemTileArray
+- uid: DEAL.BaseTable.SystemTileArray*
+  name: SystemTileArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_SystemTileArray_
+  commentId: Overload:DEAL.BaseTable.SystemTileArray
+  isSpec: "True"
+  fullName: DEAL.BaseTable.SystemTileArray
+  nameWithType: BaseTable.SystemTileArray
 - uid: DEAL.BaseTile
   name: BaseTile
   href: api/DEAL.BaseTile.html
@@ -1750,12 +2137,12 @@ references:
   commentId: F:DEAL.CardHolder.AttachedChipHolder
   fullName: DEAL.CardHolder.AttachedChipHolder
   nameWithType: CardHolder.AttachedChipHolder
-- uid: DEAL.CardHolder.ClaimOwnership(DEAL.Card)
-  name: ClaimOwnership(Card)
-  href: api/DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_Card_
-  commentId: M:DEAL.CardHolder.ClaimOwnership(DEAL.Card)
-  fullName: DEAL.CardHolder.ClaimOwnership(DEAL.Card)
-  nameWithType: CardHolder.ClaimOwnership(Card)
+- uid: DEAL.CardHolder.ClaimOwnership(DEAL.BaseCard)
+  name: ClaimOwnership(BaseCard)
+  href: api/DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_BaseCard_
+  commentId: M:DEAL.CardHolder.ClaimOwnership(DEAL.BaseCard)
+  fullName: DEAL.CardHolder.ClaimOwnership(DEAL.BaseCard)
+  nameWithType: CardHolder.ClaimOwnership(BaseCard)
 - uid: DEAL.CardHolder.ClaimOwnership*
   name: ClaimOwnership
   href: api/DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_
@@ -1763,12 +2150,12 @@ references:
   isSpec: "True"
   fullName: DEAL.CardHolder.ClaimOwnership
   nameWithType: CardHolder.ClaimOwnership
-- uid: DEAL.CardHolder.ClearOwnership(DEAL.Card)
-  name: ClearOwnership(Card)
-  href: api/DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_Card_
-  commentId: M:DEAL.CardHolder.ClearOwnership(DEAL.Card)
-  fullName: DEAL.CardHolder.ClearOwnership(DEAL.Card)
-  nameWithType: CardHolder.ClearOwnership(Card)
+- uid: DEAL.CardHolder.ClearOwnership(DEAL.BaseCard)
+  name: ClearOwnership(BaseCard)
+  href: api/DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_BaseCard_
+  commentId: M:DEAL.CardHolder.ClearOwnership(DEAL.BaseCard)
+  fullName: DEAL.CardHolder.ClearOwnership(DEAL.BaseCard)
+  nameWithType: CardHolder.ClearOwnership(BaseCard)
 - uid: DEAL.CardHolder.ClearOwnership*
   name: ClearOwnership
   href: api/DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_
@@ -1827,12 +2214,12 @@ references:
   commentId: F:DEAL.CardHolder.Index
   fullName: DEAL.CardHolder.Index
   nameWithType: CardHolder.Index
-- uid: DEAL.CardHolder.OnCardClaimed(DEAL.Card)
-  name: OnCardClaimed(Card)
-  href: api/DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_Card_
-  commentId: M:DEAL.CardHolder.OnCardClaimed(DEAL.Card)
-  fullName: DEAL.CardHolder.OnCardClaimed(DEAL.Card)
-  nameWithType: CardHolder.OnCardClaimed(Card)
+- uid: DEAL.CardHolder.OnCardClaimed(DEAL.BaseCard)
+  name: OnCardClaimed(BaseCard)
+  href: api/DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_BaseCard_
+  commentId: M:DEAL.CardHolder.OnCardClaimed(DEAL.BaseCard)
+  fullName: DEAL.CardHolder.OnCardClaimed(DEAL.BaseCard)
+  nameWithType: CardHolder.OnCardClaimed(BaseCard)
 - uid: DEAL.CardHolder.OnCardClaimed*
   name: OnCardClaimed
   href: api/DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_
@@ -1840,12 +2227,12 @@ references:
   isSpec: "True"
   fullName: DEAL.CardHolder.OnCardClaimed
   nameWithType: CardHolder.OnCardClaimed
-- uid: DEAL.CardHolder.OnCardCleared(DEAL.Card)
-  name: OnCardCleared(Card)
-  href: api/DEAL.CardHolder.html#DEAL_CardHolder_OnCardCleared_DEAL_Card_
-  commentId: M:DEAL.CardHolder.OnCardCleared(DEAL.Card)
-  fullName: DEAL.CardHolder.OnCardCleared(DEAL.Card)
-  nameWithType: CardHolder.OnCardCleared(Card)
+- uid: DEAL.CardHolder.OnCardCleared(DEAL.BaseCard)
+  name: OnCardCleared(BaseCard)
+  href: api/DEAL.CardHolder.html#DEAL_CardHolder_OnCardCleared_DEAL_BaseCard_
+  commentId: M:DEAL.CardHolder.OnCardCleared(DEAL.BaseCard)
+  fullName: DEAL.CardHolder.OnCardCleared(DEAL.BaseCard)
+  nameWithType: CardHolder.OnCardCleared(BaseCard)
 - uid: DEAL.CardHolder.OnCardCleared*
   name: OnCardCleared
   href: api/DEAL.CardHolder.html#DEAL_CardHolder_OnCardCleared_
@@ -1895,12 +2282,12 @@ references:
   isSpec: "True"
   fullName: DEAL.CardHolder.SetCustomProperties
   nameWithType: CardHolder.SetCustomProperties
-- uid: DEAL.CardHolder.TransferCard(DEAL.Card,DEAL.CardHolder)
-  name: TransferCard(Card, CardHolder)
-  href: api/DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_Card_DEAL_CardHolder_
-  commentId: M:DEAL.CardHolder.TransferCard(DEAL.Card,DEAL.CardHolder)
-  fullName: DEAL.CardHolder.TransferCard(DEAL.Card, DEAL.CardHolder)
-  nameWithType: CardHolder.TransferCard(Card, CardHolder)
+- uid: DEAL.CardHolder.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  name: TransferCard(BaseCard, CardHolder)
+  href: api/DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_BaseCard_DEAL_CardHolder_
+  commentId: M:DEAL.CardHolder.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  fullName: DEAL.CardHolder.TransferCard(DEAL.BaseCard, DEAL.CardHolder)
+  nameWithType: CardHolder.TransferCard(BaseCard, CardHolder)
 - uid: DEAL.CardHolder.TransferCard*
   name: TransferCard
   href: api/DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_
@@ -1908,15 +2295,15 @@ references:
   isSpec: "True"
   fullName: DEAL.CardHolder.TransferCard
   nameWithType: CardHolder.TransferCard
-- uid: DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name: TransferCards(IEnumerable<Card>, CardHolder)
-  href: api/DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_
-  commentId: M:DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name.vb: TransferCards(IEnumerable(Of Card), CardHolder)
-  fullName: DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable<DEAL.Card>, DEAL.CardHolder)
-  fullName.vb: DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.Card), DEAL.CardHolder)
-  nameWithType: CardHolder.TransferCards(IEnumerable<Card>, CardHolder)
-  nameWithType.vb: CardHolder.TransferCards(IEnumerable(Of Card), CardHolder)
+- uid: DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name: TransferCards(IEnumerable<BaseCard>, CardHolder)
+  href: api/DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_
+  commentId: M:DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name.vb: TransferCards(IEnumerable(Of BaseCard), CardHolder)
+  fullName: DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable<DEAL.BaseCard>, DEAL.CardHolder)
+  fullName.vb: DEAL.CardHolder.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.BaseCard), DEAL.CardHolder)
+  nameWithType: CardHolder.TransferCards(IEnumerable<BaseCard>, CardHolder)
+  nameWithType.vb: CardHolder.TransferCards(IEnumerable(Of BaseCard), CardHolder)
 - uid: DEAL.CardHolder.TransferCards*
   name: TransferCards
   href: api/DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_
@@ -2287,12 +2674,12 @@ references:
   isSpec: "True"
   fullName: DEAL.CountingDeck.InitDeck
   nameWithType: CountingDeck.InitDeck
-- uid: DEAL.CountingDeck.OnCardClaimed(DEAL.Card)
-  name: OnCardClaimed(Card)
-  href: api/DEAL.CountingDeck.html#DEAL_CountingDeck_OnCardClaimed_DEAL_Card_
-  commentId: M:DEAL.CountingDeck.OnCardClaimed(DEAL.Card)
-  fullName: DEAL.CountingDeck.OnCardClaimed(DEAL.Card)
-  nameWithType: CountingDeck.OnCardClaimed(Card)
+- uid: DEAL.CountingDeck.OnCardClaimed(DEAL.BaseCard)
+  name: OnCardClaimed(BaseCard)
+  href: api/DEAL.CountingDeck.html#DEAL_CountingDeck_OnCardClaimed_DEAL_BaseCard_
+  commentId: M:DEAL.CountingDeck.OnCardClaimed(DEAL.BaseCard)
+  fullName: DEAL.CountingDeck.OnCardClaimed(DEAL.BaseCard)
+  nameWithType: CountingDeck.OnCardClaimed(BaseCard)
 - uid: DEAL.CountingDeck.OnCardClaimed*
   name: OnCardClaimed
   href: api/DEAL.CountingDeck.html#DEAL_CountingDeck_OnCardClaimed_
@@ -3086,15 +3473,15 @@ references:
   commentId: F:DEAL.FSM.Action.CombineEvalScoreAction.Argument.subjectCheckScale
   fullName: DEAL.FSM.Action.CombineEvalScoreAction.Argument.subjectCheckScale
   nameWithType: CombineEvalScoreAction.Argument.subjectCheckScale
-- uid: DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.Card[])
-  name: CountScore(ScoreCounterType, int[], Card[])
-  href: api/DEAL.FSM.Action.CombineEvalScoreAction.html#DEAL_FSM_Action_CombineEvalScoreAction_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_Card___
-  commentId: M:DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.Card[])
-  name.vb: CountScore(ScoreCounterType, Integer(), Card())
-  fullName: DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType, int[], DEAL.Card[])
-  fullName.vb: DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType, Integer(), DEAL.Card())
-  nameWithType: CombineEvalScoreAction.CountScore(ScoreCounterType, int[], Card[])
-  nameWithType.vb: CombineEvalScoreAction.CountScore(ScoreCounterType, Integer(), Card())
+- uid: DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.BaseCard[])
+  name: CountScore(ScoreCounterType, int[], BaseCard[])
+  href: api/DEAL.FSM.Action.CombineEvalScoreAction.html#DEAL_FSM_Action_CombineEvalScoreAction_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_BaseCard___
+  commentId: M:DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.BaseCard[])
+  name.vb: CountScore(ScoreCounterType, Integer(), BaseCard())
+  fullName: DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType, int[], DEAL.BaseCard[])
+  fullName.vb: DEAL.FSM.Action.CombineEvalScoreAction.CountScore(DEAL.FSM.ScoreCounterType, Integer(), DEAL.BaseCard())
+  nameWithType: CombineEvalScoreAction.CountScore(ScoreCounterType, int[], BaseCard[])
+  nameWithType.vb: CombineEvalScoreAction.CountScore(ScoreCounterType, Integer(), BaseCard())
 - uid: DEAL.FSM.Action.CombineEvalScoreAction.CountScore*
   name: CountScore
   href: api/DEAL.FSM.Action.CombineEvalScoreAction.html#DEAL_FSM_Action_CombineEvalScoreAction_CountScore_
@@ -3983,12 +4370,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.CardStateMachineComponent.OnEvent
   nameWithType: CardStateMachineComponent.OnEvent
-- uid: DEAL.FSM.CardStateMachineComponent.OnPickSpecialAction(DEAL.Card)
-  name: OnPickSpecialAction(Card)
-  href: api/DEAL.FSM.CardStateMachineComponent.html#DEAL_FSM_CardStateMachineComponent_OnPickSpecialAction_DEAL_Card_
-  commentId: M:DEAL.FSM.CardStateMachineComponent.OnPickSpecialAction(DEAL.Card)
-  fullName: DEAL.FSM.CardStateMachineComponent.OnPickSpecialAction(DEAL.Card)
-  nameWithType: CardStateMachineComponent.OnPickSpecialAction(Card)
+- uid: DEAL.FSM.CardStateMachineComponent.OnPickSpecialAction(DEAL.BaseCard)
+  name: OnPickSpecialAction(BaseCard)
+  href: api/DEAL.FSM.CardStateMachineComponent.html#DEAL_FSM_CardStateMachineComponent_OnPickSpecialAction_DEAL_BaseCard_
+  commentId: M:DEAL.FSM.CardStateMachineComponent.OnPickSpecialAction(DEAL.BaseCard)
+  fullName: DEAL.FSM.CardStateMachineComponent.OnPickSpecialAction(DEAL.BaseCard)
+  nameWithType: CardStateMachineComponent.OnPickSpecialAction(BaseCard)
 - uid: DEAL.FSM.CardStateMachineComponent.OnPickSpecialAction*
   name: OnPickSpecialAction
   href: api/DEAL.FSM.CardStateMachineComponent.html#DEAL_FSM_CardStateMachineComponent_OnPickSpecialAction_
@@ -4105,12 +4492,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.CardStateMachineComponent.TerminateFSM
   nameWithType: CardStateMachineComponent.TerminateFSM
-- uid: DEAL.FSM.CardStateMachineComponent.TryPick(DEAL.Card,UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
-  name: TryPick(Card, IXRInteractor)
-  href: api/DEAL.FSM.CardStateMachineComponent.html#DEAL_FSM_CardStateMachineComponent_TryPick_DEAL_Card_UnityEngine_XR_Interaction_Toolkit_IXRInteractor_
-  commentId: M:DEAL.FSM.CardStateMachineComponent.TryPick(DEAL.Card,UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
-  fullName: DEAL.FSM.CardStateMachineComponent.TryPick(DEAL.Card, UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
-  nameWithType: CardStateMachineComponent.TryPick(Card, IXRInteractor)
+- uid: DEAL.FSM.CardStateMachineComponent.TryPick(DEAL.BaseCard)
+  name: TryPick(BaseCard)
+  href: api/DEAL.FSM.CardStateMachineComponent.html#DEAL_FSM_CardStateMachineComponent_TryPick_DEAL_BaseCard_
+  commentId: M:DEAL.FSM.CardStateMachineComponent.TryPick(DEAL.BaseCard)
+  fullName: DEAL.FSM.CardStateMachineComponent.TryPick(DEAL.BaseCard)
+  nameWithType: CardStateMachineComponent.TryPick(BaseCard)
 - uid: DEAL.FSM.CardStateMachineComponent.TryPick*
   name: TryPick
   href: api/DEAL.FSM.CardStateMachineComponent.html#DEAL_FSM_CardStateMachineComponent_TryPick_
@@ -4460,15 +4847,15 @@ references:
   commentId: T:DEAL.FSM.Condition.CompareScoreCondition
   fullName: DEAL.FSM.Condition.CompareScoreCondition
   nameWithType: CompareScoreCondition
-- uid: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.Card,System.Int32@)
-  name: AddCardToScore(Card, ref int)
-  href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_AddCardToScore_DEAL_Card_System_Int32__
-  commentId: M:DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.Card,System.Int32@)
-  name.vb: AddCardToScore(Card, Integer)
-  fullName: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.Card, ref int)
-  fullName.vb: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.Card, Integer)
-  nameWithType: CompareScoreCondition.AddCardToScore(Card, ref int)
-  nameWithType.vb: CompareScoreCondition.AddCardToScore(Card, Integer)
+- uid: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.BaseCard,System.Int32@)
+  name: AddCardToScore(BaseCard, ref int)
+  href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_AddCardToScore_DEAL_BaseCard_System_Int32__
+  commentId: M:DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.BaseCard,System.Int32@)
+  name.vb: AddCardToScore(BaseCard, Integer)
+  fullName: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.BaseCard, ref int)
+  fullName.vb: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore(DEAL.BaseCard, Integer)
+  nameWithType: CompareScoreCondition.AddCardToScore(BaseCard, ref int)
+  nameWithType.vb: CompareScoreCondition.AddCardToScore(BaseCard, Integer)
 - uid: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore*
   name: AddCardToScore
   href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_AddCardToScore_
@@ -4476,15 +4863,15 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.Condition.CompareScoreCondition.AddCardToScore
   nameWithType: CompareScoreCondition.AddCardToScore
-- uid: DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.Card[])
-  name: CountScore(ScoreCounterType, int[], Card[])
-  href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_Card___
-  commentId: M:DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.Card[])
-  name.vb: CountScore(ScoreCounterType, Integer(), Card())
-  fullName: DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType, int[], DEAL.Card[])
-  fullName.vb: DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType, Integer(), DEAL.Card())
-  nameWithType: CompareScoreCondition.CountScore(ScoreCounterType, int[], Card[])
-  nameWithType.vb: CompareScoreCondition.CountScore(ScoreCounterType, Integer(), Card())
+- uid: DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.BaseCard[])
+  name: CountScore(ScoreCounterType, int[], BaseCard[])
+  href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_BaseCard___
+  commentId: M:DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.BaseCard[])
+  name.vb: CountScore(ScoreCounterType, Integer(), BaseCard())
+  fullName: DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType, int[], DEAL.BaseCard[])
+  fullName.vb: DEAL.FSM.Condition.CompareScoreCondition.CountScore(DEAL.FSM.ScoreCounterType, Integer(), DEAL.BaseCard())
+  nameWithType: CompareScoreCondition.CountScore(ScoreCounterType, int[], BaseCard[])
+  nameWithType.vb: CompareScoreCondition.CountScore(ScoreCounterType, Integer(), BaseCard())
 - uid: DEAL.FSM.Condition.CompareScoreCondition.CountScore*
   name: CountScore
   href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_CountScore_
@@ -4675,15 +5062,15 @@ references:
   commentId: T:DEAL.FSM.Condition.MatchScoreMultipleCondition
   fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition
   nameWithType: MatchScoreMultipleCondition
-- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.Card,System.Int32@)
-  name: AddCardToScore(Card, ref int)
-  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_AddCardToScore_DEAL_Card_System_Int32__
-  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.Card,System.Int32@)
-  name.vb: AddCardToScore(Card, Integer)
-  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.Card, ref int)
-  fullName.vb: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.Card, Integer)
-  nameWithType: MatchScoreMultipleCondition.AddCardToScore(Card, ref int)
-  nameWithType.vb: MatchScoreMultipleCondition.AddCardToScore(Card, Integer)
+- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.BaseCard,System.Int32@)
+  name: AddCardToScore(BaseCard, ref int)
+  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_AddCardToScore_DEAL_BaseCard_System_Int32__
+  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.BaseCard,System.Int32@)
+  name.vb: AddCardToScore(BaseCard, Integer)
+  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.BaseCard, ref int)
+  fullName.vb: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore(DEAL.BaseCard, Integer)
+  nameWithType: MatchScoreMultipleCondition.AddCardToScore(BaseCard, ref int)
+  nameWithType.vb: MatchScoreMultipleCondition.AddCardToScore(BaseCard, Integer)
 - uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore*
   name: AddCardToScore
   href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_AddCardToScore_
@@ -4691,15 +5078,15 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.AddCardToScore
   nameWithType: MatchScoreMultipleCondition.AddCardToScore
-- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.Card[])
-  name: CountScore(ScoreCounterType, int[], Card[])
-  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_Card___
-  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.Card[])
-  name.vb: CountScore(ScoreCounterType, Integer(), Card())
-  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType, int[], DEAL.Card[])
-  fullName.vb: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType, Integer(), DEAL.Card())
-  nameWithType: MatchScoreMultipleCondition.CountScore(ScoreCounterType, int[], Card[])
-  nameWithType.vb: MatchScoreMultipleCondition.CountScore(ScoreCounterType, Integer(), Card())
+- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.BaseCard[])
+  name: CountScore(ScoreCounterType, int[], BaseCard[])
+  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_CountScore_DEAL_FSM_ScoreCounterType_System_Int32___DEAL_BaseCard___
+  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType,System.Int32[],DEAL.BaseCard[])
+  name.vb: CountScore(ScoreCounterType, Integer(), BaseCard())
+  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType, int[], DEAL.BaseCard[])
+  fullName.vb: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore(DEAL.FSM.ScoreCounterType, Integer(), DEAL.BaseCard())
+  nameWithType: MatchScoreMultipleCondition.CountScore(ScoreCounterType, int[], BaseCard[])
+  nameWithType.vb: MatchScoreMultipleCondition.CountScore(ScoreCounterType, Integer(), BaseCard())
 - uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore*
   name: CountScore
   href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_CountScore_
@@ -5701,6 +6088,15 @@ references:
   fullName.vb: DEAL.HandEvaluator.Eval(PHEval.Card())
   nameWithType: HandEvaluator.Eval(Card[])
   nameWithType.vb: HandEvaluator.Eval(Card())
+- uid: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList{DEAL.BaseCard})
+  name: Eval(IList<BaseCard>)
+  href: api/DEAL.HandEvaluator.html#DEAL_HandEvaluator_Eval_System_Collections_Generic_IList_DEAL_BaseCard__
+  commentId: M:DEAL.HandEvaluator.Eval(System.Collections.Generic.IList{DEAL.BaseCard})
+  name.vb: Eval(IList(Of BaseCard))
+  fullName: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList<DEAL.BaseCard>)
+  fullName.vb: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList(Of DEAL.BaseCard))
+  nameWithType: HandEvaluator.Eval(IList<BaseCard>)
+  nameWithType.vb: HandEvaluator.Eval(IList(Of BaseCard))
 - uid: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList{DEAL.CardSO})
   name: Eval(IList<CardSO>)
   href: api/DEAL.HandEvaluator.html#DEAL_HandEvaluator_Eval_System_Collections_Generic_IList_DEAL_CardSO__
@@ -5710,15 +6106,6 @@ references:
   fullName.vb: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList(Of DEAL.CardSO))
   nameWithType: HandEvaluator.Eval(IList<CardSO>)
   nameWithType.vb: HandEvaluator.Eval(IList(Of CardSO))
-- uid: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList{DEAL.Card})
-  name: Eval(IList<Card>)
-  href: api/DEAL.HandEvaluator.html#DEAL_HandEvaluator_Eval_System_Collections_Generic_IList_DEAL_Card__
-  commentId: M:DEAL.HandEvaluator.Eval(System.Collections.Generic.IList{DEAL.Card})
-  name.vb: Eval(IList(Of Card))
-  fullName: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList<DEAL.Card>)
-  fullName.vb: DEAL.HandEvaluator.Eval(System.Collections.Generic.IList(Of DEAL.Card))
-  nameWithType: HandEvaluator.Eval(IList<Card>)
-  nameWithType.vb: HandEvaluator.Eval(IList(Of Card))
 - uid: DEAL.HandEvaluator.Eval*
   name: Eval
   href: api/DEAL.HandEvaluator.html#DEAL_HandEvaluator_Eval_
@@ -6604,12 +6991,12 @@ references:
   isSpec: "True"
   fullName: DEAL.ServerTile.InitTile
   nameWithType: ServerTile.InitTile
-- uid: DEAL.ServerTile.OnCardCleared(DEAL.Card)
-  name: OnCardCleared(Card)
-  href: api/DEAL.ServerTile.html#DEAL_ServerTile_OnCardCleared_DEAL_Card_
-  commentId: M:DEAL.ServerTile.OnCardCleared(DEAL.Card)
-  fullName: DEAL.ServerTile.OnCardCleared(DEAL.Card)
-  nameWithType: ServerTile.OnCardCleared(Card)
+- uid: DEAL.ServerTile.OnCardCleared(DEAL.BaseCard)
+  name: OnCardCleared(BaseCard)
+  href: api/DEAL.ServerTile.html#DEAL_ServerTile_OnCardCleared_DEAL_BaseCard_
+  commentId: M:DEAL.ServerTile.OnCardCleared(DEAL.BaseCard)
+  fullName: DEAL.ServerTile.OnCardCleared(DEAL.BaseCard)
+  nameWithType: ServerTile.OnCardCleared(BaseCard)
 - uid: DEAL.ServerTile.OnCardCleared*
   name: OnCardCleared
   href: api/DEAL.ServerTile.html#DEAL_ServerTile_OnCardCleared_
@@ -6636,12 +7023,12 @@ references:
   commentId: T:DEAL.ServerUiTile
   fullName: DEAL.ServerUiTile
   nameWithType: ServerUiTile
-- uid: DEAL.ServerUiTile.TransferCard(DEAL.Card,DEAL.CardHolder)
-  name: TransferCard(Card, CardHolder)
-  href: api/DEAL.ServerUiTile.html#DEAL_ServerUiTile_TransferCard_DEAL_Card_DEAL_CardHolder_
-  commentId: M:DEAL.ServerUiTile.TransferCard(DEAL.Card,DEAL.CardHolder)
-  fullName: DEAL.ServerUiTile.TransferCard(DEAL.Card, DEAL.CardHolder)
-  nameWithType: ServerUiTile.TransferCard(Card, CardHolder)
+- uid: DEAL.ServerUiTile.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  name: TransferCard(BaseCard, CardHolder)
+  href: api/DEAL.ServerUiTile.html#DEAL_ServerUiTile_TransferCard_DEAL_BaseCard_DEAL_CardHolder_
+  commentId: M:DEAL.ServerUiTile.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  fullName: DEAL.ServerUiTile.TransferCard(DEAL.BaseCard, DEAL.CardHolder)
+  nameWithType: ServerUiTile.TransferCard(BaseCard, CardHolder)
 - uid: DEAL.ServerUiTile.TransferCard*
   name: TransferCard
   href: api/DEAL.ServerUiTile.html#DEAL_ServerUiTile_TransferCard_
@@ -6649,15 +7036,15 @@ references:
   isSpec: "True"
   fullName: DEAL.ServerUiTile.TransferCard
   nameWithType: ServerUiTile.TransferCard
-- uid: DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name: TransferCards(IEnumerable<Card>, CardHolder)
-  href: api/DEAL.ServerUiTile.html#DEAL_ServerUiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_
-  commentId: M:DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name.vb: TransferCards(IEnumerable(Of Card), CardHolder)
-  fullName: DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable<DEAL.Card>, DEAL.CardHolder)
-  fullName.vb: DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.Card), DEAL.CardHolder)
-  nameWithType: ServerUiTile.TransferCards(IEnumerable<Card>, CardHolder)
-  nameWithType.vb: ServerUiTile.TransferCards(IEnumerable(Of Card), CardHolder)
+- uid: DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name: TransferCards(IEnumerable<BaseCard>, CardHolder)
+  href: api/DEAL.ServerUiTile.html#DEAL_ServerUiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_
+  commentId: M:DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name.vb: TransferCards(IEnumerable(Of BaseCard), CardHolder)
+  fullName: DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable<DEAL.BaseCard>, DEAL.CardHolder)
+  fullName.vb: DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.BaseCard), DEAL.CardHolder)
+  nameWithType: ServerUiTile.TransferCards(IEnumerable<BaseCard>, CardHolder)
+  nameWithType.vb: ServerUiTile.TransferCards(IEnumerable(Of BaseCard), CardHolder)
 - uid: DEAL.ServerUiTile.TransferCards*
   name: TransferCards
   href: api/DEAL.ServerUiTile.html#DEAL_ServerUiTile_TransferCards_
@@ -6697,12 +7084,12 @@ references:
   isSpec: "True"
   fullName: DEAL.Tile.InitTile
   nameWithType: Tile.InitTile
-- uid: DEAL.Tile.OnCardCleared(DEAL.Card)
-  name: OnCardCleared(Card)
-  href: api/DEAL.Tile.html#DEAL_Tile_OnCardCleared_DEAL_Card_
-  commentId: M:DEAL.Tile.OnCardCleared(DEAL.Card)
-  fullName: DEAL.Tile.OnCardCleared(DEAL.Card)
-  nameWithType: Tile.OnCardCleared(Card)
+- uid: DEAL.Tile.OnCardCleared(DEAL.BaseCard)
+  name: OnCardCleared(BaseCard)
+  href: api/DEAL.Tile.html#DEAL_Tile_OnCardCleared_DEAL_BaseCard_
+  commentId: M:DEAL.Tile.OnCardCleared(DEAL.BaseCard)
+  fullName: DEAL.Tile.OnCardCleared(DEAL.BaseCard)
+  nameWithType: Tile.OnCardCleared(BaseCard)
 - uid: DEAL.Tile.OnCardCleared*
   name: OnCardCleared
   href: api/DEAL.Tile.html#DEAL_Tile_OnCardCleared_
@@ -6898,12 +7285,12 @@ references:
   isSpec: "True"
   fullName: DEAL.TweenHelper.BufferChipToHolder
   nameWithType: TweenHelper.BufferChipToHolder
-- uid: DEAL.TweenHelper.CardToHolder(DEAL.Card,DEAL.CardHolder,System.Action)
-  name: CardToHolder(Card, CardHolder, Action)
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_CardToHolder_DEAL_Card_DEAL_CardHolder_System_Action_
-  commentId: M:DEAL.TweenHelper.CardToHolder(DEAL.Card,DEAL.CardHolder,System.Action)
-  fullName: DEAL.TweenHelper.CardToHolder(DEAL.Card, DEAL.CardHolder, System.Action)
-  nameWithType: TweenHelper.CardToHolder(Card, CardHolder, Action)
+- uid: DEAL.TweenHelper.CardToHolder(DEAL.BaseCard,DEAL.CardHolder,System.Action)
+  name: CardToHolder(BaseCard, CardHolder, Action)
+  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_CardToHolder_DEAL_BaseCard_DEAL_CardHolder_System_Action_
+  commentId: M:DEAL.TweenHelper.CardToHolder(DEAL.BaseCard,DEAL.CardHolder,System.Action)
+  fullName: DEAL.TweenHelper.CardToHolder(DEAL.BaseCard, DEAL.CardHolder, System.Action)
+  nameWithType: TweenHelper.CardToHolder(BaseCard, CardHolder, Action)
 - uid: DEAL.TweenHelper.CardToHolder*
   name: CardToHolder
   href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_CardToHolder_
@@ -6911,15 +7298,15 @@ references:
   isSpec: "True"
   fullName: DEAL.TweenHelper.CardToHolder
   nameWithType: TweenHelper.CardToHolder
-- uid: DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder,System.Action{DEAL.Card},System.Action)
-  name: CardsToHolder(IEnumerable<Card>, CardHolder, Action<Card>, Action)
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_CardsToHolder_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_System_Action_DEAL_Card__System_Action_
-  commentId: M:DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder,System.Action{DEAL.Card},System.Action)
-  name.vb: CardsToHolder(IEnumerable(Of Card), CardHolder, Action(Of Card), Action)
-  fullName: DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable<DEAL.Card>, DEAL.CardHolder, System.Action<DEAL.Card>, System.Action)
-  fullName.vb: DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable(Of DEAL.Card), DEAL.CardHolder, System.Action(Of DEAL.Card), System.Action)
-  nameWithType: TweenHelper.CardsToHolder(IEnumerable<Card>, CardHolder, Action<Card>, Action)
-  nameWithType.vb: TweenHelper.CardsToHolder(IEnumerable(Of Card), CardHolder, Action(Of Card), Action)
+- uid: DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder,System.Action{DEAL.BaseCard},System.Action)
+  name: CardsToHolder(IEnumerable<BaseCard>, CardHolder, Action<BaseCard>, Action)
+  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_CardsToHolder_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_System_Action_DEAL_BaseCard__System_Action_
+  commentId: M:DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder,System.Action{DEAL.BaseCard},System.Action)
+  name.vb: CardsToHolder(IEnumerable(Of BaseCard), CardHolder, Action(Of BaseCard), Action)
+  fullName: DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable<DEAL.BaseCard>, DEAL.CardHolder, System.Action<DEAL.BaseCard>, System.Action)
+  fullName.vb: DEAL.TweenHelper.CardsToHolder(System.Collections.Generic.IEnumerable(Of DEAL.BaseCard), DEAL.CardHolder, System.Action(Of DEAL.BaseCard), System.Action)
+  nameWithType: TweenHelper.CardsToHolder(IEnumerable<BaseCard>, CardHolder, Action<BaseCard>, Action)
+  nameWithType.vb: TweenHelper.CardsToHolder(IEnumerable(Of BaseCard), CardHolder, Action(Of BaseCard), Action)
 - uid: DEAL.TweenHelper.CardsToHolder*
   name: CardsToHolder
   href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_CardsToHolder_
@@ -6927,15 +7314,15 @@ references:
   isSpec: "True"
   fullName: DEAL.TweenHelper.CardsToHolder
   nameWithType: TweenHelper.CardsToHolder
-- uid: DEAL.TweenHelper.DeckSlotMove(DEAL.Card,System.Int32,System.Int32)
-  name: DeckSlotMove(Card, int, int)
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_DeckSlotMove_DEAL_Card_System_Int32_System_Int32_
-  commentId: M:DEAL.TweenHelper.DeckSlotMove(DEAL.Card,System.Int32,System.Int32)
-  name.vb: DeckSlotMove(Card, Integer, Integer)
-  fullName: DEAL.TweenHelper.DeckSlotMove(DEAL.Card, int, int)
-  fullName.vb: DEAL.TweenHelper.DeckSlotMove(DEAL.Card, Integer, Integer)
-  nameWithType: TweenHelper.DeckSlotMove(Card, int, int)
-  nameWithType.vb: TweenHelper.DeckSlotMove(Card, Integer, Integer)
+- uid: DEAL.TweenHelper.DeckSlotMove(DEAL.BaseCard,System.Int32,System.Int32)
+  name: DeckSlotMove(BaseCard, int, int)
+  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_DeckSlotMove_DEAL_BaseCard_System_Int32_System_Int32_
+  commentId: M:DEAL.TweenHelper.DeckSlotMove(DEAL.BaseCard,System.Int32,System.Int32)
+  name.vb: DeckSlotMove(BaseCard, Integer, Integer)
+  fullName: DEAL.TweenHelper.DeckSlotMove(DEAL.BaseCard, int, int)
+  fullName.vb: DEAL.TweenHelper.DeckSlotMove(DEAL.BaseCard, Integer, Integer)
+  nameWithType: TweenHelper.DeckSlotMove(BaseCard, int, int)
+  nameWithType.vb: TweenHelper.DeckSlotMove(BaseCard, Integer, Integer)
 - uid: DEAL.TweenHelper.DeckSlotMove*
   name: DeckSlotMove
   href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_DeckSlotMove_
@@ -6943,19 +7330,6 @@ references:
   isSpec: "True"
   fullName: DEAL.TweenHelper.DeckSlotMove
   nameWithType: TweenHelper.DeckSlotMove
-- uid: DEAL.TweenHelper.DeckSnap(DEAL.Card)
-  name: DeckSnap(Card)
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_DeckSnap_DEAL_Card_
-  commentId: M:DEAL.TweenHelper.DeckSnap(DEAL.Card)
-  fullName: DEAL.TweenHelper.DeckSnap(DEAL.Card)
-  nameWithType: TweenHelper.DeckSnap(Card)
-- uid: DEAL.TweenHelper.DeckSnap*
-  name: DeckSnap
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_DeckSnap_
-  commentId: Overload:DEAL.TweenHelper.DeckSnap
-  isSpec: "True"
-  fullName: DEAL.TweenHelper.DeckSnap
-  nameWithType: TweenHelper.DeckSnap
 - uid: DEAL.TweenHelper.Instance
   name: Instance
   href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_Instance
@@ -6969,12 +7343,12 @@ references:
   isSpec: "True"
   fullName: DEAL.TweenHelper.Instance
   nameWithType: TweenHelper.Instance
-- uid: DEAL.TweenHelper.ShowCard(DEAL.Card)
-  name: ShowCard(Card)
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_ShowCard_DEAL_Card_
-  commentId: M:DEAL.TweenHelper.ShowCard(DEAL.Card)
-  fullName: DEAL.TweenHelper.ShowCard(DEAL.Card)
-  nameWithType: TweenHelper.ShowCard(Card)
+- uid: DEAL.TweenHelper.ShowCard(DEAL.BaseCard)
+  name: ShowCard(BaseCard)
+  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_ShowCard_DEAL_BaseCard_
+  commentId: M:DEAL.TweenHelper.ShowCard(DEAL.BaseCard)
+  fullName: DEAL.TweenHelper.ShowCard(DEAL.BaseCard)
+  nameWithType: TweenHelper.ShowCard(BaseCard)
 - uid: DEAL.TweenHelper.ShowCard*
   name: ShowCard
   href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_ShowCard_
@@ -6982,22 +7356,6 @@ references:
   isSpec: "True"
   fullName: DEAL.TweenHelper.ShowCard
   nameWithType: TweenHelper.ShowCard
-- uid: DEAL.TweenHelper.SmoothMove(UnityEngine.GameObject,UnityEngine.GameObject,System.Single,System.Single,System.Action)
-  name: SmoothMove(GameObject, GameObject, float, float, Action)
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_SmoothMove_UnityEngine_GameObject_UnityEngine_GameObject_System_Single_System_Single_System_Action_
-  commentId: M:DEAL.TweenHelper.SmoothMove(UnityEngine.GameObject,UnityEngine.GameObject,System.Single,System.Single,System.Action)
-  name.vb: SmoothMove(GameObject, GameObject, Single, Single, Action)
-  fullName: DEAL.TweenHelper.SmoothMove(UnityEngine.GameObject, UnityEngine.GameObject, float, float, System.Action)
-  fullName.vb: DEAL.TweenHelper.SmoothMove(UnityEngine.GameObject, UnityEngine.GameObject, Single, Single, System.Action)
-  nameWithType: TweenHelper.SmoothMove(GameObject, GameObject, float, float, Action)
-  nameWithType.vb: TweenHelper.SmoothMove(GameObject, GameObject, Single, Single, Action)
-- uid: DEAL.TweenHelper.SmoothMove*
-  name: SmoothMove
-  href: api/DEAL.TweenHelper.html#DEAL_TweenHelper_SmoothMove_
-  commentId: Overload:DEAL.TweenHelper.SmoothMove
-  isSpec: "True"
-  fullName: DEAL.TweenHelper.SmoothMove
-  nameWithType: TweenHelper.SmoothMove
 - uid: DEAL.UCE
   name: UCE
   href: api/DEAL.UCE.html
@@ -7366,12 +7724,12 @@ references:
   isSpec: "True"
   fullName: DEAL.UiDeck.OnRefreshDeck
   nameWithType: UiDeck.OnRefreshDeck
-- uid: DEAL.UiDeck.TransferCard(DEAL.Card,DEAL.CardHolder)
-  name: TransferCard(Card, CardHolder)
-  href: api/DEAL.UiDeck.html#DEAL_UiDeck_TransferCard_DEAL_Card_DEAL_CardHolder_
-  commentId: M:DEAL.UiDeck.TransferCard(DEAL.Card,DEAL.CardHolder)
-  fullName: DEAL.UiDeck.TransferCard(DEAL.Card, DEAL.CardHolder)
-  nameWithType: UiDeck.TransferCard(Card, CardHolder)
+- uid: DEAL.UiDeck.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  name: TransferCard(BaseCard, CardHolder)
+  href: api/DEAL.UiDeck.html#DEAL_UiDeck_TransferCard_DEAL_BaseCard_DEAL_CardHolder_
+  commentId: M:DEAL.UiDeck.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  fullName: DEAL.UiDeck.TransferCard(DEAL.BaseCard, DEAL.CardHolder)
+  nameWithType: UiDeck.TransferCard(BaseCard, CardHolder)
 - uid: DEAL.UiDeck.TransferCard*
   name: TransferCard
   href: api/DEAL.UiDeck.html#DEAL_UiDeck_TransferCard_
@@ -7379,15 +7737,15 @@ references:
   isSpec: "True"
   fullName: DEAL.UiDeck.TransferCard
   nameWithType: UiDeck.TransferCard
-- uid: DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name: TransferCards(IEnumerable<Card>, CardHolder)
-  href: api/DEAL.UiDeck.html#DEAL_UiDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_
-  commentId: M:DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name.vb: TransferCards(IEnumerable(Of Card), CardHolder)
-  fullName: DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable<DEAL.Card>, DEAL.CardHolder)
-  fullName.vb: DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.Card), DEAL.CardHolder)
-  nameWithType: UiDeck.TransferCards(IEnumerable<Card>, CardHolder)
-  nameWithType.vb: UiDeck.TransferCards(IEnumerable(Of Card), CardHolder)
+- uid: DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name: TransferCards(IEnumerable<BaseCard>, CardHolder)
+  href: api/DEAL.UiDeck.html#DEAL_UiDeck_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_
+  commentId: M:DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name.vb: TransferCards(IEnumerable(Of BaseCard), CardHolder)
+  fullName: DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable<DEAL.BaseCard>, DEAL.CardHolder)
+  fullName.vb: DEAL.UiDeck.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.BaseCard), DEAL.CardHolder)
+  nameWithType: UiDeck.TransferCards(IEnumerable<BaseCard>, CardHolder)
+  nameWithType.vb: UiDeck.TransferCards(IEnumerable(Of BaseCard), CardHolder)
 - uid: DEAL.UiDeck.TransferCards*
   name: TransferCards
   href: api/DEAL.UiDeck.html#DEAL_UiDeck_TransferCards_
@@ -7401,12 +7759,12 @@ references:
   commentId: T:DEAL.UiTile
   fullName: DEAL.UiTile
   nameWithType: UiTile
-- uid: DEAL.UiTile.TransferCard(DEAL.Card,DEAL.CardHolder)
-  name: TransferCard(Card, CardHolder)
-  href: api/DEAL.UiTile.html#DEAL_UiTile_TransferCard_DEAL_Card_DEAL_CardHolder_
-  commentId: M:DEAL.UiTile.TransferCard(DEAL.Card,DEAL.CardHolder)
-  fullName: DEAL.UiTile.TransferCard(DEAL.Card, DEAL.CardHolder)
-  nameWithType: UiTile.TransferCard(Card, CardHolder)
+- uid: DEAL.UiTile.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  name: TransferCard(BaseCard, CardHolder)
+  href: api/DEAL.UiTile.html#DEAL_UiTile_TransferCard_DEAL_BaseCard_DEAL_CardHolder_
+  commentId: M:DEAL.UiTile.TransferCard(DEAL.BaseCard,DEAL.CardHolder)
+  fullName: DEAL.UiTile.TransferCard(DEAL.BaseCard, DEAL.CardHolder)
+  nameWithType: UiTile.TransferCard(BaseCard, CardHolder)
 - uid: DEAL.UiTile.TransferCard*
   name: TransferCard
   href: api/DEAL.UiTile.html#DEAL_UiTile_TransferCard_
@@ -7414,15 +7772,15 @@ references:
   isSpec: "True"
   fullName: DEAL.UiTile.TransferCard
   nameWithType: UiTile.TransferCard
-- uid: DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name: TransferCards(IEnumerable<Card>, CardHolder)
-  href: api/DEAL.UiTile.html#DEAL_UiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_
-  commentId: M:DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)
-  name.vb: TransferCards(IEnumerable(Of Card), CardHolder)
-  fullName: DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable<DEAL.Card>, DEAL.CardHolder)
-  fullName.vb: DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.Card), DEAL.CardHolder)
-  nameWithType: UiTile.TransferCards(IEnumerable<Card>, CardHolder)
-  nameWithType.vb: UiTile.TransferCards(IEnumerable(Of Card), CardHolder)
+- uid: DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name: TransferCards(IEnumerable<BaseCard>, CardHolder)
+  href: api/DEAL.UiTile.html#DEAL_UiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_
+  commentId: M:DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)
+  name.vb: TransferCards(IEnumerable(Of BaseCard), CardHolder)
+  fullName: DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable<DEAL.BaseCard>, DEAL.CardHolder)
+  fullName.vb: DEAL.UiTile.TransferCards(System.Collections.Generic.IEnumerable(Of DEAL.BaseCard), DEAL.CardHolder)
+  nameWithType: UiTile.TransferCards(IEnumerable<BaseCard>, CardHolder)
+  nameWithType.vb: UiTile.TransferCards(IEnumerable(Of BaseCard), CardHolder)
 - uid: DEAL.UiTile.TransferCards*
   name: TransferCards
   href: api/DEAL.UiTile.html#DEAL_UiTile_TransferCards_

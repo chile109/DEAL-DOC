@@ -91,7 +91,7 @@
       <a class="xref" href="DEAL.ServerTile.html#DEAL_ServerTile_InitTile_DEAL_TileSO_">ServerTile.InitTile(TileSO)</a>
     </div>
     <div>
-      <a class="xref" href="DEAL.ServerTile.html#DEAL_ServerTile_OnCardCleared_DEAL_Card_">ServerTile.OnCardCleared(Card)</a>
+      <a class="xref" href="DEAL.ServerTile.html#DEAL_ServerTile_OnCardCleared_DEAL_BaseCard_">ServerTile.OnCardCleared(BaseCard)</a>
     </div>
     <div>
       <a class="xref" href="DEAL.ServerTile.html#DEAL_ServerTile_PickCards_DEAL_FSM_CardChoice_">ServerTile.PickCards(CardChoice)</a>
@@ -142,13 +142,13 @@
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnRefreshDeck">CardHolder.OnRefreshDeck()</a>
     </div>
     <div>
-      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_Card_">CardHolder.ClearOwnership(Card)</a>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClearOwnership_DEAL_BaseCard_">CardHolder.ClearOwnership(BaseCard)</a>
     </div>
     <div>
-      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_Card_">CardHolder.ClaimOwnership(Card)</a>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_ClaimOwnership_DEAL_BaseCard_">CardHolder.ClaimOwnership(BaseCard)</a>
     </div>
     <div>
-      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_Card_">CardHolder.OnCardClaimed(Card)</a>
+      <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_OnCardClaimed_DEAL_BaseCard_">CardHolder.OnCardClaimed(BaseCard)</a>
     </div>
     <div>
       <a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_SetCustomProperties_System_String_System_Int32_">CardHolder.SetCustomProperties(string, int)</a>
@@ -164,19 +164,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_ServerUiTile_TransferCard_DEAL_Card_DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.ServerUiTile.TransferCard(DEAL.Card%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_ServerUiTile_TransferCard_DEAL_BaseCard_DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.ServerUiTile.TransferCard(DEAL.BaseCard%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/ServerUiTile.cs/#L9">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/ServerUiTile.cs/#L9">View Source</a>
   </span>
   <a id="DEAL_ServerUiTile_TransferCard_" data-uid="DEAL.ServerUiTile.TransferCard*"></a>
-  <h4 id="DEAL_ServerUiTile_TransferCard_DEAL_Card_DEAL_CardHolder_" data-uid="DEAL.ServerUiTile.TransferCard(DEAL.Card,DEAL.CardHolder)">TransferCard(Card, CardHolder)</h4>
+  <h4 id="DEAL_ServerUiTile_TransferCard_DEAL_BaseCard_DEAL_CardHolder_" data-uid="DEAL.ServerUiTile.TransferCard(DEAL.BaseCard,DEAL.CardHolder)">TransferCard(BaseCard, CardHolder)</h4>
   <div class="markdown level1 summary"><p>Transfer a single card to another holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void TransferCard(Card c, CardHolder newOwner)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void TransferCard(BaseCard c, CardHolder newOwner)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -189,7 +189,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DEAL.Card.html">Card</a></td>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>The card to transfer</p>
 </td>
@@ -203,22 +203,22 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_Card_DEAL_CardHolder_">CardHolder.TransferCard(Card, CardHolder)</a></div>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCard_DEAL_BaseCard_DEAL_CardHolder_">CardHolder.TransferCard(BaseCard, CardHolder)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_ServerUiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable%7BDEAL.Card%7D%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_ServerUiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable%7BDEAL.BaseCard%7D%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/ServerUiTile.cs/#L22">View Source</a>
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/ServerUiTile.cs/#L22">View Source</a>
   </span>
   <a id="DEAL_ServerUiTile_TransferCards_" data-uid="DEAL.ServerUiTile.TransferCards*"></a>
-  <h4 id="DEAL_ServerUiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_" data-uid="DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.Card},DEAL.CardHolder)">TransferCards(IEnumerable&lt;Card&gt;, CardHolder)</h4>
+  <h4 id="DEAL_ServerUiTile_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_" data-uid="DEAL.ServerUiTile.TransferCards(System.Collections.Generic.IEnumerable{DEAL.BaseCard},DEAL.CardHolder)">TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)</h4>
   <div class="markdown level1 summary"><p>Transfer a group of cards to another holder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void TransferCards(IEnumerable&lt;Card&gt; cards, CardHolder newOwner)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void TransferCards(IEnumerable&lt;BaseCard&gt; cards, CardHolder newOwner)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -231,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.Card.html">Card</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
         <td><span class="parametername">cards</span></td>
         <td><p>The cards to transfer</p>
 </td>
@@ -245,7 +245,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_Card__DEAL_CardHolder_">CardHolder.TransferCards(IEnumerable&lt;Card&gt;, CardHolder)</a></div>
+  <div><a class="xref" href="DEAL.CardHolder.html#DEAL_CardHolder_TransferCards_System_Collections_Generic_IEnumerable_DEAL_BaseCard__DEAL_CardHolder_">CardHolder.TransferCards(IEnumerable&lt;BaseCard&gt;, CardHolder)</a></div>
 
 </article>
           </div>
@@ -255,10 +255,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/new/kevin/decoupling-upgrade-2021.3.39f1/apiSpec/new?filename=DEAL_ServerUiTile.md&amp;value=---%0Auid%3A%20DEAL.ServerUiTile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_ServerUiTile.md&amp;value=---%0Auid%3A%20DEAL.ServerUiTile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chile109/UCEngine/blob/kevin/decoupling-upgrade-2021.3.39f1/Packages/DEAL/Core/Runtime/Component/ServerUiTile.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Component/ServerUiTile.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
