@@ -1,6 +1,6 @@
 ---
 title: Common Usage FSM SO
-description: This document show the FSM SO common usage for game 99
+description: This document show the FSM SO common usage
 author: Kevin
 date: 2023-03-22
 ---
@@ -8,31 +8,54 @@ date: 2023-03-22
 # Common Usage
 
 The Card State Machine is a system that manages the actions ScriptableObject taken during a card game.
-Here show the usage of pre-defined FSM SO in example game 99.
 
-## Action
+A `ScriptableStateMachine` consists of a list of `ScriptableState` and `StateTransition` SOs. Each `ScriptableState` contains a list of `ScriptableAction` SOs that are executed when the state is entered, exited, or updated. Each `StateTransition` contains a `ScriptableCondition` SO that checks if the transition should be made from the origin state to the true state or false state.
+
+## Default Action Types
 
 - `ChangePlayerAction`: Rotate to the player specified by `ActionActor` enum and params
-- `DealAction`, `DrawAction`: Deal means actor will give out card to target, Draw means actor will pick card from target.
-- `PreAction`, `PostAction`: During PreAction, the action will acquire the involved decks and players, then request `CardStateMachineComponent` to WaitTurnLock until the actor has made a valid `CardChoice`, which will then be executed by PostAction.
+- `DealAction`, `DrawAction`: Deal means actor will give out card to target, Draw means actor will pick card from target.
+- `TrasnsferAction`: Similar to Deal/Draw, but for transferring chips.
+- `PreAction`, `PostAction`: During PreAction, the action will acquire the involved decks and players, then request `CardStateMachineComponent` to WaitTurnLock until the actor has made a valid `CardChoice`, which will then be executed by PostAction.
 - `CardChoice`: Serializable structure that can be set to request the state machine to host a **Card Pick**.
   - `count`: How many cards should be picked
-  - `rule`: Enum CardChoiceRule that records the pick rules (like *FromTop*, *Random*, *Specific*)
+  - `rule`: Enum CardChoiceRule that records the pick rules (like *FromTop*, *Random*, *Specific*)
   - `isRevealedToPicker`: Should the picker see the cards when picking?
+- `EliminatePlayerAction`: Eliminate the player from the game
+- `ModifyPlayerPropertyAction`: Modify the target player's property with reference player's property
+- `UpdatePlayerPropertyAction`: Update the target player's property with the given value
+- `ShowDialogAction`: Pop up a dialog to selected players
+- `UpdateStateEventAction`: Update the state machine's state
 
-## Condition
+## Default Condition Types
 
-- `EndOfTurnCondition` : check if state is locked by WaitTurnLock
-- `AlwaysTrueCondition` : always passes, used for transition phase
-- `CheckDeckCountCondition` : checks if given actor has given amount of cards, normally used in intial deal
-  - Example : `99_CheckAllPlayer5Cards_Condition` Checks if all players have 5 cards, so that the game can start
+- `EndOfTurnCondition`: check if state is locked by WaitTurnLock
+- `EndOfSystemLockCondition`: check if state is locked by WaitSystemLock
+- `AlwaysTrueCondition`: always passes, used for transition phase
+- `CheckDeckCountCondition`: checks if given actor has given amount of cards, normally used in intial deal
+  - Example usage: Checks if all players have 5 cards, so that the game can start, else continue dealing cards to players
+- `CheckDefeatedCondition`: checks if the specific player has been defeated
+- `CheckGameOverCondition`: set the amount of `maxEliminatedPlayerCount`, if the amount of eliminated players is equal to or greater than `maxEliminatedPlayerCount`, the game is over
+- `CheckPlayerPropertyCondition`: check target player's property against the given value `rawPropertyValue`
+- `ComparePlayerPropertyCondition`: compare the target player's property with the reference player's property
+- `CompareScoreCondition`: compare the subject player's card score with the control player's card score
+  - `XXXCheckScale`: check only the cards from player's buffer, or check the whole deck
+    - Buffer: When player selects one or many cards from their deck, but hasn't perform any actual transfer yet (for example: about to deal), these cards are temporarily placed in the buffer
+  - `XXXCounter`: method to count the scores
+    - `SumNumber`: sum all the card numbers
+    - `Max`: find the max number
+    - `Min`: find the min number
+    - `MostOccuredNumber`: find the most occurred number
+    - `Average`: calculate the average number
+    - `Mid`: find the middle number
+    - `GivenMinusSumNumber`: given score (stored in `CounterParams`) minus the sum of all cards
+    - `PokerEval`: evaluate the poker hand using external `PHEval` library
+    - `BaccarateRangeSum`: sum the card numbers using Baccarate rules
+- `MatchScoreMultipleCondition`: check subject player's card score against a group set of rules
+  - Example usage: Check if the player's score is larger than 3 and smaller than 6
+- `WaitEventCondition`: wait until a state event is triggered locally
+- `WaitForGroupEventCondition`: wait until a state event is triggered for all members in selected group
 
-## State
+## Extend usage
 
-- `99_Inital_State` : Initial state that will check if players all have 5 cards. If true -> start state, else -> initial deal state
-- `99_InitialDeal_State` : The initial state to deal 1 single card per entry to the current player
-- `99_Empty_State` : Used for empty state behaviour
-- `99_Start_State` : The beginning of player turns
-- `99_PlayerDraw_State` : Player draws a card from tile
-- `99_PlayerTurn_State` : Player's turn to pick a card to deal to the counting deck
-- `99_Validation_State` : Verify if this game is over based on whether next player can make any moves, should transition to GameOver State and calculate the winner/loser
+If you feel like customizing the action or condition, you can create your own `ScriptableAction` or `ScriptableCondition` SOs. Check out the `ExtendFSM` article for more information.
