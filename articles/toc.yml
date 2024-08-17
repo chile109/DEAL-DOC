@@ -1,12 +1,12 @@
 items:
   - name: Tutorial
     items:
-      - name: DEAL FSM Introduction 
-        href: FSM_Introdoction.md
       - name: Common Usage
         href: CommonUsageFSM.md
       - name: How to extend DEAL FSM
         href: ExtendFSM.md
+      - name: DEAL FSM Introduction 
+        href: FSM_Introdoction.md
   - name: Card Game Design
     items:
       - name: General Mechanism
