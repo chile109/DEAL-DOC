@@ -504,6 +504,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.Action.ClearDeckAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.Action.ClearDeckAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DEAL.FSM.Action.CombineEvalScoreAction.Argument.yml",
       "output": {
         ".html": {
@@ -1661,6 +1671,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/ExtendFSM.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/FSM_Introdoction.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/FSM_Introdoction.html"
         }
       },
       "version": ""

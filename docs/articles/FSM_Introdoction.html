@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>DEAL FSM Introduction </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="DEAL FSM Introduction ">
+    
+    <meta name="description" content="An introduction to DEAL FSM">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="what-is-a-finite-state-machine">What is a Finite State Machine?</h1>
+
+<p>A <strong>Finite State Machine (FSM)</strong> is a widely-used game design concept and a mathematical model of computation. In essence, it's an abstract machine that can be in exactly one of a finite number of states at any given time.</p>
+<h2 id="real-world-example-a-door">Real-World Example: A Door</h2>
+<p>Consider a simple real-world example: a door. A door can be in an &quot;opened&quot; state or a &quot;closed&quot; state. The FSM helps define these states and the transitions between them.</p>
+<h3 id="states">States:</h3>
+<ul>
+<li><strong>Opened</strong>: The door is fully open.</li>
+<li><strong>Closed</strong>: The door is fully closed.</li>
+</ul>
+<h3 id="transition">Transition:</h3>
+<ul>
+<li><strong>Condition</strong>: A transition occurs based on an input, such as pressing a button or sensing motion. For instance, if a motion sensor detects someone approaching, it triggers the condition to transition from the &quot;Closed&quot; state to the &quot;Opened&quot; state. Conversely, if no motion is detected for a certain period, the door transitions back to the &quot;Closed&quot; state.</li>
+</ul>
+<h3 id="summary">Summary:</h3>
+<p>In this example, the FSM manages the door’s behavior, allowing it to switch between &quot;Opened&quot; and &quot;Closed&quot; based on specific conditions (like motion detection). Transitions dictate when and how the door moves between these states, ensuring a smooth operation based on real-world inputs.</p>
+<p>For more details, please refer to the <a href="https://en.wikipedia.org/wiki/Finite-state_machine">Wikipedia page</a>.</p>
+<h1 id="basic-fsm-components-in-deal">Basic FSM Components in DEAL</h1>
+<p>The DEAL system’s Basic FSM is composed of four main Scriptable Objects (SO): <strong>State Machine</strong>, <strong>State</strong>, <strong>Action</strong>, and <strong>Condition</strong>. Each of these components can be fully customized to fit your game's needs.</p>
+<p>Game designers can define any turn-based game using several states. The relationship between the components is structured as follows:<br>
+<code>ScriptableStateMachine -&gt; ScriptableState -&gt; ScriptableCondition -&gt; ScriptableAction</code></p>
+<h2 id="scriptable-statemachine">Scriptable StateMachine</h2>
+<p>This is the core FSM Scriptable Object (SO) that holds a list of transitions, each leading to different Scriptable States. The <code>ScriptableStateMachine</code> SO is the primary data source for the <code>CardStateMachineComponent</code> class, which executes the entire game flow.</p>
+<p>Each transition element includes four variables:</p>
+<ol>
+<li><strong>Origin State (ScriptableState SO)</strong>: This is the current state (required).</li>
+<li><strong>Condition (ScriptableCondition SO)</strong>: This checks whether the transition should occur (required).</li>
+<li><strong>True State (ScriptableState SO)</strong>: The state to transition to if the condition is met (optional).</li>
+<li><strong>False State (ScriptableState SO)</strong>: The state to transition to if the condition is not met (optional).</li>
+</ol>
+<p>The Condition returns a boolean value, determining whether to transition to the next state. If the next state is not specified, the FSM will remain in the Origin State until a state change occurs.</p>
+<h2 id="scriptable-state">Scriptable State</h2>
+<p>This is the core structure representing a state within the FSM, responsible for executing every action listed in the target <code>ScriptableAction[]</code> array. Each <code>ScriptableState</code> can trigger different actions at various points:</p>
+<ul>
+<li><strong>OnEnterState</strong>: Actions to be executed when entering the state.</li>
+<li><strong>OnExitState</strong>: Actions to be executed when leaving the state.</li>
+<li><strong>OnUpdateState</strong>: Actions to be executed during each frame while in the state.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>State</strong></th>
+<th>OnEnterState</th>
+<th>OnExitState</th>
+<th>OnUpdateState</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Action List</strong></td>
+<td><em>entryActions</em></td>
+<td><em>exitActions</em></td>
+<td><em>updateActions</em></td>
+</tr>
+<tr>
+<td><strong>Invoke Timing</strong></td>
+<td>When entering the state</td>
+<td>When leaving the state</td>
+<td>Every frame during the state</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scriptable-action">Scriptable Action</h2>
+<p>Scriptable Actions define the behaviors that should be performed in the game, such as card animations or displaying dialogs.</p>
+<p>For example, <code>TileDeal_1Card_PreAction</code> will pick one card from the tile. This action includes three variables:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Variable</strong></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Actor</strong></td>
+<td>The target performer (e.g., Tile)</td>
+</tr>
+<tr>
+<td><strong>Actor Params</strong></td>
+<td>Parameters for the Actor (e.g., Tile Number)</td>
+</tr>
+<tr>
+<td><strong>Card Choice</strong></td>
+<td>Options for card count, draw rule, and visibility (Is Revealed)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scriptable-condition">Scriptable Condition</h2>
+<p>Scriptable Conditions determine whether the FSM should transition from one state to another based on specific conditions.</p>
+<p>For example, the <code>WaitChangePlayer_Condition</code> will trigger a state transition upon receiving the <code>ChangePlayer</code> event.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Variable</strong></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Event Name</strong></td>
+<td>The event that triggers the condition (e.g., ChangePlayer)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

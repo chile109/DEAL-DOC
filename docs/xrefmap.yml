@@ -88,12 +88,15 @@ references:
   commentId: F:DEAL.Avatar.NameText
   fullName: DEAL.Avatar.NameText
   nameWithType: Avatar.NameText
-- uid: DEAL.Avatar.OnDialogConfirm
-  name: OnDialogConfirm()
-  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogConfirm
-  commentId: M:DEAL.Avatar.OnDialogConfirm
-  fullName: DEAL.Avatar.OnDialogConfirm()
-  nameWithType: Avatar.OnDialogConfirm()
+- uid: DEAL.Avatar.OnDialogConfirm(System.String)
+  name: OnDialogConfirm(string)
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogConfirm_System_String_
+  commentId: M:DEAL.Avatar.OnDialogConfirm(System.String)
+  name.vb: OnDialogConfirm(String)
+  fullName: DEAL.Avatar.OnDialogConfirm(string)
+  fullName.vb: DEAL.Avatar.OnDialogConfirm(String)
+  nameWithType: Avatar.OnDialogConfirm(string)
+  nameWithType.vb: Avatar.OnDialogConfirm(String)
 - uid: DEAL.Avatar.OnDialogConfirm*
   name: OnDialogConfirm
   href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogConfirm_
@@ -101,15 +104,15 @@ references:
   isSpec: "True"
   fullName: DEAL.Avatar.OnDialogConfirm
   nameWithType: Avatar.OnDialogConfirm
-- uid: DEAL.Avatar.OnDialogSelect(System.Int32)
-  name: OnDialogSelect(int)
-  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogSelect_System_Int32_
-  commentId: M:DEAL.Avatar.OnDialogSelect(System.Int32)
-  name.vb: OnDialogSelect(Integer)
-  fullName: DEAL.Avatar.OnDialogSelect(int)
-  fullName.vb: DEAL.Avatar.OnDialogSelect(Integer)
-  nameWithType: Avatar.OnDialogSelect(int)
-  nameWithType.vb: Avatar.OnDialogSelect(Integer)
+- uid: DEAL.Avatar.OnDialogSelect(System.String,System.Int32)
+  name: OnDialogSelect(string, int)
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogSelect_System_String_System_Int32_
+  commentId: M:DEAL.Avatar.OnDialogSelect(System.String,System.Int32)
+  name.vb: OnDialogSelect(String, Integer)
+  fullName: DEAL.Avatar.OnDialogSelect(string, int)
+  fullName.vb: DEAL.Avatar.OnDialogSelect(String, Integer)
+  nameWithType: Avatar.OnDialogSelect(string, int)
+  nameWithType.vb: Avatar.OnDialogSelect(String, Integer)
 - uid: DEAL.Avatar.OnDialogSelect*
   name: OnDialogSelect
   href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogSelect_
@@ -3443,6 +3446,25 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.Action.ChangePlayerAction.Execute
   nameWithType: ChangePlayerAction.Execute
+- uid: DEAL.FSM.Action.ClearDeckAction
+  name: ClearDeckAction
+  href: api/DEAL.FSM.Action.ClearDeckAction.html
+  commentId: T:DEAL.FSM.Action.ClearDeckAction
+  fullName: DEAL.FSM.Action.ClearDeckAction
+  nameWithType: ClearDeckAction
+- uid: DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.CardStateMachineComponent)
+  name: Execute(CardStateMachineComponent)
+  href: api/DEAL.FSM.Action.ClearDeckAction.html#DEAL_FSM_Action_ClearDeckAction_Execute_DEAL_FSM_CardStateMachineComponent_
+  commentId: M:DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.CardStateMachineComponent)
+  fullName: DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.CardStateMachineComponent)
+  nameWithType: ClearDeckAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.ClearDeckAction.Execute*
+  name: Execute
+  href: api/DEAL.FSM.Action.ClearDeckAction.html#DEAL_FSM_Action_ClearDeckAction_Execute_
+  commentId: Overload:DEAL.FSM.Action.ClearDeckAction.Execute
+  isSpec: "True"
+  fullName: DEAL.FSM.Action.ClearDeckAction.Execute
+  nameWithType: ClearDeckAction.Execute
 - uid: DEAL.FSM.Action.CombineEvalScoreAction
   name: CombineEvalScoreAction
   href: api/DEAL.FSM.Action.CombineEvalScoreAction.html
@@ -5719,19 +5741,6 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.ScriptableStateMachine.CheckTransitions
   nameWithType: ScriptableStateMachine.CheckTransitions
-- uid: DEAL.FSM.ScriptableStateMachine.EmptyState
-  name: EmptyState
-  href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_EmptyState
-  commentId: P:DEAL.FSM.ScriptableStateMachine.EmptyState
-  fullName: DEAL.FSM.ScriptableStateMachine.EmptyState
-  nameWithType: ScriptableStateMachine.EmptyState
-- uid: DEAL.FSM.ScriptableStateMachine.EmptyState*
-  name: EmptyState
-  href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_EmptyState_
-  commentId: Overload:DEAL.FSM.ScriptableStateMachine.EmptyState
-  isSpec: "True"
-  fullName: DEAL.FSM.ScriptableStateMachine.EmptyState
-  nameWithType: ScriptableStateMachine.EmptyState
 - uid: DEAL.FSM.ScriptableStateMachine.InitialState
   name: InitialState
   href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_InitialState
@@ -5745,18 +5754,6 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.ScriptableStateMachine.InitialState
   nameWithType: ScriptableStateMachine.InitialState
-- uid: DEAL.FSM.ScriptableStateMachine.nodeTransitions
-  name: nodeTransitions
-  href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_nodeTransitions
-  commentId: F:DEAL.FSM.ScriptableStateMachine.nodeTransitions
-  fullName: DEAL.FSM.ScriptableStateMachine.nodeTransitions
-  nameWithType: ScriptableStateMachine.nodeTransitions
-- uid: DEAL.FSM.ScriptableStateMachine.nodes
-  name: nodes
-  href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_nodes
-  commentId: F:DEAL.FSM.ScriptableStateMachine.nodes
-  fullName: DEAL.FSM.ScriptableStateMachine.nodes
-  nameWithType: ScriptableStateMachine.nodes
 - uid: DEAL.FSM.StateNode
   name: StateNode
   href: api/DEAL.FSM.StateNode.html
