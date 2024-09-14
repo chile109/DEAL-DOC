@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Quick Start </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Quick Start ">
+    
+    <meta name="description" content="Step-by-step guide to creating a Unity card game using DEAL Toolkit">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="quick-start">Quick Start</h1>
+
+<p>This guide will walk you through the essential steps to create a <strong>High Card</strong> game in Unity using the <strong>DEAL Toolkit</strong>. By the end, you'll have a fully functional card game and a solid understanding of how to use the DEAL framework effectively.</p>
+<h2 id="define-high-card-fsm">Define High Card FSM</h2>
+<p><img src="../images/FSM.png" alt="FSM Diagram"></p>
+<p>In this <strong>High Card</strong> game, the player guesses who will win—either the <strong>Player</strong> or the <strong>Banker</strong>. After the cards are revealed, the game checks if the player's guess was correct.</p>
+<p>You can either create a new FSM Scriptable Object (SO) or use the provided <code>HighCard_FSMSO</code> located in <code>Sample/DataSO</code>.</p>
+<p>The FSM consists of 7 states, each with specific functions, explained below:</p>
+<hr>
+<h2 id="1-dialog-select-state">1. Dialog Select State</h2>
+<ul>
+<li><strong>Overview</strong>: The player selects who they think will win: <strong>Player</strong> or <strong>Banker</strong>. This state manages the selection process.</li>
+</ul>
+<h3 id="steps">Steps:</h3>
+<ol>
+<li>Show a dialog for the player to make their choice. Create an action Scriptable Object (SO) using <code>ShowDialogAction</code>. Reference the <code>SelectWinnerDialog_Action</code> and add it to the <strong>Entry Actions</strong> of this state.</li>
+<li>Use the <code>ChoosePlayer_Condition</code> SO to check if the player selected &quot;Player&quot; (index 0).</li>
+</ol>
+<hr>
+<h2 id="2-show-down-state">2. Show Down State</h2>
+<ul>
+<li><strong>Overview</strong>: This state reveals the cards and determines the winner for the current round.</li>
+</ul>
+<h3 id="steps-1">Steps:</h3>
+<ol>
+<li><p>Deal 1 card to both the <strong>Player</strong> and <strong>Banker</strong>. Add the following 4 actions to the Entry Actions:</p>
+<ul>
+<li><code>TileDraw1Action</code></li>
+<li><code>TileDealToPlayer_PostAction</code></li>
+<li><code>TileDraw1Action</code></li>
+<li><code>TileDealToBanker_PostAction</code></li>
+</ul>
+</li>
+<li><p>Add the <code>CountDown3sAction</code> to wait for the card flip animation to complete (3 seconds).</p>
+</li>
+<li><p>Unlock the FSM using <code>EndOfSystemLock_Condition</code> after 3 seconds.</p>
+</li>
+</ol>
+<hr>
+<h2 id="3-result-validate-state">3. Result Validate State</h2>
+<ul>
+<li><strong>Overview</strong>: This state validates whether the player's selection matches the actual result of the showdown.</li>
+</ul>
+<h3 id="steps-2">Steps:</h3>
+<ol>
+<li>Use <code>ChoosePlayer_Condition</code> SO to verify if the player’s selection (Player or Banker) was correct.</li>
+</ol>
+<hr>
+<h2 id="4-choose-player-state">4. Choose Player State</h2>
+<ul>
+<li><strong>Overview</strong>: This state checks if the <strong>Player</strong>’s card value is higher than the <strong>Banker</strong>’s, determining if the guess was correct.</li>
+</ul>
+<h3 id="steps-3">Steps:</h3>
+<ol>
+<li>Use the <code>PlayerWin_Condition</code> SO to check if the Player’s card score is higher than the Banker’s.</li>
+</ol>
+<hr>
+<h2 id="5-choose-banker-state">5. Choose Banker State</h2>
+<ul>
+<li><strong>Overview</strong>: This state checks if the <strong>Banker</strong>’s card value is higher than the <strong>Player</strong>’s, determining if the Banker wins.</li>
+</ul>
+<h3 id="steps-4">Steps:</h3>
+<ol>
+<li>Use the <code>BankerWin_Condition</code> SO to check if the Banker’s card score is higher than the Player’s.</li>
+</ol>
+<hr>
+<h2 id="6-correct-state">6. Correct State</h2>
+<ul>
+<li><strong>Overview</strong>: If the player guessed correctly, this state triggers a dialog displaying the winning result.</li>
+</ul>
+<h3 id="steps-5">Steps:</h3>
+<ol>
+<li>Add the <code>ShowCorrectDialogAction</code> SO to the <strong>Entry Actions</strong> to display the correct result.</li>
+</ol>
+<hr>
+<h2 id="7-wrong-state">7. Wrong State</h2>
+<ul>
+<li><strong>Overview</strong>: If the player guessed wrong, this state triggers a dialog displaying the losing result.</li>
+</ul>
+<h3 id="steps-6">Steps:</h3>
+<ol>
+<li>Add the <code>ShowWrongDialogAction</code> SO to the <strong>Entry Actions</strong> to display the incorrect result.</li>
+</ol>
+<hr>
+<h2 id="global-info-configuration">Global Info Configuration</h2>
+<p><img src="../images/GlobalInfo.png" alt="Global Info Config"></p>
+<p>The <strong>Global Info</strong> Scriptable Object (SO) holds the global configuration settings for the game, including details like the game name, FSM, player settings, and any necessary global variables.</p>
+<h3 id="steps-7">Steps:</h3>
+<ol>
+<li>Create a <strong>Global Info</strong> SO by right-clicking in the Project window and selecting <code>DealToolkit &gt; Global Info</code>. Name it <code>HighCard_GlobalInfo</code>.</li>
+<li>Set the <strong>Max Player Amount</strong> to 1 (for a single-player game).</li>
+<li>Set the <strong>Tile/Deck Settings</strong>:
+<ul>
+<li>Use one <code>BasicTileSO</code> for drawing cards.</li>
+<li>Use two <code>BasicDeckSO</code> (one for Player, one for Banker) for placing cards.</li>
+</ul>
+</li>
+<li>Set the <strong>Avatar Prefab Path</strong> and <strong>Card Prefab Path</strong>:
+<ul>
+<li>For avatars, use the <code>item_PlayerInfo</code> prefab.</li>
+<li>For cards, use the <code>item_Card</code> prefab.</li>
+</ul>
+</li>
+<li>Set the <strong>State Machine</strong> to <code>HighCard_FSMSO</code> for the game FSM logic.</li>
+</ol>
+<hr>
+<h2 id="scene-management">Scene Management</h2>
+<p><img src="../images/GameTable.png" alt="Game Table Setup"></p>
+<h3 id="steps-8">Steps:</h3>
+<ol>
+<li>Create a new scene and add the following prefabs from the sample resources folder:
+<ul>
+<li><code>DealEngine</code> Prefab</li>
+<li><code>Table Canvas</code> Prefab</li>
+<li><code>Player Canvas</code> Prefab</li>
+</ul>
+</li>
+<li>Assign the <code>HighCard_GlobalInfo</code> SO to the <strong>Global Info SO</strong> reference in the <code>DealEngine</code> component.</li>
+<li>Assign the <strong>Table Canvas</strong> to the <code>Table</code> reference in the <code>DealEngine</code> component.</li>
+<li>Assign the <strong>Player Canvas</strong> to the <code>Dialog Manager</code> reference in the <code>ViewManager</code> component.</li>
+</ol>
+<hr>
+<blockquote>
+<p>Congratulations! You’ve successfully set up the <strong>High Card</strong> game using the DEAL Toolkit. Your game is now ready to play, and you’ve learned how to configure both the FSM and the global game settings.</p>
+</blockquote>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

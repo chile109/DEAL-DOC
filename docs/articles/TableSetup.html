@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>DEAL Table Template </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="DEAL Table Template ">
+    
+    <meta name="description" content="An introduction to DEAL table">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h2 id="how-to-set-up-game-table">How to Set Up Game Table</h2>
+<p>This guide explains how to configure the <strong>game table</strong> in your card game using the DEAL Toolkit. By following these steps, you'll create the main table layout, which includes components like avatars, seats, tiles, and decks.</p>
+<h2 id="table-canvas">Table Canvas</h2>
+<p><img src="../images/BaseTable.png" alt="Base Table"></p>
+<ul>
+<li><strong>Overview</strong>: The game table consists of essential components like <strong>avatars</strong>, <strong>seats</strong>, <strong>tiles</strong>, and <strong>decks</strong>. These elements are managed by the <code>BaseTable</code> component within the <strong>Deal Engine</strong>.</li>
+</ul>
+<h3 id="key-components">Key Components:</h3>
+<ol>
+<li><strong>System Tile Array (Base Tile)</strong>: Public card tiles on the table (e.g., community or shared tiles).</li>
+<li><strong>System Deck Array (Base Deck)</strong>: Public card decks on the table (e.g., shared community decks).</li>
+<li><strong>User Deck Array (Base Deck)</strong>: Personal card decks assigned to individual seats (e.g., player hand decks).</li>
+<li><strong>Seat Array (Base Seat)</strong>: A list of player seats used to join the table.</li>
+</ol>
+<hr>
+<h2 id="generate-cards-data">Generate Cards Data</h2>
+<ul>
+<li><strong>Overview</strong>: To create cards, you need to define <strong>Scriptable Objects (SOs)</strong>. These SOs will define the unique attributes and functionalities for each card, such as its appearance and card value.</li>
+</ul>
+<h3 id="steps">Steps:</h3>
+<ol>
+<li>In Unity, right-click in the <strong>Project</strong> window and navigate to <code>Create &gt; DealToolkit &gt; Card Data</code>.</li>
+<li>Define the properties of the cards, including the <strong>Index</strong>, <strong>Suit</strong>, and <strong>Number</strong>.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>Argument</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Index</strong></td>
+<td>The unique index of the card, used to identify it.</td>
+</tr>
+<tr>
+<td><strong>Card Graphic</strong></td>
+<td>The visual display of the card, including both the front and back.</td>
+</tr>
+<tr>
+<td><strong>Card Data</strong></td>
+<td>The card's poker data, including suit and number.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>DEAL provides a set of basic poker card data in the <code>DEAL/Core/CommonSO/BasicCardSO</code> folder.</p>
+</blockquote>
+<hr>
+<h2 id="generate-tile-and-deck-scriptable-objects">Generate Tile and Deck Scriptable Objects</h2>
+<ul>
+<li><strong>Overview</strong>: <strong>Tiles</strong> and <strong>decks</strong> are foundational elements in your card game. Tiles represent the locations on the table where cards can be placed, while decks are collections of cards that players or the system can draw from.</li>
+</ul>
+<h3 id="steps-1">Steps:</h3>
+<ol>
+<li><p><strong>Create Tiles</strong>:</p>
+<ul>
+<li>In the <strong>Project</strong> window, right-click and navigate to <code>Create &gt; DealToolkit &gt; Tile Data</code>.</li>
+<li>Edit the Tile data and link all 52 poker card data to the Tile's <strong>Card Pool</strong>. Alternatively, you can use the pre-existing <code>BasicTileSO</code> from the <code>DEAL/Core/CommonSO</code> folder.</li>
+</ul>
+</li>
+<li><p><strong>Create Decks</strong>:</p>
+<ul>
+<li>Create the <strong>Player</strong> and <strong>Banker</strong> decks by navigating to <code>Create &gt; DealToolkit &gt; Deck Data</code>.</li>
+<li>In this specific case, no card data is required for the <strong>Deck Card Pool</strong>, so you can use the pre-existing <code>BasicDeckSO</code> located in the <code>DEAL/Core/CommonSO</code> folder.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="additional-notes">Additional Notes:</h3>
+<ul>
+<li><strong>Tile and Deck Settings</strong>: The tiles and decks you configure are linked directly to the game's visual and functional flow. Ensure you have properly assigned the correct data (like card pools) to these objects for a smooth game setup.</li>
+<li><strong>Component Relationships</strong>: The <strong>BaseTable</strong> component ensures that all elements (seats, decks, and tiles) work together seamlessly. Be sure to assign the appropriate arrays and references in the component inspector.</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -44,6 +44,12 @@ references:
   commentId: T:DEAL.Avatar
   fullName: DEAL.Avatar
   nameWithType: Avatar
+- uid: DEAL.Avatar.AvatarType
+  name: AvatarType
+  href: api/DEAL.Avatar.html#DEAL_Avatar_AvatarType
+  commentId: F:DEAL.Avatar.AvatarType
+  fullName: DEAL.Avatar.AvatarType
+  nameWithType: Avatar.AvatarType
 - uid: DEAL.Avatar.Eliminate
   name: Eliminate()
   href: api/DEAL.Avatar.html#DEAL_Avatar_Eliminate
@@ -60,7 +66,14 @@ references:
 - uid: DEAL.Avatar.IsAI
   name: IsAI
   href: api/DEAL.Avatar.html#DEAL_Avatar_IsAI
-  commentId: F:DEAL.Avatar.IsAI
+  commentId: P:DEAL.Avatar.IsAI
+  fullName: DEAL.Avatar.IsAI
+  nameWithType: Avatar.IsAI
+- uid: DEAL.Avatar.IsAI*
+  name: IsAI
+  href: api/DEAL.Avatar.html#DEAL_Avatar_IsAI_
+  commentId: Overload:DEAL.Avatar.IsAI
+  isSpec: "True"
   fullName: DEAL.Avatar.IsAI
   nameWithType: Avatar.IsAI
 - uid: DEAL.Avatar.IsEliminated
@@ -88,38 +101,32 @@ references:
   commentId: F:DEAL.Avatar.NameText
   fullName: DEAL.Avatar.NameText
   nameWithType: Avatar.NameText
-- uid: DEAL.Avatar.OnDialogConfirm(System.String)
-  name: OnDialogConfirm(string)
-  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogConfirm_System_String_
-  commentId: M:DEAL.Avatar.OnDialogConfirm(System.String)
-  name.vb: OnDialogConfirm(String)
-  fullName: DEAL.Avatar.OnDialogConfirm(string)
-  fullName.vb: DEAL.Avatar.OnDialogConfirm(String)
-  nameWithType: Avatar.OnDialogConfirm(string)
-  nameWithType.vb: Avatar.OnDialogConfirm(String)
-- uid: DEAL.Avatar.OnDialogConfirm*
-  name: OnDialogConfirm
-  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogConfirm_
-  commentId: Overload:DEAL.Avatar.OnDialogConfirm
+- uid: DEAL.Avatar.OnDialogSingleProperty(DEAL.Event.PopDialogData,DEAL.UI.DialogProperty)
+  name: OnDialogSingleProperty(PopDialogData, DialogProperty)
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogSingleProperty_DEAL_Event_PopDialogData_DEAL_UI_DialogProperty_
+  commentId: M:DEAL.Avatar.OnDialogSingleProperty(DEAL.Event.PopDialogData,DEAL.UI.DialogProperty)
+  fullName: DEAL.Avatar.OnDialogSingleProperty(DEAL.Event.PopDialogData, DEAL.UI.DialogProperty)
+  nameWithType: Avatar.OnDialogSingleProperty(PopDialogData, DialogProperty)
+- uid: DEAL.Avatar.OnDialogSingleProperty*
+  name: OnDialogSingleProperty
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogSingleProperty_
+  commentId: Overload:DEAL.Avatar.OnDialogSingleProperty
   isSpec: "True"
-  fullName: DEAL.Avatar.OnDialogConfirm
-  nameWithType: Avatar.OnDialogConfirm
-- uid: DEAL.Avatar.OnDialogSelect(System.String,System.Int32)
-  name: OnDialogSelect(string, int)
-  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogSelect_System_String_System_Int32_
-  commentId: M:DEAL.Avatar.OnDialogSelect(System.String,System.Int32)
-  name.vb: OnDialogSelect(String, Integer)
-  fullName: DEAL.Avatar.OnDialogSelect(string, int)
-  fullName.vb: DEAL.Avatar.OnDialogSelect(String, Integer)
-  nameWithType: Avatar.OnDialogSelect(string, int)
-  nameWithType.vb: Avatar.OnDialogSelect(String, Integer)
-- uid: DEAL.Avatar.OnDialogSelect*
-  name: OnDialogSelect
-  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogSelect_
-  commentId: Overload:DEAL.Avatar.OnDialogSelect
+  fullName: DEAL.Avatar.OnDialogSingleProperty
+  nameWithType: Avatar.OnDialogSingleProperty
+- uid: DEAL.Avatar.OnDialogVoid(DEAL.Event.PopDialogData)
+  name: OnDialogVoid(PopDialogData)
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogVoid_DEAL_Event_PopDialogData_
+  commentId: M:DEAL.Avatar.OnDialogVoid(DEAL.Event.PopDialogData)
+  fullName: DEAL.Avatar.OnDialogVoid(DEAL.Event.PopDialogData)
+  nameWithType: Avatar.OnDialogVoid(PopDialogData)
+- uid: DEAL.Avatar.OnDialogVoid*
+  name: OnDialogVoid
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnDialogVoid_
+  commentId: Overload:DEAL.Avatar.OnDialogVoid
   isSpec: "True"
-  fullName: DEAL.Avatar.OnDialogSelect
-  nameWithType: Avatar.OnDialogSelect
+  fullName: DEAL.Avatar.OnDialogVoid
+  nameWithType: Avatar.OnDialogVoid
 - uid: DEAL.Avatar.OnInstantiate
   name: OnInstantiate()
   href: api/DEAL.Avatar.html#DEAL_Avatar_OnInstantiate
@@ -133,6 +140,19 @@ references:
   isSpec: "True"
   fullName: DEAL.Avatar.OnInstantiate
   nameWithType: Avatar.OnInstantiate
+- uid: DEAL.Avatar.OnNpcProcessDialog(DEAL.Event.PopDialogData)
+  name: OnNpcProcessDialog(PopDialogData)
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnNpcProcessDialog_DEAL_Event_PopDialogData_
+  commentId: M:DEAL.Avatar.OnNpcProcessDialog(DEAL.Event.PopDialogData)
+  fullName: DEAL.Avatar.OnNpcProcessDialog(DEAL.Event.PopDialogData)
+  nameWithType: Avatar.OnNpcProcessDialog(PopDialogData)
+- uid: DEAL.Avatar.OnNpcProcessDialog*
+  name: OnNpcProcessDialog
+  href: api/DEAL.Avatar.html#DEAL_Avatar_OnNpcProcessDialog_
+  commentId: Overload:DEAL.Avatar.OnNpcProcessDialog
+  isSpec: "True"
+  fullName: DEAL.Avatar.OnNpcProcessDialog
+  nameWithType: Avatar.OnNpcProcessDialog
 - uid: DEAL.Avatar.PlayerId
   name: PlayerId
   href: api/DEAL.Avatar.html#DEAL_Avatar_PlayerId
@@ -576,6 +596,19 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseCard.PerformSlotMove
   nameWithType: BaseCard.PerformSlotMove
+- uid: DEAL.BaseCard.Pick
+  name: Pick()
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_Pick
+  commentId: M:DEAL.BaseCard.Pick
+  fullName: DEAL.BaseCard.Pick()
+  nameWithType: BaseCard.Pick()
+- uid: DEAL.BaseCard.Pick*
+  name: Pick
+  href: api/DEAL.BaseCard.html#DEAL_BaseCard_Pick_
+  commentId: Overload:DEAL.BaseCard.Pick
+  isSpec: "True"
+  fullName: DEAL.BaseCard.Pick
+  nameWithType: BaseCard.Pick
 - uid: DEAL.BaseCard.ProcessSpecialMove
   name: ProcessSpecialMove()
   href: api/DEAL.BaseCard.html#DEAL_BaseCard_ProcessSpecialMove
@@ -987,19 +1020,6 @@ references:
   commentId: T:DEAL.BaseTable
   fullName: DEAL.BaseTable
   nameWithType: BaseTable
-- uid: DEAL.BaseTable.PlayerDeckArray
-  name: PlayerDeckArray
-  href: api/DEAL.BaseTable.html#DEAL_BaseTable_PlayerDeckArray
-  commentId: P:DEAL.BaseTable.PlayerDeckArray
-  fullName: DEAL.BaseTable.PlayerDeckArray
-  nameWithType: BaseTable.PlayerDeckArray
-- uid: DEAL.BaseTable.PlayerDeckArray*
-  name: PlayerDeckArray
-  href: api/DEAL.BaseTable.html#DEAL_BaseTable_PlayerDeckArray_
-  commentId: Overload:DEAL.BaseTable.PlayerDeckArray
-  isSpec: "True"
-  fullName: DEAL.BaseTable.PlayerDeckArray
-  nameWithType: BaseTable.PlayerDeckArray
 - uid: DEAL.BaseTable.SeatArray
   name: SeatArray
   href: api/DEAL.BaseTable.html#DEAL_BaseTable_SeatArray
@@ -1039,6 +1059,19 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseTable.SystemTileArray
   nameWithType: BaseTable.SystemTileArray
+- uid: DEAL.BaseTable.UserDeckArray
+  name: UserDeckArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_UserDeckArray
+  commentId: P:DEAL.BaseTable.UserDeckArray
+  fullName: DEAL.BaseTable.UserDeckArray
+  nameWithType: BaseTable.UserDeckArray
+- uid: DEAL.BaseTable.UserDeckArray*
+  name: UserDeckArray
+  href: api/DEAL.BaseTable.html#DEAL_BaseTable_UserDeckArray_
+  commentId: Overload:DEAL.BaseTable.UserDeckArray
+  isSpec: "True"
+  fullName: DEAL.BaseTable.UserDeckArray
+  nameWithType: BaseTable.UserDeckArray
 - uid: DEAL.BaseTile
   name: BaseTile
   href: api/DEAL.BaseTile.html
@@ -1058,6 +1091,25 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseTile.AddCard
   nameWithType: BaseTile.AddCard
+- uid: DEAL.BaseTile.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)
+  name: GenerateAutoPickCombinations(CardChoice)
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_GenerateAutoPickCombinations_DEAL_FSM_CardChoice_
+  commentId: M:DEAL.BaseTile.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)
+  fullName: DEAL.BaseTile.GenerateAutoPickCombinations(DEAL.FSM.CardChoice)
+  nameWithType: BaseTile.GenerateAutoPickCombinations(CardChoice)
+- uid: DEAL.BaseTile.GenerateAutoPickCombinations*
+  name: GenerateAutoPickCombinations
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_GenerateAutoPickCombinations_
+  commentId: Overload:DEAL.BaseTile.GenerateAutoPickCombinations
+  isSpec: "True"
+  fullName: DEAL.BaseTile.GenerateAutoPickCombinations
+  nameWithType: BaseTile.GenerateAutoPickCombinations
+- uid: DEAL.BaseTile.GenerateCard(DEAL.CardSO)
+  name: GenerateCard(CardSO)
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_GenerateCard_DEAL_CardSO_
+  commentId: M:DEAL.BaseTile.GenerateCard(DEAL.CardSO)
+  fullName: DEAL.BaseTile.GenerateCard(DEAL.CardSO)
+  nameWithType: BaseTile.GenerateCard(CardSO)
 - uid: DEAL.BaseTile.GenerateCard(DEAL.Event.CardSOJsonData)
   name: GenerateCard(CardSOJsonData)
   href: api/DEAL.BaseTile.html#DEAL_BaseTile_GenerateCard_DEAL_Event_CardSOJsonData_
@@ -1126,6 +1178,51 @@ references:
   isSpec: "True"
   fullName: DEAL.BaseTile.InitTile
   nameWithType: BaseTile.InitTile
+- uid: DEAL.BaseTile.OnCardCleared(DEAL.BaseCard)
+  name: OnCardCleared(BaseCard)
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_OnCardCleared_DEAL_BaseCard_
+  commentId: M:DEAL.BaseTile.OnCardCleared(DEAL.BaseCard)
+  fullName: DEAL.BaseTile.OnCardCleared(DEAL.BaseCard)
+  nameWithType: BaseTile.OnCardCleared(BaseCard)
+- uid: DEAL.BaseTile.OnCardCleared*
+  name: OnCardCleared
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_OnCardCleared_
+  commentId: Overload:DEAL.BaseTile.OnCardCleared
+  isSpec: "True"
+  fullName: DEAL.BaseTile.OnCardCleared
+  nameWithType: BaseTile.OnCardCleared
+- uid: DEAL.BaseTile.PickCards(DEAL.FSM.CardChoice)
+  name: PickCards(CardChoice)
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_PickCards_DEAL_FSM_CardChoice_
+  commentId: M:DEAL.BaseTile.PickCards(DEAL.FSM.CardChoice)
+  fullName: DEAL.BaseTile.PickCards(DEAL.FSM.CardChoice)
+  nameWithType: BaseTile.PickCards(CardChoice)
+- uid: DEAL.BaseTile.PickCards*
+  name: PickCards
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_PickCards_
+  commentId: Overload:DEAL.BaseTile.PickCards
+  isSpec: "True"
+  fullName: DEAL.BaseTile.PickCards
+  nameWithType: BaseTile.PickCards
+- uid: DEAL.BaseTile.Shuffle
+  name: Shuffle()
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_Shuffle
+  commentId: M:DEAL.BaseTile.Shuffle
+  fullName: DEAL.BaseTile.Shuffle()
+  nameWithType: BaseTile.Shuffle()
+- uid: DEAL.BaseTile.Shuffle*
+  name: Shuffle
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_Shuffle_
+  commentId: Overload:DEAL.BaseTile.Shuffle
+  isSpec: "True"
+  fullName: DEAL.BaseTile.Shuffle
+  nameWithType: BaseTile.Shuffle
+- uid: DEAL.BaseTile.cardBuffer
+  name: cardBuffer
+  href: api/DEAL.BaseTile.html#DEAL_BaseTile_cardBuffer
+  commentId: F:DEAL.BaseTile.cardBuffer
+  fullName: DEAL.BaseTile.cardBuffer
+  nameWithType: BaseTile.cardBuffer
 - uid: DEAL.BaseTile.cardPool
   name: cardPool
   href: api/DEAL.BaseTile.html#DEAL_BaseTile_cardPool
@@ -2658,6 +2755,78 @@ references:
   isSpec: "True"
   fullName: DEAL.CommunityChipHolder.UpdateValueDisplay
   nameWithType: CommunityChipHolder.UpdateValueDisplay
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass
+  name: DEAL.Core.Runtime.UI.DialogPropertySubclass
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.html
+  commentId: N:DEAL.Core.Runtime.UI.DialogPropertySubclass
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass
+  nameWithType: DEAL.Core.Runtime.UI.DialogPropertySubclass
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemActorArgs
+  name: DialogPropertyItemActorArgs
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemActorArgs.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemActorArgs
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemActorArgs
+  nameWithType: DialogPropertyItemActorArgs
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemBool
+  name: DialogPropertyItemBool
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemBool.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemBool
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemBool
+  nameWithType: DialogPropertyItemBool
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemColor
+  name: DialogPropertyItemColor
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemColor.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemColor
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemColor
+  nameWithType: DialogPropertyItemColor
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemFloat
+  name: DialogPropertyItemFloat
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemFloat.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemFloat
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemFloat
+  nameWithType: DialogPropertyItemFloat
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemInt
+  name: DialogPropertyItemInt
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemInt.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemInt
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemInt
+  nameWithType: DialogPropertyItemInt
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemObject
+  name: DialogPropertyItemObject
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemObject.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemObject
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemObject
+  nameWithType: DialogPropertyItemObject
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemQuaternion
+  name: DialogPropertyItemQuaternion
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemQuaternion.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemQuaternion
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemQuaternion
+  nameWithType: DialogPropertyItemQuaternion
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemString
+  name: DialogPropertyItemString
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemString.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemString
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemString
+  nameWithType: DialogPropertyItemString
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector2
+  name: DialogPropertyItemVector2
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector2.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector2
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector2
+  nameWithType: DialogPropertyItemVector2
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector3
+  name: DialogPropertyItemVector3
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector3.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector3
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector3
+  nameWithType: DialogPropertyItemVector3
+- uid: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector4
+  name: DialogPropertyItemVector4
+  href: api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector4.html
+  commentId: T:DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector4
+  fullName: DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector4
+  nameWithType: DialogPropertyItemVector4
 - uid: DEAL.CountingDeck
   name: CountingDeck
   href: api/DEAL.CountingDeck.html
@@ -2690,6 +2859,312 @@ references:
   isSpec: "True"
   fullName: DEAL.CountingDeck.OnCardClaimed
   nameWithType: CountingDeck.OnCardClaimed
+- uid: DEAL.DealEngine
+  name: DealEngine
+  href: api/DEAL.DealEngine.html
+  commentId: T:DEAL.DealEngine
+  fullName: DEAL.DealEngine
+  nameWithType: DealEngine
+- uid: DEAL.DealEngine.ActiveSystemDeckArray
+  name: ActiveSystemDeckArray
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_ActiveSystemDeckArray
+  commentId: P:DEAL.DealEngine.ActiveSystemDeckArray
+  fullName: DEAL.DealEngine.ActiveSystemDeckArray
+  nameWithType: DealEngine.ActiveSystemDeckArray
+- uid: DEAL.DealEngine.ActiveSystemDeckArray*
+  name: ActiveSystemDeckArray
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_ActiveSystemDeckArray_
+  commentId: Overload:DEAL.DealEngine.ActiveSystemDeckArray
+  isSpec: "True"
+  fullName: DEAL.DealEngine.ActiveSystemDeckArray
+  nameWithType: DealEngine.ActiveSystemDeckArray
+- uid: DEAL.DealEngine.ActiveSystemTileArray
+  name: ActiveSystemTileArray
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_ActiveSystemTileArray
+  commentId: P:DEAL.DealEngine.ActiveSystemTileArray
+  fullName: DEAL.DealEngine.ActiveSystemTileArray
+  nameWithType: DealEngine.ActiveSystemTileArray
+- uid: DEAL.DealEngine.ActiveSystemTileArray*
+  name: ActiveSystemTileArray
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_ActiveSystemTileArray_
+  commentId: Overload:DEAL.DealEngine.ActiveSystemTileArray
+  isSpec: "True"
+  fullName: DEAL.DealEngine.ActiveSystemTileArray
+  nameWithType: DealEngine.ActiveSystemTileArray
+- uid: DEAL.DealEngine.AllPlayerIds
+  name: AllPlayerIds
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_AllPlayerIds
+  commentId: P:DEAL.DealEngine.AllPlayerIds
+  fullName: DEAL.DealEngine.AllPlayerIds
+  nameWithType: DealEngine.AllPlayerIds
+- uid: DEAL.DealEngine.AllPlayerIds*
+  name: AllPlayerIds
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_AllPlayerIds_
+  commentId: Overload:DEAL.DealEngine.AllPlayerIds
+  isSpec: "True"
+  fullName: DEAL.DealEngine.AllPlayerIds
+  nameWithType: DealEngine.AllPlayerIds
+- uid: DEAL.DealEngine.AvatarJoin(DEAL.Avatar)
+  name: AvatarJoin(Avatar)
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_AvatarJoin_DEAL_Avatar_
+  commentId: M:DEAL.DealEngine.AvatarJoin(DEAL.Avatar)
+  fullName: DEAL.DealEngine.AvatarJoin(DEAL.Avatar)
+  nameWithType: DealEngine.AvatarJoin(Avatar)
+- uid: DEAL.DealEngine.AvatarJoin*
+  name: AvatarJoin
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_AvatarJoin_
+  commentId: Overload:DEAL.DealEngine.AvatarJoin
+  isSpec: "True"
+  fullName: DEAL.DealEngine.AvatarJoin
+  nameWithType: DealEngine.AvatarJoin
+- uid: DEAL.DealEngine.AvatarList
+  name: AvatarList
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_AvatarList
+  commentId: P:DEAL.DealEngine.AvatarList
+  fullName: DEAL.DealEngine.AvatarList
+  nameWithType: DealEngine.AvatarList
+- uid: DEAL.DealEngine.AvatarList*
+  name: AvatarList
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_AvatarList_
+  commentId: Overload:DEAL.DealEngine.AvatarList
+  isSpec: "True"
+  fullName: DEAL.DealEngine.AvatarList
+  nameWithType: DealEngine.AvatarList
+- uid: DEAL.DealEngine.ClearGame
+  name: ClearGame()
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_ClearGame
+  commentId: M:DEAL.DealEngine.ClearGame
+  fullName: DEAL.DealEngine.ClearGame()
+  nameWithType: DealEngine.ClearGame()
+- uid: DEAL.DealEngine.ClearGame*
+  name: ClearGame
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_ClearGame_
+  commentId: Overload:DEAL.DealEngine.ClearGame
+  isSpec: "True"
+  fullName: DEAL.DealEngine.ClearGame
+  nameWithType: DealEngine.ClearGame
+- uid: DEAL.DealEngine.GlobalInfoSO
+  name: GlobalInfoSO
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_GlobalInfoSO
+  commentId: P:DEAL.DealEngine.GlobalInfoSO
+  fullName: DEAL.DealEngine.GlobalInfoSO
+  nameWithType: DealEngine.GlobalInfoSO
+- uid: DEAL.DealEngine.GlobalInfoSO*
+  name: GlobalInfoSO
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_GlobalInfoSO_
+  commentId: Overload:DEAL.DealEngine.GlobalInfoSO
+  isSpec: "True"
+  fullName: DEAL.DealEngine.GlobalInfoSO
+  nameWithType: DealEngine.GlobalInfoSO
+- uid: DEAL.DealEngine.InitPlayer
+  name: InitPlayer()
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_InitPlayer
+  commentId: M:DEAL.DealEngine.InitPlayer
+  fullName: DEAL.DealEngine.InitPlayer()
+  nameWithType: DealEngine.InitPlayer()
+- uid: DEAL.DealEngine.InitPlayer*
+  name: InitPlayer
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_InitPlayer_
+  commentId: Overload:DEAL.DealEngine.InitPlayer
+  isSpec: "True"
+  fullName: DEAL.DealEngine.InitPlayer
+  nameWithType: DealEngine.InitPlayer
+- uid: DEAL.DealEngine.InitTable
+  name: InitTable()
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_InitTable
+  commentId: M:DEAL.DealEngine.InitTable
+  fullName: DEAL.DealEngine.InitTable()
+  nameWithType: DealEngine.InitTable()
+- uid: DEAL.DealEngine.InitTable*
+  name: InitTable
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_InitTable_
+  commentId: Overload:DEAL.DealEngine.InitTable
+  isSpec: "True"
+  fullName: DEAL.DealEngine.InitTable
+  nameWithType: DealEngine.InitTable
+- uid: DEAL.DealEngine.Instance
+  name: Instance
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_Instance
+  commentId: P:DEAL.DealEngine.Instance
+  fullName: DEAL.DealEngine.Instance
+  nameWithType: DealEngine.Instance
+- uid: DEAL.DealEngine.Instance*
+  name: Instance
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_Instance_
+  commentId: Overload:DEAL.DealEngine.Instance
+  isSpec: "True"
+  fullName: DEAL.DealEngine.Instance
+  nameWithType: DealEngine.Instance
+- uid: DEAL.DealEngine.IsGameReady
+  name: IsGameReady()
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_IsGameReady
+  commentId: M:DEAL.DealEngine.IsGameReady
+  fullName: DEAL.DealEngine.IsGameReady()
+  nameWithType: DealEngine.IsGameReady()
+- uid: DEAL.DealEngine.IsGameReady*
+  name: IsGameReady
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_IsGameReady_
+  commentId: Overload:DEAL.DealEngine.IsGameReady
+  isSpec: "True"
+  fullName: DEAL.DealEngine.IsGameReady
+  nameWithType: DealEngine.IsGameReady
+- uid: DEAL.DealEngine.LocalAvatar
+  name: LocalAvatar
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_LocalAvatar
+  commentId: P:DEAL.DealEngine.LocalAvatar
+  fullName: DEAL.DealEngine.LocalAvatar
+  nameWithType: DealEngine.LocalAvatar
+- uid: DEAL.DealEngine.LocalAvatar*
+  name: LocalAvatar
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_LocalAvatar_
+  commentId: Overload:DEAL.DealEngine.LocalAvatar
+  isSpec: "True"
+  fullName: DEAL.DealEngine.LocalAvatar
+  nameWithType: DealEngine.LocalAvatar
+- uid: DEAL.DealEngine.LocalAvatarId
+  name: LocalAvatarId
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_LocalAvatarId
+  commentId: P:DEAL.DealEngine.LocalAvatarId
+  fullName: DEAL.DealEngine.LocalAvatarId
+  nameWithType: DealEngine.LocalAvatarId
+- uid: DEAL.DealEngine.LocalAvatarId*
+  name: LocalAvatarId
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_LocalAvatarId_
+  commentId: Overload:DEAL.DealEngine.LocalAvatarId
+  isSpec: "True"
+  fullName: DEAL.DealEngine.LocalAvatarId
+  nameWithType: DealEngine.LocalAvatarId
+- uid: DEAL.DealEngine.OnDestroy
+  name: OnDestroy()
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_OnDestroy
+  commentId: M:DEAL.DealEngine.OnDestroy
+  fullName: DEAL.DealEngine.OnDestroy()
+  nameWithType: DealEngine.OnDestroy()
+- uid: DEAL.DealEngine.OnDestroy*
+  name: OnDestroy
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_OnDestroy_
+  commentId: Overload:DEAL.DealEngine.OnDestroy
+  isSpec: "True"
+  fullName: DEAL.DealEngine.OnDestroy
+  nameWithType: DealEngine.OnDestroy
+- uid: DEAL.DealEngine.OnEvent(DEAL.EventMsg)
+  name: OnEvent(EventMsg)
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_OnEvent_DEAL_EventMsg_
+  commentId: M:DEAL.DealEngine.OnEvent(DEAL.EventMsg)
+  fullName: DEAL.DealEngine.OnEvent(DEAL.EventMsg)
+  nameWithType: DealEngine.OnEvent(EventMsg)
+- uid: DEAL.DealEngine.OnEvent*
+  name: OnEvent
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_OnEvent_
+  commentId: Overload:DEAL.DealEngine.OnEvent
+  isSpec: "True"
+  fullName: DEAL.DealEngine.OnEvent
+  nameWithType: DealEngine.OnEvent
+- uid: DEAL.DealEngine.PlayerDeckArray
+  name: PlayerDeckArray
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_PlayerDeckArray
+  commentId: P:DEAL.DealEngine.PlayerDeckArray
+  fullName: DEAL.DealEngine.PlayerDeckArray
+  nameWithType: DealEngine.PlayerDeckArray
+- uid: DEAL.DealEngine.PlayerDeckArray*
+  name: PlayerDeckArray
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_PlayerDeckArray_
+  commentId: Overload:DEAL.DealEngine.PlayerDeckArray
+  isSpec: "True"
+  fullName: DEAL.DealEngine.PlayerDeckArray
+  nameWithType: DealEngine.PlayerDeckArray
+- uid: DEAL.DealEngine.RefreshSeat
+  name: RefreshSeat()
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_RefreshSeat
+  commentId: M:DEAL.DealEngine.RefreshSeat
+  fullName: DEAL.DealEngine.RefreshSeat()
+  nameWithType: DealEngine.RefreshSeat()
+- uid: DEAL.DealEngine.RefreshSeat*
+  name: RefreshSeat
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_RefreshSeat_
+  commentId: Overload:DEAL.DealEngine.RefreshSeat
+  isSpec: "True"
+  fullName: DEAL.DealEngine.RefreshSeat
+  nameWithType: DealEngine.RefreshSeat
+- uid: DEAL.DealEngine.SpawnAvatar
+  name: SpawnAvatar()
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_SpawnAvatar
+  commentId: M:DEAL.DealEngine.SpawnAvatar
+  fullName: DEAL.DealEngine.SpawnAvatar()
+  nameWithType: DealEngine.SpawnAvatar()
+- uid: DEAL.DealEngine.SpawnAvatar*
+  name: SpawnAvatar
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_SpawnAvatar_
+  commentId: Overload:DEAL.DealEngine.SpawnAvatar
+  isSpec: "True"
+  fullName: DEAL.DealEngine.SpawnAvatar
+  nameWithType: DealEngine.SpawnAvatar
+- uid: DEAL.DealEngine.StartGame(System.String)
+  name: StartGame(string)
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_StartGame_System_String_
+  commentId: M:DEAL.DealEngine.StartGame(System.String)
+  name.vb: StartGame(String)
+  fullName: DEAL.DealEngine.StartGame(string)
+  fullName.vb: DEAL.DealEngine.StartGame(String)
+  nameWithType: DealEngine.StartGame(string)
+  nameWithType.vb: DealEngine.StartGame(String)
+- uid: DEAL.DealEngine.StartGame*
+  name: StartGame
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_StartGame_
+  commentId: Overload:DEAL.DealEngine.StartGame
+  isSpec: "True"
+  fullName: DEAL.DealEngine.StartGame
+  nameWithType: DealEngine.StartGame
+- uid: DEAL.DealEngine.StateMachineComponent
+  name: StateMachineComponent
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_StateMachineComponent
+  commentId: P:DEAL.DealEngine.StateMachineComponent
+  fullName: DEAL.DealEngine.StateMachineComponent
+  nameWithType: DealEngine.StateMachineComponent
+- uid: DEAL.DealEngine.StateMachineComponent*
+  name: StateMachineComponent
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_StateMachineComponent_
+  commentId: Overload:DEAL.DealEngine.StateMachineComponent
+  isSpec: "True"
+  fullName: DEAL.DealEngine.StateMachineComponent
+  nameWithType: DealEngine.StateMachineComponent
+- uid: DEAL.DealEngine.Table
+  name: Table
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_Table
+  commentId: P:DEAL.DealEngine.Table
+  fullName: DEAL.DealEngine.Table
+  nameWithType: DealEngine.Table
+- uid: DEAL.DealEngine.Table*
+  name: Table
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_Table_
+  commentId: Overload:DEAL.DealEngine.Table
+  isSpec: "True"
+  fullName: DEAL.DealEngine.Table
+  nameWithType: DealEngine.Table
+- uid: DEAL.DealEngine.avatarList
+  name: avatarList
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_avatarList
+  commentId: F:DEAL.DealEngine.avatarList
+  fullName: DEAL.DealEngine.avatarList
+  nameWithType: DealEngine.avatarList
+- uid: DEAL.DealEngine.globalInfoSO
+  name: globalInfoSO
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_globalInfoSO
+  commentId: F:DEAL.DealEngine.globalInfoSO
+  fullName: DEAL.DealEngine.globalInfoSO
+  nameWithType: DealEngine.globalInfoSO
+- uid: DEAL.DealEngine.playerDeckArray
+  name: playerDeckArray
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_playerDeckArray
+  commentId: F:DEAL.DealEngine.playerDeckArray
+  fullName: DEAL.DealEngine.playerDeckArray
+  nameWithType: DealEngine.playerDeckArray
+- uid: DEAL.DealEngine.stateMachineComponent
+  name: stateMachineComponent
+  href: api/DEAL.DealEngine.html#DEAL_DealEngine_stateMachineComponent
+  commentId: F:DEAL.DealEngine.stateMachineComponent
+  fullName: DEAL.DealEngine.stateMachineComponent
+  nameWithType: DealEngine.stateMachineComponent
 - uid: DEAL.DeckSO
   name: DeckSO
   href: api/DEAL.DeckSO.html
@@ -2958,6 +3433,78 @@ references:
   isSpec: "True"
   fullName: DEAL.DefaultNetworkAdapter.TransferOwnershipToMaster
   nameWithType: DefaultNetworkAdapter.TransferOwnershipToMaster
+- uid: DEAL.Dialog
+  name: DEAL.Dialog
+  href: api/DEAL.Dialog.html
+  commentId: N:DEAL.Dialog
+  fullName: DEAL.Dialog
+  nameWithType: DEAL.Dialog
+- uid: DEAL.Dialog.DialogPropertyItemActorArgs
+  name: DialogPropertyItemActorArgs
+  href: api/DEAL.Dialog.DialogPropertyItemActorArgs.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemActorArgs
+  fullName: DEAL.Dialog.DialogPropertyItemActorArgs
+  nameWithType: DialogPropertyItemActorArgs
+- uid: DEAL.Dialog.DialogPropertyItemBool
+  name: DialogPropertyItemBool
+  href: api/DEAL.Dialog.DialogPropertyItemBool.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemBool
+  fullName: DEAL.Dialog.DialogPropertyItemBool
+  nameWithType: DialogPropertyItemBool
+- uid: DEAL.Dialog.DialogPropertyItemColor
+  name: DialogPropertyItemColor
+  href: api/DEAL.Dialog.DialogPropertyItemColor.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemColor
+  fullName: DEAL.Dialog.DialogPropertyItemColor
+  nameWithType: DialogPropertyItemColor
+- uid: DEAL.Dialog.DialogPropertyItemFloat
+  name: DialogPropertyItemFloat
+  href: api/DEAL.Dialog.DialogPropertyItemFloat.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemFloat
+  fullName: DEAL.Dialog.DialogPropertyItemFloat
+  nameWithType: DialogPropertyItemFloat
+- uid: DEAL.Dialog.DialogPropertyItemInt
+  name: DialogPropertyItemInt
+  href: api/DEAL.Dialog.DialogPropertyItemInt.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemInt
+  fullName: DEAL.Dialog.DialogPropertyItemInt
+  nameWithType: DialogPropertyItemInt
+- uid: DEAL.Dialog.DialogPropertyItemObject
+  name: DialogPropertyItemObject
+  href: api/DEAL.Dialog.DialogPropertyItemObject.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemObject
+  fullName: DEAL.Dialog.DialogPropertyItemObject
+  nameWithType: DialogPropertyItemObject
+- uid: DEAL.Dialog.DialogPropertyItemQuaternion
+  name: DialogPropertyItemQuaternion
+  href: api/DEAL.Dialog.DialogPropertyItemQuaternion.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemQuaternion
+  fullName: DEAL.Dialog.DialogPropertyItemQuaternion
+  nameWithType: DialogPropertyItemQuaternion
+- uid: DEAL.Dialog.DialogPropertyItemString
+  name: DialogPropertyItemString
+  href: api/DEAL.Dialog.DialogPropertyItemString.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemString
+  fullName: DEAL.Dialog.DialogPropertyItemString
+  nameWithType: DialogPropertyItemString
+- uid: DEAL.Dialog.DialogPropertyItemVector2
+  name: DialogPropertyItemVector2
+  href: api/DEAL.Dialog.DialogPropertyItemVector2.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemVector2
+  fullName: DEAL.Dialog.DialogPropertyItemVector2
+  nameWithType: DialogPropertyItemVector2
+- uid: DEAL.Dialog.DialogPropertyItemVector3
+  name: DialogPropertyItemVector3
+  href: api/DEAL.Dialog.DialogPropertyItemVector3.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemVector3
+  fullName: DEAL.Dialog.DialogPropertyItemVector3
+  nameWithType: DialogPropertyItemVector3
+- uid: DEAL.Dialog.DialogPropertyItemVector4
+  name: DialogPropertyItemVector4
+  href: api/DEAL.Dialog.DialogPropertyItemVector4.html
+  commentId: T:DEAL.Dialog.DialogPropertyItemVector4
+  fullName: DEAL.Dialog.DialogPropertyItemVector4
+  nameWithType: DialogPropertyItemVector4
 - uid: DEAL.EnumNamedArrayAttribute
   name: EnumNamedArrayAttribute
   href: api/DEAL.EnumNamedArrayAttribute.html
@@ -3001,36 +3548,18 @@ references:
   commentId: T:DEAL.Event.ActionPayload
   fullName: DEAL.Event.ActionPayload
   nameWithType: ActionPayload
-- uid: DEAL.Event.ActionPayload._additionalParam
-  name: _additionalParam
-  href: api/DEAL.Event.ActionPayload.html#DEAL_Event_ActionPayload__additionalParam
-  commentId: F:DEAL.Event.ActionPayload._additionalParam
-  fullName: DEAL.Event.ActionPayload._additionalParam
-  nameWithType: ActionPayload._additionalParam
 - uid: DEAL.Event.ActionPayload.actionName
   name: actionName
   href: api/DEAL.Event.ActionPayload.html#DEAL_Event_ActionPayload_actionName
   commentId: F:DEAL.Event.ActionPayload.actionName
   fullName: DEAL.Event.ActionPayload.actionName
   nameWithType: ActionPayload.actionName
-- uid: DEAL.Event.ActionPayload.additionalParam
-  name: additionalParam
-  href: api/DEAL.Event.ActionPayload.html#DEAL_Event_ActionPayload_additionalParam
-  commentId: F:DEAL.Event.ActionPayload.additionalParam
-  fullName: DEAL.Event.ActionPayload.additionalParam
-  nameWithType: ActionPayload.additionalParam
-- uid: DEAL.Event.ActionPayload.isStatic
-  name: isStatic
-  href: api/DEAL.Event.ActionPayload.html#DEAL_Event_ActionPayload_isStatic
-  commentId: F:DEAL.Event.ActionPayload.isStatic
-  fullName: DEAL.Event.ActionPayload.isStatic
-  nameWithType: ActionPayload.isStatic
-- uid: DEAL.Event.ActionPayload.typeName
-  name: typeName
-  href: api/DEAL.Event.ActionPayload.html#DEAL_Event_ActionPayload_typeName
-  commentId: F:DEAL.Event.ActionPayload.typeName
-  fullName: DEAL.Event.ActionPayload.typeName
-  nameWithType: ActionPayload.typeName
+- uid: DEAL.Event.ActionPayload.actionTargetId
+  name: actionTargetId
+  href: api/DEAL.Event.ActionPayload.html#DEAL_Event_ActionPayload_actionTargetId
+  commentId: F:DEAL.Event.ActionPayload.actionTargetId
+  fullName: DEAL.Event.ActionPayload.actionTargetId
+  nameWithType: ActionPayload.actionTargetId
 - uid: DEAL.Event.ActorArgs
   name: ActorArgs
   href: api/DEAL.Event.ActorArgs.html
@@ -3086,6 +3615,12 @@ references:
   commentId: F:DEAL.Event.BasePayload.data
   fullName: DEAL.Event.BasePayload.data
   nameWithType: BasePayload.data
+- uid: DEAL.Event.BasePayload.dataType
+  name: dataType
+  href: api/DEAL.Event.BasePayload.html#DEAL_Event_BasePayload_dataType
+  commentId: F:DEAL.Event.BasePayload.dataType
+  fullName: DEAL.Event.BasePayload.dataType
+  nameWithType: BasePayload.dataType
 - uid: DEAL.Event.BasePayload.eventKey
   name: eventKey
   href: api/DEAL.Event.BasePayload.html#DEAL_Event_BasePayload_eventKey
@@ -3194,30 +3729,54 @@ references:
   commentId: T:DEAL.Event.PopDialogData
   fullName: DEAL.Event.PopDialogData
   nameWithType: PopDialogData
-- uid: DEAL.Event.PopDialogData.Description
-  name: Description
-  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_Description
-  commentId: F:DEAL.Event.PopDialogData.Description
-  fullName: DEAL.Event.PopDialogData.Description
-  nameWithType: PopDialogData.Description
-- uid: DEAL.Event.PopDialogData.DialogParams
-  name: DialogParams
-  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_DialogParams
-  commentId: F:DEAL.Event.PopDialogData.DialogParams
-  fullName: DEAL.Event.PopDialogData.DialogParams
-  nameWithType: PopDialogData.DialogParams
+- uid: DEAL.Event.PopDialogData.CallbackActionName
+  name: CallbackActionName
+  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_CallbackActionName
+  commentId: F:DEAL.Event.PopDialogData.CallbackActionName
+  fullName: DEAL.Event.PopDialogData.CallbackActionName
+  nameWithType: PopDialogData.CallbackActionName
+- uid: DEAL.Event.PopDialogData.CallbackActionTargetId
+  name: CallbackActionTargetId
+  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_CallbackActionTargetId
+  commentId: F:DEAL.Event.PopDialogData.CallbackActionTargetId
+  fullName: DEAL.Event.PopDialogData.CallbackActionTargetId
+  nameWithType: PopDialogData.CallbackActionTargetId
+- uid: DEAL.Event.PopDialogData.CallbackEventKey
+  name: CallbackEventKey
+  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_CallbackEventKey
+  commentId: F:DEAL.Event.PopDialogData.CallbackEventKey
+  fullName: DEAL.Event.PopDialogData.CallbackEventKey
+  nameWithType: PopDialogData.CallbackEventKey
+- uid: DEAL.Event.PopDialogData.DialogProperties
+  name: DialogProperties
+  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_DialogProperties
+  commentId: F:DEAL.Event.PopDialogData.DialogProperties
+  fullName: DEAL.Event.PopDialogData.DialogProperties
+  nameWithType: PopDialogData.DialogProperties
 - uid: DEAL.Event.PopDialogData.DialogType
   name: DialogType
   href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_DialogType
   commentId: F:DEAL.Event.PopDialogData.DialogType
   fullName: DEAL.Event.PopDialogData.DialogType
   nameWithType: PopDialogData.DialogType
+- uid: DEAL.Event.PopDialogData.DisplayText
+  name: DisplayText
+  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_DisplayText
+  commentId: F:DEAL.Event.PopDialogData.DisplayText
+  fullName: DEAL.Event.PopDialogData.DisplayText
+  nameWithType: PopDialogData.DisplayText
 - uid: DEAL.Event.PopDialogData.TargetParams
   name: TargetParams
   href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData_TargetParams
   commentId: F:DEAL.Event.PopDialogData.TargetParams
   fullName: DEAL.Event.PopDialogData.TargetParams
   nameWithType: PopDialogData.TargetParams
+- uid: DEAL.Event.PopDialogData._json_DialogProperties
+  name: _json_DialogProperties
+  href: api/DEAL.Event.PopDialogData.html#DEAL_Event_PopDialogData__json_DialogProperties
+  commentId: F:DEAL.Event.PopDialogData._json_DialogProperties
+  fullName: DEAL.Event.PopDialogData._json_DialogProperties
+  nameWithType: PopDialogData._json_DialogProperties
 - uid: DEAL.Event.ServerPayload
   name: ServerPayload
   href: api/DEAL.Event.ServerPayload.html
@@ -3384,12 +3943,6 @@ references:
   commentId: F:DEAL.EventType.STATE_EVENT
   fullName: DEAL.EventType.STATE_EVENT
   nameWithType: EventType.STATE_EVENT
-- uid: DEAL.EventType.TRANSFER_EVENT
-  name: TRANSFER_EVENT
-  href: api/DEAL.EventType.html#DEAL_EventType_TRANSFER_EVENT
-  commentId: F:DEAL.EventType.TRANSFER_EVENT
-  fullName: DEAL.EventType.TRANSFER_EVENT
-  nameWithType: EventType.TRANSFER_EVENT
 - uid: DEAL.EventType.VIEW_EVENT
   name: VIEW_EVENT
   href: api/DEAL.EventType.html#DEAL_EventType_VIEW_EVENT
@@ -3433,12 +3986,12 @@ references:
   commentId: T:DEAL.FSM.Action.ChangePlayerAction
   fullName: DEAL.FSM.Action.ChangePlayerAction
   nameWithType: ChangePlayerAction
-- uid: DEAL.FSM.Action.ChangePlayerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.ChangePlayerAction.html#DEAL_FSM_Action_ChangePlayerAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.ChangePlayerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.ChangePlayerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ChangePlayerAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.ChangePlayerAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.ChangePlayerAction.html#DEAL_FSM_Action_ChangePlayerAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.ChangePlayerAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.ChangePlayerAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: ChangePlayerAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.ChangePlayerAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.ChangePlayerAction.html#DEAL_FSM_Action_ChangePlayerAction_Execute_
@@ -3452,12 +4005,12 @@ references:
   commentId: T:DEAL.FSM.Action.ClearDeckAction
   fullName: DEAL.FSM.Action.ClearDeckAction
   nameWithType: ClearDeckAction
-- uid: DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.ClearDeckAction.html#DEAL_FSM_Action_ClearDeckAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ClearDeckAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.ClearDeckAction.html#DEAL_FSM_Action_ClearDeckAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.ClearDeckAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: ClearDeckAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.ClearDeckAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.ClearDeckAction.html#DEAL_FSM_Action_ClearDeckAction_Execute_
@@ -3511,12 +4064,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.Action.CombineEvalScoreAction.CountScore
   nameWithType: CombineEvalScoreAction.CountScore
-- uid: DEAL.FSM.Action.CombineEvalScoreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.CombineEvalScoreAction.html#DEAL_FSM_Action_CombineEvalScoreAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.CombineEvalScoreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.CombineEvalScoreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: CombineEvalScoreAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.CombineEvalScoreAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.CombineEvalScoreAction.html#DEAL_FSM_Action_CombineEvalScoreAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.CombineEvalScoreAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.CombineEvalScoreAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: CombineEvalScoreAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.CombineEvalScoreAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.CombineEvalScoreAction.html#DEAL_FSM_Action_CombineEvalScoreAction_Execute_
@@ -3530,12 +4083,12 @@ references:
   commentId: T:DEAL.FSM.Action.DealPostAction
   fullName: DEAL.FSM.Action.DealPostAction
   nameWithType: DealPostAction
-- uid: DEAL.FSM.Action.DealPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.DealPostAction.html#DEAL_FSM_Action_DealPostAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.DealPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.DealPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: DealPostAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.DealPostAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.DealPostAction.html#DEAL_FSM_Action_DealPostAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.DealPostAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.DealPostAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: DealPostAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.DealPostAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.DealPostAction.html#DEAL_FSM_Action_DealPostAction_Execute_
@@ -3549,12 +4102,12 @@ references:
   commentId: T:DEAL.FSM.Action.DealPreAction
   fullName: DEAL.FSM.Action.DealPreAction
   nameWithType: DealPreAction
-- uid: DEAL.FSM.Action.DealPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.DealPreAction.html#DEAL_FSM_Action_DealPreAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.DealPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.DealPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: DealPreAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.DealPreAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.DealPreAction.html#DEAL_FSM_Action_DealPreAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.DealPreAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.DealPreAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: DealPreAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.DealPreAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.DealPreAction.html#DEAL_FSM_Action_DealPreAction_Execute_
@@ -3568,12 +4121,12 @@ references:
   commentId: T:DEAL.FSM.Action.DrawPostAction
   fullName: DEAL.FSM.Action.DrawPostAction
   nameWithType: DrawPostAction
-- uid: DEAL.FSM.Action.DrawPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.DrawPostAction.html#DEAL_FSM_Action_DrawPostAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.DrawPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.DrawPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: DrawPostAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.DrawPostAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.DrawPostAction.html#DEAL_FSM_Action_DrawPostAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.DrawPostAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.DrawPostAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: DrawPostAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.DrawPostAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.DrawPostAction.html#DEAL_FSM_Action_DrawPostAction_Execute_
@@ -3587,12 +4140,12 @@ references:
   commentId: T:DEAL.FSM.Action.DrawPreAction
   fullName: DEAL.FSM.Action.DrawPreAction
   nameWithType: DrawPreAction
-- uid: DEAL.FSM.Action.DrawPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.DrawPreAction.html#DEAL_FSM_Action_DrawPreAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.DrawPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.DrawPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: DrawPreAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.DrawPreAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.DrawPreAction.html#DEAL_FSM_Action_DrawPreAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.DrawPreAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.DrawPreAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: DrawPreAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.DrawPreAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.DrawPreAction.html#DEAL_FSM_Action_DrawPreAction_Execute_
@@ -3606,12 +4159,12 @@ references:
   commentId: T:DEAL.FSM.Action.EliminatePlayerAction
   fullName: DEAL.FSM.Action.EliminatePlayerAction
   nameWithType: EliminatePlayerAction
-- uid: DEAL.FSM.Action.EliminatePlayerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.EliminatePlayerAction.html#DEAL_FSM_Action_EliminatePlayerAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.EliminatePlayerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.EliminatePlayerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: EliminatePlayerAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.EliminatePlayerAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.EliminatePlayerAction.html#DEAL_FSM_Action_EliminatePlayerAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.EliminatePlayerAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.EliminatePlayerAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: EliminatePlayerAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.EliminatePlayerAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.EliminatePlayerAction.html#DEAL_FSM_Action_EliminatePlayerAction_Execute_
@@ -3625,12 +4178,12 @@ references:
   commentId: T:DEAL.FSM.Action.ModifyPlayerPropertyAction
   fullName: DEAL.FSM.Action.ModifyPlayerPropertyAction
   nameWithType: ModifyPlayerPropertyAction
-- uid: DEAL.FSM.Action.ModifyPlayerPropertyAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.ModifyPlayerPropertyAction.html#DEAL_FSM_Action_ModifyPlayerPropertyAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.ModifyPlayerPropertyAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.ModifyPlayerPropertyAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ModifyPlayerPropertyAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.ModifyPlayerPropertyAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.ModifyPlayerPropertyAction.html#DEAL_FSM_Action_ModifyPlayerPropertyAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.ModifyPlayerPropertyAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.ModifyPlayerPropertyAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: ModifyPlayerPropertyAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.ModifyPlayerPropertyAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.ModifyPlayerPropertyAction.html#DEAL_FSM_Action_ModifyPlayerPropertyAction_Execute_
@@ -3701,12 +4254,12 @@ references:
   commentId: T:DEAL.FSM.Action.RequestServerAction
   fullName: DEAL.FSM.Action.RequestServerAction
   nameWithType: RequestServerAction
-- uid: DEAL.FSM.Action.RequestServerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.RequestServerAction.html#DEAL_FSM_Action_RequestServerAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.RequestServerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.RequestServerAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: RequestServerAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.RequestServerAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.RequestServerAction.html#DEAL_FSM_Action_RequestServerAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.RequestServerAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.RequestServerAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: RequestServerAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.RequestServerAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.RequestServerAction.html#DEAL_FSM_Action_RequestServerAction_Execute_
@@ -3720,12 +4273,12 @@ references:
   commentId: T:DEAL.FSM.Action.ShowDialogAction
   fullName: DEAL.FSM.Action.ShowDialogAction
   nameWithType: ShowDialogAction
-- uid: DEAL.FSM.Action.ShowDialogAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.ShowDialogAction.html#DEAL_FSM_Action_ShowDialogAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.ShowDialogAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.ShowDialogAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ShowDialogAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.ShowDialogAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.ShowDialogAction.html#DEAL_FSM_Action_ShowDialogAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.ShowDialogAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.ShowDialogAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: ShowDialogAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.ShowDialogAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.ShowDialogAction.html#DEAL_FSM_Action_ShowDialogAction_Execute_
@@ -3739,12 +4292,12 @@ references:
   commentId: T:DEAL.FSM.Action.StartCountDownAction
   fullName: DEAL.FSM.Action.StartCountDownAction
   nameWithType: StartCountDownAction
-- uid: DEAL.FSM.Action.StartCountDownAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.StartCountDownAction.html#DEAL_FSM_Action_StartCountDownAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.StartCountDownAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.StartCountDownAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: StartCountDownAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.StartCountDownAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.StartCountDownAction.html#DEAL_FSM_Action_StartCountDownAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.StartCountDownAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.StartCountDownAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: StartCountDownAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.StartCountDownAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.StartCountDownAction.html#DEAL_FSM_Action_StartCountDownAction_Execute_
@@ -3758,12 +4311,12 @@ references:
   commentId: T:DEAL.FSM.Action.TransferPostAction
   fullName: DEAL.FSM.Action.TransferPostAction
   nameWithType: TransferPostAction
-- uid: DEAL.FSM.Action.TransferPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.TransferPostAction.html#DEAL_FSM_Action_TransferPostAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.TransferPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.TransferPostAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: TransferPostAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.TransferPostAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.TransferPostAction.html#DEAL_FSM_Action_TransferPostAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.TransferPostAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.TransferPostAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: TransferPostAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.TransferPostAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.TransferPostAction.html#DEAL_FSM_Action_TransferPostAction_Execute_
@@ -3777,12 +4330,12 @@ references:
   commentId: T:DEAL.FSM.Action.TransferPreAction
   fullName: DEAL.FSM.Action.TransferPreAction
   nameWithType: TransferPreAction
-- uid: DEAL.FSM.Action.TransferPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.TransferPreAction.html#DEAL_FSM_Action_TransferPreAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.TransferPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.TransferPreAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: TransferPreAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.TransferPreAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.TransferPreAction.html#DEAL_FSM_Action_TransferPreAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.TransferPreAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.TransferPreAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: TransferPreAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.TransferPreAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.TransferPreAction.html#DEAL_FSM_Action_TransferPreAction_Execute_
@@ -3796,12 +4349,12 @@ references:
   commentId: T:DEAL.FSM.Action.UpdateBlackBoardAction
   fullName: DEAL.FSM.Action.UpdateBlackBoardAction
   nameWithType: UpdateBlackBoardAction
-- uid: DEAL.FSM.Action.UpdateBlackBoardAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.UpdateBlackBoardAction.html#DEAL_FSM_Action_UpdateBlackBoardAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.UpdateBlackBoardAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.UpdateBlackBoardAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: UpdateBlackBoardAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.UpdateBlackBoardAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.UpdateBlackBoardAction.html#DEAL_FSM_Action_UpdateBlackBoardAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.UpdateBlackBoardAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.UpdateBlackBoardAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: UpdateBlackBoardAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.UpdateBlackBoardAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.UpdateBlackBoardAction.html#DEAL_FSM_Action_UpdateBlackBoardAction_Execute_
@@ -3815,12 +4368,12 @@ references:
   commentId: T:DEAL.FSM.Action.UpdatePlayerPropertyAction
   fullName: DEAL.FSM.Action.UpdatePlayerPropertyAction
   nameWithType: UpdatePlayerPropertyAction
-- uid: DEAL.FSM.Action.UpdatePlayerPropertyAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.UpdatePlayerPropertyAction.html#DEAL_FSM_Action_UpdatePlayerPropertyAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.UpdatePlayerPropertyAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.UpdatePlayerPropertyAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: UpdatePlayerPropertyAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.UpdatePlayerPropertyAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.UpdatePlayerPropertyAction.html#DEAL_FSM_Action_UpdatePlayerPropertyAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.UpdatePlayerPropertyAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.UpdatePlayerPropertyAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: UpdatePlayerPropertyAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.UpdatePlayerPropertyAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.UpdatePlayerPropertyAction.html#DEAL_FSM_Action_UpdatePlayerPropertyAction_Execute_
@@ -3922,12 +4475,12 @@ references:
   commentId: T:DEAL.FSM.Action.UpdateStateEventAction
   fullName: DEAL.FSM.Action.UpdateStateEventAction
   nameWithType: UpdateStateEventAction
-- uid: DEAL.FSM.Action.UpdateStateEventAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.Action.UpdateStateEventAction.html#DEAL_FSM_Action_UpdateStateEventAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Action.UpdateStateEventAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Action.UpdateStateEventAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: UpdateStateEventAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.Action.UpdateStateEventAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.Action.UpdateStateEventAction.html#DEAL_FSM_Action_UpdateStateEventAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Action.UpdateStateEventAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Action.UpdateStateEventAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: UpdateStateEventAction.Execute(DealFSM)
 - uid: DEAL.FSM.Action.UpdateStateEventAction.Execute*
   name: Execute
   href: api/DEAL.FSM.Action.UpdateStateEventAction.html#DEAL_FSM_Action_UpdateStateEventAction_Execute_
@@ -4698,12 +5251,12 @@ references:
   commentId: T:DEAL.FSM.Condition.CheckDeckCountCondition
   fullName: DEAL.FSM.Condition.CheckDeckCountCondition
   nameWithType: CheckDeckCountCondition
-- uid: DEAL.FSM.Condition.CheckDeckCountCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.CheckDeckCountCondition.html#DEAL_FSM_Condition_CheckDeckCountCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.CheckDeckCountCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.CheckDeckCountCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: CheckDeckCountCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.CheckDeckCountCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.CheckDeckCountCondition.html#DEAL_FSM_Condition_CheckDeckCountCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.CheckDeckCountCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.CheckDeckCountCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: CheckDeckCountCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.CheckDeckCountCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.CheckDeckCountCondition.html#DEAL_FSM_Condition_CheckDeckCountCondition_Verify_
@@ -4717,12 +5270,12 @@ references:
   commentId: T:DEAL.FSM.Condition.CheckDefeatedCondition
   fullName: DEAL.FSM.Condition.CheckDefeatedCondition
   nameWithType: CheckDefeatedCondition
-- uid: DEAL.FSM.Condition.CheckDefeatedCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.CheckDefeatedCondition.html#DEAL_FSM_Condition_CheckDefeatedCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.CheckDefeatedCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.CheckDefeatedCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: CheckDefeatedCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.CheckDefeatedCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.CheckDefeatedCondition.html#DEAL_FSM_Condition_CheckDefeatedCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.CheckDefeatedCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.CheckDefeatedCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: CheckDefeatedCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.CheckDefeatedCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.CheckDefeatedCondition.html#DEAL_FSM_Condition_CheckDefeatedCondition_Verify_
@@ -4736,12 +5289,12 @@ references:
   commentId: T:DEAL.FSM.Condition.CheckGameOverCondition
   fullName: DEAL.FSM.Condition.CheckGameOverCondition
   nameWithType: CheckGameOverCondition
-- uid: DEAL.FSM.Condition.CheckGameOverCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.CheckGameOverCondition.html#DEAL_FSM_Condition_CheckGameOverCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.CheckGameOverCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.CheckGameOverCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: CheckGameOverCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.CheckGameOverCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.CheckGameOverCondition.html#DEAL_FSM_Condition_CheckGameOverCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.CheckGameOverCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.CheckGameOverCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: CheckGameOverCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.CheckGameOverCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.CheckGameOverCondition.html#DEAL_FSM_Condition_CheckGameOverCondition_Verify_
@@ -4755,12 +5308,12 @@ references:
   commentId: T:DEAL.FSM.Condition.CheckPlayerPropertyCondition
   fullName: DEAL.FSM.Condition.CheckPlayerPropertyCondition
   nameWithType: CheckPlayerPropertyCondition
-- uid: DEAL.FSM.Condition.CheckPlayerPropertyCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.CheckPlayerPropertyCondition.html#DEAL_FSM_Condition_CheckPlayerPropertyCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.CheckPlayerPropertyCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.CheckPlayerPropertyCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: CheckPlayerPropertyCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.CheckPlayerPropertyCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.CheckPlayerPropertyCondition.html#DEAL_FSM_Condition_CheckPlayerPropertyCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.CheckPlayerPropertyCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.CheckPlayerPropertyCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: CheckPlayerPropertyCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.CheckPlayerPropertyCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.CheckPlayerPropertyCondition.html#DEAL_FSM_Condition_CheckPlayerPropertyCondition_Verify_
@@ -4825,12 +5378,12 @@ references:
   commentId: T:DEAL.FSM.Condition.ComparePlayerPropertyCondition
   fullName: DEAL.FSM.Condition.ComparePlayerPropertyCondition
   nameWithType: ComparePlayerPropertyCondition
-- uid: DEAL.FSM.Condition.ComparePlayerPropertyCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.ComparePlayerPropertyCondition.html#DEAL_FSM_Condition_ComparePlayerPropertyCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.ComparePlayerPropertyCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.ComparePlayerPropertyCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ComparePlayerPropertyCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.ComparePlayerPropertyCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.ComparePlayerPropertyCondition.html#DEAL_FSM_Condition_ComparePlayerPropertyCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.ComparePlayerPropertyCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.ComparePlayerPropertyCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: ComparePlayerPropertyCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.ComparePlayerPropertyCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.ComparePlayerPropertyCondition.html#DEAL_FSM_Condition_ComparePlayerPropertyCondition_Verify_
@@ -4850,12 +5403,12 @@ references:
   commentId: F:DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.SupportedControlActors
   fullName: DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.SupportedControlActors
   nameWithType: CompareScoreAgainstMultipleCondition.SupportedControlActors
-- uid: DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.html#DEAL_FSM_Condition_CompareScoreAgainstMultipleCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: CompareScoreAgainstMultipleCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.html#DEAL_FSM_Condition_CompareScoreAgainstMultipleCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: CompareScoreAgainstMultipleCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.CompareScoreAgainstMultipleCondition.html#DEAL_FSM_Condition_CompareScoreAgainstMultipleCondition_Verify_
@@ -4901,12 +5454,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.Condition.CompareScoreCondition.CountScore
   nameWithType: CompareScoreCondition.CountScore
-- uid: DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: CompareScoreCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.CompareScoreCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: CompareScoreCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.CompareScoreCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.CompareScoreCondition.html#DEAL_FSM_Condition_CompareScoreCondition_Verify_
@@ -4986,12 +5539,12 @@ references:
   commentId: T:DEAL.FSM.Condition.EndOfSystemLockCondition
   fullName: DEAL.FSM.Condition.EndOfSystemLockCondition
   nameWithType: EndOfSystemLockCondition
-- uid: DEAL.FSM.Condition.EndOfSystemLockCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.EndOfSystemLockCondition.html#DEAL_FSM_Condition_EndOfSystemLockCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.EndOfSystemLockCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.EndOfSystemLockCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: EndOfSystemLockCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.EndOfSystemLockCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.EndOfSystemLockCondition.html#DEAL_FSM_Condition_EndOfSystemLockCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.EndOfSystemLockCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.EndOfSystemLockCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: EndOfSystemLockCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.EndOfSystemLockCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.EndOfSystemLockCondition.html#DEAL_FSM_Condition_EndOfSystemLockCondition_Verify_
@@ -5005,12 +5558,12 @@ references:
   commentId: T:DEAL.FSM.Condition.EndOfTurnCondition
   fullName: DEAL.FSM.Condition.EndOfTurnCondition
   nameWithType: EndOfTurnCondition
-- uid: DEAL.FSM.Condition.EndOfTurnCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.EndOfTurnCondition.html#DEAL_FSM_Condition_EndOfTurnCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.EndOfTurnCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.EndOfTurnCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: EndOfTurnCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.EndOfTurnCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.EndOfTurnCondition.html#DEAL_FSM_Condition_EndOfTurnCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.EndOfTurnCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.EndOfTurnCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: EndOfTurnCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.EndOfTurnCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.EndOfTurnCondition.html#DEAL_FSM_Condition_EndOfTurnCondition_Verify_
@@ -5116,12 +5669,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.CountScore
   nameWithType: MatchScoreMultipleCondition.CountScore
-- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: MatchScoreMultipleCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: MatchScoreMultipleCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_Verify_
@@ -5129,12 +5682,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.Verify
   nameWithType: MatchScoreMultipleCondition.Verify
-- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.VerifyMatchRule(DEAL.FSM.Condition.MatchRule,DEAL.FSM.CardStateMachineComponent)
-  name: VerifyMatchRule(MatchRule, CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_VerifyMatchRule_DEAL_FSM_Condition_MatchRule_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.VerifyMatchRule(DEAL.FSM.Condition.MatchRule,DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.VerifyMatchRule(DEAL.FSM.Condition.MatchRule, DEAL.FSM.CardStateMachineComponent)
-  nameWithType: MatchScoreMultipleCondition.VerifyMatchRule(MatchRule, CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.VerifyMatchRule(DEAL.FSM.Condition.MatchRule,DEAL.FSM.DealFSM)
+  name: VerifyMatchRule(MatchRule, DealFSM)
+  href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_VerifyMatchRule_DEAL_FSM_Condition_MatchRule_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.MatchScoreMultipleCondition.VerifyMatchRule(DEAL.FSM.Condition.MatchRule,DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.MatchScoreMultipleCondition.VerifyMatchRule(DEAL.FSM.Condition.MatchRule, DEAL.FSM.DealFSM)
+  nameWithType: MatchScoreMultipleCondition.VerifyMatchRule(MatchRule, DealFSM)
 - uid: DEAL.FSM.Condition.MatchScoreMultipleCondition.VerifyMatchRule*
   name: VerifyMatchRule
   href: api/DEAL.FSM.Condition.MatchScoreMultipleCondition.html#DEAL_FSM_Condition_MatchScoreMultipleCondition_VerifyMatchRule_
@@ -5154,12 +5707,12 @@ references:
   commentId: T:DEAL.FSM.Condition.WaitEventCondition
   fullName: DEAL.FSM.Condition.WaitEventCondition
   nameWithType: WaitEventCondition
-- uid: DEAL.FSM.Condition.WaitEventCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.WaitEventCondition.html#DEAL_FSM_Condition_WaitEventCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.WaitEventCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.WaitEventCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: WaitEventCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.WaitEventCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.WaitEventCondition.html#DEAL_FSM_Condition_WaitEventCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.WaitEventCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.WaitEventCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: WaitEventCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.WaitEventCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.WaitEventCondition.html#DEAL_FSM_Condition_WaitEventCondition_Verify_
@@ -5179,12 +5732,12 @@ references:
   commentId: T:DEAL.FSM.Condition.WaitForGroupEventCondition
   fullName: DEAL.FSM.Condition.WaitForGroupEventCondition
   nameWithType: WaitForGroupEventCondition
-- uid: DEAL.FSM.Condition.WaitForGroupEventCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.Condition.WaitForGroupEventCondition.html#DEAL_FSM_Condition_WaitForGroupEventCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.Condition.WaitForGroupEventCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.Condition.WaitForGroupEventCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: WaitForGroupEventCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.Condition.WaitForGroupEventCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.Condition.WaitForGroupEventCondition.html#DEAL_FSM_Condition_WaitForGroupEventCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.Condition.WaitForGroupEventCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.Condition.WaitForGroupEventCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: WaitForGroupEventCondition.Verify(DealFSM)
 - uid: DEAL.FSM.Condition.WaitForGroupEventCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.Condition.WaitForGroupEventCondition.html#DEAL_FSM_Condition_WaitForGroupEventCondition_Verify_
@@ -5204,6 +5757,464 @@ references:
   commentId: F:DEAL.FSM.Condition.WaitForGroupEventCondition.targetParams
   fullName: DEAL.FSM.Condition.WaitForGroupEventCondition.targetParams
   nameWithType: WaitForGroupEventCondition.targetParams
+- uid: DEAL.FSM.DealFSM
+  name: DealFSM
+  href: api/DEAL.FSM.DealFSM.html
+  commentId: T:DEAL.FSM.DealFSM
+  fullName: DEAL.FSM.DealFSM
+  nameWithType: DealFSM
+- uid: DEAL.FSM.DealFSM.AlivePlayerCount
+  name: AlivePlayerCount
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_AlivePlayerCount
+  commentId: P:DEAL.FSM.DealFSM.AlivePlayerCount
+  fullName: DEAL.FSM.DealFSM.AlivePlayerCount
+  nameWithType: DealFSM.AlivePlayerCount
+- uid: DEAL.FSM.DealFSM.AlivePlayerCount*
+  name: AlivePlayerCount
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_AlivePlayerCount_
+  commentId: Overload:DEAL.FSM.DealFSM.AlivePlayerCount
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.AlivePlayerCount
+  nameWithType: DealFSM.AlivePlayerCount
+- uid: DEAL.FSM.DealFSM.CardChoiceBuffer
+  name: CardChoiceBuffer
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CardChoiceBuffer
+  commentId: P:DEAL.FSM.DealFSM.CardChoiceBuffer
+  fullName: DEAL.FSM.DealFSM.CardChoiceBuffer
+  nameWithType: DealFSM.CardChoiceBuffer
+- uid: DEAL.FSM.DealFSM.CardChoiceBuffer*
+  name: CardChoiceBuffer
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CardChoiceBuffer_
+  commentId: Overload:DEAL.FSM.DealFSM.CardChoiceBuffer
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.CardChoiceBuffer
+  nameWithType: DealFSM.CardChoiceBuffer
+- uid: DEAL.FSM.DealFSM.ChangePlayer(System.Int32)
+  name: ChangePlayer(int)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_ChangePlayer_System_Int32_
+  commentId: M:DEAL.FSM.DealFSM.ChangePlayer(System.Int32)
+  name.vb: ChangePlayer(Integer)
+  fullName: DEAL.FSM.DealFSM.ChangePlayer(int)
+  fullName.vb: DEAL.FSM.DealFSM.ChangePlayer(Integer)
+  nameWithType: DealFSM.ChangePlayer(int)
+  nameWithType.vb: DealFSM.ChangePlayer(Integer)
+- uid: DEAL.FSM.DealFSM.ChangePlayer*
+  name: ChangePlayer
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_ChangePlayer_
+  commentId: Overload:DEAL.FSM.DealFSM.ChangePlayer
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.ChangePlayer
+  nameWithType: DealFSM.ChangePlayer
+- uid: DEAL.FSM.DealFSM.CurrentAvatar
+  name: CurrentAvatar
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CurrentAvatar
+  commentId: P:DEAL.FSM.DealFSM.CurrentAvatar
+  fullName: DEAL.FSM.DealFSM.CurrentAvatar
+  nameWithType: DealFSM.CurrentAvatar
+- uid: DEAL.FSM.DealFSM.CurrentAvatar*
+  name: CurrentAvatar
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CurrentAvatar_
+  commentId: Overload:DEAL.FSM.DealFSM.CurrentAvatar
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.CurrentAvatar
+  nameWithType: DealFSM.CurrentAvatar
+- uid: DEAL.FSM.DealFSM.CurrentPlayerDeck
+  name: CurrentPlayerDeck
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CurrentPlayerDeck
+  commentId: P:DEAL.FSM.DealFSM.CurrentPlayerDeck
+  fullName: DEAL.FSM.DealFSM.CurrentPlayerDeck
+  nameWithType: DealFSM.CurrentPlayerDeck
+- uid: DEAL.FSM.DealFSM.CurrentPlayerDeck*
+  name: CurrentPlayerDeck
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CurrentPlayerDeck_
+  commentId: Overload:DEAL.FSM.DealFSM.CurrentPlayerDeck
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.CurrentPlayerDeck
+  nameWithType: DealFSM.CurrentPlayerDeck
+- uid: DEAL.FSM.DealFSM.CurrentState
+  name: CurrentState
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CurrentState
+  commentId: P:DEAL.FSM.DealFSM.CurrentState
+  fullName: DEAL.FSM.DealFSM.CurrentState
+  nameWithType: DealFSM.CurrentState
+- uid: DEAL.FSM.DealFSM.CurrentState*
+  name: CurrentState
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_CurrentState_
+  commentId: Overload:DEAL.FSM.DealFSM.CurrentState
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.CurrentState
+  nameWithType: DealFSM.CurrentState
+- uid: DEAL.FSM.DealFSM.DebugCancelWait
+  name: DebugCancelWait()
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_DebugCancelWait
+  commentId: M:DEAL.FSM.DealFSM.DebugCancelWait
+  fullName: DEAL.FSM.DealFSM.DebugCancelWait()
+  nameWithType: DealFSM.DebugCancelWait()
+- uid: DEAL.FSM.DealFSM.DebugCancelWait*
+  name: DebugCancelWait
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_DebugCancelWait_
+  commentId: Overload:DEAL.FSM.DealFSM.DebugCancelWait
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.DebugCancelWait
+  nameWithType: DealFSM.DebugCancelWait
+- uid: DEAL.FSM.DealFSM.EliminatePlayer(DEAL.Avatar)
+  name: EliminatePlayer(Avatar)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_EliminatePlayer_DEAL_Avatar_
+  commentId: M:DEAL.FSM.DealFSM.EliminatePlayer(DEAL.Avatar)
+  fullName: DEAL.FSM.DealFSM.EliminatePlayer(DEAL.Avatar)
+  nameWithType: DealFSM.EliminatePlayer(Avatar)
+- uid: DEAL.FSM.DealFSM.EliminatePlayer(DEAL.FSM.ActionActor,System.Int32[])
+  name: EliminatePlayer(ActionActor, int[])
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_EliminatePlayer_DEAL_FSM_ActionActor_System_Int32___
+  commentId: M:DEAL.FSM.DealFSM.EliminatePlayer(DEAL.FSM.ActionActor,System.Int32[])
+  name.vb: EliminatePlayer(ActionActor, Integer())
+  fullName: DEAL.FSM.DealFSM.EliminatePlayer(DEAL.FSM.ActionActor, int[])
+  fullName.vb: DEAL.FSM.DealFSM.EliminatePlayer(DEAL.FSM.ActionActor, Integer())
+  nameWithType: DealFSM.EliminatePlayer(ActionActor, int[])
+  nameWithType.vb: DealFSM.EliminatePlayer(ActionActor, Integer())
+- uid: DEAL.FSM.DealFSM.EliminatePlayer*
+  name: EliminatePlayer
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_EliminatePlayer_
+  commentId: Overload:DEAL.FSM.DealFSM.EliminatePlayer
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.EliminatePlayer
+  nameWithType: DealFSM.EliminatePlayer
+- uid: DEAL.FSM.DealFSM.ExecuteCardTransfer(DEAL.Avatar,DEAL.CardHolder)
+  name: ExecuteCardTransfer(Avatar, CardHolder)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_ExecuteCardTransfer_DEAL_Avatar_DEAL_CardHolder_
+  commentId: M:DEAL.FSM.DealFSM.ExecuteCardTransfer(DEAL.Avatar,DEAL.CardHolder)
+  fullName: DEAL.FSM.DealFSM.ExecuteCardTransfer(DEAL.Avatar, DEAL.CardHolder)
+  nameWithType: DealFSM.ExecuteCardTransfer(Avatar, CardHolder)
+- uid: DEAL.FSM.DealFSM.ExecuteCardTransfer*
+  name: ExecuteCardTransfer
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_ExecuteCardTransfer_
+  commentId: Overload:DEAL.FSM.DealFSM.ExecuteCardTransfer
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.ExecuteCardTransfer
+  nameWithType: DealFSM.ExecuteCardTransfer
+- uid: DEAL.FSM.DealFSM.FixedPlayerOrderStack
+  name: FixedPlayerOrderStack
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_FixedPlayerOrderStack
+  commentId: F:DEAL.FSM.DealFSM.FixedPlayerOrderStack
+  fullName: DEAL.FSM.DealFSM.FixedPlayerOrderStack
+  nameWithType: DealFSM.FixedPlayerOrderStack
+- uid: DEAL.FSM.DealFSM.GetActorAvatar(DEAL.FSM.ActionActor,System.Int32[])
+  name: GetActorAvatar(ActionActor, int[])
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorAvatar_DEAL_FSM_ActionActor_System_Int32___
+  commentId: M:DEAL.FSM.DealFSM.GetActorAvatar(DEAL.FSM.ActionActor,System.Int32[])
+  name.vb: GetActorAvatar(ActionActor, Integer())
+  fullName: DEAL.FSM.DealFSM.GetActorAvatar(DEAL.FSM.ActionActor, int[])
+  fullName.vb: DEAL.FSM.DealFSM.GetActorAvatar(DEAL.FSM.ActionActor, Integer())
+  nameWithType: DealFSM.GetActorAvatar(ActionActor, int[])
+  nameWithType.vb: DealFSM.GetActorAvatar(ActionActor, Integer())
+- uid: DEAL.FSM.DealFSM.GetActorAvatar*
+  name: GetActorAvatar
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorAvatar_
+  commentId: Overload:DEAL.FSM.DealFSM.GetActorAvatar
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.GetActorAvatar
+  nameWithType: DealFSM.GetActorAvatar
+- uid: DEAL.FSM.DealFSM.GetActorAvatars(DEAL.FSM.ActionActor,System.Int32[])
+  name: GetActorAvatars(ActionActor, int[])
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorAvatars_DEAL_FSM_ActionActor_System_Int32___
+  commentId: M:DEAL.FSM.DealFSM.GetActorAvatars(DEAL.FSM.ActionActor,System.Int32[])
+  name.vb: GetActorAvatars(ActionActor, Integer())
+  fullName: DEAL.FSM.DealFSM.GetActorAvatars(DEAL.FSM.ActionActor, int[])
+  fullName.vb: DEAL.FSM.DealFSM.GetActorAvatars(DEAL.FSM.ActionActor, Integer())
+  nameWithType: DealFSM.GetActorAvatars(ActionActor, int[])
+  nameWithType.vb: DealFSM.GetActorAvatars(ActionActor, Integer())
+- uid: DEAL.FSM.DealFSM.GetActorAvatars*
+  name: GetActorAvatars
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorAvatars_
+  commentId: Overload:DEAL.FSM.DealFSM.GetActorAvatars
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.GetActorAvatars
+  nameWithType: DealFSM.GetActorAvatars
+- uid: DEAL.FSM.DealFSM.GetActorChipHolder(DEAL.FSM.ActionActor,System.Int32[])
+  name: GetActorChipHolder(ActionActor, int[])
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorChipHolder_DEAL_FSM_ActionActor_System_Int32___
+  commentId: M:DEAL.FSM.DealFSM.GetActorChipHolder(DEAL.FSM.ActionActor,System.Int32[])
+  name.vb: GetActorChipHolder(ActionActor, Integer())
+  fullName: DEAL.FSM.DealFSM.GetActorChipHolder(DEAL.FSM.ActionActor, int[])
+  fullName.vb: DEAL.FSM.DealFSM.GetActorChipHolder(DEAL.FSM.ActionActor, Integer())
+  nameWithType: DealFSM.GetActorChipHolder(ActionActor, int[])
+  nameWithType.vb: DealFSM.GetActorChipHolder(ActionActor, Integer())
+- uid: DEAL.FSM.DealFSM.GetActorChipHolder*
+  name: GetActorChipHolder
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorChipHolder_
+  commentId: Overload:DEAL.FSM.DealFSM.GetActorChipHolder
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.GetActorChipHolder
+  nameWithType: DealFSM.GetActorChipHolder
+- uid: DEAL.FSM.DealFSM.GetActorDeck(DEAL.FSM.ActionActor,System.Int32[])
+  name: GetActorDeck(ActionActor, int[])
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorDeck_DEAL_FSM_ActionActor_System_Int32___
+  commentId: M:DEAL.FSM.DealFSM.GetActorDeck(DEAL.FSM.ActionActor,System.Int32[])
+  name.vb: GetActorDeck(ActionActor, Integer())
+  fullName: DEAL.FSM.DealFSM.GetActorDeck(DEAL.FSM.ActionActor, int[])
+  fullName.vb: DEAL.FSM.DealFSM.GetActorDeck(DEAL.FSM.ActionActor, Integer())
+  nameWithType: DealFSM.GetActorDeck(ActionActor, int[])
+  nameWithType.vb: DealFSM.GetActorDeck(ActionActor, Integer())
+- uid: DEAL.FSM.DealFSM.GetActorDeck*
+  name: GetActorDeck
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorDeck_
+  commentId: Overload:DEAL.FSM.DealFSM.GetActorDeck
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.GetActorDeck
+  nameWithType: DealFSM.GetActorDeck
+- uid: DEAL.FSM.DealFSM.GetActorDeckById(System.Int32)
+  name: GetActorDeckById(int)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorDeckById_System_Int32_
+  commentId: M:DEAL.FSM.DealFSM.GetActorDeckById(System.Int32)
+  name.vb: GetActorDeckById(Integer)
+  fullName: DEAL.FSM.DealFSM.GetActorDeckById(int)
+  fullName.vb: DEAL.FSM.DealFSM.GetActorDeckById(Integer)
+  nameWithType: DealFSM.GetActorDeckById(int)
+  nameWithType.vb: DealFSM.GetActorDeckById(Integer)
+- uid: DEAL.FSM.DealFSM.GetActorDeckById*
+  name: GetActorDeckById
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetActorDeckById_
+  commentId: Overload:DEAL.FSM.DealFSM.GetActorDeckById
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.GetActorDeckById
+  nameWithType: DealFSM.GetActorDeckById
+- uid: DEAL.FSM.DealFSM.GetPlayerActorIndex(DEAL.FSM.ActionActor,System.Int32[])
+  name: GetPlayerActorIndex(ActionActor, int[])
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetPlayerActorIndex_DEAL_FSM_ActionActor_System_Int32___
+  commentId: M:DEAL.FSM.DealFSM.GetPlayerActorIndex(DEAL.FSM.ActionActor,System.Int32[])
+  name.vb: GetPlayerActorIndex(ActionActor, Integer())
+  fullName: DEAL.FSM.DealFSM.GetPlayerActorIndex(DEAL.FSM.ActionActor, int[])
+  fullName.vb: DEAL.FSM.DealFSM.GetPlayerActorIndex(DEAL.FSM.ActionActor, Integer())
+  nameWithType: DealFSM.GetPlayerActorIndex(ActionActor, int[])
+  nameWithType.vb: DealFSM.GetPlayerActorIndex(ActionActor, Integer())
+- uid: DEAL.FSM.DealFSM.GetPlayerActorIndex*
+  name: GetPlayerActorIndex
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_GetPlayerActorIndex_
+  commentId: Overload:DEAL.FSM.DealFSM.GetPlayerActorIndex
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.GetPlayerActorIndex
+  nameWithType: DealFSM.GetPlayerActorIndex
+- uid: DEAL.FSM.DealFSM.LastExecutedCards
+  name: LastExecutedCards
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_LastExecutedCards
+  commentId: P:DEAL.FSM.DealFSM.LastExecutedCards
+  fullName: DEAL.FSM.DealFSM.LastExecutedCards
+  nameWithType: DealFSM.LastExecutedCards
+- uid: DEAL.FSM.DealFSM.LastExecutedCards*
+  name: LastExecutedCards
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_LastExecutedCards_
+  commentId: Overload:DEAL.FSM.DealFSM.LastExecutedCards
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.LastExecutedCards
+  nameWithType: DealFSM.LastExecutedCards
+- uid: DEAL.FSM.DealFSM.NextPlayerMultiplier
+  name: NextPlayerMultiplier
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_NextPlayerMultiplier
+  commentId: P:DEAL.FSM.DealFSM.NextPlayerMultiplier
+  fullName: DEAL.FSM.DealFSM.NextPlayerMultiplier
+  nameWithType: DealFSM.NextPlayerMultiplier
+- uid: DEAL.FSM.DealFSM.NextPlayerMultiplier*
+  name: NextPlayerMultiplier
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_NextPlayerMultiplier_
+  commentId: Overload:DEAL.FSM.DealFSM.NextPlayerMultiplier
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.NextPlayerMultiplier
+  nameWithType: DealFSM.NextPlayerMultiplier
+- uid: DEAL.FSM.DealFSM.OnConfirmSpecialAction
+  name: OnConfirmSpecialAction()
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_OnConfirmSpecialAction
+  commentId: M:DEAL.FSM.DealFSM.OnConfirmSpecialAction
+  fullName: DEAL.FSM.DealFSM.OnConfirmSpecialAction()
+  nameWithType: DealFSM.OnConfirmSpecialAction()
+- uid: DEAL.FSM.DealFSM.OnConfirmSpecialAction*
+  name: OnConfirmSpecialAction
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_OnConfirmSpecialAction_
+  commentId: Overload:DEAL.FSM.DealFSM.OnConfirmSpecialAction
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.OnConfirmSpecialAction
+  nameWithType: DealFSM.OnConfirmSpecialAction
+- uid: DEAL.FSM.DealFSM.OnEvent(DEAL.EventMsg)
+  name: OnEvent(EventMsg)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_OnEvent_DEAL_EventMsg_
+  commentId: M:DEAL.FSM.DealFSM.OnEvent(DEAL.EventMsg)
+  fullName: DEAL.FSM.DealFSM.OnEvent(DEAL.EventMsg)
+  nameWithType: DealFSM.OnEvent(EventMsg)
+- uid: DEAL.FSM.DealFSM.OnEvent*
+  name: OnEvent
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_OnEvent_
+  commentId: Overload:DEAL.FSM.DealFSM.OnEvent
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.OnEvent
+  nameWithType: DealFSM.OnEvent
+- uid: DEAL.FSM.DealFSM.OnPickSpecialAction(DEAL.BaseCard)
+  name: OnPickSpecialAction(BaseCard)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_OnPickSpecialAction_DEAL_BaseCard_
+  commentId: M:DEAL.FSM.DealFSM.OnPickSpecialAction(DEAL.BaseCard)
+  fullName: DEAL.FSM.DealFSM.OnPickSpecialAction(DEAL.BaseCard)
+  nameWithType: DealFSM.OnPickSpecialAction(BaseCard)
+- uid: DEAL.FSM.DealFSM.OnPickSpecialAction*
+  name: OnPickSpecialAction
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_OnPickSpecialAction_
+  commentId: Overload:DEAL.FSM.DealFSM.OnPickSpecialAction
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.OnPickSpecialAction
+  nameWithType: DealFSM.OnPickSpecialAction
+- uid: DEAL.FSM.DealFSM.OnStateChanged
+  name: OnStateChanged
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_OnStateChanged
+  commentId: F:DEAL.FSM.DealFSM.OnStateChanged
+  fullName: DEAL.FSM.DealFSM.OnStateChanged
+  nameWithType: DealFSM.OnStateChanged
+- uid: DEAL.FSM.DealFSM.RequestCardPick(DEAL.Avatar,DEAL.CardHolder,DEAL.FSM.CardChoice)
+  name: RequestCardPick(Avatar, CardHolder, CardChoice)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_RequestCardPick_DEAL_Avatar_DEAL_CardHolder_DEAL_FSM_CardChoice_
+  commentId: M:DEAL.FSM.DealFSM.RequestCardPick(DEAL.Avatar,DEAL.CardHolder,DEAL.FSM.CardChoice)
+  fullName: DEAL.FSM.DealFSM.RequestCardPick(DEAL.Avatar, DEAL.CardHolder, DEAL.FSM.CardChoice)
+  nameWithType: DealFSM.RequestCardPick(Avatar, CardHolder, CardChoice)
+- uid: DEAL.FSM.DealFSM.RequestCardPick*
+  name: RequestCardPick
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_RequestCardPick_
+  commentId: Overload:DEAL.FSM.DealFSM.RequestCardPick
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.RequestCardPick
+  nameWithType: DealFSM.RequestCardPick
+- uid: DEAL.FSM.DealFSM.RequestTimedLock(System.Single)
+  name: RequestTimedLock(float)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_RequestTimedLock_System_Single_
+  commentId: M:DEAL.FSM.DealFSM.RequestTimedLock(System.Single)
+  name.vb: RequestTimedLock(Single)
+  fullName: DEAL.FSM.DealFSM.RequestTimedLock(float)
+  fullName.vb: DEAL.FSM.DealFSM.RequestTimedLock(Single)
+  nameWithType: DealFSM.RequestTimedLock(float)
+  nameWithType.vb: DealFSM.RequestTimedLock(Single)
+- uid: DEAL.FSM.DealFSM.RequestTimedLock*
+  name: RequestTimedLock
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_RequestTimedLock_
+  commentId: Overload:DEAL.FSM.DealFSM.RequestTimedLock
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.RequestTimedLock
+  nameWithType: DealFSM.RequestTimedLock
+- uid: DEAL.FSM.DealFSM.SetNextPlayer(System.Int32)
+  name: SetNextPlayer(int)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_SetNextPlayer_System_Int32_
+  commentId: M:DEAL.FSM.DealFSM.SetNextPlayer(System.Int32)
+  name.vb: SetNextPlayer(Integer)
+  fullName: DEAL.FSM.DealFSM.SetNextPlayer(int)
+  fullName.vb: DEAL.FSM.DealFSM.SetNextPlayer(Integer)
+  nameWithType: DealFSM.SetNextPlayer(int)
+  nameWithType.vb: DealFSM.SetNextPlayer(Integer)
+- uid: DEAL.FSM.DealFSM.SetNextPlayer*
+  name: SetNextPlayer
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_SetNextPlayer_
+  commentId: Overload:DEAL.FSM.DealFSM.SetNextPlayer
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.SetNextPlayer
+  nameWithType: DealFSM.SetNextPlayer
+- uid: DEAL.FSM.DealFSM.SetPlayerOrder(DEAL.FSM.OrderType,System.Int32[])
+  name: SetPlayerOrder(OrderType, int[])
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_SetPlayerOrder_DEAL_FSM_OrderType_System_Int32___
+  commentId: M:DEAL.FSM.DealFSM.SetPlayerOrder(DEAL.FSM.OrderType,System.Int32[])
+  name.vb: SetPlayerOrder(OrderType, Integer())
+  fullName: DEAL.FSM.DealFSM.SetPlayerOrder(DEAL.FSM.OrderType, int[])
+  fullName.vb: DEAL.FSM.DealFSM.SetPlayerOrder(DEAL.FSM.OrderType, Integer())
+  nameWithType: DealFSM.SetPlayerOrder(OrderType, int[])
+  nameWithType.vb: DealFSM.SetPlayerOrder(OrderType, Integer())
+- uid: DEAL.FSM.DealFSM.SetPlayerOrder*
+  name: SetPlayerOrder
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_SetPlayerOrder_
+  commentId: Overload:DEAL.FSM.DealFSM.SetPlayerOrder
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.SetPlayerOrder
+  nameWithType: DealFSM.SetPlayerOrder
+- uid: DEAL.FSM.DealFSM.StartFSM
+  name: StartFSM()
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_StartFSM
+  commentId: M:DEAL.FSM.DealFSM.StartFSM
+  fullName: DEAL.FSM.DealFSM.StartFSM()
+  nameWithType: DealFSM.StartFSM()
+- uid: DEAL.FSM.DealFSM.StartFSM*
+  name: StartFSM
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_StartFSM_
+  commentId: Overload:DEAL.FSM.DealFSM.StartFSM
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.StartFSM
+  nameWithType: DealFSM.StartFSM
+- uid: DEAL.FSM.DealFSM.TerminateFSM
+  name: TerminateFSM()
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_TerminateFSM
+  commentId: M:DEAL.FSM.DealFSM.TerminateFSM
+  fullName: DEAL.FSM.DealFSM.TerminateFSM()
+  nameWithType: DealFSM.TerminateFSM()
+- uid: DEAL.FSM.DealFSM.TerminateFSM*
+  name: TerminateFSM
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_TerminateFSM_
+  commentId: Overload:DEAL.FSM.DealFSM.TerminateFSM
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.TerminateFSM
+  nameWithType: DealFSM.TerminateFSM
+- uid: DEAL.FSM.DealFSM.TryPick(DEAL.BaseCard)
+  name: TryPick(BaseCard)
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_TryPick_DEAL_BaseCard_
+  commentId: M:DEAL.FSM.DealFSM.TryPick(DEAL.BaseCard)
+  fullName: DEAL.FSM.DealFSM.TryPick(DEAL.BaseCard)
+  nameWithType: DealFSM.TryPick(BaseCard)
+- uid: DEAL.FSM.DealFSM.TryPick*
+  name: TryPick
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_TryPick_
+  commentId: Overload:DEAL.FSM.DealFSM.TryPick
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.TryPick
+  nameWithType: DealFSM.TryPick
+- uid: DEAL.FSM.DealFSM.UpdateAlivePlayerCount
+  name: UpdateAlivePlayerCount()
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_UpdateAlivePlayerCount
+  commentId: M:DEAL.FSM.DealFSM.UpdateAlivePlayerCount
+  fullName: DEAL.FSM.DealFSM.UpdateAlivePlayerCount()
+  nameWithType: DealFSM.UpdateAlivePlayerCount()
+- uid: DEAL.FSM.DealFSM.UpdateAlivePlayerCount*
+  name: UpdateAlivePlayerCount
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_UpdateAlivePlayerCount_
+  commentId: Overload:DEAL.FSM.DealFSM.UpdateAlivePlayerCount
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.UpdateAlivePlayerCount
+  nameWithType: DealFSM.UpdateAlivePlayerCount
+- uid: DEAL.FSM.DealFSM.WaitDialogLock
+  name: WaitDialogLock
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_WaitDialogLock
+  commentId: F:DEAL.FSM.DealFSM.WaitDialogLock
+  fullName: DEAL.FSM.DealFSM.WaitDialogLock
+  nameWithType: DealFSM.WaitDialogLock
+- uid: DEAL.FSM.DealFSM.WaitSystemLock
+  name: WaitSystemLock
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_WaitSystemLock
+  commentId: F:DEAL.FSM.DealFSM.WaitSystemLock
+  fullName: DEAL.FSM.DealFSM.WaitSystemLock
+  nameWithType: DealFSM.WaitSystemLock
+- uid: DEAL.FSM.DealFSM.WaitTurnLock
+  name: WaitTurnLock
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_WaitTurnLock
+  commentId: P:DEAL.FSM.DealFSM.WaitTurnLock
+  fullName: DEAL.FSM.DealFSM.WaitTurnLock
+  nameWithType: DealFSM.WaitTurnLock
+- uid: DEAL.FSM.DealFSM.WaitTurnLock*
+  name: WaitTurnLock
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_WaitTurnLock_
+  commentId: Overload:DEAL.FSM.DealFSM.WaitTurnLock
+  isSpec: "True"
+  fullName: DEAL.FSM.DealFSM.WaitTurnLock
+  nameWithType: DealFSM.WaitTurnLock
+- uid: DEAL.FSM.DealFSM.eventDictionary
+  name: eventDictionary
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_eventDictionary
+  commentId: F:DEAL.FSM.DealFSM.eventDictionary
+  fullName: DEAL.FSM.DealFSM.eventDictionary
+  nameWithType: DealFSM.eventDictionary
+- uid: DEAL.FSM.DealFSM.eventValueDictionary
+  name: eventValueDictionary
+  href: api/DEAL.FSM.DealFSM.html#DEAL_FSM_DealFSM_eventValueDictionary
+  commentId: F:DEAL.FSM.DealFSM.eventValueDictionary
+  fullName: DEAL.FSM.DealFSM.eventValueDictionary
+  nameWithType: DealFSM.eventValueDictionary
 - uid: DEAL.FSM.DialogType
   name: DialogType
   href: api/DEAL.FSM.DialogType.html
@@ -5216,12 +6227,24 @@ references:
   commentId: F:DEAL.FSM.DialogType.Confirm
   fullName: DEAL.FSM.DialogType.Confirm
   nameWithType: DialogType.Confirm
-- uid: DEAL.FSM.DialogType.Select
-  name: Select
-  href: api/DEAL.FSM.DialogType.html#DEAL_FSM_DialogType_Select
-  commentId: F:DEAL.FSM.DialogType.Select
-  fullName: DEAL.FSM.DialogType.Select
-  nameWithType: DialogType.Select
+- uid: DEAL.FSM.DialogType.IntSlider
+  name: IntSlider
+  href: api/DEAL.FSM.DialogType.html#DEAL_FSM_DialogType_IntSlider
+  commentId: F:DEAL.FSM.DialogType.IntSlider
+  fullName: DEAL.FSM.DialogType.IntSlider
+  nameWithType: DialogType.IntSlider
+- uid: DEAL.FSM.DialogType.SingleDropdown
+  name: SingleDropdown
+  href: api/DEAL.FSM.DialogType.html#DEAL_FSM_DialogType_SingleDropdown
+  commentId: F:DEAL.FSM.DialogType.SingleDropdown
+  fullName: DEAL.FSM.DialogType.SingleDropdown
+  nameWithType: DialogType.SingleDropdown
+- uid: DEAL.FSM.DialogType.SingleSelect
+  name: SingleSelect
+  href: api/DEAL.FSM.DialogType.html#DEAL_FSM_DialogType_SingleSelect
+  commentId: F:DEAL.FSM.DialogType.SingleSelect
+  fullName: DEAL.FSM.DialogType.SingleSelect
+  nameWithType: DialogType.SingleSelect
 - uid: DEAL.FSM.GameoverType
   name: GameoverType
   href: api/DEAL.FSM.GameoverType.html
@@ -5583,12 +6606,12 @@ references:
   commentId: T:DEAL.FSM.ScriptableAction
   fullName: DEAL.FSM.ScriptableAction
   nameWithType: ScriptableAction
-- uid: DEAL.FSM.ScriptableAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  name: Execute(CardStateMachineComponent)
-  href: api/DEAL.FSM.ScriptableAction.html#DEAL_FSM_ScriptableAction_Execute_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.ScriptableAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.ScriptableAction.Execute(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ScriptableAction.Execute(CardStateMachineComponent)
+- uid: DEAL.FSM.ScriptableAction.Execute(DEAL.FSM.DealFSM)
+  name: Execute(DealFSM)
+  href: api/DEAL.FSM.ScriptableAction.html#DEAL_FSM_ScriptableAction_Execute_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.ScriptableAction.Execute(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.ScriptableAction.Execute(DEAL.FSM.DealFSM)
+  nameWithType: ScriptableAction.Execute(DealFSM)
 - uid: DEAL.FSM.ScriptableAction.Execute*
   name: Execute
   href: api/DEAL.FSM.ScriptableAction.html#DEAL_FSM_ScriptableAction_Execute_
@@ -5621,12 +6644,12 @@ references:
   commentId: T:DEAL.FSM.ScriptableCondition
   fullName: DEAL.FSM.ScriptableCondition
   nameWithType: ScriptableCondition
-- uid: DEAL.FSM.ScriptableCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  name: Verify(CardStateMachineComponent)
-  href: api/DEAL.FSM.ScriptableCondition.html#DEAL_FSM_ScriptableCondition_Verify_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.ScriptableCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.ScriptableCondition.Verify(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ScriptableCondition.Verify(CardStateMachineComponent)
+- uid: DEAL.FSM.ScriptableCondition.Verify(DEAL.FSM.DealFSM)
+  name: Verify(DealFSM)
+  href: api/DEAL.FSM.ScriptableCondition.html#DEAL_FSM_ScriptableCondition_Verify_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.ScriptableCondition.Verify(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.ScriptableCondition.Verify(DEAL.FSM.DealFSM)
+  nameWithType: ScriptableCondition.Verify(DealFSM)
 - uid: DEAL.FSM.ScriptableCondition.Verify*
   name: Verify
   href: api/DEAL.FSM.ScriptableCondition.html#DEAL_FSM_ScriptableCondition_Verify_
@@ -5683,12 +6706,12 @@ references:
   commentId: T:DEAL.FSM.ScriptableState
   fullName: DEAL.FSM.ScriptableState
   nameWithType: ScriptableState
-- uid: DEAL.FSM.ScriptableState.OnEnterState(DEAL.FSM.CardStateMachineComponent)
-  name: OnEnterState(CardStateMachineComponent)
-  href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnEnterState_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.ScriptableState.OnEnterState(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.ScriptableState.OnEnterState(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ScriptableState.OnEnterState(CardStateMachineComponent)
+- uid: DEAL.FSM.ScriptableState.OnEnterState(DEAL.FSM.DealFSM)
+  name: OnEnterState(DealFSM)
+  href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnEnterState_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.ScriptableState.OnEnterState(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.ScriptableState.OnEnterState(DEAL.FSM.DealFSM)
+  nameWithType: ScriptableState.OnEnterState(DealFSM)
 - uid: DEAL.FSM.ScriptableState.OnEnterState*
   name: OnEnterState
   href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnEnterState_
@@ -5696,12 +6719,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.ScriptableState.OnEnterState
   nameWithType: ScriptableState.OnEnterState
-- uid: DEAL.FSM.ScriptableState.OnExitState(DEAL.FSM.CardStateMachineComponent)
-  name: OnExitState(CardStateMachineComponent)
-  href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnExitState_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.ScriptableState.OnExitState(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.ScriptableState.OnExitState(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ScriptableState.OnExitState(CardStateMachineComponent)
+- uid: DEAL.FSM.ScriptableState.OnExitState(DEAL.FSM.DealFSM)
+  name: OnExitState(DealFSM)
+  href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnExitState_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.ScriptableState.OnExitState(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.ScriptableState.OnExitState(DEAL.FSM.DealFSM)
+  nameWithType: ScriptableState.OnExitState(DealFSM)
 - uid: DEAL.FSM.ScriptableState.OnExitState*
   name: OnExitState
   href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnExitState_
@@ -5709,12 +6732,12 @@ references:
   isSpec: "True"
   fullName: DEAL.FSM.ScriptableState.OnExitState
   nameWithType: ScriptableState.OnExitState
-- uid: DEAL.FSM.ScriptableState.OnUpdateState(DEAL.FSM.CardStateMachineComponent)
-  name: OnUpdateState(CardStateMachineComponent)
-  href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnUpdateState_DEAL_FSM_CardStateMachineComponent_
-  commentId: M:DEAL.FSM.ScriptableState.OnUpdateState(DEAL.FSM.CardStateMachineComponent)
-  fullName: DEAL.FSM.ScriptableState.OnUpdateState(DEAL.FSM.CardStateMachineComponent)
-  nameWithType: ScriptableState.OnUpdateState(CardStateMachineComponent)
+- uid: DEAL.FSM.ScriptableState.OnUpdateState(DEAL.FSM.DealFSM)
+  name: OnUpdateState(DealFSM)
+  href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnUpdateState_DEAL_FSM_DealFSM_
+  commentId: M:DEAL.FSM.ScriptableState.OnUpdateState(DEAL.FSM.DealFSM)
+  fullName: DEAL.FSM.ScriptableState.OnUpdateState(DEAL.FSM.DealFSM)
+  nameWithType: ScriptableState.OnUpdateState(DealFSM)
 - uid: DEAL.FSM.ScriptableState.OnUpdateState*
   name: OnUpdateState
   href: api/DEAL.FSM.ScriptableState.html#DEAL_FSM_ScriptableState_OnUpdateState_
@@ -5728,12 +6751,12 @@ references:
   commentId: T:DEAL.FSM.ScriptableStateMachine
   fullName: DEAL.FSM.ScriptableStateMachine
   nameWithType: ScriptableStateMachine
-- uid: DEAL.FSM.ScriptableStateMachine.CheckTransitions(DEAL.FSM.CardStateMachineComponent,DEAL.FSM.ScriptableState)
-  name: CheckTransitions(CardStateMachineComponent, ScriptableState)
-  href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_CheckTransitions_DEAL_FSM_CardStateMachineComponent_DEAL_FSM_ScriptableState_
-  commentId: M:DEAL.FSM.ScriptableStateMachine.CheckTransitions(DEAL.FSM.CardStateMachineComponent,DEAL.FSM.ScriptableState)
-  fullName: DEAL.FSM.ScriptableStateMachine.CheckTransitions(DEAL.FSM.CardStateMachineComponent, DEAL.FSM.ScriptableState)
-  nameWithType: ScriptableStateMachine.CheckTransitions(CardStateMachineComponent, ScriptableState)
+- uid: DEAL.FSM.ScriptableStateMachine.CheckTransitions(DEAL.FSM.DealFSM,DEAL.FSM.ScriptableState)
+  name: CheckTransitions(DealFSM, ScriptableState)
+  href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_CheckTransitions_DEAL_FSM_DealFSM_DEAL_FSM_ScriptableState_
+  commentId: M:DEAL.FSM.ScriptableStateMachine.CheckTransitions(DEAL.FSM.DealFSM,DEAL.FSM.ScriptableState)
+  fullName: DEAL.FSM.ScriptableStateMachine.CheckTransitions(DEAL.FSM.DealFSM, DEAL.FSM.ScriptableState)
+  nameWithType: ScriptableStateMachine.CheckTransitions(DealFSM, ScriptableState)
 - uid: DEAL.FSM.ScriptableStateMachine.CheckTransitions*
   name: CheckTransitions
   href: api/DEAL.FSM.ScriptableStateMachine.html#DEAL_FSM_ScriptableStateMachine_CheckTransitions_
@@ -5820,6 +6843,36 @@ references:
   commentId: T:DEAL.GlobalEnum
   fullName: DEAL.GlobalEnum
   nameWithType: GlobalEnum
+- uid: DEAL.GlobalEnum.AvatarType
+  name: GlobalEnum.AvatarType
+  href: api/DEAL.GlobalEnum.AvatarType.html
+  commentId: T:DEAL.GlobalEnum.AvatarType
+  fullName: DEAL.GlobalEnum.AvatarType
+  nameWithType: GlobalEnum.AvatarType
+- uid: DEAL.GlobalEnum.AvatarType.Npc
+  name: Npc
+  href: api/DEAL.GlobalEnum.AvatarType.html#DEAL_GlobalEnum_AvatarType_Npc
+  commentId: F:DEAL.GlobalEnum.AvatarType.Npc
+  fullName: DEAL.GlobalEnum.AvatarType.Npc
+  nameWithType: GlobalEnum.AvatarType.Npc
+- uid: DEAL.GlobalEnum.AvatarType.OtherNpc
+  name: OtherNpc
+  href: api/DEAL.GlobalEnum.AvatarType.html#DEAL_GlobalEnum_AvatarType_OtherNpc
+  commentId: F:DEAL.GlobalEnum.AvatarType.OtherNpc
+  fullName: DEAL.GlobalEnum.AvatarType.OtherNpc
+  nameWithType: GlobalEnum.AvatarType.OtherNpc
+- uid: DEAL.GlobalEnum.AvatarType.OtherPlayer
+  name: OtherPlayer
+  href: api/DEAL.GlobalEnum.AvatarType.html#DEAL_GlobalEnum_AvatarType_OtherPlayer
+  commentId: F:DEAL.GlobalEnum.AvatarType.OtherPlayer
+  fullName: DEAL.GlobalEnum.AvatarType.OtherPlayer
+  nameWithType: GlobalEnum.AvatarType.OtherPlayer
+- uid: DEAL.GlobalEnum.AvatarType.Player
+  name: Player
+  href: api/DEAL.GlobalEnum.AvatarType.html#DEAL_GlobalEnum_AvatarType_Player
+  commentId: F:DEAL.GlobalEnum.AvatarType.Player
+  fullName: DEAL.GlobalEnum.AvatarType.Player
+  nameWithType: GlobalEnum.AvatarType.Player
 - uid: DEAL.GlobalEnum.PlayCardMode
   name: GlobalEnum.PlayCardMode
   href: api/DEAL.GlobalEnum.PlayCardMode.html
@@ -5880,6 +6933,78 @@ references:
   commentId: F:DEAL.GlobalEnum.PokerSuit.Spade
   fullName: DEAL.GlobalEnum.PokerSuit.Spade
   nameWithType: GlobalEnum.PokerSuit.Spade
+- uid: DEAL.GlobalEnum.PropertyType
+  name: GlobalEnum.PropertyType
+  href: api/DEAL.GlobalEnum.PropertyType.html
+  commentId: T:DEAL.GlobalEnum.PropertyType
+  fullName: DEAL.GlobalEnum.PropertyType
+  nameWithType: GlobalEnum.PropertyType
+- uid: DEAL.GlobalEnum.PropertyType.ActorArgs
+  name: ActorArgs
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_ActorArgs
+  commentId: F:DEAL.GlobalEnum.PropertyType.ActorArgs
+  fullName: DEAL.GlobalEnum.PropertyType.ActorArgs
+  nameWithType: GlobalEnum.PropertyType.ActorArgs
+- uid: DEAL.GlobalEnum.PropertyType.Bool
+  name: Bool
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Bool
+  commentId: F:DEAL.GlobalEnum.PropertyType.Bool
+  fullName: DEAL.GlobalEnum.PropertyType.Bool
+  nameWithType: GlobalEnum.PropertyType.Bool
+- uid: DEAL.GlobalEnum.PropertyType.Color
+  name: Color
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Color
+  commentId: F:DEAL.GlobalEnum.PropertyType.Color
+  fullName: DEAL.GlobalEnum.PropertyType.Color
+  nameWithType: GlobalEnum.PropertyType.Color
+- uid: DEAL.GlobalEnum.PropertyType.Float
+  name: Float
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Float
+  commentId: F:DEAL.GlobalEnum.PropertyType.Float
+  fullName: DEAL.GlobalEnum.PropertyType.Float
+  nameWithType: GlobalEnum.PropertyType.Float
+- uid: DEAL.GlobalEnum.PropertyType.Int
+  name: Int
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Int
+  commentId: F:DEAL.GlobalEnum.PropertyType.Int
+  fullName: DEAL.GlobalEnum.PropertyType.Int
+  nameWithType: GlobalEnum.PropertyType.Int
+- uid: DEAL.GlobalEnum.PropertyType.Object
+  name: Object
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Object
+  commentId: F:DEAL.GlobalEnum.PropertyType.Object
+  fullName: DEAL.GlobalEnum.PropertyType.Object
+  nameWithType: GlobalEnum.PropertyType.Object
+- uid: DEAL.GlobalEnum.PropertyType.String
+  name: String
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_String
+  commentId: F:DEAL.GlobalEnum.PropertyType.String
+  fullName: DEAL.GlobalEnum.PropertyType.String
+  nameWithType: GlobalEnum.PropertyType.String
+- uid: DEAL.GlobalEnum.PropertyType.Vector2
+  name: Vector2
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Vector2
+  commentId: F:DEAL.GlobalEnum.PropertyType.Vector2
+  fullName: DEAL.GlobalEnum.PropertyType.Vector2
+  nameWithType: GlobalEnum.PropertyType.Vector2
+- uid: DEAL.GlobalEnum.PropertyType.Vector3
+  name: Vector3
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Vector3
+  commentId: F:DEAL.GlobalEnum.PropertyType.Vector3
+  fullName: DEAL.GlobalEnum.PropertyType.Vector3
+  nameWithType: GlobalEnum.PropertyType.Vector3
+- uid: DEAL.GlobalEnum.PropertyType.Vector4
+  name: Vector4
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Vector4
+  commentId: F:DEAL.GlobalEnum.PropertyType.Vector4
+  fullName: DEAL.GlobalEnum.PropertyType.Vector4
+  nameWithType: GlobalEnum.PropertyType.Vector4
+- uid: DEAL.GlobalEnum.PropertyType.Void
+  name: Void
+  href: api/DEAL.GlobalEnum.PropertyType.html#DEAL_GlobalEnum_PropertyType_Void
+  commentId: F:DEAL.GlobalEnum.PropertyType.Void
+  fullName: DEAL.GlobalEnum.PropertyType.Void
+  nameWithType: GlobalEnum.PropertyType.Void
 - uid: DEAL.GlobalEnum.TileOrder
   name: GlobalEnum.TileOrder
   href: api/DEAL.GlobalEnum.TileOrder.html
@@ -5983,43 +7108,24 @@ references:
   commentId: F:DEAL.GlobalInfoSO.AvatarPrefabPath
   fullName: DEAL.GlobalInfoSO.AvatarPrefabPath
   nameWithType: GlobalInfoSO.AvatarPrefabPath
+- uid: DEAL.GlobalInfoSO.EnableLocalMultiplayer
+  name: EnableLocalMultiplayer
+  href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_EnableLocalMultiplayer
+  commentId: F:DEAL.GlobalInfoSO.EnableLocalMultiplayer
+  fullName: DEAL.GlobalInfoSO.EnableLocalMultiplayer
+  nameWithType: GlobalInfoSO.EnableLocalMultiplayer
 - uid: DEAL.GlobalInfoSO.GameName
   name: GameName
   href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_GameName
   commentId: F:DEAL.GlobalInfoSO.GameName
   fullName: DEAL.GlobalInfoSO.GameName
   nameWithType: GlobalInfoSO.GameName
-- uid: DEAL.GlobalInfoSO.GameTable
-  name: GameTable
-  href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_GameTable
-  commentId: P:DEAL.GlobalInfoSO.GameTable
-  fullName: DEAL.GlobalInfoSO.GameTable
-  nameWithType: GlobalInfoSO.GameTable
-- uid: DEAL.GlobalInfoSO.GameTable*
-  name: GameTable
-  href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_GameTable_
-  commentId: Overload:DEAL.GlobalInfoSO.GameTable
-  isSpec: "True"
-  fullName: DEAL.GlobalInfoSO.GameTable
-  nameWithType: GlobalInfoSO.GameTable
 - uid: DEAL.GlobalInfoSO.MaxPlayerCount
   name: MaxPlayerCount
   href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_MaxPlayerCount
   commentId: F:DEAL.GlobalInfoSO.MaxPlayerCount
   fullName: DEAL.GlobalInfoSO.MaxPlayerCount
   nameWithType: GlobalInfoSO.MaxPlayerCount
-- uid: DEAL.GlobalInfoSO.Order
-  name: Order
-  href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_Order
-  commentId: F:DEAL.GlobalInfoSO.Order
-  fullName: DEAL.GlobalInfoSO.Order
-  nameWithType: GlobalInfoSO.Order
-- uid: DEAL.GlobalInfoSO.PlayCardMode
-  name: PlayCardMode
-  href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_PlayCardMode
-  commentId: F:DEAL.GlobalInfoSO.PlayCardMode
-  fullName: DEAL.GlobalInfoSO.PlayCardMode
-  nameWithType: GlobalInfoSO.PlayCardMode
 - uid: DEAL.GlobalInfoSO.PlayerDecks
   name: PlayerDecks
   href: api/DEAL.GlobalInfoSO.html#DEAL_GlobalInfoSO_PlayerDecks
@@ -6693,6 +7799,22 @@ references:
   isSpec: "True"
   fullName: DEAL.NetworkEventSystem.Instantiate
   nameWithType: NetworkEventSystem.Instantiate
+- uid: DEAL.NetworkEventSystem.InvokeCachedEvent*
+  name: InvokeCachedEvent
+  href: api/DEAL.NetworkEventSystem.html#DEAL_NetworkEventSystem_InvokeCachedEvent_
+  commentId: Overload:DEAL.NetworkEventSystem.InvokeCachedEvent
+  isSpec: "True"
+  fullName: DEAL.NetworkEventSystem.InvokeCachedEvent
+  nameWithType: NetworkEventSystem.InvokeCachedEvent
+- uid: DEAL.NetworkEventSystem.InvokeCachedEvent``1(``0,System.String,DEAL.GlobalEnum.PropertyType,System.Object)
+  name: InvokeCachedEvent<T>(T, string, PropertyType, object)
+  href: api/DEAL.NetworkEventSystem.html#DEAL_NetworkEventSystem_InvokeCachedEvent__1___0_System_String_DEAL_GlobalEnum_PropertyType_System_Object_
+  commentId: M:DEAL.NetworkEventSystem.InvokeCachedEvent``1(``0,System.String,DEAL.GlobalEnum.PropertyType,System.Object)
+  name.vb: InvokeCachedEvent(Of T)(T, String, PropertyType, Object)
+  fullName: DEAL.NetworkEventSystem.InvokeCachedEvent<T>(T, string, DEAL.GlobalEnum.PropertyType, object)
+  fullName.vb: DEAL.NetworkEventSystem.InvokeCachedEvent(Of T)(T, String, DEAL.GlobalEnum.PropertyType, Object)
+  nameWithType: NetworkEventSystem.InvokeCachedEvent<T>(T, string, GlobalEnum.PropertyType, object)
+  nameWithType.vb: NetworkEventSystem.InvokeCachedEvent(Of T)(T, String, GlobalEnum.PropertyType, Object)
 - uid: DEAL.NetworkEventSystem.IsMasterClient
   name: IsMasterClient
   href: api/DEAL.NetworkEventSystem.html#DEAL_NetworkEventSystem_IsMasterClient
@@ -6738,22 +7860,6 @@ references:
   isSpec: "True"
   fullName: DEAL.NetworkEventSystem.NetworkAdapter
   nameWithType: NetworkEventSystem.NetworkAdapter
-- uid: DEAL.NetworkEventSystem.NotifyEventArgs(System.String,System.Object[])
-  name: NotifyEventArgs(string, object[])
-  href: api/DEAL.NetworkEventSystem.html#DEAL_NetworkEventSystem_NotifyEventArgs_System_String_System_Object___
-  commentId: M:DEAL.NetworkEventSystem.NotifyEventArgs(System.String,System.Object[])
-  name.vb: NotifyEventArgs(String, Object())
-  fullName: DEAL.NetworkEventSystem.NotifyEventArgs(string, object[])
-  fullName.vb: DEAL.NetworkEventSystem.NotifyEventArgs(String, Object())
-  nameWithType: NetworkEventSystem.NotifyEventArgs(string, object[])
-  nameWithType.vb: NetworkEventSystem.NotifyEventArgs(String, Object())
-- uid: DEAL.NetworkEventSystem.NotifyEventArgs*
-  name: NotifyEventArgs
-  href: api/DEAL.NetworkEventSystem.html#DEAL_NetworkEventSystem_NotifyEventArgs_
-  commentId: Overload:DEAL.NetworkEventSystem.NotifyEventArgs
-  isSpec: "True"
-  fullName: DEAL.NetworkEventSystem.NotifyEventArgs
-  nameWithType: NetworkEventSystem.NotifyEventArgs
 - uid: DEAL.NetworkEventSystem.RPC(UnityEngine.MonoBehaviour,System.String,DEAL.RpcTargetType,System.Object[])
   name: RPC(MonoBehaviour, string, RpcTargetType, params object[])
   href: api/DEAL.NetworkEventSystem.html#DEAL_NetworkEventSystem_RPC_UnityEngine_MonoBehaviour_System_String_DEAL_RpcTargetType_System_Object___
@@ -7126,12 +8232,6 @@ references:
   commentId: T:DEAL.TileSO
   fullName: DEAL.TileSO
   nameWithType: TileSO
-- uid: DEAL.TileSO.ABkey
-  name: ABkey
-  href: api/DEAL.TileSO.html#DEAL_TileSO_ABkey
-  commentId: F:DEAL.TileSO.ABkey
-  fullName: DEAL.TileSO.ABkey
-  nameWithType: TileSO.ABkey
 - uid: DEAL.TileSO.AddCardEvent
   name: TileSO.AddCardEvent
   href: api/DEAL.TileSO.AddCardEvent.html
@@ -7174,24 +8274,12 @@ references:
   commentId: F:DEAL.TileSO.OnShuffleEvent
   fullName: DEAL.TileSO.OnShuffleEvent
   nameWithType: TileSO.OnShuffleEvent
-- uid: DEAL.TileSO.PivotTarget
-  name: PivotTarget
-  href: api/DEAL.TileSO.html#DEAL_TileSO_PivotTarget
-  commentId: F:DEAL.TileSO.PivotTarget
-  fullName: DEAL.TileSO.PivotTarget
-  nameWithType: TileSO.PivotTarget
 - uid: DEAL.TileSO.ShuffleEvent
   name: TileSO.ShuffleEvent
   href: api/DEAL.TileSO.ShuffleEvent.html
   commentId: T:DEAL.TileSO.ShuffleEvent
   fullName: DEAL.TileSO.ShuffleEvent
   nameWithType: TileSO.ShuffleEvent
-- uid: DEAL.TileSO.Type
-  name: Type
-  href: api/DEAL.TileSO.html#DEAL_TileSO_Type
-  commentId: F:DEAL.TileSO.Type
-  fullName: DEAL.TileSO.Type
-  nameWithType: TileSO.Type
 - uid: DEAL.TurnTable
   name: TurnTable
   href: api/DEAL.TurnTable.html
@@ -7551,22 +8639,96 @@ references:
   isSpec: "True"
   fullName: DEAL.UI.ConfirmDialog.DebugCloseDialog
   nameWithType: ConfirmDialog.DebugCloseDialog
-- uid: DEAL.UI.ConfirmDialog.ShowDialog(System.String,System.String,System.Action)
-  name: ShowDialog(string, string, Action)
-  href: api/DEAL.UI.ConfirmDialog.html#DEAL_UI_ConfirmDialog_ShowDialog_System_String_System_String_System_Action_
-  commentId: M:DEAL.UI.ConfirmDialog.ShowDialog(System.String,System.String,System.Action)
-  name.vb: ShowDialog(String, String, Action)
-  fullName: DEAL.UI.ConfirmDialog.ShowDialog(string, string, System.Action)
-  fullName.vb: DEAL.UI.ConfirmDialog.ShowDialog(String, String, System.Action)
-  nameWithType: ConfirmDialog.ShowDialog(string, string, Action)
-  nameWithType.vb: ConfirmDialog.ShowDialog(String, String, Action)
-- uid: DEAL.UI.ConfirmDialog.ShowDialog*
-  name: ShowDialog
-  href: api/DEAL.UI.ConfirmDialog.html#DEAL_UI_ConfirmDialog_ShowDialog_
-  commentId: Overload:DEAL.UI.ConfirmDialog.ShowDialog
+- uid: DEAL.UI.ConfirmDialog.InitDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  name: InitDialog(Avatar, PopDialogData)
+  href: api/DEAL.UI.ConfirmDialog.html#DEAL_UI_ConfirmDialog_InitDialog_DEAL_Avatar_DEAL_Event_PopDialogData_
+  commentId: M:DEAL.UI.ConfirmDialog.InitDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  fullName: DEAL.UI.ConfirmDialog.InitDialog(DEAL.Avatar, DEAL.Event.PopDialogData)
+  nameWithType: ConfirmDialog.InitDialog(Avatar, PopDialogData)
+- uid: DEAL.UI.ConfirmDialog.InitDialog*
+  name: InitDialog
+  href: api/DEAL.UI.ConfirmDialog.html#DEAL_UI_ConfirmDialog_InitDialog_
+  commentId: Overload:DEAL.UI.ConfirmDialog.InitDialog
   isSpec: "True"
-  fullName: DEAL.UI.ConfirmDialog.ShowDialog
-  nameWithType: ConfirmDialog.ShowDialog
+  fullName: DEAL.UI.ConfirmDialog.InitDialog
+  nameWithType: ConfirmDialog.InitDialog
+- uid: DEAL.UI.DealEngineDialog
+  name: DealEngineDialog
+  href: api/DEAL.UI.DealEngineDialog.html
+  commentId: T:DEAL.UI.DealEngineDialog
+  fullName: DEAL.UI.DealEngineDialog
+  nameWithType: DealEngineDialog
+- uid: DEAL.UI.DealEngineDialog.CloseDialog
+  name: CloseDialog()
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_CloseDialog
+  commentId: M:DEAL.UI.DealEngineDialog.CloseDialog
+  fullName: DEAL.UI.DealEngineDialog.CloseDialog()
+  nameWithType: DealEngineDialog.CloseDialog()
+- uid: DEAL.UI.DealEngineDialog.CloseDialog*
+  name: CloseDialog
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_CloseDialog_
+  commentId: Overload:DEAL.UI.DealEngineDialog.CloseDialog
+  isSpec: "True"
+  fullName: DEAL.UI.DealEngineDialog.CloseDialog
+  nameWithType: DealEngineDialog.CloseDialog
+- uid: DEAL.UI.DealEngineDialog.HideDialog
+  name: HideDialog()
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_HideDialog
+  commentId: M:DEAL.UI.DealEngineDialog.HideDialog
+  fullName: DEAL.UI.DealEngineDialog.HideDialog()
+  nameWithType: DealEngineDialog.HideDialog()
+- uid: DEAL.UI.DealEngineDialog.HideDialog*
+  name: HideDialog
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_HideDialog_
+  commentId: Overload:DEAL.UI.DealEngineDialog.HideDialog
+  isSpec: "True"
+  fullName: DEAL.UI.DealEngineDialog.HideDialog
+  nameWithType: DealEngineDialog.HideDialog
+- uid: DEAL.UI.DealEngineDialog.OnDialogInComplete
+  name: OnDialogInComplete()
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_OnDialogInComplete
+  commentId: M:DEAL.UI.DealEngineDialog.OnDialogInComplete
+  fullName: DEAL.UI.DealEngineDialog.OnDialogInComplete()
+  nameWithType: DealEngineDialog.OnDialogInComplete()
+- uid: DEAL.UI.DealEngineDialog.OnDialogInComplete*
+  name: OnDialogInComplete
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_OnDialogInComplete_
+  commentId: Overload:DEAL.UI.DealEngineDialog.OnDialogInComplete
+  isSpec: "True"
+  fullName: DEAL.UI.DealEngineDialog.OnDialogInComplete
+  nameWithType: DealEngineDialog.OnDialogInComplete
+- uid: DEAL.UI.DealEngineDialog.OnDialogOutComplete
+  name: OnDialogOutComplete()
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_OnDialogOutComplete
+  commentId: M:DEAL.UI.DealEngineDialog.OnDialogOutComplete
+  fullName: DEAL.UI.DealEngineDialog.OnDialogOutComplete()
+  nameWithType: DealEngineDialog.OnDialogOutComplete()
+- uid: DEAL.UI.DealEngineDialog.OnDialogOutComplete*
+  name: OnDialogOutComplete
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_OnDialogOutComplete_
+  commentId: Overload:DEAL.UI.DealEngineDialog.OnDialogOutComplete
+  isSpec: "True"
+  fullName: DEAL.UI.DealEngineDialog.OnDialogOutComplete
+  nameWithType: DealEngineDialog.OnDialogOutComplete
+- uid: DEAL.UI.DealEngineDialog.ShowDialog
+  name: ShowDialog()
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_ShowDialog
+  commentId: M:DEAL.UI.DealEngineDialog.ShowDialog
+  fullName: DEAL.UI.DealEngineDialog.ShowDialog()
+  nameWithType: DealEngineDialog.ShowDialog()
+- uid: DEAL.UI.DealEngineDialog.ShowDialog*
+  name: ShowDialog
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_ShowDialog_
+  commentId: Overload:DEAL.UI.DealEngineDialog.ShowDialog
+  isSpec: "True"
+  fullName: DEAL.UI.DealEngineDialog.ShowDialog
+  nameWithType: DealEngineDialog.ShowDialog
+- uid: DEAL.UI.DealEngineDialog.animator
+  name: animator
+  href: api/DEAL.UI.DealEngineDialog.html#DEAL_UI_DealEngineDialog_animator
+  commentId: F:DEAL.UI.DealEngineDialog.animator
+  fullName: DEAL.UI.DealEngineDialog.animator
+  nameWithType: DealEngineDialog.animator
 - uid: DEAL.UI.DialogBase
   name: DialogBase
   href: api/DEAL.UI.DialogBase.html
@@ -7586,6 +8748,69 @@ references:
   isSpec: "True"
   fullName: DEAL.UI.DialogBase.CloseDialog
   nameWithType: DialogBase.CloseDialog
+- uid: DEAL.UI.DialogBase.HideDialog
+  name: HideDialog()
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_HideDialog
+  commentId: M:DEAL.UI.DialogBase.HideDialog
+  fullName: DEAL.UI.DialogBase.HideDialog()
+  nameWithType: DialogBase.HideDialog()
+- uid: DEAL.UI.DialogBase.HideDialog*
+  name: HideDialog
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_HideDialog_
+  commentId: Overload:DEAL.UI.DialogBase.HideDialog
+  isSpec: "True"
+  fullName: DEAL.UI.DialogBase.HideDialog
+  nameWithType: DialogBase.HideDialog
+- uid: DEAL.UI.DialogBase.InitDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  name: InitDialog(Avatar, PopDialogData)
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_InitDialog_DEAL_Avatar_DEAL_Event_PopDialogData_
+  commentId: M:DEAL.UI.DialogBase.InitDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  fullName: DEAL.UI.DialogBase.InitDialog(DEAL.Avatar, DEAL.Event.PopDialogData)
+  nameWithType: DialogBase.InitDialog(Avatar, PopDialogData)
+- uid: DEAL.UI.DialogBase.InitDialog*
+  name: InitDialog
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_InitDialog_
+  commentId: Overload:DEAL.UI.DialogBase.InitDialog
+  isSpec: "True"
+  fullName: DEAL.UI.DialogBase.InitDialog
+  nameWithType: DialogBase.InitDialog
+- uid: DEAL.UI.DialogBase.IsShown
+  name: IsShown
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_IsShown
+  commentId: P:DEAL.UI.DialogBase.IsShown
+  fullName: DEAL.UI.DialogBase.IsShown
+  nameWithType: DialogBase.IsShown
+- uid: DEAL.UI.DialogBase.IsShown*
+  name: IsShown
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_IsShown_
+  commentId: Overload:DEAL.UI.DialogBase.IsShown
+  isSpec: "True"
+  fullName: DEAL.UI.DialogBase.IsShown
+  nameWithType: DialogBase.IsShown
+- uid: DEAL.UI.DialogBase.OnCloseDialog
+  name: OnCloseDialog
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_OnCloseDialog
+  commentId: F:DEAL.UI.DialogBase.OnCloseDialog
+  fullName: DEAL.UI.DialogBase.OnCloseDialog
+  nameWithType: DialogBase.OnCloseDialog
+- uid: DEAL.UI.DialogBase.OnCloseDialogComplete
+  name: OnCloseDialogComplete
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_OnCloseDialogComplete
+  commentId: F:DEAL.UI.DialogBase.OnCloseDialogComplete
+  fullName: DEAL.UI.DialogBase.OnCloseDialogComplete
+  nameWithType: DialogBase.OnCloseDialogComplete
+- uid: DEAL.UI.DialogBase.OnOpenDialog
+  name: OnOpenDialog
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_OnOpenDialog
+  commentId: F:DEAL.UI.DialogBase.OnOpenDialog
+  fullName: DEAL.UI.DialogBase.OnOpenDialog
+  nameWithType: DialogBase.OnOpenDialog
+- uid: DEAL.UI.DialogBase.OnOpenDialogComplete
+  name: OnOpenDialogComplete
+  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_OnOpenDialogComplete
+  commentId: F:DEAL.UI.DialogBase.OnOpenDialogComplete
+  fullName: DEAL.UI.DialogBase.OnOpenDialogComplete
+  nameWithType: DialogBase.OnOpenDialogComplete
 - uid: DEAL.UI.DialogBase.ShowDialog
   name: ShowDialog()
   href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_ShowDialog
@@ -7599,19 +8824,256 @@ references:
   isSpec: "True"
   fullName: DEAL.UI.DialogBase.ShowDialog
   nameWithType: DialogBase.ShowDialog
-- uid: DEAL.UI.DialogBase.isShown
-  name: isShown
-  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_isShown
-  commentId: P:DEAL.UI.DialogBase.isShown
-  fullName: DEAL.UI.DialogBase.isShown
-  nameWithType: DialogBase.isShown
-- uid: DEAL.UI.DialogBase.isShown*
-  name: isShown
-  href: api/DEAL.UI.DialogBase.html#DEAL_UI_DialogBase_isShown_
-  commentId: Overload:DEAL.UI.DialogBase.isShown
+- uid: DEAL.UI.DialogManager
+  name: DialogManager
+  href: api/DEAL.UI.DialogManager.html
+  commentId: T:DEAL.UI.DialogManager
+  fullName: DEAL.UI.DialogManager
+  nameWithType: DialogManager
+- uid: DEAL.UI.DialogManager.CloseAllDialogs
+  name: CloseAllDialogs()
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_CloseAllDialogs
+  commentId: M:DEAL.UI.DialogManager.CloseAllDialogs
+  fullName: DEAL.UI.DialogManager.CloseAllDialogs()
+  nameWithType: DialogManager.CloseAllDialogs()
+- uid: DEAL.UI.DialogManager.CloseAllDialogs*
+  name: CloseAllDialogs
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_CloseAllDialogs_
+  commentId: Overload:DEAL.UI.DialogManager.CloseAllDialogs
   isSpec: "True"
-  fullName: DEAL.UI.DialogBase.isShown
-  nameWithType: DialogBase.isShown
+  fullName: DEAL.UI.DialogManager.CloseAllDialogs
+  nameWithType: DialogManager.CloseAllDialogs
+- uid: DEAL.UI.DialogManager.DebugSelect(System.Int32)
+  name: DebugSelect(int)
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_DebugSelect_System_Int32_
+  commentId: M:DEAL.UI.DialogManager.DebugSelect(System.Int32)
+  name.vb: DebugSelect(Integer)
+  fullName: DEAL.UI.DialogManager.DebugSelect(int)
+  fullName.vb: DEAL.UI.DialogManager.DebugSelect(Integer)
+  nameWithType: DialogManager.DebugSelect(int)
+  nameWithType.vb: DialogManager.DebugSelect(Integer)
+- uid: DEAL.UI.DialogManager.DebugSelect(System.String)
+  name: DebugSelect(string)
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_DebugSelect_System_String_
+  commentId: M:DEAL.UI.DialogManager.DebugSelect(System.String)
+  name.vb: DebugSelect(String)
+  fullName: DEAL.UI.DialogManager.DebugSelect(string)
+  fullName.vb: DEAL.UI.DialogManager.DebugSelect(String)
+  nameWithType: DialogManager.DebugSelect(string)
+  nameWithType.vb: DialogManager.DebugSelect(String)
+- uid: DEAL.UI.DialogManager.DebugSelect*
+  name: DebugSelect
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_DebugSelect_
+  commentId: Overload:DEAL.UI.DialogManager.DebugSelect
+  isSpec: "True"
+  fullName: DEAL.UI.DialogManager.DebugSelect
+  nameWithType: DialogManager.DebugSelect
+- uid: DEAL.UI.DialogManager.OpenDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  name: OpenDialog(Avatar, PopDialogData)
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_OpenDialog_DEAL_Avatar_DEAL_Event_PopDialogData_
+  commentId: M:DEAL.UI.DialogManager.OpenDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  fullName: DEAL.UI.DialogManager.OpenDialog(DEAL.Avatar, DEAL.Event.PopDialogData)
+  nameWithType: DialogManager.OpenDialog(Avatar, PopDialogData)
+- uid: DEAL.UI.DialogManager.OpenDialog*
+  name: OpenDialog
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_OpenDialog_
+  commentId: Overload:DEAL.UI.DialogManager.OpenDialog
+  isSpec: "True"
+  fullName: DEAL.UI.DialogManager.OpenDialog
+  nameWithType: DialogManager.OpenDialog
+- uid: DEAL.UI.DialogManager.OpenDialogCoroutine(DEAL.UI.DialogBase)
+  name: OpenDialogCoroutine(DialogBase)
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_OpenDialogCoroutine_DEAL_UI_DialogBase_
+  commentId: M:DEAL.UI.DialogManager.OpenDialogCoroutine(DEAL.UI.DialogBase)
+  fullName: DEAL.UI.DialogManager.OpenDialogCoroutine(DEAL.UI.DialogBase)
+  nameWithType: DialogManager.OpenDialogCoroutine(DialogBase)
+- uid: DEAL.UI.DialogManager.OpenDialogCoroutine*
+  name: OpenDialogCoroutine
+  href: api/DEAL.UI.DialogManager.html#DEAL_UI_DialogManager_OpenDialogCoroutine_
+  commentId: Overload:DEAL.UI.DialogManager.OpenDialogCoroutine
+  isSpec: "True"
+  fullName: DEAL.UI.DialogManager.OpenDialogCoroutine
+  nameWithType: DialogManager.OpenDialogCoroutine
+- uid: DEAL.UI.DialogMask
+  name: DialogMask
+  href: api/DEAL.UI.DialogMask.html
+  commentId: T:DEAL.UI.DialogMask
+  fullName: DEAL.UI.DialogMask
+  nameWithType: DialogMask
+- uid: DEAL.UI.DialogMask.HideMask
+  name: HideMask()
+  href: api/DEAL.UI.DialogMask.html#DEAL_UI_DialogMask_HideMask
+  commentId: M:DEAL.UI.DialogMask.HideMask
+  fullName: DEAL.UI.DialogMask.HideMask()
+  nameWithType: DialogMask.HideMask()
+- uid: DEAL.UI.DialogMask.HideMask*
+  name: HideMask
+  href: api/DEAL.UI.DialogMask.html#DEAL_UI_DialogMask_HideMask_
+  commentId: Overload:DEAL.UI.DialogMask.HideMask
+  isSpec: "True"
+  fullName: DEAL.UI.DialogMask.HideMask
+  nameWithType: DialogMask.HideMask
+- uid: DEAL.UI.DialogMask.ShowMask
+  name: ShowMask()
+  href: api/DEAL.UI.DialogMask.html#DEAL_UI_DialogMask_ShowMask
+  commentId: M:DEAL.UI.DialogMask.ShowMask
+  fullName: DEAL.UI.DialogMask.ShowMask()
+  nameWithType: DialogMask.ShowMask()
+- uid: DEAL.UI.DialogMask.ShowMask*
+  name: ShowMask
+  href: api/DEAL.UI.DialogMask.html#DEAL_UI_DialogMask_ShowMask_
+  commentId: Overload:DEAL.UI.DialogMask.ShowMask
+  isSpec: "True"
+  fullName: DEAL.UI.DialogMask.ShowMask
+  nameWithType: DialogMask.ShowMask
+- uid: DEAL.UI.DialogPair
+  name: DialogPair
+  href: api/DEAL.UI.DialogPair.html
+  commentId: T:DEAL.UI.DialogPair
+  fullName: DEAL.UI.DialogPair
+  nameWithType: DialogPair
+- uid: DEAL.UI.DialogPair.key
+  name: key
+  href: api/DEAL.UI.DialogPair.html#DEAL_UI_DialogPair_key
+  commentId: F:DEAL.UI.DialogPair.key
+  fullName: DEAL.UI.DialogPair.key
+  nameWithType: DialogPair.key
+- uid: DEAL.UI.DialogPair.value
+  name: value
+  href: api/DEAL.UI.DialogPair.html#DEAL_UI_DialogPair_value
+  commentId: F:DEAL.UI.DialogPair.value
+  fullName: DEAL.UI.DialogPair.value
+  nameWithType: DialogPair.value
+- uid: DEAL.UI.DialogProperty
+  name: DialogProperty
+  href: api/DEAL.UI.DialogProperty.html
+  commentId: T:DEAL.UI.DialogProperty
+  fullName: DEAL.UI.DialogProperty
+  nameWithType: DialogProperty
+- uid: DEAL.UI.DialogProperty.property
+  name: property
+  href: api/DEAL.UI.DialogProperty.html#DEAL_UI_DialogProperty_property
+  commentId: F:DEAL.UI.DialogProperty.property
+  fullName: DEAL.UI.DialogProperty.property
+  nameWithType: DialogProperty.property
+- uid: DEAL.UI.DialogProperty.propertyType
+  name: propertyType
+  href: api/DEAL.UI.DialogProperty.html#DEAL_UI_DialogProperty_propertyType
+  commentId: F:DEAL.UI.DialogProperty.propertyType
+  fullName: DEAL.UI.DialogProperty.propertyType
+  nameWithType: DialogProperty.propertyType
+- uid: DEAL.UI.DialogPropertyArray
+  name: DialogPropertyArray
+  href: api/DEAL.UI.DialogPropertyArray.html
+  commentId: T:DEAL.UI.DialogPropertyArray
+  fullName: DEAL.UI.DialogPropertyArray
+  nameWithType: DialogPropertyArray
+- uid: DEAL.UI.DialogPropertyArray.props
+  name: props
+  href: api/DEAL.UI.DialogPropertyArray.html#DEAL_UI_DialogPropertyArray_props
+  commentId: F:DEAL.UI.DialogPropertyArray.props
+  fullName: DEAL.UI.DialogPropertyArray.props
+  nameWithType: DialogPropertyArray.props
+- uid: DEAL.UI.DialogPropertyItem
+  name: DialogPropertyItem
+  href: api/DEAL.UI.DialogPropertyItem.html
+  commentId: T:DEAL.UI.DialogPropertyItem
+  fullName: DEAL.UI.DialogPropertyItem
+  nameWithType: DialogPropertyItem
+- uid: DEAL.UI.DialogPropertyItem.BaseValue
+  name: BaseValue
+  href: api/DEAL.UI.DialogPropertyItem.html#DEAL_UI_DialogPropertyItem_BaseValue
+  commentId: P:DEAL.UI.DialogPropertyItem.BaseValue
+  fullName: DEAL.UI.DialogPropertyItem.BaseValue
+  nameWithType: DialogPropertyItem.BaseValue
+- uid: DEAL.UI.DialogPropertyItem.BaseValue*
+  name: BaseValue
+  href: api/DEAL.UI.DialogPropertyItem.html#DEAL_UI_DialogPropertyItem_BaseValue_
+  commentId: Overload:DEAL.UI.DialogPropertyItem.BaseValue
+  isSpec: "True"
+  fullName: DEAL.UI.DialogPropertyItem.BaseValue
+  nameWithType: DialogPropertyItem.BaseValue
+- uid: DEAL.UI.DialogPropertyItem`1
+  name: DialogPropertyItem<T>
+  href: api/DEAL.UI.DialogPropertyItem-1.html
+  commentId: T:DEAL.UI.DialogPropertyItem`1
+  name.vb: DialogPropertyItem(Of T)
+  fullName: DEAL.UI.DialogPropertyItem<T>
+  fullName.vb: DEAL.UI.DialogPropertyItem(Of T)
+  nameWithType: DialogPropertyItem<T>
+  nameWithType.vb: DialogPropertyItem(Of T)
+- uid: DEAL.UI.DialogPropertyItem`1.BaseValue
+  name: BaseValue
+  href: api/DEAL.UI.DialogPropertyItem-1.html#DEAL_UI_DialogPropertyItem_1_BaseValue
+  commentId: P:DEAL.UI.DialogPropertyItem`1.BaseValue
+  fullName: DEAL.UI.DialogPropertyItem<T>.BaseValue
+  fullName.vb: DEAL.UI.DialogPropertyItem(Of T).BaseValue
+  nameWithType: DialogPropertyItem<T>.BaseValue
+  nameWithType.vb: DialogPropertyItem(Of T).BaseValue
+- uid: DEAL.UI.DialogPropertyItem`1.BaseValue*
+  name: BaseValue
+  href: api/DEAL.UI.DialogPropertyItem-1.html#DEAL_UI_DialogPropertyItem_1_BaseValue_
+  commentId: Overload:DEAL.UI.DialogPropertyItem`1.BaseValue
+  isSpec: "True"
+  fullName: DEAL.UI.DialogPropertyItem<T>.BaseValue
+  fullName.vb: DEAL.UI.DialogPropertyItem(Of T).BaseValue
+  nameWithType: DialogPropertyItem<T>.BaseValue
+  nameWithType.vb: DialogPropertyItem(Of T).BaseValue
+- uid: DEAL.UI.DialogPropertyItem`1.Value
+  name: Value
+  href: api/DEAL.UI.DialogPropertyItem-1.html#DEAL_UI_DialogPropertyItem_1_Value
+  commentId: P:DEAL.UI.DialogPropertyItem`1.Value
+  fullName: DEAL.UI.DialogPropertyItem<T>.Value
+  fullName.vb: DEAL.UI.DialogPropertyItem(Of T).Value
+  nameWithType: DialogPropertyItem<T>.Value
+  nameWithType.vb: DialogPropertyItem(Of T).Value
+- uid: DEAL.UI.DialogPropertyItem`1.Value*
+  name: Value
+  href: api/DEAL.UI.DialogPropertyItem-1.html#DEAL_UI_DialogPropertyItem_1_Value_
+  commentId: Overload:DEAL.UI.DialogPropertyItem`1.Value
+  isSpec: "True"
+  fullName: DEAL.UI.DialogPropertyItem<T>.Value
+  fullName.vb: DEAL.UI.DialogPropertyItem(Of T).Value
+  nameWithType: DialogPropertyItem<T>.Value
+  nameWithType.vb: DialogPropertyItem(Of T).Value
+- uid: DEAL.UI.Editor
+  name: DEAL.UI.Editor
+  href: api/DEAL.UI.Editor.html
+  commentId: N:DEAL.UI.Editor
+  fullName: DEAL.UI.Editor
+  nameWithType: DEAL.UI.Editor
+- uid: DEAL.UI.Editor.DialogPropertyArrayDrawer
+  name: DialogPropertyArrayDrawer
+  href: api/DEAL.UI.Editor.DialogPropertyArrayDrawer.html
+  commentId: T:DEAL.UI.Editor.DialogPropertyArrayDrawer
+  fullName: DEAL.UI.Editor.DialogPropertyArrayDrawer
+  nameWithType: DialogPropertyArrayDrawer
+- uid: DEAL.UI.Editor.DialogPropertyArrayDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/DEAL.UI.Editor.DialogPropertyArrayDrawer.html#DEAL_UI_Editor_DialogPropertyArrayDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:DEAL.UI.Editor.DialogPropertyArrayDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: DEAL.UI.Editor.DialogPropertyArrayDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  nameWithType: DialogPropertyArrayDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: DEAL.UI.Editor.DialogPropertyArrayDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/DEAL.UI.Editor.DialogPropertyArrayDrawer.html#DEAL_UI_Editor_DialogPropertyArrayDrawer_GetPropertyHeight_
+  commentId: Overload:DEAL.UI.Editor.DialogPropertyArrayDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: DEAL.UI.Editor.DialogPropertyArrayDrawer.GetPropertyHeight
+  nameWithType: DialogPropertyArrayDrawer.GetPropertyHeight
+- uid: DEAL.UI.Editor.DialogPropertyArrayDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/DEAL.UI.Editor.DialogPropertyArrayDrawer.html#DEAL_UI_Editor_DialogPropertyArrayDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:DEAL.UI.Editor.DialogPropertyArrayDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: DEAL.UI.Editor.DialogPropertyArrayDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  nameWithType: DialogPropertyArrayDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: DEAL.UI.Editor.DialogPropertyArrayDrawer.OnGUI*
+  name: OnGUI
+  href: api/DEAL.UI.Editor.DialogPropertyArrayDrawer.html#DEAL_UI_Editor_DialogPropertyArrayDrawer_OnGUI_
+  commentId: Overload:DEAL.UI.Editor.DialogPropertyArrayDrawer.OnGUI
+  isSpec: "True"
+  fullName: DEAL.UI.Editor.DialogPropertyArrayDrawer.OnGUI
+  nameWithType: DialogPropertyArrayDrawer.OnGUI
 - uid: DEAL.UI.GameInfoView
   name: GameInfoView
   href: api/DEAL.UI.GameInfoView.html
@@ -7686,22 +9148,92 @@ references:
   isSpec: "True"
   fullName: DEAL.UI.SelectDialog.DebugSelectDialog
   nameWithType: SelectDialog.DebugSelectDialog
-- uid: DEAL.UI.SelectDialog.ShowDialog(System.String,System.String[],System.Action{System.Int32})
-  name: ShowDialog(string, string[], Action<int>)
-  href: api/DEAL.UI.SelectDialog.html#DEAL_UI_SelectDialog_ShowDialog_System_String_System_String___System_Action_System_Int32__
-  commentId: M:DEAL.UI.SelectDialog.ShowDialog(System.String,System.String[],System.Action{System.Int32})
-  name.vb: ShowDialog(String, String(), Action(Of Integer))
-  fullName: DEAL.UI.SelectDialog.ShowDialog(string, string[], System.Action<int>)
-  fullName.vb: DEAL.UI.SelectDialog.ShowDialog(String, String(), System.Action(Of Integer))
-  nameWithType: SelectDialog.ShowDialog(string, string[], Action<int>)
-  nameWithType.vb: SelectDialog.ShowDialog(String, String(), Action(Of Integer))
-- uid: DEAL.UI.SelectDialog.ShowDialog*
-  name: ShowDialog
-  href: api/DEAL.UI.SelectDialog.html#DEAL_UI_SelectDialog_ShowDialog_
-  commentId: Overload:DEAL.UI.SelectDialog.ShowDialog
+- uid: DEAL.UI.SelectDialog.InitDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  name: InitDialog(Avatar, PopDialogData)
+  href: api/DEAL.UI.SelectDialog.html#DEAL_UI_SelectDialog_InitDialog_DEAL_Avatar_DEAL_Event_PopDialogData_
+  commentId: M:DEAL.UI.SelectDialog.InitDialog(DEAL.Avatar,DEAL.Event.PopDialogData)
+  fullName: DEAL.UI.SelectDialog.InitDialog(DEAL.Avatar, DEAL.Event.PopDialogData)
+  nameWithType: SelectDialog.InitDialog(Avatar, PopDialogData)
+- uid: DEAL.UI.SelectDialog.InitDialog*
+  name: InitDialog
+  href: api/DEAL.UI.SelectDialog.html#DEAL_UI_SelectDialog_InitDialog_
+  commentId: Overload:DEAL.UI.SelectDialog.InitDialog
   isSpec: "True"
-  fullName: DEAL.UI.SelectDialog.ShowDialog
-  nameWithType: SelectDialog.ShowDialog
+  fullName: DEAL.UI.SelectDialog.InitDialog
+  nameWithType: SelectDialog.InitDialog
+- uid: DEAL.UI.ViewManager
+  name: ViewManager
+  href: api/DEAL.UI.ViewManager.html
+  commentId: T:DEAL.UI.ViewManager
+  fullName: DEAL.UI.ViewManager
+  nameWithType: ViewManager
+- uid: DEAL.UI.ViewManager.AttachViewEventListener(System.String,DEAL.UI.ViewManager.ViewEventHandler)
+  name: AttachViewEventListener(string, ViewEventHandler)
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_AttachViewEventListener_System_String_DEAL_UI_ViewManager_ViewEventHandler_
+  commentId: M:DEAL.UI.ViewManager.AttachViewEventListener(System.String,DEAL.UI.ViewManager.ViewEventHandler)
+  name.vb: AttachViewEventListener(String, ViewEventHandler)
+  fullName: DEAL.UI.ViewManager.AttachViewEventListener(string, DEAL.UI.ViewManager.ViewEventHandler)
+  fullName.vb: DEAL.UI.ViewManager.AttachViewEventListener(String, DEAL.UI.ViewManager.ViewEventHandler)
+  nameWithType: ViewManager.AttachViewEventListener(string, ViewManager.ViewEventHandler)
+  nameWithType.vb: ViewManager.AttachViewEventListener(String, ViewManager.ViewEventHandler)
+- uid: DEAL.UI.ViewManager.AttachViewEventListener*
+  name: AttachViewEventListener
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_AttachViewEventListener_
+  commentId: Overload:DEAL.UI.ViewManager.AttachViewEventListener
+  isSpec: "True"
+  fullName: DEAL.UI.ViewManager.AttachViewEventListener
+  nameWithType: ViewManager.AttachViewEventListener
+- uid: DEAL.UI.ViewManager.AttachViewEventListeners
+  name: AttachViewEventListeners()
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_AttachViewEventListeners
+  commentId: M:DEAL.UI.ViewManager.AttachViewEventListeners
+  fullName: DEAL.UI.ViewManager.AttachViewEventListeners()
+  nameWithType: ViewManager.AttachViewEventListeners()
+- uid: DEAL.UI.ViewManager.AttachViewEventListeners*
+  name: AttachViewEventListeners
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_AttachViewEventListeners_
+  commentId: Overload:DEAL.UI.ViewManager.AttachViewEventListeners
+  isSpec: "True"
+  fullName: DEAL.UI.ViewManager.AttachViewEventListeners
+  nameWithType: ViewManager.AttachViewEventListeners
+- uid: DEAL.UI.ViewManager.Instance
+  name: Instance
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_Instance
+  commentId: P:DEAL.UI.ViewManager.Instance
+  fullName: DEAL.UI.ViewManager.Instance
+  nameWithType: ViewManager.Instance
+- uid: DEAL.UI.ViewManager.Instance*
+  name: Instance
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_Instance_
+  commentId: Overload:DEAL.UI.ViewManager.Instance
+  isSpec: "True"
+  fullName: DEAL.UI.ViewManager.Instance
+  nameWithType: ViewManager.Instance
+- uid: DEAL.UI.ViewManager.OnEvent(DEAL.EventMsg)
+  name: OnEvent(EventMsg)
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_OnEvent_DEAL_EventMsg_
+  commentId: M:DEAL.UI.ViewManager.OnEvent(DEAL.EventMsg)
+  fullName: DEAL.UI.ViewManager.OnEvent(DEAL.EventMsg)
+  nameWithType: ViewManager.OnEvent(EventMsg)
+- uid: DEAL.UI.ViewManager.OnEvent*
+  name: OnEvent
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_OnEvent_
+  commentId: Overload:DEAL.UI.ViewManager.OnEvent
+  isSpec: "True"
+  fullName: DEAL.UI.ViewManager.OnEvent
+  nameWithType: ViewManager.OnEvent
+- uid: DEAL.UI.ViewManager.ViewEventHandler
+  name: ViewManager.ViewEventHandler
+  href: api/DEAL.UI.ViewManager.ViewEventHandler.html
+  commentId: T:DEAL.UI.ViewManager.ViewEventHandler
+  fullName: DEAL.UI.ViewManager.ViewEventHandler
+  nameWithType: ViewManager.ViewEventHandler
+- uid: DEAL.UI.ViewManager.mDialogManager
+  name: mDialogManager
+  href: api/DEAL.UI.ViewManager.html#DEAL_UI_ViewManager_mDialogManager
+  commentId: F:DEAL.UI.ViewManager.mDialogManager
+  fullName: DEAL.UI.ViewManager.mDialogManager
+  nameWithType: ViewManager.mDialogManager
 - uid: DEAL.UiDeck
   name: UiDeck
   href: api/DEAL.UiDeck.html

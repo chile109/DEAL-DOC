@@ -85,21 +85,28 @@
 <p>In this example, the FSM manages the door’s behavior, allowing it to switch between &quot;Opened&quot; and &quot;Closed&quot; based on specific conditions (like motion detection). Transitions dictate when and how the door moves between these states, ensuring a smooth operation based on real-world inputs.</p>
 <p>For more details, please refer to the <a href="https://en.wikipedia.org/wiki/Finite-state_machine">Wikipedia page</a>.</p>
 <h1 id="basic-fsm-components-in-deal">Basic FSM Components in DEAL</h1>
-<p>The DEAL system’s Basic FSM is composed of four main Scriptable Objects (SO): <strong>State Machine</strong>, <strong>State</strong>, <strong>Action</strong>, and <strong>Condition</strong>. Each of these components can be fully customized to fit your game's needs.</p>
+<p>The DEAL Toolkit’s FSM is composed of four main Scriptable Objects (SO): <strong>State Machine</strong>, <strong>State</strong>, <strong>Action</strong>, and <strong>Condition</strong>. Each of these components can be fully customized to fit your game's needs.</p>
 <p>Game designers can define any turn-based game using several states. The relationship between the components is structured as follows:<br>
 <code>ScriptableStateMachine -&gt; ScriptableState -&gt; ScriptableCondition -&gt; ScriptableAction</code></p>
 <h2 id="scriptable-statemachine">Scriptable StateMachine</h2>
 <p>This is the core FSM Scriptable Object (SO) that holds a list of transitions, each leading to different Scriptable States. The <code>ScriptableStateMachine</code> SO is the primary data source for the <code>CardStateMachineComponent</code> class, which executes the entire game flow.</p>
+<blockquote>
+<p>Create a new state machine SO by navigating project window and right-click: <code>Create &gt; DealToolkit &gt; FSM &gt; StateMachine</code>.</p>
+</blockquote>
 <p>Each transition element includes four variables:</p>
 <ol>
 <li><strong>Origin State (ScriptableState SO)</strong>: This is the current state (required).</li>
-<li><strong>Condition (ScriptableCondition SO)</strong>: This checks whether the transition should occur (required).</li>
+<li><strong>Condition (ScriptableCondition SO)</strong>: This checks whether the transition should occur (optional).</li>
 <li><strong>True State (ScriptableState SO)</strong>: The state to transition to if the condition is met (optional).</li>
 <li><strong>False State (ScriptableState SO)</strong>: The state to transition to if the condition is not met (optional).</li>
 </ol>
 <p>The Condition returns a boolean value, determining whether to transition to the next state. If the next state is not specified, the FSM will remain in the Origin State until a state change occurs.</p>
 <h2 id="scriptable-state">Scriptable State</h2>
-<p>This is the core structure representing a state within the FSM, responsible for executing every action listed in the target <code>ScriptableAction[]</code> array. Each <code>ScriptableState</code> can trigger different actions at various points:</p>
+<p>This is the core structure representing a state within the FSM, responsible for executing every action listed in the target <code>ScriptableAction[]</code> array.</p>
+<blockquote>
+<p>Create a new state SO by navigating project window and right-click: <code>Create &gt; DealToolkit &gt; FSM &gt; State</code>.</p>
+</blockquote>
+<p>Each <code>ScriptableState</code> can trigger different actions at various points:</p>
 <ul>
 <li><strong>OnEnterState</strong>: Actions to be executed when entering the state.</li>
 <li><strong>OnExitState</strong>: Actions to be executed when leaving the state.</li>
@@ -131,6 +138,9 @@
 </table>
 <h2 id="scriptable-action">Scriptable Action</h2>
 <p>Scriptable Actions define the behaviors that should be performed in the game, such as card animations or displaying dialogs.</p>
+<blockquote>
+<p>Create a new action SO by navigating project window and right-click: <code>Create &gt; DealToolkit &gt; FSM &gt; Action</code>.</p>
+</blockquote>
 <p>For example, <code>TileDeal_1Card_PreAction</code> will pick one card from the tile. This action includes three variables:</p>
 <table>
 <thead>
@@ -156,6 +166,9 @@
 </table>
 <h2 id="scriptable-condition">Scriptable Condition</h2>
 <p>Scriptable Conditions determine whether the FSM should transition from one state to another based on specific conditions.</p>
+<blockquote>
+<p>Create a new condition SO by navigating project window and right-click: <code>Create &gt; DealToolkit &gt; FSM &gt; Condition</code>.</p>
+</blockquote>
 <p>For example, the <code>WaitChangePlayer_Condition</code> will trigger a state transition upon receiving the <code>ChangePlayer</code> event.</p>
 <table>
 <thead>

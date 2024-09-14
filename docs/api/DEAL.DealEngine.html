@@ -1,0 +1,847 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class DealEngine </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class DealEngine ">
+    
+    <meta name="description" content="This DealEngine singleton is responsible for initializing the game table elements and managing the DEAL FSM.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DEAL.DealEngine">
+
+
+
+  <h1 id="DEAL_DealEngine" data-uid="DEAL.DealEngine" class="text-break">Class DealEngine</h1>
+  <div class="markdown level0 summary"><p>This DealEngine singleton is responsible for initializing the game table elements and managing the DEAL FSM.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">DealEngine</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DEAL.IEventListener.html">IEventListener</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a></h6>
+  <h6><strong>Assembly</strong>: Mustaverse.DEAL.Runtime.dll</h6>
+  <h5 id="DEAL_DealEngine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DealEngine : MonoBehaviour, IEventListener</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_avatarList.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.avatarList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L86">View Source</a>
+  </span>
+  <h4 id="DEAL_DealEngine_avatarList" data-uid="DEAL.DealEngine.avatarList">avatarList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Avatar&gt; avatarList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.Avatar.html">Avatar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_globalInfoSO.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.globalInfoSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L34">View Source</a>
+  </span>
+  <h4 id="DEAL_DealEngine_globalInfoSO" data-uid="DEAL.DealEngine.globalInfoSO">globalInfoSO</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalInfoSO globalInfoSO</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.GlobalInfoSO.html">GlobalInfoSO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_playerDeckArray.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.playerDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L76">View Source</a>
+  </span>
+  <h4 id="DEAL_DealEngine_playerDeckArray" data-uid="DEAL.DealEngine.playerDeckArray">playerDeckArray</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseDeck[] playerDeckArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_stateMachineComponent.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.stateMachineComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L45">View Source</a>
+  </span>
+  <h4 id="DEAL_DealEngine_stateMachineComponent" data-uid="DEAL.DealEngine.stateMachineComponent">stateMachineComponent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected DealFSM stateMachineComponent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.DealFSM.html">DealFSM</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_ActiveSystemDeckArray.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.ActiveSystemDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L71">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_ActiveSystemDeckArray_" data-uid="DEAL.DealEngine.ActiveSystemDeckArray*"></a>
+  <h4 id="DEAL_DealEngine_ActiveSystemDeckArray" data-uid="DEAL.DealEngine.ActiveSystemDeckArray">ActiveSystemDeckArray</h4>
+  <div class="markdown level1 summary"><p>The public system such as the counting deck.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseDeck[] ActiveSystemDeckArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_ActiveSystemTileArray.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.ActiveSystemTileArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L61">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_ActiveSystemTileArray_" data-uid="DEAL.DealEngine.ActiveSystemTileArray*"></a>
+  <h4 id="DEAL_DealEngine_ActiveSystemTileArray" data-uid="DEAL.DealEngine.ActiveSystemTileArray">ActiveSystemTileArray</h4>
+  <div class="markdown level1 summary"><p>The public system tiles to be used in the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardHolder[] ActiveSystemTileArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_AllPlayerIds.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.AllPlayerIds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L123">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_AllPlayerIds_" data-uid="DEAL.DealEngine.AllPlayerIds*"></a>
+  <h4 id="DEAL_DealEngine_AllPlayerIds" data-uid="DEAL.DealEngine.AllPlayerIds">AllPlayerIds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] AllPlayerIds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_AvatarList.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.AvatarList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L93">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_AvatarList_" data-uid="DEAL.DealEngine.AvatarList*"></a>
+  <h4 id="DEAL_DealEngine_AvatarList" data-uid="DEAL.DealEngine.AvatarList">AvatarList</h4>
+  <div class="markdown level1 summary"><p>All player avatars in the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Avatar&gt; AvatarList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DEAL.Avatar.html">Avatar</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_GlobalInfoSO.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.GlobalInfoSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L39">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_GlobalInfoSO_" data-uid="DEAL.DealEngine.GlobalInfoSO*"></a>
+  <h4 id="DEAL_DealEngine_GlobalInfoSO" data-uid="DEAL.DealEngine.GlobalInfoSO">GlobalInfoSO</h4>
+  <div class="markdown level1 summary"><p>Your DEAL card game global information config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalInfoSO GlobalInfoSO { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.GlobalInfoSO.html">GlobalInfoSO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_Instance.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L16">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_Instance_" data-uid="DEAL.DealEngine.Instance*"></a>
+  <h4 id="DEAL_DealEngine_Instance" data-uid="DEAL.DealEngine.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DealEngine Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.DealEngine.html">DealEngine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_LocalAvatar.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.LocalAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L103">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_LocalAvatar_" data-uid="DEAL.DealEngine.LocalAvatar*"></a>
+  <h4 id="DEAL_DealEngine_LocalAvatar" data-uid="DEAL.DealEngine.LocalAvatar">LocalAvatar</h4>
+  <div class="markdown level1 summary"><p>current player avatar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar LocalAvatar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_LocalAvatarId.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.LocalAvatarId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L108">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_LocalAvatarId_" data-uid="DEAL.DealEngine.LocalAvatarId*"></a>
+  <h4 id="DEAL_DealEngine_LocalAvatarId" data-uid="DEAL.DealEngine.LocalAvatarId">LocalAvatarId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LocalAvatarId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_PlayerDeckArray.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.PlayerDeckArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L81">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_PlayerDeckArray_" data-uid="DEAL.DealEngine.PlayerDeckArray*"></a>
+  <h4 id="DEAL_DealEngine_PlayerDeckArray" data-uid="DEAL.DealEngine.PlayerDeckArray">PlayerDeckArray</h4>
+  <div class="markdown level1 summary"><p>Current player's card holder deck.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseDeck[] PlayerDeckArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_StateMachineComponent.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.StateMachineComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L51">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_StateMachineComponent_" data-uid="DEAL.DealEngine.StateMachineComponent*"></a>
+  <h4 id="DEAL_DealEngine_StateMachineComponent" data-uid="DEAL.DealEngine.StateMachineComponent">StateMachineComponent</h4>
+  <div class="markdown level1 summary"><p>DEAL FSM Unity component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DealFSM StateMachineComponent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.DealFSM.html">DealFSM</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DEAL_DealEngine_StateMachineComponent_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="DEAL.html">DEAL</a>.<a class="xref" href="DEAL.FSM.html">FSM</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_Table.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.Table%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L131">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_Table_" data-uid="DEAL.DealEngine.Table*"></a>
+  <h4 id="DEAL_DealEngine_Table" data-uid="DEAL.DealEngine.Table">Table</h4>
+  <div class="markdown level1 summary"><p>Game table prefab with settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseTable Table { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseTable.html">BaseTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_AvatarJoin_DEAL_Avatar_.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.AvatarJoin(DEAL.Avatar)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L220">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_AvatarJoin_" data-uid="DEAL.DealEngine.AvatarJoin*"></a>
+  <h4 id="DEAL_DealEngine_AvatarJoin_DEAL_Avatar_" data-uid="DEAL.DealEngine.AvatarJoin(DEAL.Avatar)">AvatarJoin(Avatar)</h4>
+  <div class="markdown level1 summary"><p>Add avatar to the game when player join the room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AvatarJoin(Avatar avatar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">avatar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_ClearGame.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.ClearGame%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L259">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_ClearGame_" data-uid="DEAL.DealEngine.ClearGame*"></a>
+  <h4 id="DEAL_DealEngine_ClearGame" data-uid="DEAL.DealEngine.ClearGame">ClearGame()</h4>
+  <div class="markdown level1 summary"><p>Clean up the game settings and leave the room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearGame()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_InitPlayer.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.InitPlayer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L188">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_InitPlayer_" data-uid="DEAL.DealEngine.InitPlayer*"></a>
+  <h4 id="DEAL_DealEngine_InitPlayer" data-uid="DEAL.DealEngine.InitPlayer">InitPlayer()</h4>
+  <div class="markdown level1 summary"><p>Init the avatar for the game player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitPlayer()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_InitTable.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.InitTable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L156">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_InitTable_" data-uid="DEAL.DealEngine.InitTable*"></a>
+  <h4 id="DEAL_DealEngine_InitTable" data-uid="DEAL.DealEngine.InitTable">InitTable()</h4>
+  <div class="markdown level1 summary"><p>Init the game global information cofing to load the game table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitTable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_IsGameReady.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.IsGameReady%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L272">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_IsGameReady_" data-uid="DEAL.DealEngine.IsGameReady*"></a>
+  <h4 id="DEAL_DealEngine_IsGameReady" data-uid="DEAL.DealEngine.IsGameReady">IsGameReady()</h4>
+  <div class="markdown level1 summary"><p>Check if all players are ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGameReady()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_OnDestroy.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.OnDestroy%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L148">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_OnDestroy_" data-uid="DEAL.DealEngine.OnDestroy*"></a>
+  <h4 id="DEAL_DealEngine_OnDestroy" data-uid="DEAL.DealEngine.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_OnEvent_DEAL_EventMsg_.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.OnEvent(DEAL.EventMsg)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L305">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_OnEvent_" data-uid="DEAL.DealEngine.OnEvent*"></a>
+  <h4 id="DEAL_DealEngine_OnEvent_DEAL_EventMsg_" data-uid="DEAL.DealEngine.OnEvent(DEAL.EventMsg)">OnEvent(EventMsg)</h4>
+  <div class="markdown level1 summary"><p>Handle Different events fired by NetworkEventSystem.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEvent(EventMsg e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.EventMsg.html">EventMsg</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_RefreshSeat.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.RefreshSeat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L287">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_RefreshSeat_" data-uid="DEAL.DealEngine.RefreshSeat*"></a>
+  <h4 id="DEAL_DealEngine_RefreshSeat" data-uid="DEAL.DealEngine.RefreshSeat">RefreshSeat()</h4>
+  <div class="markdown level1 summary"><p>Reresh the seat of all players.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RefreshSeat()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_SpawnAvatar.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.SpawnAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L196">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_SpawnAvatar_" data-uid="DEAL.DealEngine.SpawnAvatar*"></a>
+  <h4 id="DEAL_DealEngine_SpawnAvatar" data-uid="DEAL.DealEngine.SpawnAvatar">SpawnAvatar()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GameObject SpawnAvatar()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine_StartGame_System_String_.md&amp;value=---%0Auid%3A%20DEAL.DealEngine.StartGame(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L249">View Source</a>
+  </span>
+  <a id="DEAL_DealEngine_StartGame_" data-uid="DEAL.DealEngine.StartGame*"></a>
+  <h4 id="DEAL_DealEngine_StartGame_System_String_" data-uid="DEAL.DealEngine.StartGame(System.String)">StartGame(string)</h4>
+  <div class="markdown level1 summary"><p>Start game with the global information config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StartGame(string infoKey = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">infoKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DEAL.IEventListener.html">IEventListener</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_DealEngine.md&amp;value=---%0Auid%3A%20DEAL.DealEngine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/Generic/DealEngine.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

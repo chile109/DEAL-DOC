@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "MustaverseLab.DEAL.Runtime.csproj"
+            "Mustaverse.DEAL.Runtime.csproj"
           ],
           "src": ".."
         }

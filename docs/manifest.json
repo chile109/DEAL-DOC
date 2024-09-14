@@ -234,10 +234,140 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemActorArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemActorArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemBool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemBool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemFloat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemInt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemQuaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemQuaternion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.DialogPropertyItemVector4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Core.Runtime.UI.DialogPropertySubclass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DEAL.CountingDeck.yml",
       "output": {
         ".html": {
           "relative_path": "api/DEAL.CountingDeck.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.DealEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.DealEngine.html"
         }
       },
       "version": ""
@@ -298,6 +428,126 @@
       "output": {
         ".html": {
           "relative_path": "api/DEAL.DefaultNetworkAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemActorArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemActorArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemBool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemBool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemFloat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemInt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemQuaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemQuaternion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemVector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemVector2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemVector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemVector3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.DialogPropertyItemVector4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.DialogPropertyItemVector4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.Dialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.Dialog.html"
         }
       },
       "version": ""
@@ -1014,6 +1264,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.FSM.DealFSM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.FSM.DealFSM.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DEAL.FSM.DialogType.yml",
       "output": {
         ".html": {
@@ -1234,6 +1494,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.GlobalEnum.AvatarType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.GlobalEnum.AvatarType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DEAL.GlobalEnum.PlayCardMode.yml",
       "output": {
         ".html": {
@@ -1248,6 +1518,16 @@
       "output": {
         ".html": {
           "relative_path": "api/DEAL.GlobalEnum.PokerSuit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.GlobalEnum.PropertyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.GlobalEnum.PropertyType.html"
         }
       },
       "version": ""
@@ -1554,10 +1834,110 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DealEngineDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DealEngineDialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DEAL.UI.DialogBase.yml",
       "output": {
         ".html": {
           "relative_path": "api/DEAL.UI.DialogBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DialogManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DialogManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DialogMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DialogMask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DialogPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DialogPair.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DialogProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DialogProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DialogPropertyArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DialogPropertyArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DialogPropertyItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DialogPropertyItem-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.DialogPropertyItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.DialogPropertyItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.Editor.DialogPropertyArrayDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.Editor.DialogPropertyArrayDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.Editor.html"
         }
       },
       "version": ""
@@ -1588,6 +1968,26 @@
       "output": {
         ".html": {
           "relative_path": "api/DEAL.UI.SelectDialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.ViewManager.ViewEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.ViewManager.ViewEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DEAL.UI.ViewManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DEAL.UI.ViewManager.html"
         }
       },
       "version": ""
@@ -1696,6 +2096,26 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/QuickStart.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/QuickStart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/TableSetup.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/TableSetup.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
@@ -1704,6 +2124,46 @@
         },
         ".json": {
           "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/BaseTable.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/BaseTable.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/FSM.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/FSM.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/GameTable.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/GameTable.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/GlobalInfo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/GlobalInfo.png"
         }
       },
       "version": ""

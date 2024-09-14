@@ -1,0 +1,1412 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class DealFSM </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class DealFSM ">
+    
+    <meta name="description" content="State machine component that manages card state transitions and player turns">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DEAL.FSM.DealFSM">
+
+
+
+  <h1 id="DEAL_FSM_DealFSM" data-uid="DEAL.FSM.DealFSM" class="text-break">Class DealFSM</h1>
+  <div class="markdown level0 summary"><p>State machine component that manages card state transitions and player turns</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">DealFSM</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DEAL.IEventListener.html">IEventListener</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DEAL.html">DEAL</a>.<a class="xref" href="DEAL.FSM.html">FSM</a></h6>
+  <h6><strong>Assembly</strong>: Mustaverse.DEAL.Runtime.dll</h6>
+  <h5 id="DEAL_FSM_DealFSM_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DealFSM : MonoBehaviour, IEventListener</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_FixedPlayerOrderStack.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.FixedPlayerOrderStack%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L53">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_DealFSM_FixedPlayerOrderStack" data-uid="DEAL.FSM.DealFSM.FixedPlayerOrderStack">FixedPlayerOrderStack</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stack&lt;Tuple&lt;ActionActor, int[]&gt;&gt; FixedPlayerOrderStack</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1">Stack</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_OnStateChanged.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.OnStateChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L87">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_DealFSM_OnStateChanged" data-uid="DEAL.FSM.DealFSM.OnStateChanged">OnStateChanged</h4>
+  <div class="markdown level1 summary"><p>Callback when the state of the state machine changes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ScriptableState, ScriptableState&gt; OnStateChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="DEAL.FSM.ScriptableState.html">ScriptableState</a>, <a class="xref" href="DEAL.FSM.ScriptableState.html">ScriptableState</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_WaitDialogLock.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.WaitDialogLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L37">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_DealFSM_WaitDialogLock" data-uid="DEAL.FSM.DealFSM.WaitDialogLock">WaitDialogLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WaitDialogLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_WaitSystemLock.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.WaitSystemLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L28">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_DealFSM_WaitSystemLock" data-uid="DEAL.FSM.DealFSM.WaitSystemLock">WaitSystemLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WaitSystemLock</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_eventDictionary.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.eventDictionary%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L19">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_DealFSM_eventDictionary" data-uid="DEAL.FSM.DealFSM.eventDictionary">eventDictionary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, bool&gt; eventDictionary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_eventValueDictionary.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.eventValueDictionary%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L20">View Source</a>
+  </span>
+  <h4 id="DEAL_FSM_DealFSM_eventValueDictionary" data-uid="DEAL.FSM.DealFSM.eventValueDictionary">eventValueDictionary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, int&gt; eventValueDictionary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_AlivePlayerCount.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.AlivePlayerCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L93">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_AlivePlayerCount_" data-uid="DEAL.FSM.DealFSM.AlivePlayerCount*"></a>
+  <h4 id="DEAL_FSM_DealFSM_AlivePlayerCount" data-uid="DEAL.FSM.DealFSM.AlivePlayerCount">AlivePlayerCount</h4>
+  <div class="markdown level1 summary"><p>The number of players that are still alive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AlivePlayerCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_CardChoiceBuffer.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.CardChoiceBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L65">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_CardChoiceBuffer_" data-uid="DEAL.FSM.DealFSM.CardChoiceBuffer*"></a>
+  <h4 id="DEAL_FSM_DealFSM_CardChoiceBuffer" data-uid="DEAL.FSM.DealFSM.CardChoiceBuffer">CardChoiceBuffer</h4>
+  <div class="markdown level1 summary"><p>The buffer of cards that are currently being chosen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;BaseCard&gt; CardChoiceBuffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_CurrentAvatar.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.CurrentAvatar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L55">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_CurrentAvatar_" data-uid="DEAL.FSM.DealFSM.CurrentAvatar*"></a>
+  <h4 id="DEAL_FSM_DealFSM_CurrentAvatar" data-uid="DEAL.FSM.DealFSM.CurrentAvatar">CurrentAvatar</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar CurrentAvatar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_CurrentPlayerDeck.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.CurrentPlayerDeck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L41">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_CurrentPlayerDeck_" data-uid="DEAL.FSM.DealFSM.CurrentPlayerDeck*"></a>
+  <h4 id="DEAL_FSM_DealFSM_CurrentPlayerDeck" data-uid="DEAL.FSM.DealFSM.CurrentPlayerDeck">CurrentPlayerDeck</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseDeck CurrentPlayerDeck { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseDeck.html">BaseDeck</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_CurrentState.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.CurrentState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L23">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_CurrentState_" data-uid="DEAL.FSM.DealFSM.CurrentState*"></a>
+  <h4 id="DEAL_FSM_DealFSM_CurrentState" data-uid="DEAL.FSM.DealFSM.CurrentState">CurrentState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptableState CurrentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ScriptableState.html">ScriptableState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_LastExecutedCards.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.LastExecutedCards%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L74">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_LastExecutedCards_" data-uid="DEAL.FSM.DealFSM.LastExecutedCards*"></a>
+  <h4 id="DEAL_FSM_DealFSM_LastExecutedCards" data-uid="DEAL.FSM.DealFSM.LastExecutedCards">LastExecutedCards</h4>
+  <div class="markdown level1 summary"><p>The cards that were last dealt</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;BaseCard&gt; LastExecutedCards { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="DEAL.BaseCard.html">BaseCard</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_NextPlayerMultiplier.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.NextPlayerMultiplier%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L48">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_NextPlayerMultiplier_" data-uid="DEAL.FSM.DealFSM.NextPlayerMultiplier*"></a>
+  <h4 id="DEAL_FSM_DealFSM_NextPlayerMultiplier" data-uid="DEAL.FSM.DealFSM.NextPlayerMultiplier">NextPlayerMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NextPlayerMultiplier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_WaitTurnLock.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.WaitTurnLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L32">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_WaitTurnLock_" data-uid="DEAL.FSM.DealFSM.WaitTurnLock*"></a>
+  <h4 id="DEAL_FSM_DealFSM_WaitTurnLock" data-uid="DEAL.FSM.DealFSM.WaitTurnLock">WaitTurnLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WaitTurnLock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_ChangePlayer_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.ChangePlayer(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L173">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_ChangePlayer_" data-uid="DEAL.FSM.DealFSM.ChangePlayer*"></a>
+  <h4 id="DEAL_FSM_DealFSM_ChangePlayer_System_Int32_" data-uid="DEAL.FSM.DealFSM.ChangePlayer(System.Int32)">ChangePlayer(int)</h4>
+  <div class="markdown level1 summary"><p>Change the current player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangePlayer(int newPlayerIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">newPlayerIndex</span></td>
+        <td><p>The index of the new player</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_DebugCancelWait.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.DebugCancelWait%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L449">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_DebugCancelWait_" data-uid="DEAL.FSM.DealFSM.DebugCancelWait*"></a>
+  <h4 id="DEAL_FSM_DealFSM_DebugCancelWait" data-uid="DEAL.FSM.DealFSM.DebugCancelWait">DebugCancelWait()</h4>
+  <div class="markdown level1 summary"><p>Debug function to cancel waiting of dialogs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DebugCancelWait()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_EliminatePlayer_DEAL_Avatar_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.EliminatePlayer(DEAL.Avatar)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L431">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_EliminatePlayer_" data-uid="DEAL.FSM.DealFSM.EliminatePlayer*"></a>
+  <h4 id="DEAL_FSM_DealFSM_EliminatePlayer_DEAL_Avatar_" data-uid="DEAL.FSM.DealFSM.EliminatePlayer(DEAL.Avatar)">EliminatePlayer(Avatar)</h4>
+  <div class="markdown level1 summary"><p>Eliminate the player by given avatar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EliminatePlayer(Avatar eliminateAvatar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">eliminateAvatar</span></td>
+        <td><p>The avatar to eliminate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_EliminatePlayer_DEAL_FSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.EliminatePlayer(DEAL.FSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L421">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_EliminatePlayer_" data-uid="DEAL.FSM.DealFSM.EliminatePlayer*"></a>
+  <h4 id="DEAL_FSM_DealFSM_EliminatePlayer_DEAL_FSM_ActionActor_System_Int32___" data-uid="DEAL.FSM.DealFSM.EliminatePlayer(DEAL.FSM.ActionActor,System.Int32[])">EliminatePlayer(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"><p>Eliminate the player by given actor and actor parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EliminatePlayer(ActionActor eliminateActor, int[] eliminateActorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">eliminateActor</span></td>
+        <td><p>The actor to eliminate the player</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">eliminateActorParams</span></td>
+        <td><p>Additional parameters for the actor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_ExecuteCardTransfer_DEAL_Avatar_DEAL_CardHolder_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.ExecuteCardTransfer(DEAL.Avatar%2CDEAL.CardHolder)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L538">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_ExecuteCardTransfer_" data-uid="DEAL.FSM.DealFSM.ExecuteCardTransfer*"></a>
+  <h4 id="DEAL_FSM_DealFSM_ExecuteCardTransfer_DEAL_Avatar_DEAL_CardHolder_" data-uid="DEAL.FSM.DealFSM.ExecuteCardTransfer(DEAL.Avatar,DEAL.CardHolder)">ExecuteCardTransfer(Avatar, CardHolder)</h4>
+  <div class="markdown level1 summary"><p>Execute the card transfer based on the card choice rule <p></p>
+Will only be executed on the specific player's local client
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCardTransfer(Avatar actorPlayer, CardHolder newOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">actorPlayer</span></td>
+        <td><p>The player to execute the card transfer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">newOwner</span></td>
+        <td><p>The new owner of the cards</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_GetActorAvatar_DEAL_FSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.GetActorAvatar(DEAL.FSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L353">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_GetActorAvatar_" data-uid="DEAL.FSM.DealFSM.GetActorAvatar*"></a>
+  <h4 id="DEAL_FSM_DealFSM_GetActorAvatar_DEAL_FSM_ActionActor_System_Int32___" data-uid="DEAL.FSM.DealFSM.GetActorAvatar(DEAL.FSM.ActionActor,System.Int32[])">GetActorAvatar(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"><p>Get the avatar of the player by given actor and actor parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar GetActorAvatar(ActionActor actor, int[] actorParams = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td><p>The actor to get the avatar</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td><p>Additional parameters for the actor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td><p>The avatar of the player</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_GetActorAvatars_DEAL_FSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.GetActorAvatars(DEAL.FSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L401">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_GetActorAvatars_" data-uid="DEAL.FSM.DealFSM.GetActorAvatars*"></a>
+  <h4 id="DEAL_FSM_DealFSM_GetActorAvatars_DEAL_FSM_ActionActor_System_Int32___" data-uid="DEAL.FSM.DealFSM.GetActorAvatars(DEAL.FSM.ActionActor,System.Int32[])">GetActorAvatars(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"><p>Get the avatars of players selected by given actor and actor parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar[] GetActorAvatars(ActionActor actor, int[] actorParams = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td><p>The actor to get the avatar</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td><p>Additional parameters for the actor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a>[]</td>
+        <td><p>The avatars of the players</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_GetActorChipHolder_DEAL_FSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.GetActorChipHolder(DEAL.FSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L326">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_GetActorChipHolder_" data-uid="DEAL.FSM.DealFSM.GetActorChipHolder*"></a>
+  <h4 id="DEAL_FSM_DealFSM_GetActorChipHolder_DEAL_FSM_ActionActor_System_Int32___" data-uid="DEAL.FSM.DealFSM.GetActorChipHolder(DEAL.FSM.ActionActor,System.Int32[])">GetActorChipHolder(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"><p>Get the chip holder of the player by given actor and actor parameters <p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChipHolder[] GetActorChipHolder(ActionActor actor, int[] actorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td><p>ActionActor enum to specify picking rules</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td><p>Additional parameters for ActionActor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.ChipHolder.html">ChipHolder</a>[]</td>
+        <td><p>The chip holder of the player</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_GetActorDeck_DEAL_FSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.GetActorDeck(DEAL.FSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L266">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_GetActorDeck_" data-uid="DEAL.FSM.DealFSM.GetActorDeck*"></a>
+  <h4 id="DEAL_FSM_DealFSM_GetActorDeck_DEAL_FSM_ActionActor_System_Int32___" data-uid="DEAL.FSM.DealFSM.GetActorDeck(DEAL.FSM.ActionActor,System.Int32[])">GetActorDeck(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"><p>Get the card holder of the player by given actor and actor parameters <p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardHolder[] GetActorDeck(ActionActor actor, int[] actorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td><p>ActionActor enum to specify picking rules</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td><p>Additional parameters for ActionActor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a>[]</td>
+        <td><p>The card holder of the player</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_GetActorDeckById_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.GetActorDeckById(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L342">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_GetActorDeckById_" data-uid="DEAL.FSM.DealFSM.GetActorDeckById*"></a>
+  <h4 id="DEAL_FSM_DealFSM_GetActorDeckById_System_Int32_" data-uid="DEAL.FSM.DealFSM.GetActorDeckById(System.Int32)">GetActorDeckById(int)</h4>
+  <div class="markdown level1 summary"><p>Get the card holder of the player by given unique id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardHolder GetActorDeckById(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The unique id of the player</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><p>The card holder of the player</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_GetPlayerActorIndex_DEAL_FSM_ActionActor_System_Int32___.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.GetPlayerActorIndex(DEAL.FSM.ActionActor%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L213">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_GetPlayerActorIndex_" data-uid="DEAL.FSM.DealFSM.GetPlayerActorIndex*"></a>
+  <h4 id="DEAL_FSM_DealFSM_GetPlayerActorIndex_DEAL_FSM_ActionActor_System_Int32___" data-uid="DEAL.FSM.DealFSM.GetPlayerActorIndex(DEAL.FSM.ActionActor,System.Int32[])">GetPlayerActorIndex(ActionActor, int[])</h4>
+  <div class="markdown level1 summary"><p>Get the index of the player by given actor and actor parameters <p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPlayerActorIndex(ActionActor actor, int[] actorParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.ActionActor.html">ActionActor</a></td>
+        <td><span class="parametername">actor</span></td>
+        <td><p>ActionActor enum to specify picking rules</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">actorParams</span></td>
+        <td><p>Additional parameters for ActionActor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the player</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_OnConfirmSpecialAction.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.OnConfirmSpecialAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L670">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_OnConfirmSpecialAction_" data-uid="DEAL.FSM.DealFSM.OnConfirmSpecialAction*"></a>
+  <h4 id="DEAL_FSM_DealFSM_OnConfirmSpecialAction" data-uid="DEAL.FSM.DealFSM.OnConfirmSpecialAction">OnConfirmSpecialAction()</h4>
+  <div class="markdown level1 summary"><p>Trigger special action when the card is confirmed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConfirmSpecialAction()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_OnEvent_DEAL_EventMsg_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.OnEvent(DEAL.EventMsg)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L743">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_OnEvent_" data-uid="DEAL.FSM.DealFSM.OnEvent*"></a>
+  <h4 id="DEAL_FSM_DealFSM_OnEvent_DEAL_EventMsg_" data-uid="DEAL.FSM.DealFSM.OnEvent(DEAL.EventMsg)">OnEvent(EventMsg)</h4>
+  <div class="markdown level1 summary"><p>Event handler for attached event types</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEvent(EventMsg e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.EventMsg.html">EventMsg</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_OnPickSpecialAction_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.OnPickSpecialAction(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L589">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_OnPickSpecialAction_" data-uid="DEAL.FSM.DealFSM.OnPickSpecialAction*"></a>
+  <h4 id="DEAL_FSM_DealFSM_OnPickSpecialAction_DEAL_BaseCard_" data-uid="DEAL.FSM.DealFSM.OnPickSpecialAction(DEAL.BaseCard)">OnPickSpecialAction(BaseCard)</h4>
+  <div class="markdown level1 summary"><p>Trigger special action when the card is picked</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPickSpecialAction(BaseCard card)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
+        <td><span class="parametername">card</span></td>
+        <td><p>The card that is picked</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_RequestCardPick_DEAL_Avatar_DEAL_CardHolder_DEAL_FSM_CardChoice_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.RequestCardPick(DEAL.Avatar%2CDEAL.CardHolder%2CDEAL.FSM.CardChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L461">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_RequestCardPick_" data-uid="DEAL.FSM.DealFSM.RequestCardPick*"></a>
+  <h4 id="DEAL_FSM_DealFSM_RequestCardPick_DEAL_Avatar_DEAL_CardHolder_DEAL_FSM_CardChoice_" data-uid="DEAL.FSM.DealFSM.RequestCardPick(DEAL.Avatar,DEAL.CardHolder,DEAL.FSM.CardChoice)">RequestCardPick(Avatar, CardHolder, CardChoice)</h4>
+  <div class="markdown level1 summary"><p>State machine for requesting specific player to pick cards based on the card choice rule <p></p>
+Will only be executed on the specific player's local client
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestCardPick(Avatar actorPlayer, CardHolder pickingDeck, CardChoice newCardChoice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">actorPlayer</span></td>
+        <td><p>The player to pick the cards</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.CardHolder.html">CardHolder</a></td>
+        <td><span class="parametername">pickingDeck</span></td>
+        <td><p>The deck to pick the cards from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.CardChoice.html">CardChoice</a></td>
+        <td><span class="parametername">newCardChoice</span></td>
+        <td><p>The card choice rule</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_RequestTimedLock_System_Single_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.RequestTimedLock(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L514">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_RequestTimedLock_" data-uid="DEAL.FSM.DealFSM.RequestTimedLock*"></a>
+  <h4 id="DEAL_FSM_DealFSM_RequestTimedLock_System_Single_" data-uid="DEAL.FSM.DealFSM.RequestTimedLock(System.Single)">RequestTimedLock(float)</h4>
+  <div class="markdown level1 summary"><p>Request to lock the system for a certain amount of time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestTimedLock(float time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>The time to lock the system, in seconds</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_SetNextPlayer_System_Int32_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.SetNextPlayer(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L202">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_SetNextPlayer_" data-uid="DEAL.FSM.DealFSM.SetNextPlayer*"></a>
+  <h4 id="DEAL_FSM_DealFSM_SetNextPlayer_System_Int32_" data-uid="DEAL.FSM.DealFSM.SetNextPlayer(System.Int32)">SetNextPlayer(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNextPlayer(int playerIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">playerIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_SetPlayerOrder_DEAL_FSM_OrderType_System_Int32___.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.SetPlayerOrder(DEAL.FSM.OrderType%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L184">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_SetPlayerOrder_" data-uid="DEAL.FSM.DealFSM.SetPlayerOrder*"></a>
+  <h4 id="DEAL_FSM_DealFSM_SetPlayerOrder_DEAL_FSM_OrderType_System_Int32___" data-uid="DEAL.FSM.DealFSM.SetPlayerOrder(DEAL.FSM.OrderType,System.Int32[])">SetPlayerOrder(OrderType, int[])</h4>
+  <div class="markdown level1 summary"><p>Change the current player rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlayerOrder(OrderType orderType, int[] orderParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.FSM.OrderType.html">OrderType</a></td>
+        <td><span class="parametername">orderType</span></td>
+        <td><p>If reverse, the player order will be reversed. If specific, the player order will be set to the specified index</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">orderParams</span></td>
+        <td><p>Additional parameters for the order type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_StartFSM.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.StartFSM%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L114">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_StartFSM_" data-uid="DEAL.FSM.DealFSM.StartFSM*"></a>
+  <h4 id="DEAL_FSM_DealFSM_StartFSM" data-uid="DEAL.FSM.DealFSM.StartFSM">StartFSM()</h4>
+  <div class="markdown level1 summary"><p>Start the state machine. <p></p>
+This method should be called after the state machine is initialized with a valid global info scriptable object.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartFSM()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_TerminateFSM.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.TerminateFSM%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L133">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_TerminateFSM_" data-uid="DEAL.FSM.DealFSM.TerminateFSM*"></a>
+  <h4 id="DEAL_FSM_DealFSM_TerminateFSM" data-uid="DEAL.FSM.DealFSM.TerminateFSM">TerminateFSM()</h4>
+  <div class="markdown level1 summary"><p>Terminate the state machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TerminateFSM()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_TryPick_DEAL_BaseCard_.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.TryPick(DEAL.BaseCard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L560">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_TryPick_" data-uid="DEAL.FSM.DealFSM.TryPick*"></a>
+  <h4 id="DEAL_FSM_DealFSM_TryPick_DEAL_BaseCard_" data-uid="DEAL.FSM.DealFSM.TryPick(DEAL.BaseCard)">TryPick(BaseCard)</h4>
+  <div class="markdown level1 summary"><p>Try to pick a card based on the card choice rule <p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryPick(BaseCard card)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DEAL.BaseCard.html">BaseCard</a></td>
+        <td><span class="parametername">card</span></td>
+        <td><p>The card to pick</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the card is picked, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM_UpdateAlivePlayerCount.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM.UpdateAlivePlayerCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L441">View Source</a>
+  </span>
+  <a id="DEAL_FSM_DealFSM_UpdateAlivePlayerCount_" data-uid="DEAL.FSM.DealFSM.UpdateAlivePlayerCount*"></a>
+  <h4 id="DEAL_FSM_DealFSM_UpdateAlivePlayerCount" data-uid="DEAL.FSM.DealFSM.UpdateAlivePlayerCount">UpdateAlivePlayerCount()</h4>
+  <div class="markdown level1 summary"><p>Update the alive player count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAlivePlayerCount()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DEAL.IEventListener.html">IEventListener</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/new/main/apiSpec/new?filename=DEAL_FSM_DealFSM.md&amp;value=---%0Auid%3A%20DEAL.FSM.DealFSM%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chile109/UCEngine/blob/main/Assets/DEAL/Core/Runtime/ScriptableObject/FSM/DealFSM.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
